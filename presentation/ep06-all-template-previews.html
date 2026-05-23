@@ -1,0 +1,1063 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EP06 All Visual Template Previews</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #080d10;
+        --ink: #111820;
+        --line: #29414d;
+        --text: #f2f5f5;
+        --muted: #91a2aa;
+        --cyan: #61d8ff;
+        --amber: #f0b44c;
+        --red: #ef6a5b;
+        --green: #7bd88f;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: linear-gradient(180deg, #0c1115 0%, #080d10 100%);
+        color: var(--text);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+      }
+
+      .page {
+        width: min(1540px, calc(100vw - 44px));
+        margin: 0 auto;
+        padding: 36px 0 64px;
+      }
+
+      header {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 24px;
+        align-items: end;
+        padding-bottom: 28px;
+        margin-bottom: 24px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      h1 {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(42px, 5vw, 82px);
+        line-height: 0.96;
+        letter-spacing: 0;
+      }
+
+      .lede {
+        max-width: 840px;
+        margin: 16px 0 0;
+        color: var(--muted);
+        font-size: 18px;
+        line-height: 1.55;
+      }
+
+      .badge {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        padding: 0 16px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        color: var(--cyan);
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-weight: 900;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+
+      .toolbar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 24px;
+      }
+
+      .toolbar button {
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: rgba(17, 24, 32, 0.84);
+        color: var(--text);
+        min-height: 36px;
+        padding: 0 14px;
+        font: inherit;
+        font-size: 14px;
+        cursor: pointer;
+      }
+
+      .toolbar button.active {
+        border-color: var(--cyan);
+        color: var(--cyan);
+        box-shadow: 0 0 22px rgba(97, 216, 255, 0.16);
+      }
+
+      .toolbar .replay {
+        margin-left: auto;
+        border-color: rgba(240, 180, 76, 0.68);
+        color: var(--amber);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .card {
+        min-height: 570px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(17, 24, 32, 0.82);
+        overflow: hidden;
+      }
+
+      .head {
+        min-height: 84px;
+        display: flex;
+        justify-content: space-between;
+        gap: 14px;
+        padding: 16px 18px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .title {
+        margin: 0;
+        font-size: 21px;
+        line-height: 1.16;
+      }
+
+      .type {
+        color: var(--amber);
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 11px;
+        font-weight: 900;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+
+      .mock {
+        height: 300px;
+        position: relative;
+        padding: 18px;
+        border-bottom: 1px solid var(--line);
+        overflow: hidden;
+        isolation: isolate;
+      }
+
+      .body {
+        padding: 15px 18px 18px;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.46;
+      }
+
+      .body strong {
+        color: var(--text);
+      }
+
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+        margin-top: 12px;
+      }
+
+      .chip {
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        color: var(--cyan);
+        padding: 6px 9px;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 11px;
+        font-weight: 800;
+      }
+
+      .motion-chip {
+        color: var(--amber);
+      }
+
+      .stage-label {
+        position: absolute;
+        left: 18px;
+        top: 16px;
+        z-index: 4;
+        color: var(--cyan);
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 12px;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      .claim {
+        position: absolute;
+        left: 18px;
+        right: 18px;
+        top: 54px;
+        z-index: 3;
+        font-size: 38px;
+        line-height: 0.98;
+        font-weight: 950;
+      }
+
+      .claim.serif {
+        font-family: Georgia, "Times New Roman", serif;
+        font-weight: 900;
+      }
+
+      .proof {
+        position: absolute;
+        left: 18px;
+        right: 18px;
+        bottom: 18px;
+        min-height: 88px;
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: 8px;
+        background: rgba(8, 13, 16, 0.58);
+        padding: 12px;
+      }
+
+      .row {
+        height: 12px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.18);
+        margin-bottom: 10px;
+      }
+
+      .row.short {
+        width: 56%;
+      }
+
+      .blocks {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+      }
+
+      .block {
+        min-height: 38px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 6px;
+        background: rgba(97, 216, 255, 0.12);
+      }
+
+      .motion-strip {
+        position: absolute;
+        left: 18px;
+        right: 18px;
+        bottom: 112px;
+        z-index: 5;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 7px;
+        pointer-events: none;
+      }
+
+      .motion-token {
+        min-height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 999px;
+        background: rgba(8, 13, 16, 0.66);
+        color: var(--text);
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 9px;
+        font-weight: 900;
+        line-height: 1;
+        text-transform: uppercase;
+      }
+
+      .stage-label,
+      .claim,
+      .proof,
+      .motion-token,
+      .row,
+      .block {
+        animation-duration: 4.8s;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(0.2, 0.7, 0.1, 1);
+        animation-fill-mode: both;
+      }
+
+      .stage-label {
+        animation-name: label-reveal;
+      }
+
+      .claim {
+        animation-name: claim-reveal;
+      }
+
+      .proof {
+        animation-name: proof-reveal;
+      }
+
+      .row {
+        transform-origin: left center;
+        animation-name: row-sweep;
+      }
+
+      .row.short {
+        animation-delay: 0.16s;
+      }
+
+      .block {
+        animation-name: block-activate;
+      }
+
+      .block:nth-child(2) {
+        animation-delay: 0.18s;
+      }
+
+      .block:nth-child(3) {
+        animation-delay: 0.36s;
+      }
+
+      .motion-token {
+        animation-name: token-reveal;
+      }
+
+      .motion-token:nth-child(2) {
+        animation-delay: 0.26s;
+      }
+
+      .motion-token:nth-child(3) {
+        animation-delay: 0.52s;
+      }
+
+      .mock::before {
+        content: "";
+        position: absolute;
+        left: 18px;
+        right: 18px;
+        top: 42%;
+        z-index: 1;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, var(--cyan), transparent);
+        opacity: 0;
+        transform: scaleX(0);
+        transform-origin: left center;
+        animation: path-activation 4.8s cubic-bezier(0.2, 0.7, 0.1, 1) infinite both;
+      }
+
+      .replay-run .stage-label,
+      .replay-run .claim,
+      .replay-run .proof,
+      .replay-run .motion-token,
+      .replay-run .row,
+      .replay-run .block,
+      .replay-run .mock::before {
+        animation-name: none;
+      }
+
+      @keyframes label-reveal {
+        0%,
+        8% {
+          opacity: 0;
+          transform: translateY(-8px);
+        }
+        16%,
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes claim-reveal {
+        0%,
+        14% {
+          opacity: 0;
+          transform: translateY(18px);
+          clip-path: inset(0 0 100% 0);
+        }
+        28%,
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+          clip-path: inset(0 0 0 0);
+        }
+      }
+
+      @keyframes proof-reveal {
+        0%,
+        28% {
+          opacity: 0;
+          transform: translateY(22px) scale(0.98);
+        }
+        42%,
+        100% {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      @keyframes row-sweep {
+        0%,
+        42% {
+          opacity: 0.34;
+          transform: scaleX(0.18);
+        }
+        58%,
+        100% {
+          opacity: 1;
+          transform: scaleX(1);
+        }
+      }
+
+      @keyframes block-activate {
+        0%,
+        54% {
+          opacity: 0.48;
+          transform: translateY(8px);
+          filter: saturate(0.8);
+        }
+        68% {
+          opacity: 1;
+          transform: translateY(0);
+          filter: saturate(1.7);
+        }
+        100% {
+          opacity: 0.9;
+          transform: translateY(0);
+          filter: saturate(1);
+        }
+      }
+
+      @keyframes token-reveal {
+        0%,
+        18% {
+          opacity: 0;
+          transform: translateY(8px) scale(0.92);
+        }
+        30%,
+        78% {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+        100% {
+          opacity: 0.72;
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      @keyframes path-activation {
+        0%,
+        34% {
+          opacity: 0;
+          transform: scaleX(0);
+        }
+        50% {
+          opacity: 0.82;
+          transform: scaleX(1);
+        }
+        74%,
+        100% {
+          opacity: 0;
+          transform: scaleX(1);
+        }
+      }
+
+      .executive-technical-documentary {
+        background: radial-gradient(circle at 80% 20%, rgba(97, 216, 255, 0.15), transparent 32%),
+          #080d10;
+      }
+
+      .source-editorial-technical {
+        background: #eee9dd;
+        color: #162027;
+      }
+
+      .source-editorial-technical .stage-label,
+      .source-editorial-technical .claim {
+        color: #162027;
+      }
+
+      .source-editorial-technical .proof {
+        background: #fffaf0;
+        border-color: #c9b988;
+      }
+
+      .systems-control-room {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+        background-size: 32px 32px;
+      }
+
+      .systems-control-room .block:nth-child(2) {
+        background: rgba(240, 180, 76, 0.22);
+        border-color: var(--amber);
+      }
+
+      .decision-matrix {
+        background: linear-gradient(135deg, rgba(240, 180, 76, 0.09), rgba(97, 216, 255, 0.1));
+      }
+
+      .decision-matrix .proof {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+      }
+
+      .decision-matrix .proof .row {
+        height: auto;
+        min-height: 28px;
+        margin: 0;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: rgba(97, 216, 255, 0.12);
+      }
+
+      .bold-signal {
+        background: #101010;
+      }
+
+      .bold-signal::after {
+        content: "";
+        position: absolute;
+        inset: 126px 24px 26px;
+        background: #ff5a36;
+        border-radius: 8px;
+      }
+
+      .bold-signal .proof {
+        z-index: 4;
+        border-color: transparent;
+        background: rgba(0, 0, 0, 0.44);
+      }
+
+      .electric-studio {
+        background: linear-gradient(90deg, #050505 0 48%, #f7f9fb 48% 100%);
+      }
+
+      .electric-studio .claim {
+        color: #ffffff;
+        width: 46%;
+      }
+
+      .electric-studio .proof {
+        left: 52%;
+        background: #ffffff;
+        border-color: #111820;
+      }
+
+      .electric-studio .row {
+        background: #61d8ff;
+      }
+
+      .creative-voltage {
+        background: linear-gradient(135deg, #101942, #072b42);
+      }
+
+      .creative-voltage::after {
+        content: "!";
+        position: absolute;
+        right: 26px;
+        top: 24px;
+        color: #f4f02e;
+        font-size: 132px;
+        font-weight: 950;
+        animation: badge-pop 4.8s cubic-bezier(0.2, 0.7, 0.1, 1) infinite both;
+      }
+
+      .dark-botanical {
+        background: radial-gradient(circle at 82% 18%, rgba(224, 134, 128, 0.24), transparent 32%),
+          radial-gradient(circle at 18% 86%, rgba(240, 180, 76, 0.18), transparent 34%), #151413;
+      }
+
+      .dark-botanical .claim {
+        color: #f6ead7;
+      }
+
+      .notebook-tabs {
+        background: #f4ecd8;
+        color: #1b2428;
+      }
+
+      .notebook-tabs .claim,
+      .notebook-tabs .stage-label {
+        color: #1b2428;
+      }
+
+      .notebook-tabs::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 34px;
+        width: 44px;
+        height: 210px;
+        background: linear-gradient(#a6e7cf 0 24%, #d9c3ff 24% 50%, #ffcad8 50% 76%, #b7dcff 76%);
+        border-radius: 8px 0 0 8px;
+        animation: tab-switch 4.8s steps(4, end) infinite both;
+      }
+
+      .pastel-geometry {
+        background: linear-gradient(135deg, #dff3ff, #ffe4ef 48%, #e4f7df);
+        color: #1d272c;
+      }
+
+      .pastel-geometry .claim,
+      .pastel-geometry .stage-label {
+        color: #1d272c;
+      }
+
+      .pastel-geometry .proof {
+        background: rgba(255, 255, 255, 0.62);
+        border-color: rgba(29, 39, 44, 0.18);
+      }
+
+      .vintage-editorial {
+        background: #efe3c7;
+        color: #20201d;
+      }
+
+      .vintage-editorial .claim,
+      .vintage-editorial .stage-label {
+        color: #20201d;
+      }
+
+      .vintage-editorial::after {
+        content: "";
+        position: absolute;
+        right: 24px;
+        top: 32px;
+        width: 88px;
+        height: 88px;
+        border: 14px solid #d94d35;
+        transform: rotate(18deg);
+        animation: callout-stamp 4.8s cubic-bezier(0.2, 0.7, 0.1, 1) infinite both;
+      }
+
+      .terminal-green {
+        background: #0d1117;
+      }
+
+      .terminal-green .claim {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        color: #7ee787;
+        font-size: 31px;
+      }
+
+      .terminal-green .stage-label {
+        color: #7ee787;
+      }
+
+      .terminal-green .proof {
+        border-color: #238636;
+      }
+
+      .swiss-modern {
+        background: #f7f7f4;
+        color: #0b0b0b;
+      }
+
+      .swiss-modern .claim,
+      .swiss-modern .stage-label {
+        color: #0b0b0b;
+      }
+
+      .swiss-modern::after {
+        content: "";
+        position: absolute;
+        right: 28px;
+        top: 28px;
+        width: 18px;
+        height: 238px;
+        background: #e53935;
+        animation: grid-reveal 4.8s cubic-bezier(0.2, 0.7, 0.1, 1) infinite both;
+      }
+
+      @keyframes badge-pop {
+        0%,
+        26% {
+          opacity: 0;
+          transform: translateY(-10px) scale(0.7) rotate(-12deg);
+        }
+        40%,
+        100% {
+          opacity: 1;
+          transform: translateY(0) scale(1) rotate(0deg);
+        }
+      }
+
+      @keyframes tab-switch {
+        0%,
+        100% {
+          filter: hue-rotate(0deg);
+          transform: translateX(0);
+        }
+        50% {
+          filter: hue-rotate(35deg);
+          transform: translateX(-6px);
+        }
+      }
+
+      @keyframes callout-stamp {
+        0%,
+        34% {
+          opacity: 0;
+          transform: scale(1.35) rotate(28deg);
+        }
+        48%,
+        100% {
+          opacity: 1;
+          transform: scale(1) rotate(18deg);
+        }
+      }
+
+      @keyframes grid-reveal {
+        0%,
+        30% {
+          opacity: 0;
+          transform: scaleY(0);
+        }
+        48%,
+        100% {
+          opacity: 1;
+          transform: scaleY(1);
+        }
+      }
+
+      .paper-and-ink {
+        background: #f6eedc;
+        color: #1b1815;
+      }
+
+      .paper-and-ink .claim,
+      .paper-and-ink .stage-label {
+        color: #1b1815;
+      }
+
+      .paper-and-ink .claim::first-letter {
+        color: #9e1b32;
+        font-size: 1.22em;
+      }
+
+      .split-pastel {
+        background: linear-gradient(90deg, #ffd7c2 0 50%, #d9ccff 50% 100%);
+        color: #202027;
+      }
+
+      .split-pastel .claim,
+      .split-pastel .stage-label {
+        color: #202027;
+      }
+
+      .neon-cyber {
+        background: radial-gradient(circle at 72% 30%, rgba(255, 0, 180, 0.2), transparent 34%),
+          #071426;
+      }
+
+      .neon-cyber .claim {
+        color: #baf5ff;
+        text-shadow: 0 0 20px rgba(97, 216, 255, 0.48);
+      }
+
+      .source-native {
+        background: #10161a;
+      }
+
+      .source-native .proof {
+        background: #f2efe7;
+        color: #162027;
+      }
+
+      .source-native .row {
+        background: #ccd7d4;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.001ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.001ms !important;
+        }
+      }
+
+      @media (max-width: 1180px) {
+        .grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 760px) {
+        .page {
+          width: min(100vw - 28px, 680px);
+          padding-top: 24px;
+        }
+
+        header {
+          grid-template-columns: 1fr;
+        }
+
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header>
+        <div>
+          <h1>EP06 全模板动画预览</h1>
+          <p class="lede">
+            这些是本地 skill/template catalog 的 17 个视觉方向，全部用同一个 EP06 信息层做快速 mock：
+            混合架构别太早，先跑出证据，再组合系统。每张卡片都会循环演示该模板声明的 motion patterns。
+          </p>
+        </div>
+        <div class="badge">17 Templates</div>
+      </header>
+
+      <nav class="toolbar" aria-label="template filters">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="codex-native">Codex Native</button>
+        <button data-filter="frontend-slides-adapted">Frontend Slides</button>
+        <button data-filter="source-native">Source Native</button>
+        <button class="replay" type="button" data-action="replay">Replay Animations</button>
+      </nav>
+
+      <section class="grid" id="grid" aria-label="template previews"></section>
+    </main>
+
+    <script>
+      const templates = [
+        {
+          id: "executive-technical-documentary",
+          type: "codex-native",
+          title: "Executive Technical Documentary",
+          best: "frontier AI systems, architecture choices, technical leadership",
+          risk: "Can become repetitive if every episode uses it.",
+          chips: ["cinematic", "serious", "architecture"],
+          motions: ["slow reveal", "focus outline", "path activation", "state change"],
+          claimClass: "serif",
+        },
+        {
+          id: "source-editorial-technical",
+          type: "codex-native",
+          title: "Source Editorial Technical",
+          best: "research reports, taxonomy explanation, source diagram annotation",
+          risk: "Can feel static unless highlights are timed carefully.",
+          chips: ["report-like", "source-heavy", "credible"],
+          motions: ["page reveal", "line highlight", "margin-note reveal"],
+          claimClass: "serif",
+        },
+        {
+          id: "systems-control-room",
+          type: "codex-native",
+          title: "Systems Control Room",
+          best: "production readiness, routing, monitoring, agent operations",
+          risk: "Can imply fake telemetry if labels are unclear.",
+          chips: ["operational", "routing", "status gates"],
+          motions: ["row activation", "trace sweep", "threshold change", "incident highlight"],
+        },
+        {
+          id: "decision-matrix",
+          type: "codex-native",
+          title: "Decision Matrix",
+          best: "architecture choice, tradeoffs, buy/build decisions",
+          risk: "Can flatten taxonomy if axes are not source-faithful.",
+          chips: ["tradeoff", "gates", "leader-friendly"],
+          motions: ["option dimming", "gate pass/fail", "selection highlight", "axis reveal"],
+        },
+        {
+          id: "bold-signal",
+          type: "frontend-slides-adapted",
+          title: "Bold Signal",
+          best: "hooks, strong claims, episode covers",
+          risk: "Can overpower source diagrams.",
+          chips: ["hook", "cover", "high impact"],
+          motions: ["card snap-in", "number reveal", "accent wipe"],
+        },
+        {
+          id: "electric-studio",
+          type: "frontend-slides-adapted",
+          title: "Electric Studio",
+          best: "business explainers and clean framework slides",
+          risk: "Can feel generic corporate unless artifacts are distinctive.",
+          chips: ["clean", "business", "blue split"],
+          motions: ["panel reveal", "accent bar sweep", "quote fade"],
+        },
+        {
+          id: "creative-voltage",
+          type: "frontend-slides-adapted",
+          title: "Creative Voltage",
+          best: "high-energy hooks and knowledge-gap openings",
+          risk: "Can become hype if applied to every scene.",
+          chips: ["energetic", "social", "badge motion"],
+          motions: ["badge pop", "halftone reveal", "fast accent sweep"],
+        },
+        {
+          id: "dark-botanical",
+          type: "frontend-slides-adapted",
+          title: "Dark Botanical",
+          best: "strategic reflection and soft authority",
+          risk: "Decorative softness can weaken engineering clarity.",
+          chips: ["premium", "warm", "reflective"],
+          motions: ["slow fade", "soft drift", "line draw"],
+          claimClass: "serif",
+        },
+        {
+          id: "notebook-tabs",
+          type: "frontend-slides-adapted",
+          title: "Notebook Tabs",
+          best: "series maps, sectioned explainers, taxonomy walkthroughs",
+          risk: "Can look classroom-like for frontier infrastructure.",
+          chips: ["organized", "tabs", "taxonomy"],
+          motions: ["tab switch", "page slide", "note reveal"],
+        },
+        {
+          id: "pastel-geometry",
+          type: "frontend-slides-adapted",
+          title: "Pastel Geometry",
+          best: "beginner-friendly explainers and soft onboarding",
+          risk: "Can undercut institutional-grade trust.",
+          chips: ["friendly", "soft", "onboarding"],
+          motions: ["pill reveal", "soft slide", "gentle scale"],
+        },
+        {
+          id: "vintage-editorial",
+          type: "frontend-slides-adapted",
+          title: "Vintage Editorial",
+          best: "contrarian takes and memorable mental upgrades",
+          risk: "Can over-personalize serious source material.",
+          chips: ["editorial", "myth-busting", "personality"],
+          motions: ["headline stagger", "callout stamp", "geometry slide"],
+          claimClass: "serif",
+        },
+        {
+          id: "terminal-green",
+          type: "frontend-slides-adapted",
+          title: "Terminal Green",
+          best: "developer workflows, tools, debugging, logs",
+          risk: "Can feel gimmicky if the source is not dev-operational.",
+          chips: ["developer", "logs", "terminal"],
+          motions: ["cursor blink", "line typing", "log highlight"],
+        },
+        {
+          id: "swiss-modern",
+          type: "frontend-slides-adapted",
+          title: "Swiss Modern",
+          best: "frameworks, clean taxonomy, precise comparisons",
+          risk: "Can feel cold or too abstract for source-heavy videos.",
+          chips: ["minimal", "grid", "taxonomy"],
+          motions: ["grid reveal", "axis movement", "precise crop/slide"],
+        },
+        {
+          id: "paper-and-ink",
+          type: "frontend-slides-adapted",
+          title: "Paper And Ink",
+          best: "principles, quotes, argument structure, research insight",
+          risk: "May lack enough visual explanation for complex architecture.",
+          chips: ["careful", "literary", "principle"],
+          motions: ["ink reveal", "rule draw", "quote fade"],
+          claimClass: "serif",
+        },
+        {
+          id: "split-pastel",
+          type: "frontend-slides-adapted",
+          title: "Split Pastel",
+          best: "soft intros and non-threatening concept onboarding",
+          risk: "Too casual for serious frontier AI infrastructure.",
+          chips: ["playful", "creator", "friendly"],
+          motions: ["badge pop", "soft split reveal", "gentle slide"],
+        },
+        {
+          id: "neon-cyber",
+          type: "frontend-slides-adapted",
+          title: "Neon Cyber",
+          best: "rare high-energy hooks and future-facing contrast beats",
+          risk: "Very easy to become generic AI/cyberpunk if overused.",
+          chips: ["futuristic", "hook only", "high risk"],
+          motions: ["grid reveal", "glow pulse", "glitch/scramble emphasis"],
+        },
+        {
+          id: "source-native",
+          type: "source-native",
+          title: "Source Native",
+          best: "recognizable source diagrams, report layout, product UI proof",
+          risk: "Can imply endorsement or become visually inconsistent.",
+          chips: ["source proof", "taxonomy safe", "diagram-first"],
+          motions: ["source reveal", "annotation highlight", "zoom to evidence"],
+        },
+      ];
+
+      const grid = document.querySelector("#grid");
+
+      const render = (filter = "all") => {
+        grid.innerHTML = "";
+        templates
+          .filter((template) => filter === "all" || template.type === filter)
+          .forEach((template, index) => {
+            const card = document.createElement("article");
+            card.className = "card";
+            card.dataset.type = template.type;
+            card.innerHTML = `
+              <div class="head">
+                <h2 class="title">${String(index + 1).padStart(2, "0")}. ${template.title}</h2>
+                <div class="type">${template.type}</div>
+              </div>
+              <div class="mock ${template.id}">
+                <div class="stage-label">EP06 / Hybrid</div>
+                <div class="claim ${template.claimClass || ""}">混合架构<br />别太早</div>
+                <div class="motion-strip" aria-label="motion patterns">
+                  ${template.motions.slice(0, 3).map((motion) => `<div class="motion-token">${motion}</div>`).join("")}
+                </div>
+                <div class="proof" aria-label="template mock proof">
+                  <div class="row"></div>
+                  <div class="row short"></div>
+                  <div class="blocks">
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="body">
+                <strong>Best for:</strong> ${template.best}<br />
+                <strong>Risk:</strong> ${template.risk}
+                <div class="chips">
+                  ${template.chips.map((chip) => `<span class="chip">${chip}</span>`).join("")}
+                  ${template.motions.map((motion) => `<span class="chip motion-chip">${motion}</span>`).join("")}
+                </div>
+              </div>
+            `;
+            grid.appendChild(card);
+          });
+      };
+
+      document.querySelectorAll(".toolbar button").forEach((button) => {
+        button.addEventListener("click", () => {
+          if (button.dataset.action === "replay") {
+            document.body.classList.add("replay-run");
+            requestAnimationFrame(() => {
+              document.body.classList.remove("replay-run");
+            });
+            return;
+          }
+          document.querySelectorAll(".toolbar button").forEach((item) => item.classList.remove("active"));
+          button.classList.add("active");
+          render(button.dataset.filter);
+        });
+      });
+
+      render();
+    </script>
+  </body>
+</html>

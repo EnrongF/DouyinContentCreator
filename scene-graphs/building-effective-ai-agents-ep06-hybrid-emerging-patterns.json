@@ -1,0 +1,559 @@
+{
+  "schemaVersion": "1.0",
+  "slug": "building-effective-ai-agents-ep06-hybrid-emerging-patterns",
+  "title": "Building Effective AI Agents EP06: 什么时候用混合架构?",
+  "mission": "AI cognition compression",
+  "audience": "Builders, operators, founders, and enterprise AI decision makers",
+  "format": {
+    "aspectRatio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "visualSystem": {
+    "name": "Decision Matrix with Executive Technical Documentary",
+    "background": "near-black graphite with source-faithful architecture overlays",
+    "typography": "large Chinese decision claim, compact sans metadata, mono source labels",
+    "palette": {
+      "graphite": "#0b0f12",
+      "panel": "#111820",
+      "line": "#29414d",
+      "cyan": "#61d8ff",
+      "cyanSoft": "#1e6f86",
+      "amber": "#f0b44c",
+      "red": "#ef6a5b",
+      "text": "#f2f5f5",
+      "muted": "#8ea0a8"
+    },
+    "motionPrinciples": [
+      "Treat the evolution ladder as synthesis, not a source taxonomy.",
+      "Use routing, escalation, evaluator, and cost gates as semantic motion.",
+      "Keep one visual focus per voice chunk.",
+      "Never make hierarchical, parallel, and evaluator look like peer source categories."
+    ]
+  },
+  "cover": {
+    "headline": "什么时候用混合架构?",
+    "subhead": "混合架构不是起点，是证据逼出来的下一步",
+    "artifact": "evolution-gate",
+    "badge": "EP06 / 混合架构",
+    "proofChips": [
+      "Evolution",
+      "Hybrid",
+      "10-15x Token"
+    ],
+    "sourceMark": "Source: Anthropic PDF / Building Effective AI Agents",
+    "sourceVisualRule": "Evolution ladder is synthesis; source taxonomy boundaries remain protected.",
+    "visuals": [
+      {
+        "title": "Single Agent",
+        "label": "起点",
+        "image": "building-effective-ai-agents-ep06-hybrid-emerging-patterns/diagrams/p12-single-agent-architecture.png"
+      },
+      {
+        "title": "Supervisor",
+        "label": "协调",
+        "image": "building-effective-ai-agents-ep06-hybrid-emerging-patterns/diagrams/p16-multi-agent-hierarchical-workflow.png"
+      }
+    ]
+  },
+  "sourceDiagrams": [
+    {
+      "id": "single-agent-architecture",
+      "sourceRef": "pdf:p12",
+      "path": "resources/building-effective-ai-agents/diagrams/p12-single-agent-architecture.png",
+      "useInEpisodes": [
+        "episode-6"
+      ],
+      "preservation": "Use as source proof for the starting point."
+    },
+    {
+      "id": "multi-agent-hierarchical-workflow",
+      "sourceRef": "pdf:p16",
+      "path": "resources/building-effective-ai-agents/diagrams/p16-multi-agent-hierarchical-workflow.png",
+      "useInEpisodes": [
+        "episode-6"
+      ],
+      "preservation": "Use as source proof for supervisor-led coordination."
+    },
+    {
+      "id": "multi-agent-sequential-workflow",
+      "sourceRef": "pdf:p19",
+      "path": "resources/building-effective-ai-agents/diagrams/p19-multi-agent-sequential-workflow.png",
+      "useInEpisodes": [
+        "episode-6"
+      ],
+      "preservation": "Use only as workflow structure, not as a peer of hierarchical coordination."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "c01",
+      "durationSeconds": 5.12,
+      "sectionLabel": "Reset",
+      "paragraphLabel": "question",
+      "claim": "别急着上混合架构",
+      "narration": "很多团队做 Agent，最后都会问一句：那我们是不是该上混合架构了？",
+      "subtitle": "很多团队最后都会问：该上混合架构了吗？",
+      "artifact": {
+        "type": "ep06-question-gate",
+        "nodes": [
+          "直接上 Hybrid",
+          "先看证据"
+        ]
+      },
+      "focus": "先把高级架构的问题放慢。",
+      "sources": [
+        "pdf:p10",
+        "pdf:p24-p25"
+      ],
+      "audioFile": "building-effective-ai-agents-ep06-hybrid-emerging-patterns/audio/c01.wav"
+    },
+    {
+      "id": "c02",
+      "durationSeconds": 5.04,
+      "sectionLabel": "Reset",
+      "paragraphLabel": "source premise",
+      "claim": "混合架构不是一开始就用",
+      "narration": "但 Anthropic 这份报告里，混合架构不是一开始就用的方案。",
+      "subtitle": "混合架构不是一开始就用的方案。",
+      "artifact": {
+        "type": "ep06-threshold-board",
+        "nodes": [
+          "过早复杂",
+          "先跑起来",
+          "再组合"
+        ]
+      },
+      "focus": "高级感不能替代运行证据。",
+      "sources": [
+        "pdf:p24-p25"
+      ],
+      "audioFile": "building-effective-ai-agents-ep06-hybrid-emerging-patterns/audio/c02.wav"
+    },
+    {
+      "id": "c03",
+      "durationSeconds": 3.56,
+      "sectionLabel": "Reset",
+      "paragraphLabel": "composition",
+      "claim": "它是后期组合形态",
+      "narration": "它更像是系统长大以后，才出现的组合形态。",
+      "subtitle": "它是系统长大以后出现的组合形态。",
+      "artifact": {
+        "type": "ep06-evidence-ladder",
+        "nodes": [
+          "Single Agent",
+          "Routing",
+          "Specialists",
+          "Coordination",
+          "Evaluator",
+          "Hybrid"
+        ]
+      },
+      "focus": "这条演进线是 synthesis，不是源文 taxonomy。",
+      "sources": [
+        "pdf:p24-p25",
+        "pdf:p25"
+      ],
+      "audioFile": "building-effective-ai-agents-ep06-hybrid-emerging-patterns/audio/c03.wav"
+    },
+    {
+      "id": "c04",
+      "durationSeconds": 4.88,
+      "sectionLabel": "Single Agent",
+      "paragraphLabel": "start narrow",
+      "claim": "先做边界清楚的单 Agent",
+      "narration": "比较稳的路线，是先做一个边界清楚的单 Agent。",
+      "subtitle": "稳的路线：先做边界清楚的单 Agent。",
+      "artifact": {
+        "type": "ep06-composition-board",
+        "nodes": [
+          "Single Agent"
+        ],
+        "imagePaths": [
+          "building-effective-ai-agents-ep06-hybrid-emerging-patterns/diagrams/p12-single-agent-architecture.png"
+        ]
+      },
+      "focus": "先证明窄任务真的需要自治。",
+      "sources": [
+        "pdf:p11-p12",
+        "pdf:p24-p25"
+      ],
+      "sourceDiagramRefs": [
+        "single-agent-architecture"
+      ],
+      "audioFile": "building-effective-ai-agents-ep06-hybrid-emerging-patterns/audio/c04.wav"
+    },
+    {
+      "id": "c05",
+      "durationSeconds": 4.64,
+      "sectionLabel": "Routing",
+      "paragraphLabel": "first hybrid move",
+      "claim": "任务分叉，再加 routing",
+      "narration": "等任务类型开始分叉，再加 routing，让不同请求走不同路径。",
+      "subtitle": "任务类型分叉，再加 routing。",
+      "artifact": {
+        "type": "ep06-routing-escalator",
+        "nodes": [
+          "默认路径",
+          "任务分类",
+          "Routing",
+          "不同路径"
+        ]
+      },
+      "focus": "Routing 是最轻的组合动作。",
+      "sources": [
+        "pdf:p24-p25",
+        "pdf:p25"
+      ],
+      "audioFile": "building-effective-ai-agents-ep06-hybrid-emerging-patterns/audio/c05.wav"
+    },
+    {
+      "id": "c06",
+      "durationSeconds": 5.44,
+      "sectionLabel": "Specialists",
+      "paragraphLabel": "domain split",
+      "claim": "跨领域，再拆 specialist agents",
+      "narration": "如果问题真的跨了多个专业领域，再把能力拆成 specialist agents。",
+      "subtitle": "跨多个专业领域，再拆 specialist agents。",
+      "artifact": {
+        "type": "ep06-escalation-gate",
+        "nodes": [
+          "单域任务",
+          "领域分叉",
+          "Specialist A",
+          "Specialist B"
+        ]
+      },
+      "focus": "专业领域清楚分开，才需要专门 agent。",
+      "sources": [
+        "pdf:p14-p16",
+        "pdf:p24-p25"
+      ],
+      "audioFile": "building-effective-ai-agents-ep06-hybrid-emerging-patterns/audio/c06.wav"
+    },
+    {
+      "id": "c07",
+      "durationSeconds": 3.6,
+      "sectionLabel": "Specialists",
+      "paragraphLabel": "supervisor",
+      "claim": "supervisor 负责分派和兜底",
+      "narration": "让 supervisor 负责分派、汇总和兜底。",
+      "subtitle": "supervisor 负责分派、汇总和兜底。",
+      "artifact": {
+        "type": "ep06-composition-board",
+        "nodes": [
+          "Supervisor",
+          "Specialists"
+        ],
+        "imagePaths": [
+          "building-effective-ai-agents-ep06-hybrid-emerging-patterns/diagrams/p16-multi-agent-hierarchical-workflow.png"
+        ]
+      },
+      "focus": "这是多智能体协调方式，不是 workflow 分类。",
+      "sources": [
+        "pdf:p14-p16",
+        "pdf:p24-p25"
+      ],
+      "sourceDiagramRefs": [
+        "multi-agent-hierarchical-workflow"
+      ],
+      "audioFile": "building-effective-ai-agents-ep06-hybrid-emerging-patterns/audio/c07.wav"
+    },
+    {
+      "id": "c08",
+      "durationSeconds": 3.7,
+      "sectionLabel": "Workflow",
+      "paragraphLabel": "add structure",
+      "claim": "再往后，才接 workflow",
+      "narration": "再往后，才是把 workflow 结构接进来。",
+      "subtitle": "再往后，才接入 workflow 结构。",
+      "artifact": {
+        "type": "ep06-hybrid-composer",
+        "nodes": [
+          "Single Agent",
+          "Workflow",
+          "Multi-Agent"
+        ],
+        "imagePaths": [
+          "building-effective-ai-agents-ep06-hybrid-emerging-patterns/diagrams/p12-single-agent-architecture.png",
+          "building-effective-ai-agents-ep06-hybrid-emerging-patterns/diagrams/p19-multi-agent-sequential-workflow.png",
+          "building-effective-ai-agents-ep06-hybrid-emerging-patterns/diagrams/p16-multi-agent-hierarchical-workflow.png"
+        ]
+      },
+      "focus": "Workflow 是结构化编排，可以和 agent 组合。",
+      "sources": [
+        "pdf:p18-p22",
+        "pdf:p25"
+      ],
+      "audioFile": "building-effective-ai-agents-ep06-hybrid-emerging-patterns/audio/c08.wav"
+    },
+    {
+      "id": "c09",
+      "durationSeconds": 5.88,
+      "sectionLabel": "Workflow",
+      "paragraphLabel": "parallel evaluator",
+      "claim": "并行和 evaluator 是后加结构",
+      "narration": "独立分析可以并行跑；质量标准清楚的任务，可以加 evaluator 做反复优化。",
+      "subtitle": "并行分析，或加 evaluator 做优化。",
+      "artifact": {
+        "type": "ep06-composition-board",
+        "nodes": [
+          "Parallel",
+          "Evaluator"
+        ],
+        "imagePaths": [
+          "building-effective-ai-agents-ep04-agentic-workflows-are-structure/diagrams/p20-multi-agent-parallel-workflow.png",
+          "building-effective-ai-agents-ep04-agentic-workflows-are-structure/diagrams/p22-multi-agent-evaluator-workflow.png"
+        ]
+      },
+      "focus": "先有清楚的质量标准，再加 evaluator。",
+      "sources": [
+        "pdf:p20-p22",
+        "pdf:p25"
+      ],
+      "audioFile": "building-effective-ai-agents-ep06-hybrid-emerging-patterns/audio/c09.wav"
+    },
+    {
+      "id": "c10",
+      "durationSeconds": 3.04,
+      "sectionLabel": "Taxonomy",
+      "paragraphLabel": "warning",
+      "claim": "这些不是同一层级",
+      "narration": "注意，这些不是同一层级的模式。",
+      "subtitle": "注意：这些不是同一层级的模式。",
+      "artifact": {
+        "type": "ep06-threshold-board",
+        "nodes": [
+          "协调方式",
+          "工作流结构",
+          "Synthesis"
+        ]
+      },
+      "focus": "这是 EP06 最重要的源文边界。",
+      "sources": [
+        "extraction:source-taxonomy-qc",
+        "pdf:p14-p22"
+      ],
+      "audioFile": "building-effective-ai-agents-ep06-hybrid-emerging-patterns/audio/c10.wav"
+    },
+    {
+      "id": "c11",
+      "durationSeconds": 7.48,
+      "sectionLabel": "Taxonomy",
+      "paragraphLabel": "two layers",
+      "claim": "hierarchical 和 parallel 不同层",
+      "narration": "hierarchical，讲的是多智能体怎么协调。parallel 和 evaluator，讲的是 workflow 怎么组织。",
+      "subtitle": "hierarchical 讲协调；parallel 和 evaluator 讲 workflow。",
+      "artifact": {
+        "type": "architecture-hierarchy",
+        "nodes": [],
+        "groups": [
+          {
+            "title": "Multi-Agent Coordination",
+            "items": [
+              "hierarchical",
+              "collaborative"
+            ]
+          },
+          {
+            "title": "Agentic Workflow",
+            "items": [
+              "sequential",
+              "parallel",
+              "evaluator"
+            ]
+          }
+        ]
+      },
+      "focus": "不要把协调方式和工作流结构画成同级选项。",
+      "sources": [
+        "extraction:source-taxonomy-qc",
+        "pdf:p14-p22"
+      ],
+      "audioFile": "building-effective-ai-agents-ep06-hybrid-emerging-patterns/audio/c11.wav"
+    },
+    {
+      "id": "c12",
+      "durationSeconds": 3.2,
+      "sectionLabel": "Taxonomy",
+      "paragraphLabel": "synthesis label",
+      "claim": "组合使用，要标成 synthesis",
+      "narration": "如果把它们组合使用，要标成 synthesis。",
+      "subtitle": "组合使用时，要标成 synthesis。",
+      "artifact": {
+        "type": "ep06-final-stack",
+        "nodes": [
+          "Source layers",
+          "Composed design",
+          "Label: synthesis"
+        ]
+      },
+      "focus": "组合图可以用，但必须标清楚。",
+      "sources": [
+        "extraction:source-taxonomy-qc"
+      ],
+      "audioFile": "building-effective-ai-agents-ep06-hybrid-emerging-patterns/audio/c12.wav"
+    },
+    {
+      "id": "c13",
+      "durationSeconds": 5.2,
+      "sectionLabel": "Emerging",
+      "paragraphLabel": "patterns",
+      "claim": "还有更激进的 emerging patterns",
+      "narration": "报告还提到 dynamic agent generation 和 peer-to-peer network。",
+      "subtitle": "报告还提到 dynamic generation 和 peer-to-peer network。",
+      "artifact": {
+        "type": "ep06-emerging-lab",
+        "nodes": [
+          "Dynamic generation",
+          "Peer-to-peer network",
+          "Flexible",
+          "Less predictable"
+        ]
+      },
+      "focus": "这些是探索方向，不是默认生产方案。",
+      "sources": [
+        "pdf:p22-p23"
+      ],
+      "audioFile": "building-effective-ai-agents-ep06-hybrid-emerging-patterns/audio/c13.wav"
+    },
+    {
+      "id": "c14",
+      "durationSeconds": 6.6,
+      "sectionLabel": "Emerging",
+      "paragraphLabel": "caveat",
+      "claim": "emerging 不等于默认生产",
+      "narration": "但它们属于 emerging patterns。适合探索，不适合一上来就当生产默认方案。",
+      "subtitle": "它们是 emerging patterns，不是生产默认方案。",
+      "artifact": {
+        "type": "ep06-emerging-lab",
+        "nodes": [
+          "Explore",
+          "Prototype",
+          "Observe",
+          "Not default"
+        ]
+      },
+      "focus": "不要把实验性模式包装成成熟建议。",
+      "sources": [
+        "pdf:p22-p23"
+      ],
+      "audioFile": "building-effective-ai-agents-ep06-hybrid-emerging-patterns/audio/c14.wav"
+    },
+    {
+      "id": "c15",
+      "durationSeconds": 3.1,
+      "sectionLabel": "Decision",
+      "paragraphLabel": "four signals",
+      "claim": "要不要 hybrid，看四个信号",
+      "narration": "所以判断要不要 hybrid，看四个信号。",
+      "subtitle": "判断要不要 hybrid，看四个信号。",
+      "artifact": {
+        "type": "ep06-decision-radar",
+        "nodes": [
+          "瓶颈",
+          "可拆",
+          "规则",
+          "成本",
+          "观测"
+        ]
+      },
+      "focus": "不是看架构名字，是看约束是否成立。",
+      "sources": [
+        "pdf:p23-p25"
+      ],
+      "audioFile": "building-effective-ai-agents-ep06-hybrid-emerging-patterns/audio/c15.wav"
+    },
+    {
+      "id": "c16",
+      "durationSeconds": 6.02,
+      "sectionLabel": "Decision",
+      "paragraphLabel": "first gates",
+      "claim": "瓶颈明确、任务可拆、规则清楚",
+      "narration": "单个 Agent 的瓶颈已经明确；任务也能自然拆开；质量和升级规则说得清。",
+      "subtitle": "瓶颈明确、任务可拆、规则说得清。",
+      "artifact": {
+        "type": "ep06-decision-panel",
+        "nodes": [
+          "单 Agent 瓶颈",
+          "任务自然可拆",
+          "质量规则清楚",
+          "升级规则清楚"
+        ]
+      },
+      "focus": "没有这些条件，先不要升级架构。",
+      "sources": [
+        "pdf:p23-p25"
+      ],
+      "audioFile": "building-effective-ai-agents-ep06-hybrid-emerging-patterns/audio/c16.wav"
+    },
+    {
+      "id": "c17",
+      "durationSeconds": 5.7,
+      "sectionLabel": "Decision",
+      "paragraphLabel": "cost gate",
+      "claim": "还要扛住 10 到 15 倍 token",
+      "narration": "还有，团队扛得住 10 到 15 倍 token 成本、延迟和观测复杂度。",
+      "subtitle": "还要扛得住 10 到 15 倍 token 成本。",
+      "artifact": {
+        "type": "ep06-routing-ledger",
+        "nodes": [
+          "Simple request",
+          "Cheap path",
+          "Complex request",
+          "10-15x Token"
+        ]
+      },
+      "focus": "成本、延迟、观测复杂度一起上升。",
+      "sources": [
+        "pdf:p23"
+      ],
+      "audioFile": "building-effective-ai-agents-ep06-hybrid-emerging-patterns/audio/c17.wav"
+    },
+    {
+      "id": "c18",
+      "durationSeconds": 3.0,
+      "sectionLabel": "Principle",
+      "paragraphLabel": "not status",
+      "claim": "混合架构不是高级感",
+      "narration": "一句话：混合架构不是高级感。",
+      "subtitle": "混合架构不是高级感。",
+      "artifact": {
+        "type": "ep06-final-stack",
+        "nodes": [
+          "不是高级感",
+          "不是默认模板",
+          "不是一步到位"
+        ]
+      },
+      "focus": "复杂不是成熟的证明。",
+      "sources": [
+        "pdf:p27"
+      ],
+      "audioFile": "building-effective-ai-agents-ep06-hybrid-emerging-patterns/audio/c18.wav"
+    },
+    {
+      "id": "c19",
+      "durationSeconds": 2.67,
+      "sectionLabel": "Principle",
+      "paragraphLabel": "evidence",
+      "claim": "它是证据逼出来的下一步",
+      "narration": "它是证据逼出来的下一步。",
+      "subtitle": "它是证据逼出来的下一步。",
+      "artifact": {
+        "type": "ep06-takeaway-stack",
+        "nodes": [
+          "先跑单 Agent",
+          "再看瓶颈",
+          "最后组合架构"
+        ]
+      },
+      "focus": "让架构跟着运行证据演进。",
+      "sources": [
+        "pdf:p27"
+      ],
+      "audioFile": "building-effective-ai-agents-ep06-hybrid-emerging-patterns/audio/c19.wav"
+    }
+  ]
+}

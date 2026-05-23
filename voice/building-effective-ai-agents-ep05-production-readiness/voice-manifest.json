@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "1.0",
+  "slug": "building-effective-ai-agents-ep05-production-readiness",
+  "status": "timed_audio_ready",
+  "ttsStatus": "complete",
+  "chunks": [
+    {
+      "id": "s01",
+      "text": "Agent 的风险不只是答错，而是你不知道它为什么这样做、用了什么上下文、调用了哪些工具。",
+      "actualDurationSeconds": 9.902,
+      "measuredSpeechSeconds": 9.552,
+      "audioFile": "chunks/s01.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep05-production-readiness/audio/s01.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s02",
+      "text": "AI 应用要看 prompt chains、model decision paths、retrieval context、Token consumption，以及整个 reasoning workflow。",
+      "actualDurationSeconds": 10.91,
+      "measuredSpeechSeconds": 10.56,
+      "audioFile": "chunks/s02.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep05-production-readiness/audio/s02.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s03",
+      "text": "多轮工具调用、检索结果、Agent 交接都会让上下文膨胀。上下文失控，Agent 的行为就会变得不可控。",
+      "actualDurationSeconds": 10.262,
+      "measuredSpeechSeconds": 9.912,
+      "audioFile": "chunks/s03.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep05-production-readiness/audio/s03.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s04",
+      "text": "原文提到 context editing、memory tools、pagination、filtering、truncation 和 token caps。这些不是优化项，是上线条件。",
+      "actualDurationSeconds": 11.318,
+      "measuredSpeechSeconds": 10.968,
+      "audioFile": "chunks/s04.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep05-production-readiness/audio/s04.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s05",
+      "text": "传统软件的错误路径通常可复现，但 Agent 的决策可能每次不同。生产系统必须记录、评估、限制和回滚。",
+      "actualDurationSeconds": 12.614,
+      "measuredSpeechSeconds": 12.264,
+      "audioFile": "chunks/s05.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep05-production-readiness/audio/s05.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s06",
+      "text": "不要只看模型分数。要看节省时间、错误率、人工接管率、客户体验和成本，指标必须能说明业务价值。",
+      "actualDurationSeconds": 12.398,
+      "measuredSpeechSeconds": 12.048,
+      "audioFile": "chunks/s06.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep05-production-readiness/audio/s06.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s07",
+      "text": "第一个门：任务边界清楚。第二个门：工具权限可控。第三个门：上下文可管理。第四个门：失败能被发现和接管。",
+      "actualDurationSeconds": 13.55,
+      "measuredSpeechSeconds": 13.2,
+      "audioFile": "chunks/s07.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep05-production-readiness/audio/s07.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s08",
+      "text": "第五集的结论是：生产级 Agent 不是先追求更聪明，而是先做到可见、可控、可接管。",
+      "actualDurationSeconds": 9.11,
+      "measuredSpeechSeconds": 8.76,
+      "audioFile": "chunks/s08.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep05-production-readiness/audio/s08.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    }
+  ],
+  "finalAudio": "remotion_sequence_audio",
+  "totalDurationSeconds": 90.064,
+  "asrTranscript": "asr.txt",
+  "asrStatus": "pass",
+  "asrReviewChunks": [],
+  "termQa": {
+    "terms": [
+      "Agent",
+      "Workflow",
+      "Single Agent",
+      "Multi-Agent",
+      "Agentic Workflows",
+      "Token"
+    ],
+    "note": "ASR may translate English terms into Chinese; final QA should be by listening."
+  }
+}

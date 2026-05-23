@@ -1,0 +1,264 @@
+{
+  "schemaVersion": "1.0",
+  "slug": "the-founders-playbook-ai-native-startup-ep05-workflow-moat",
+  "title": "上线后，护城河藏在业务流程里",
+  "series": "The Founder's Playbook - Building an AI-Native Startup",
+  "episode": 5,
+  "status": "scene_graph_ready",
+  "mission": "Explain that scale-stage defensibility comes from accumulated workflow-specific context, not generic model access.",
+  "audience": "AI-native startup founders who have moved past MVP and are thinking about defensibility.",
+  "format": {
+    "primary": "douyin_vertical",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "coverGrid": {
+      "width": 1080,
+      "height": 1440,
+      "note": "Douyin grid-safe cover crop."
+    }
+  },
+  "timing": {
+    "totalDurationSeconds": 53.18,
+    "totalMeasuredSpeechSeconds": 50.24,
+    "audioStrategy": "qwen chunk sequence with measured pauses"
+  },
+  "visualSystem": {
+    "template": "founder-playbook-operating-system",
+    "motionRule": "one forward pass through the workflow-moat context; no repeated group in/out loops inside a semantic context",
+    "focusRule": "highlight the active entity or connection for each chunk; dim non-focus options without removing them",
+    "backgroundRule": "slow natural light drift only; background motion remains secondary to content"
+  },
+  "scenes": [
+    {
+      "id": "c01",
+      "startSeconds": 0,
+      "durationSeconds": 5.42,
+      "speechEndSeconds": 5.12,
+      "sectionLabel": "错误护城河",
+      "paragraphId": "p01",
+      "claim": "讲护城河，别只看模型。",
+      "narration": "很多人讲 AI 创业的护城河，第一反应是：我用了哪个模型。",
+      "subtitle": "讲护城河，别只看用了哪个模型。",
+      "artifact": {
+        "type": "model-access-not-moat",
+        "state": "wrong-model-focus",
+        "nodes": ["模型权限", "同类能力", "护城河"],
+        "highlight": "模型不是护城河",
+        "keyMessage": "Model access is not enough for defensibility."
+      },
+      "focusPhrase": "用了哪个模型",
+      "focusCue": "highlight the model-access card, then show it as insufficient",
+      "motion": "single reveal of model access comparison",
+      "sources": ["series/the-founders-playbook-ai-native-startup.series.md#ep05", "extraction/the-founders-playbook-ai-native-startup.source-map.md"],
+      "sourceLogic": "Source positions Scale-stage defensibility around accumulated workflow specificity, not a generic model claim."
+    },
+    {
+      "id": "c02",
+      "startSeconds": 5.42,
+      "durationSeconds": 6.52,
+      "speechEndSeconds": 11.58,
+      "sectionLabel": "错误护城河",
+      "paragraphId": "p01",
+      "claim": "模型权限本身，很难防守。",
+      "narration": "但到规模化阶段，模型权限本身很难成为护城河。别人也能接入相似的能力。",
+      "subtitle": "模型权限本身，很难成为护城河。",
+      "artifact": {
+        "type": "model-access-not-moat",
+        "state": "same-access-no-gap",
+        "nodes": ["你", "模型", "别人"],
+        "highlight": "别人也能接入",
+        "keyMessage": "Similar model access does not create durable separation."
+      },
+      "focusPhrase": "模型权限本身",
+      "focusCue": "highlight the shared model-access connection",
+      "motion": "continue same model-access context; no scene group reset",
+      "sources": ["series/the-founders-playbook-ai-native-startup.series.md#ep05", "extraction/the-founders-playbook-ai-native-startup.source-map.md"],
+      "sourceLogic": "Keeps the claim conditional and avoids unsupported named moat examples."
+    },
+    {
+      "id": "c03",
+      "startSeconds": 11.94,
+      "durationSeconds": 6.36,
+      "speechEndSeconds": 17.94,
+      "sectionLabel": "流程沉淀",
+      "paragraphId": "p02",
+      "claim": "差距来自流程里沉淀的细节。",
+      "narration": "真正开始拉开差距的，是业务流程里一层一层沉淀下来的细节。",
+      "subtitle": "差距来自业务流程里沉淀的细节。",
+      "artifact": {
+        "type": "workflow-specificity-stack",
+        "state": "stack-begins",
+        "nodes": ["业务流程", "细节", "沉淀"],
+        "highlight": "业务流程",
+        "keyMessage": "Workflow-specific detail becomes the strategic asset."
+      },
+      "focusPhrase": "业务流程里一层一层沉淀",
+      "focusCue": "highlight the workflow spine and first accumulated layer",
+      "motion": "start a single forward stack reveal",
+      "sources": ["series/the-founders-playbook-ai-native-startup.series.md#ep05", "extraction/the-founders-playbook-ai-native-startup.source-map.md"],
+      "sourceLogic": "EP05 series note frames defensibility as specificity accumulated through workflow depth."
+    },
+    {
+      "id": "c04",
+      "startSeconds": 18.3,
+      "durationSeconds": 5.7,
+      "speechEndSeconds": 23.74,
+      "sectionLabel": "细节来源",
+      "paragraphId": "p03",
+      "claim": "行业例外和用户行为，会进入系统。",
+      "narration": "比如，你知道这个行业的例外情况；你的系统接住了真实用户的行为。",
+      "subtitle": "行业例外、用户行为，开始进入系统。",
+      "artifact": {
+        "type": "specificity-layer-stack",
+        "state": "domain-behavior",
+        "nodes": ["行业例外", "用户行为", "系统记忆"],
+        "highlight": "行业例外",
+        "keyMessage": "Specificity begins with exceptions and observed behavior."
+      },
+      "focusPhrase": "行业的例外情况",
+      "focusCue": "highlight domain exception layer, then user behavior layer",
+      "motion": "continue the same stack context",
+      "sources": ["series/the-founders-playbook-ai-native-startup.series.md#ep05", "extraction/the-founders-playbook-ai-native-startup.source-map.md"],
+      "sourceLogic": "Uses only source-supported categories: domain knowledge and proprietary behavioral data."
+    },
+    {
+      "id": "c05",
+      "startSeconds": 24,
+      "durationSeconds": 4.84,
+      "speechEndSeconds": 28.48,
+      "sectionLabel": "细节来源",
+      "paragraphId": "p03",
+      "claim": "工具集成和协作痕迹，也会沉淀。",
+      "narration": "你的流程连上了客户原来的工具，也留下了真实协作的痕迹。",
+      "subtitle": "流程接入工具，也留下协作痕迹。",
+      "artifact": {
+        "type": "specificity-layer-stack",
+        "state": "integration-collaboration",
+        "nodes": ["工具集成", "协作痕迹", "系统记忆"],
+        "highlight": "工具集成",
+        "keyMessage": "Integrations and collaboration traces deepen workflow specificity."
+      },
+      "focusPhrase": "连上了客户原来的工具",
+      "focusCue": "highlight integration and collaboration layers",
+      "motion": "continue the same stack context",
+      "sources": ["series/the-founders-playbook-ai-native-startup.series.md#ep05", "extraction/the-founders-playbook-ai-native-startup.source-map.md"],
+      "sourceLogic": "Uses source-supported integration and workflow-depth defensibility categories."
+    },
+    {
+      "id": "c06",
+      "startSeconds": 28.84,
+      "durationSeconds": 4.18,
+      "speechEndSeconds": 32.76,
+      "sectionLabel": "复制差距",
+      "paragraphId": "p04",
+      "claim": "提示词和模型，复制不了业务记忆。",
+      "narration": "这些东西不是一句提示词，也不是换一个模型就能复制。",
+      "subtitle": "这些不是换个模型就能复制。",
+      "artifact": {
+        "type": "copy-gap-barrier",
+        "state": "prompt-model-dimmed",
+        "nodes": ["提示词", "模型", "业务记忆"],
+        "highlight": "业务记忆",
+        "keyMessage": "Operational memory is harder to copy than model access."
+      },
+      "focusPhrase": "换一个模型就能复制",
+      "focusCue": "dim prompt/model cards and highlight operational memory",
+      "motion": "single barrier reveal",
+      "sources": ["series/the-founders-playbook-ai-native-startup.series.md#ep05", "extraction/the-founders-playbook-ai-native-startup.source-map.md"],
+      "sourceLogic": "Careful paraphrase of accumulated specificity and workflow depth as defensibility."
+    },
+    {
+      "id": "c07",
+      "startSeconds": 33.02,
+      "durationSeconds": 6.42,
+      "speechEndSeconds": 39.02,
+      "sectionLabel": "复制差距",
+      "paragraphId": "p04",
+      "claim": "最后会变成切换成本。",
+      "narration": "它们会变成上下文、数据、集成、习惯，最后变成切换成本。",
+      "subtitle": "上下文、数据、集成、习惯，会变成切换成本。",
+      "artifact": {
+        "type": "switching-cost-chain",
+        "state": "asset-chain",
+        "nodes": ["上下文", "数据", "集成", "习惯", "切换成本"],
+        "highlight": "切换成本",
+        "keyMessage": "Accumulated workflow assets may become switching cost."
+      },
+      "focusPhrase": "最后变成切换成本",
+      "focusCue": "highlight the final switching-cost node after chain reveal",
+      "motion": "continue copy-gap context into asset chain",
+      "sources": ["series/the-founders-playbook-ai-native-startup.series.md#ep05", "extraction/the-founders-playbook-ai-native-startup.source-map.md"],
+      "sourceLogic": "Directly reflects source-supported defensibility mechanisms: context, data, integrations, lock-in."
+    },
+    {
+      "id": "c08",
+      "startSeconds": 39.44,
+      "durationSeconds": 4.08,
+      "speechEndSeconds": 43.28,
+      "sectionLabel": "本集判断",
+      "paragraphId": "p05",
+      "claim": "不要只问：我们是不是用了 AI？",
+      "narration": "所以，这一集不要问：我们是不是用了 AI？",
+      "subtitle": "不要只问：我们是不是用了 AI？",
+      "artifact": {
+        "type": "workflow-moat-audit",
+        "state": "wrong-question-dimmed",
+        "nodes": ["用了 AI", "业务细节", "护城河"],
+        "highlight": "用了 AI",
+        "keyMessage": "Generic AI adoption is the wrong audit question."
+      },
+      "focusPhrase": "是不是用了 AI",
+      "focusCue": "show the wrong question and dim it",
+      "motion": "single audit board reveal",
+      "sources": ["series/the-founders-playbook-ai-native-startup.series.md#ep05", "extraction/the-founders-playbook-ai-native-startup.source-map.md"],
+      "sourceLogic": "Turns the Scale-stage source model into a founder audit question."
+    },
+    {
+      "id": "c09",
+      "startSeconds": 43.52,
+      "durationSeconds": 4.94,
+      "speechEndSeconds": 48.08,
+      "sectionLabel": "本集判断",
+      "paragraphId": "p05",
+      "claim": "要问：系统沉淀了什么独特业务细节？",
+      "narration": "要问：我们的 AI 系统里，沉淀了哪些只有我们才有的业务细节？",
+      "subtitle": "要问：系统里沉淀了哪些独特业务细节？",
+      "artifact": {
+        "type": "workflow-moat-audit",
+        "state": "right-question-highlight",
+        "nodes": ["用了 AI", "业务细节", "护城河"],
+        "highlight": "业务细节",
+        "keyMessage": "Audit the unique workflow detail accumulating inside the AI system."
+      },
+      "focusPhrase": "只有我们才有的业务细节",
+      "focusCue": "highlight the unique business-detail question",
+      "motion": "continue audit board context",
+      "sources": ["series/the-founders-playbook-ai-native-startup.series.md#ep05", "extraction/the-founders-playbook-ai-native-startup.source-map.md"],
+      "sourceLogic": "Preserves the source logic while avoiding unsupported certainty."
+    },
+    {
+      "id": "c10",
+      "startSeconds": 48.46,
+      "durationSeconds": 4.72,
+      "speechEndSeconds": 53.18,
+      "sectionLabel": "系列收束",
+      "paragraphId": "p05",
+      "claim": "规模化以后，护城河可能长在工作流里。",
+      "narration": "这才是 AI-native 公司在规模化以后，可能长出护城河的地方。",
+      "subtitle": "工作流里，才可能长出护城河。",
+      "artifact": {
+        "type": "scale-lifecycle-close",
+        "state": "scale-moat-conditional",
+        "nodes": ["Idea", "MVP", "Launch", "Scale"],
+        "highlight": "Scale",
+        "keyMessage": "At Scale, workflow-specific accumulation may become defensibility."
+      },
+      "focusPhrase": "可能长出护城河",
+      "focusCue": "highlight Scale and conditional moat outcome",
+      "motion": "final lifecycle close, no loop",
+      "sources": ["series/the-founders-playbook-ai-native-startup.series.md#ep05", "extraction/the-founders-playbook-ai-native-startup.source-map.md"],
+      "sourceLogic": "Uses conditional moat language because the source supports mechanisms, not guaranteed outcomes."
+    }
+  ]
+}

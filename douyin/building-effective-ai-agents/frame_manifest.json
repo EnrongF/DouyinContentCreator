@@ -1,0 +1,59 @@
+{
+  "frames": [
+    {
+      "file": "frames/scene_01.png",
+      "duration": 8.0,
+      "subtitle": "很多企业做 Agent，第一步就问错了：他们先问能不能做多智能体。"
+    },
+    {
+      "file": "frames/scene_02.png",
+      "duration": 11.0,
+      "subtitle": "Agent 真正适合的是：路径不固定，需要调用工具，需要根据反馈调整，还要持续推进目标。"
+    },
+    {
+      "file": "frames/scene_03.png",
+      "duration": 10.0,
+      "subtitle": "如果流程很清楚，规则也稳定，你需要的可能只是自动化，或者一个 Workflow。"
+    },
+    {
+      "file": "frames/scene_04.png",
+      "duration": 10.0,
+      "subtitle": "步骤清楚但需要控制时，适合 Sequential Workflow，因为你知道每一步，也需要留下过程。"
+    },
+    {
+      "file": "frames/scene_05.png",
+      "duration": 12.0,
+      "subtitle": "目标清楚但路径不清楚时，可以用 Single Agent：它计划、调用工具、观察结果，再继续调整。"
+    },
+    {
+      "file": "frames/scene_06.png",
+      "duration": 13.0,
+      "subtitle": "问题跨多个领域时，Multi-Agent 才有意义：不同 Agent 负责不同专业视角，最后再汇总。"
+    },
+    {
+      "file": "frames/scene_07.png",
+      "duration": 10.0,
+      "subtitle": "多 Agent 的代价很真实：成本更高、延迟更长、调试更难。它不是默认选项。"
+    },
+    {
+      "file": "frames/scene_08.png",
+      "duration": 13.0,
+      "subtitle": "当 Agent 要碰真实业务系统，重点不再是 Agent 本身，而是权限、日志、评估、回滚和人工接管。"
+    },
+    {
+      "file": "frames/scene_09.png",
+      "duration": 12.0,
+      "subtitle": "给业务团队的选择框架很简单：流程是否固定，风险是否可控，是否跨领域，治理能力是否足够。"
+    },
+    {
+      "file": "frames/scene_10.png",
+      "duration": 12.0,
+      "subtitle": "先用最小架构解决真实业务问题，再逐步从 Workflow 到 Single Agent，再到 Multi-Agent 和 Harness。"
+    },
+    {
+      "file": "frames/scene_11.png",
+      "duration": 8.0,
+      "subtitle": "真正成熟的 Agent 项目，不是更复杂，而是复杂度刚好够用。"
+    }
+  ]
+}

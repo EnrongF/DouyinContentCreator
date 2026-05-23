@@ -1,0 +1,97 @@
+## c01
+Expected: A I 让你很快做出 Demo。
+ASR: AI让你很快做出Demo
+Similarity: 1.000
+Core match: pass
+Term check: pass
+
+## c02
+Expected: 但最危险的地方也在这里：演示版一出来，你很容易以为问题已经被验证了。
+ASR: 但最危险的地方也在这里,演示版一出来,你很容易以为问题已经被验证了。
+Similarity: 1.000
+Core match: pass
+Term check: pass
+
+## c03
+Expected: 其实，Demo 不是没用。它很有用。
+ASR: 其实,demo不是没用,它很有用。
+Similarity: 1.000
+Core match: pass
+Term check: pass
+
+## c04
+Expected: 但它不是用来证明你对了，而是用来帮你问清楚：这个问题到底是不是真的存在。
+ASR: 但它不是用来证明你对了,而是用来帮你问清楚,这个问题到底是不是真的存在。
+Similarity: 1.000
+Core match: pass
+Term check: not_applicable
+
+## c05
+Expected: 在想法阶段，真正要过的不是“能不能做出来”，而是三件事。
+ASR: 在想法阶段,真正要过的不是能不能做出来,而是三件事。
+Similarity: 1.000
+Core match: pass
+Term check: not_applicable
+
+## c06
+Expected: 第一，问题是不是真实、具体，而且经常发生。
+ASR: 第一,问题是不是真实、具体,而且经常发生。
+Similarity: 1.000
+Core match: pass
+Term check: not_applicable
+
+## c07
+Expected: 第二，你的方案是不是解决了用户真正的问题，而不是你一开始想象的问题。
+ASR: 第二,你的方案是不是解决了用户真正的问题,而不是你一开始想象的问题。
+Similarity: 1.000
+Core match: pass
+Term check: not_applicable
+
+## c08
+Expected: 第三，信号够不够支持你开始做 M V P。
+ASR: 第三,信号够不够支持你开始做MVP。
+Similarity: 1.000
+Core match: pass
+Term check: pass
+
+## c09
+Expected: 所以，别只问用户：“你会不会用？”
+ASR: 所以,别只问用户你会不会用。
+Similarity: 1.000
+Core match: pass
+Term check: not_applicable
+
+## c10
+Expected: 更好的问题是：你上一次遇到这个问题是什么时候？现在怎么解决？为什么还不换？
+ASR: 更好的问题是,你上次遇到这个问题是什么时候?现在怎么解决?为什么还不换?
+Similarity: 0.985
+Core match: pass
+Term check: not_applicable
+
+## c11
+Expected: 如果用户只是在夸 Demo，你还没有答案。
+ASR: 如果用户只是在夸demo,你还没有答案
+Similarity: 1.000
+Core match: pass
+Term check: pass
+
+## c12
+Expected: 如果他开始暴露真实痛点，甚至指出你的 Demo 哪里没解决问题，那才是更有价值的信号。
+ASR: 如果他开始暴露真实痛点,甚至指出你的demo哪里没解决问题,那才是更有价值的信号。
+Similarity: 1.000
+Core match: pass
+Term check: pass
+
+## c13
+Expected: 这一集的判断是：Demo 可以帮你问问题，但不能替你证明有人要。
+ASR: ChatGPT的判断是,Demo可以帮你问问题,但不能替你证明有人要。
+Similarity: 0.833
+Core match: pass
+Term check: pass
+
+## c14
+Expected: 下一集，我们看确定要做以后，为什么要先定边界，再让 A I 写。
+ASR: 下一集,我们看确定要做以后,为什么要先定边界,再让AI写。
+Similarity: 1.000
+Core match: pass
+Term check: pass

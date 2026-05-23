@@ -1,0 +1,169 @@
+{
+  "slug": "building-effective-ai-agents-ep01-architecture-choice",
+  "language": "zh-CN",
+  "voiceDirection": "calm executive documentary, natural Mandarin, measured but not slow",
+  "status": "timed_audio_ready",
+  "ttsStatus": "complete",
+  "chunks": [
+    {
+      "id": "s01",
+      "text": "做 Agent 最容易犯的错，是从技术名词开始。",
+      "actualDurationSeconds": 5.462,
+      "measuredSpeechSeconds": 5.112,
+      "audioFile": "chunks/s01.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep01-architecture-choice/audio/s01.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s02",
+      "text": "这份 Anthropic PDF 真正给出的，不是一个固定答案，而是一组架构选择。",
+      "actualDurationSeconds": 7.598,
+      "measuredSpeechSeconds": 7.248,
+      "audioFile": "chunks/s02.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep01-architecture-choice/audio/s02.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s03",
+      "text": "先不要把概念混在一起。原文先讲 Single Agent，再讲 Multi-Agent 的协调概念，最后讲 Agentic Workflows。",
+      "actualDurationSeconds": 10.67,
+      "measuredSpeechSeconds": 10.32,
+      "audioFile": "chunks/s03.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep01-architecture-choice/audio/s03.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s04",
+      "text": "Agentic Workflow 讲的是结构：任务如何排序、交接、并行和评估。它支撑架构，但不等于 Multi-Agent 的协调概念。",
+      "actualDurationSeconds": 12.758,
+      "measuredSpeechSeconds": 12.408,
+      "audioFile": "chunks/s04.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep01-architecture-choice/audio/s04.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s05",
+      "text": "Single Agent 是一个 Agent 负责目标，用工具、技能和记忆推进任务。它可以调用流程，但核心仍是一个 Agent 的动态决策。",
+      "actualDurationSeconds": 12.71,
+      "measuredSpeechSeconds": 12.36,
+      "audioFile": "chunks/s05.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep01-architecture-choice/audio/s05.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s06",
+      "text": "所以，目标清楚、路径需要动态选择，但还不需要多个专家一起处理时，先从 Single Agent 开始。",
+      "actualDurationSeconds": 9.902,
+      "measuredSpeechSeconds": 9.552,
+      "audioFile": "chunks/s06.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep01-architecture-choice/audio/s06.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s07",
+      "text": "Multi-Agent 的核心不是顺序或并行，而是协调。原文先分集中式和去中心化：集中式里才有 hierarchical pattern。",
+      "actualDurationSeconds": 12.158,
+      "measuredSpeechSeconds": 11.808,
+      "audioFile": "chunks/s07.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep01-architecture-choice/audio/s07.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s08",
+      "text": "但代价也很真实。PDF 提醒，Multi-Agent 可能消耗单 Agent 大约十到十五倍 Token。",
+      "actualDurationSeconds": 10.166,
+      "measuredSpeechSeconds": 9.816,
+      "audioFile": "chunks/s08.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep01-architecture-choice/audio/s08.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s09",
+      "text": "所以架构选择，主要看五件事：控制要求、领域复杂度、资源预算、上线时间，以及需不需要领域专家参与。",
+      "actualDurationSeconds": 13.214,
+      "measuredSpeechSeconds": 12.864,
+      "audioFile": "chunks/s09.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep01-architecture-choice/audio/s09.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s10",
+      "text": "一旦进入真实业务系统，还要能观察和治理：提示链、模型决策、检索上下文、Token 消耗，都要看得见。",
+      "actualDurationSeconds": 11.606,
+      "measuredSpeechSeconds": 11.256,
+      "audioFile": "chunks/s10.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep01-architecture-choice/audio/s10.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s11",
+      "text": "第一集的结论是：先选最小可用架构，再保留演进空间。",
+      "actualDurationSeconds": 6.206,
+      "measuredSpeechSeconds": 5.856,
+      "audioFile": "chunks/s11.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep01-architecture-choice/audio/s11.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s12",
+      "text": "下一集讲：怎么从一个窄而稳的 Agent 开始。",
+      "actualDurationSeconds": 5.51,
+      "measuredSpeechSeconds": 5.16,
+      "audioFile": "chunks/s12.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep01-architecture-choice/audio/s12.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    }
+  ],
+  "finalAudio": "remotion_sequence_audio",
+  "totalDurationSeconds": 117.96,
+  "asrTranscript": "asr.txt",
+  "asrStatus": "pass",
+  "asrReviewChunks": [],
+  "termQa": {
+    "terms": [
+      "Agent",
+      "Workflow",
+      "Single Agent",
+      "Multi-Agent",
+      "Agentic Workflows",
+      "Token"
+    ],
+    "note": "ASR may translate English terms into Chinese; final QA should be by listening."
+  }
+}

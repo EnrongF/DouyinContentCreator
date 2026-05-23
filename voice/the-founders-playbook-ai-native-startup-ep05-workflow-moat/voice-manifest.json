@@ -1,0 +1,400 @@
+{
+  "schemaVersion": "1.2",
+  "slug": "the-founders-playbook-ai-native-startup-ep05-workflow-moat",
+  "series": "The Founder's Playbook - Building an AI-Native Startup",
+  "episode": {
+    "number": 5,
+    "title": "护城河藏在业务流程里",
+    "workingEnglishTitle": "Workflow Moat"
+  },
+  "language": "zh-CN",
+  "status": "voice_manifest_ready",
+  "pauseRequired": true,
+  "nextApprovedStage": "scene graph",
+  "notApprovedYet": [
+    "visual production",
+    "render",
+    "Douyin package"
+  ],
+  "voiceDirection": "natural Mandarin, calm technical host, strategic but cautious, no hype or influencer tone",
+  "defaultVoiceMaker": {
+    "provider": "qwen-dashscope",
+    "model": "qwen3-tts-instruct-flash",
+    "voice": "Ethan"
+  },
+  "audioStrategy": "chunk_sequence",
+  "finalAudio": "selected_qwen_chunks",
+  "totalMeasuredSpeechSeconds": 50.24,
+  "totalDurationSeconds": 53.18,
+  "asr": {
+    "status": "pending",
+    "transcriptPath": "asr.txt",
+    "qaPath": "qa.md"
+  },
+  "paragraphs": [
+    {
+      "id": "p01",
+      "chunkIds": [
+        "c01",
+        "c02"
+      ],
+      "coreIdea": "Model access is not defensibility at Scale.",
+      "visualFocus": "same model access comparison"
+    },
+    {
+      "id": "p02",
+      "chunkIds": [
+        "c03"
+      ],
+      "coreIdea": "The gap comes from workflow-specific accumulated detail.",
+      "visualFocus": "workflow specificity stack"
+    },
+    {
+      "id": "p03",
+      "chunkIds": [
+        "c04",
+        "c05"
+      ],
+      "coreIdea": "Specificity accumulates through domain exceptions, user behavior, integrations, and collaboration traces.",
+      "visualFocus": "specificity layers"
+    },
+    {
+      "id": "p04",
+      "chunkIds": [
+        "c06",
+        "c07"
+      ],
+      "coreIdea": "Competitors can copy access more easily than operational memory.",
+      "visualFocus": "copy gap and switching cost"
+    },
+    {
+      "id": "p05",
+      "chunkIds": [
+        "c08",
+        "c09",
+        "c10"
+      ],
+      "coreIdea": "Ask what unique business detail the system is accumulating.",
+      "visualFocus": "workflow moat audit and final lifecycle close"
+    }
+  ],
+  "chunks": [
+    {
+      "id": "c01",
+      "paragraphId": "p01",
+      "sectionLabel": "错误护城河",
+      "intent": "open with the common wrong moat question",
+      "tone": "direct",
+      "pacing": "firm hook",
+      "text": "很多人讲 AI 创业的护城河，第一反应是：我用了哪个模型。",
+      "ttsInputText": "很多人讲 A I 创业的护城河，第一反应是：我用了哪个模型。",
+      "subtitle": "讲护城河，别只看用了哪个模型。",
+      "focusPhrase": "用了哪个模型",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "model access comparison"
+      ],
+      "emphasis": [
+        "护城河",
+        "哪个模型"
+      ],
+      "audioFile": "chunks-qwen/c01.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 0.0,
+      "speechEndSeconds": 5.12,
+      "endSeconds": 5.42,
+      "measuredSpeechSeconds": 5.12,
+      "pauseAfterMs": 300,
+      "paddingSeconds": 0.3,
+      "actualDurationSeconds": 5.42
+    },
+    {
+      "id": "c02",
+      "paragraphId": "p01",
+      "sectionLabel": "错误护城河",
+      "intent": "separate model access from defensibility",
+      "tone": "corrective",
+      "pacing": "clear contrast",
+      "text": "但到规模化阶段，模型权限本身很难成为护城河。别人也能接入相似的能力。",
+      "ttsInputText": "但到规模化阶段，模型权限本身很难成为护城河。别人也能接入相似的能力。",
+      "subtitle": "模型权限本身，很难成为护城河。",
+      "focusPhrase": "模型权限本身",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "same model access does not create separation"
+      ],
+      "emphasis": [
+        "规模化",
+        "模型权限",
+        "相似能力"
+      ],
+      "audioFile": "chunks-qwen/c02.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 5.42,
+      "speechEndSeconds": 11.58,
+      "endSeconds": 11.94,
+      "measuredSpeechSeconds": 6.16,
+      "pauseAfterMs": 360,
+      "paddingSeconds": 0.36,
+      "actualDurationSeconds": 6.52
+    },
+    {
+      "id": "c03",
+      "paragraphId": "p02",
+      "sectionLabel": "流程沉淀",
+      "intent": "state the episode mental model",
+      "tone": "settled",
+      "pacing": "slow on the key phrase",
+      "text": "真正开始拉开差距的，是业务流程里一层一层沉淀下来的细节。",
+      "ttsInputText": "真正开始拉开差距的，是业务流程里一层一层沉淀下来的细节。",
+      "subtitle": "差距来自业务流程里沉淀的细节。",
+      "focusPhrase": "业务流程里一层一层沉淀",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "workflow specificity stack begins"
+      ],
+      "emphasis": [
+        "业务流程",
+        "沉淀",
+        "细节"
+      ],
+      "audioFile": "chunks-qwen/c03.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 11.94,
+      "speechEndSeconds": 17.94,
+      "endSeconds": 18.3,
+      "measuredSpeechSeconds": 6.0,
+      "pauseAfterMs": 360,
+      "paddingSeconds": 0.36,
+      "actualDurationSeconds": 6.36
+    },
+    {
+      "id": "c04",
+      "paragraphId": "p03",
+      "sectionLabel": "细节来源",
+      "intent": "show domain and behavior as sources of specificity",
+      "tone": "concrete",
+      "pacing": "two-example rhythm",
+      "text": "比如，你知道这个行业的例外情况；你的系统接住了真实用户的行为。",
+      "ttsInputText": "比如，你知道这个行业的例外情况；你的系统接住了真实用户的行为。",
+      "subtitle": "行业例外、用户行为，开始进入系统。",
+      "focusPhrase": "行业的例外情况",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "domain and behavior layers"
+      ],
+      "emphasis": [
+        "行业例外",
+        "真实用户的行为"
+      ],
+      "audioFile": "chunks-qwen/c04.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 18.3,
+      "speechEndSeconds": 23.74,
+      "endSeconds": 24.0,
+      "measuredSpeechSeconds": 5.44,
+      "pauseAfterMs": 260,
+      "paddingSeconds": 0.26,
+      "actualDurationSeconds": 5.7
+    },
+    {
+      "id": "c05",
+      "paragraphId": "p03",
+      "sectionLabel": "细节来源",
+      "intent": "show integrations and collaboration traces",
+      "tone": "concrete",
+      "pacing": "measured",
+      "text": "你的流程连上了客户原来的工具，也留下了真实协作的痕迹。",
+      "ttsInputText": "你的流程连上了客户原来的工具，也留下了真实协作的痕迹。",
+      "subtitle": "流程接入工具，也留下协作痕迹。",
+      "focusPhrase": "连上了客户原来的工具",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "integration and collaboration layers"
+      ],
+      "emphasis": [
+        "客户原来的工具",
+        "协作痕迹"
+      ],
+      "audioFile": "chunks-qwen/c05.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 24.0,
+      "speechEndSeconds": 28.48,
+      "endSeconds": 28.84,
+      "measuredSpeechSeconds": 4.48,
+      "pauseAfterMs": 360,
+      "paddingSeconds": 0.36,
+      "actualDurationSeconds": 4.84
+    },
+    {
+      "id": "c06",
+      "paragraphId": "p04",
+      "sectionLabel": "复制差距",
+      "intent": "make the copy gap explicit",
+      "tone": "decisive",
+      "pacing": "short contrast",
+      "text": "这些东西不是一句提示词，也不是换一个模型就能复制。",
+      "ttsInputText": "这些东西不是一句提示词，也不是换一个模型就能复制。",
+      "subtitle": "这些不是换个模型就能复制。",
+      "focusPhrase": "换一个模型就能复制",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "competitor copy path blocked"
+      ],
+      "emphasis": [
+        "提示词",
+        "模型",
+        "复制"
+      ],
+      "audioFile": "chunks-qwen/c06.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 28.84,
+      "speechEndSeconds": 32.76,
+      "endSeconds": 33.02,
+      "measuredSpeechSeconds": 3.92,
+      "pauseAfterMs": 260,
+      "paddingSeconds": 0.26,
+      "actualDurationSeconds": 4.18
+    },
+    {
+      "id": "c07",
+      "paragraphId": "p04",
+      "sectionLabel": "复制差距",
+      "intent": "name the accumulated assets without overclaiming",
+      "tone": "structured",
+      "pacing": "list rhythm",
+      "text": "它们会变成上下文、数据、集成、习惯，最后变成切换成本。",
+      "ttsInputText": "它们会变成上下文、数据、集成、习惯，最后变成切换成本。",
+      "subtitle": "上下文、数据、集成、习惯，会变成切换成本。",
+      "focusPhrase": "最后变成切换成本",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "specificity becomes switching cost"
+      ],
+      "emphasis": [
+        "上下文",
+        "数据",
+        "集成",
+        "习惯",
+        "切换成本"
+      ],
+      "audioFile": "chunks-qwen/c07.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 33.02,
+      "speechEndSeconds": 39.02,
+      "endSeconds": 39.44,
+      "measuredSpeechSeconds": 6.0,
+      "pauseAfterMs": 420,
+      "paddingSeconds": 0.42,
+      "actualDurationSeconds": 6.42
+    },
+    {
+      "id": "c08",
+      "paragraphId": "p05",
+      "sectionLabel": "本集判断",
+      "intent": "reject generic AI adoption as the question",
+      "tone": "corrective",
+      "pacing": "brief pause",
+      "text": "所以，这一集不要问：我们是不是用了 AI？",
+      "ttsInputText": "所以，这一集不要问：我们是不是用了 A I？",
+      "subtitle": "不要只问：我们是不是用了 AI？",
+      "focusPhrase": "是不是用了 AI",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "wrong question dims"
+      ],
+      "emphasis": [
+        "是不是用了 AI"
+      ],
+      "audioFile": "chunks-qwen/c08.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 39.44,
+      "speechEndSeconds": 43.28,
+      "endSeconds": 43.52,
+      "measuredSpeechSeconds": 3.84,
+      "pauseAfterMs": 240,
+      "paddingSeconds": 0.24,
+      "actualDurationSeconds": 4.08
+    },
+    {
+      "id": "c09",
+      "paragraphId": "p05",
+      "sectionLabel": "本集判断",
+      "intent": "give the practical audit question",
+      "tone": "practical",
+      "pacing": "slow audit question",
+      "text": "要问：我们的 AI 系统里，沉淀了哪些只有我们才有的业务细节？",
+      "ttsInputText": "要问：我们的 A I 系统里，沉淀了哪些只有我们才有的业务细节？",
+      "subtitle": "要问：系统里沉淀了哪些独特业务细节？",
+      "focusPhrase": "只有我们才有的业务细节",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "workflow moat audit"
+      ],
+      "emphasis": [
+        "系统里",
+        "只有我们才有",
+        "业务细节"
+      ],
+      "audioFile": "chunks-qwen/c09.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 43.52,
+      "speechEndSeconds": 48.08,
+      "endSeconds": 48.46,
+      "measuredSpeechSeconds": 4.56,
+      "pauseAfterMs": 380,
+      "paddingSeconds": 0.38,
+      "actualDurationSeconds": 4.94
+    },
+    {
+      "id": "c10",
+      "paragraphId": "p05",
+      "sectionLabel": "系列收束",
+      "intent": "close the mini-series with conditional moat language",
+      "tone": "settled",
+      "pacing": "final emphasis",
+      "text": "这才是 AI-native 公司在规模化以后，可能长出护城河的地方。",
+      "ttsInputText": "这才是 A I native 公司在规模化以后，可能长出护城河的地方。",
+      "subtitle": "工作流里，才可能长出护城河。",
+      "focusPhrase": "可能长出护城河",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "workflow moat closes the lifecycle"
+      ],
+      "emphasis": [
+        "规模化",
+        "可能",
+        "护城河"
+      ],
+      "audioFile": "chunks-qwen/c10.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 48.46,
+      "speechEndSeconds": 53.18,
+      "endSeconds": 53.18,
+      "measuredSpeechSeconds": 4.72,
+      "pauseAfterMs": 0,
+      "paddingSeconds": 0.0,
+      "actualDurationSeconds": 4.72
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "schemaVersion": "1.0",
+  "slug": "building-effective-ai-agents-ep03-single-vs-multi-agent-coordination",
+  "title": "Building Effective AI Agents EP03: 多智能体一定更好么?",
+  "mission": "AI cognition compression",
+  "audience": "Business and technical leaders choosing an AI-agent architecture",
+  "format": {
+    "aspectRatio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "visualSystem": {
+    "name": "Executive Technical Documentary with Preserved Source Diagrams",
+    "background": "near-black graphite with preserved PDF diagrams as source artifacts",
+    "typography": "large Chinese serif claim, compact sans-serif metadata, original English diagram labels preserved",
+    "palette": {
+      "graphite": "#0b0f12",
+      "panel": "#111820",
+      "line": "#29414d",
+      "cyan": "#61d8ff",
+      "cyanSoft": "#1e6f86",
+      "amber": "#f0b44c",
+      "red": "#ef6a5b",
+      "text": "#f2f5f5",
+      "muted": "#8ea0a8"
+    },
+    "motionPrinciples": [
+      "Use original English PDF diagrams as source artifacts.",
+      "Add Chinese callouts around diagrams rather than redrawing them away.",
+      "Highlight one decision focus per paragraph.",
+      "Keep progress labels audience-facing."
+    ]
+  },
+  "cover": {
+    "headline": "多智能体一定更好么?",
+    "subhead": "不是 Agent 越多，结果就越好",
+    "artifact": "source-proof",
+    "badge": "EP03 / 多智能体?",
+    "proofChips": [
+      "Hierarchical",
+      "Collaborative",
+      "10-15x Token"
+    ],
+    "sourceMark": "Source: Anthropic PDF / Building Effective AI Agents",
+    "sourceVisualRule": "Use original source diagrams as visual proof; keep source taxonomy boundaries.",
+    "visuals": [
+      {
+        "title": "Hierarchical",
+        "label": "集中协调",
+        "image": "building-effective-ai-agents-ep03-single-vs-multi-agent-coordination/diagrams/p16-multi-agent-hierarchical-workflow.png"
+      },
+      {
+        "title": "Collaborative",
+        "label": "协作协调",
+        "image": "building-effective-ai-agents-ep03-single-vs-multi-agent-coordination/diagrams/p17-multi-agent-collaborative-workflow.png"
+      }
+    ]
+  },
+  "sourceDiagrams": [
+    {
+      "id": "multi-agent-hierarchical-workflow",
+      "sourceRef": "pdf:p16",
+      "path": "resources/building-effective-ai-agents/diagrams/p16-multi-agent-hierarchical-workflow.png",
+      "useInEpisodes": [
+        "episode-3"
+      ],
+      "preservation": "Keep original English labels visible; add explanatory overlays only."
+    },
+    {
+      "id": "multi-agent-collaborative-workflow",
+      "sourceRef": "pdf:p17",
+      "path": "resources/building-effective-ai-agents/diagrams/p17-multi-agent-collaborative-workflow.png",
+      "useInEpisodes": [
+        "episode-3"
+      ],
+      "preservation": "Keep original English labels visible; add explanatory overlays only."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s01",
+      "durationSeconds": 9.998,
+      "sectionLabel": "Problem",
+      "paragraphLabel": "agent count",
+      "claim": "多智能体不是把 Agent 数量加上去",
+      "narration": "多智能体的重点不是多几个 Agent，而是任务真的需要多个专业视角一起协调。",
+      "subtitle": "多智能体的重点不是数量，而是协调。",
+      "artifact": {
+        "type": "wrong-question",
+        "nodes": [
+          "多放几个 Agent",
+          "需要协调的专业分工"
+        ]
+      },
+      "focus": "Reset multi-agent framing.",
+      "sources": [
+        "pdf:p350-p377"
+      ],
+      "audioFile": "building-effective-ai-agents-ep03-single-vs-multi-agent-coordination/audio/s01.mp3"
+    },
+    {
+      "id": "s02",
+      "durationSeconds": 12.758,
+      "sectionLabel": "Trigger",
+      "paragraphLabel": "single limits",
+      "claim": "先问：Single Agent 卡在哪里",
+      "narration": "只有当单个 Agent 遇到明显限制，比如领域太宽、上下文太长、需要并行探索，才值得考虑 Multi-Agent。",
+      "subtitle": "先问 Single Agent 卡在哪里。",
+      "artifact": {
+        "type": "selection-matrix",
+        "nodes": [
+          "领域太宽",
+          "上下文太长",
+          "并行探索",
+          "专家分工",
+          "价值足够高"
+        ]
+      },
+      "focus": "Define legitimate triggers for multi-agent.",
+      "sources": [
+        "pdf:p377-p382",
+        "pdf:p445-p448"
+      ],
+      "audioFile": "building-effective-ai-agents-ep03-single-vs-multi-agent-coordination/audio/s02.mp3"
+    },
+    {
+      "id": "s03",
+      "durationSeconds": 13.91,
+      "sectionLabel": "Centralized",
+      "paragraphLabel": "hierarchical",
+      "claim": "集中式协调：一个 supervisor 分派任务",
+      "narration": "原文里的 hierarchical pattern 属于集中式多智能体协调。Supervisor 决定调用哪些子 Agent，适合需要控制和汇总的任务。",
+      "subtitle": "Hierarchical 是集中式协调。",
+      "artifact": {
+        "type": "source-diagram",
+        "nodes": [],
+        "imagePath": "building-effective-ai-agents-ep03-single-vs-multi-agent-coordination/diagrams/p16-multi-agent-hierarchical-workflow.png",
+        "caption": "Original PDF diagram: hierarchical multi-agent workflow."
+      },
+      "focus": "Preserve hierarchy as a coordination concept, not workflow peer.",
+      "sources": [
+        "pdf:p382-p440"
+      ],
+      "sourceDiagramRefs": [
+        "multi-agent-hierarchical-workflow"
+      ],
+      "audioFile": "building-effective-ai-agents-ep03-single-vs-multi-agent-coordination/audio/s03.mp3"
+    },
+    {
+      "id": "s04",
+      "durationSeconds": 12.854,
+      "sectionLabel": "Decentralized",
+      "paragraphLabel": "collaborative",
+      "claim": "协作式协调：Agent 之间直接沟通",
+      "narration": "Collaborative pattern 没有一个固定中心，多个专业 Agent 直接沟通、协商角色、共享上下文。灵活性更高，治理难度也更高。",
+      "subtitle": "Collaborative 更灵活，也更难治理。",
+      "artifact": {
+        "type": "source-diagram",
+        "nodes": [],
+        "imagePath": "building-effective-ai-agents-ep03-single-vs-multi-agent-coordination/diagrams/p17-multi-agent-collaborative-workflow.png",
+        "caption": "Original PDF diagram: collaborative multi-agent workflow."
+      },
+      "focus": "Contrast decentralized coordination with hierarchy.",
+      "sources": [
+        "pdf:p487-p520"
+      ],
+      "sourceDiagramRefs": [
+        "multi-agent-collaborative-workflow"
+      ],
+      "audioFile": "building-effective-ai-agents-ep03-single-vs-multi-agent-coordination/audio/s04.mp3"
+    },
+    {
+      "id": "s05",
+      "durationSeconds": 12.254,
+      "sectionLabel": "Cost",
+      "paragraphLabel": "token cost",
+      "claim": "多智能体有真实 Token 成本",
+      "narration": "PDF 提醒，Multi-Agent 可能消耗单 Agent 大约 10 到 15 倍 Token。只有任务价值足够高，这个成本才合理。",
+      "subtitle": "Multi-Agent 可能消耗 10 到 15 倍 Token。",
+      "artifact": {
+        "type": "cost-triangle",
+        "nodes": [
+          "Token",
+          "延迟",
+          "调试复杂度"
+        ]
+      },
+      "focus": "Make cost visible before recommending coordination.",
+      "sources": [
+        "pdf:p397-p407",
+        "pdf:p781"
+      ],
+      "audioFile": "building-effective-ai-agents-ep03-single-vs-multi-agent-coordination/audio/s05.mp3"
+    },
+    {
+      "id": "s06",
+      "durationSeconds": 14.15,
+      "sectionLabel": "Evidence",
+      "paragraphLabel": "90 caveat",
+      "claim": "90.2% 不是万能证明",
+      "narration": "原文提到复杂任务中多智能体可能比单智能体高 90.2%，但前提是任务需要多个独立方向。简单问题不该触发昂贵协调。",
+      "subtitle": "90.2% 只适合复杂任务语境。",
+      "artifact": {
+        "type": "selection-matrix",
+        "nodes": [
+          "复杂任务",
+          "多个方向",
+          "高价值",
+          "简单查询",
+          "不要触发"
+        ]
+      },
+      "focus": "Caveat the performance signal.",
+      "sources": [
+        "pdf:p365-p367",
+        "pdf:p407"
+      ],
+      "audioFile": "building-effective-ai-agents-ep03-single-vs-multi-agent-coordination/audio/s06.mp3"
+    },
+    {
+      "id": "s07",
+      "durationSeconds": 11.054,
+      "sectionLabel": "Observe",
+      "paragraphLabel": "coordination observability",
+      "claim": "协调失败，比单点失败更难查",
+      "narration": "多智能体失败时，不只要看每个 Agent 做了什么，还要看它们怎么沟通、怎么交接、怎么综合结论。",
+      "subtitle": "协调失败，需要看交互结构。",
+      "artifact": {
+        "type": "production-observability",
+        "nodes": [
+          "消息",
+          "委派",
+          "交接",
+          "综合",
+          "根因"
+        ]
+      },
+      "focus": "Tie multi-agent to observability burden.",
+      "sources": [
+        "pdf:p365-p370",
+        "pdf:p409-p418"
+      ],
+      "audioFile": "building-effective-ai-agents-ep03-single-vs-multi-agent-coordination/audio/s07.mp3"
+    },
+    {
+      "id": "s08",
+      "durationSeconds": 12.158,
+      "sectionLabel": "Takeaway",
+      "paragraphLabel": "coordination rule",
+      "claim": "结论：先证明协调值得",
+      "narration": "第三集的结论是：先证明 Single Agent 不够，再证明协调成本值得，最后才选 hierarchical 或 collaborative。",
+      "subtitle": "先证明协调值得。",
+      "artifact": {
+        "type": "architecture-hierarchy",
+        "nodes": [
+          "Single Agent 不够",
+          "协调价值足够",
+          "Hierarchical",
+          "Collaborative"
+        ]
+      },
+      "focus": "Close with source-faithful coordination choice.",
+      "sources": [
+        "series:building-effective-ai-agents"
+      ],
+      "audioFile": "building-effective-ai-agents-ep03-single-vs-multi-agent-coordination/audio/s08.mp3"
+    }
+  ]
+}

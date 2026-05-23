@@ -1,0 +1,83 @@
+## c01
+Expected: A I 写代码很快。
+ASR: AI写代码很快。
+Similarity: 1.000
+Core match: pass
+Term check: pass
+
+## c02
+Expected: 但如果产品边界不清楚，它也会很快把产品写散。
+ASR: 但如果产品边界不清楚,他也会很快把产品写散。
+Similarity: 0.950
+Core match: pass
+Term check: pass
+
+## c03
+Expected: 有了验证信号以后，下一关不是马上把功能做满。
+ASR: 有了验证信号以后,下一关不是马上把功能做满
+Similarity: 1.000
+Core match: pass
+Term check: not_applicable
+
+## c04
+Expected: M V P 阶段，本质上还是在收集证据：一小群真实用户，会不会回来、付费，或者愿意推荐。
+ASR: MVP阶段本质上还是在收集证据,一小群真实用户会不会回来、付费或者愿意推荐?
+Similarity: 1.000
+Core match: pass
+Term check: pass
+
+## c05
+Expected: 所以，最小可用产品，最重要的不是“还能加什么”。
+ASR: 所以,最小可用产品,最重要的不是还能加什么
+Similarity: 1.000
+Core match: pass
+Term check: not_applicable
+
+## c06
+Expected: 而是先写清楚三件事：它现在解决什么，暂时不解决什么，什么证据才允许你加新功能。
+ASR: 而是先写清楚三件事,他现在解决什么,暂时不解决什么,什么证据才允许你加新功能。
+Similarity: 0.971
+Core match: pass
+Term check: pass
+
+## c07
+Expected: 不然，每次让 A I 开工，它都会重新猜一遍产品边界。
+ASR: 不然,每次让AI开工,它都会重新猜一遍产品边界。
+Similarity: 1.000
+Core match: pass
+Term check: pass
+
+## c08
+Expected: 今天加一个边缘场景，明天补一个酷功能，后天整个产品就开始失去形状。
+ASR: 今天加一个边缘场景,明天补一个酷功能,后天整个产品就开始失去形状。
+Similarity: 1.000
+Core match: pass
+Term check: not_applicable
+
+## c09
+Expected: 这就是 A I 时代更隐蔽的技术债：代码可能能跑，但产品边界和架构上下文已经开始漂移。
+ASR: 这就是AI时代更隐蔽的技术债,代码可能能跑,但产品边界和架构上下文已经开始飘移。
+Similarity: 1.000
+Core match: pass
+Term check: pass
+
+## c10
+Expected: 所以，让 A I 写之前，先把边界和上下文放到它能读到的地方。
+ASR: 所以啊,让AI写之前,先把边界和上下文放到它能读到的地方。
+Similarity: 0.980
+Core match: pass
+Term check: pass
+
+## c11
+Expected: 这一集的判断是：先写边界，再写代码。
+ASR: 这一集的判断是先写边界,再写代码。
+Similarity: 1.000
+Core match: pass
+Term check: pass
+
+## c12
+Expected: 下一集，我们看产品上线以后，创始人为什么不能继续做所有事情的中转站。
+ASR: 下一节,我们看产品上线以后,创始人为什么不能继续做所有事情的中转站。
+Similarity: 0.968
+Core match: pass
+Term check: pass

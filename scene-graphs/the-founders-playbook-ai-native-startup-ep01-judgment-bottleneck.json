@@ -1,0 +1,808 @@
+{
+  "schemaVersion": "1.1",
+  "slug": "the-founders-playbook-ai-native-startup-ep01-judgment-bottleneck",
+  "title": "AI 创业，真正卡的是判断",
+  "series": "The Founder's Playbook - Building an AI-Native Startup",
+  "episode": 1,
+  "status": "douyin_package_ready",
+  "pauseRequired": true,
+  "nextApprovedStage": "publish decision / platform plan",
+  "notApprovedYet": [
+    "publish/upload"
+  ],
+  "mission": "AI cognition compression",
+  "audience": "Founders, solo builders, AI startup operators, and technical product leaders",
+  "format": {
+    "primary": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "coverGrid": {
+      "width": 1080,
+      "height": 1440,
+      "note": "Cover crop constraints apply later; this scene graph is for video timing."
+    }
+  },
+  "timing": {
+    "source": "voice/the-founders-playbook-ai-native-startup-ep01-judgment-bottleneck/voice-manifest.json",
+    "totalMeasuredSpeechSeconds": 61.44,
+    "totalDurationSeconds": 67.3,
+    "audioStrategy": "selected_qwen_chunks"
+  },
+  "visualSystem": {
+    "status": "locked",
+    "lockedStyleName": "A2 Balanced VI + Content Fit",
+    "chosenDirection": "A2 Balanced VI + Content Fit",
+    "chosenPreview": "presentation/.visual-previews/the-founders-playbook-ai-native-startup-ep01-judgment-bottleneck/style-a-v2-warm-founder-gate.html",
+    "lockedOn": "2026-05-21",
+    "previewBoard": "presentation/.visual-previews/the-founders-playbook-ai-native-startup-ep01-judgment-bottleneck/index.html",
+    "advancedPreview": "presentation/.visual-previews/the-founders-playbook-ai-native-startup-ep01-judgment-bottleneck/style-a-advanced.html",
+    "styleAVariantBoard": "presentation/.visual-previews/the-founders-playbook-ai-native-startup-ep01-judgment-bottleneck/style-a-variant-board.html",
+    "visualJob": "founder decision gate",
+    "styleIntent": "approved visual system for EP01 Remotion planning: shared VI layer plus content-specific scene modules",
+    "audienceFeeling": "founder-facing, warm, high-trust, technical enough for builders, less dashboard-like than the earlier Style A",
+    "typography": [
+      "Rounded / humanist Chinese sans stack from the confirmed cover system",
+      "Avenir Next / Inter / system sans for UI metadata"
+    ],
+    "palette": [
+      "warm black field",
+      "cream text",
+      "amber episode badge",
+      "orange / cyan / amber semantic accents",
+      "rose only for wrong-direction or blocked-demand risk"
+    ],
+    "layoutGrammar": [
+      "Use the confirmed six-cover system as visual identity, not as a fixed page template.",
+      "Keep top metadata stable, center visual content-specific, and subtitle integrated at the bottom without a rectangle.",
+      "Do not force every scene into the same source-proof shelf."
+    ],
+    "layoutRegions": {
+      "top": "progress and source strapline",
+      "center": "single dominant artifact or gate state",
+      "bottom": "integrated burned-in subtitle text without a rectangle"
+    },
+    "artifactTreatment": [
+      "Treat the confirmed six-cover system as visual identity, not a fixed page template: warm black field, cream headline, amber badge, semantic chip row, source language, and quiet source mark.",
+      "Change the central visual structure by scene content: blocked lane, wrong path, execution lanes, early gate, control split, lifecycle gates, retained execution layer, binary hold, or demo/demand gate.",
+      "Use reusable general symbols only as content markers: bottleneck, path, lanes, gate, control, lifecycle, layer, node, binary, and demo/demand.",
+      "Do not imply the source publisher endorses the video.",
+      "Use lifecycle labels only as source hierarchy: Idea, MVP, Launch, Scale."
+    ],
+    "symbolGrammar": [
+      "bottleneck",
+      "path",
+      "lanes",
+      "gate",
+      "control",
+      "lifecycle",
+      "layer",
+      "node",
+      "binary",
+      "demo/demand"
+    ],
+    "motionPrinciples": [
+      "One visual focus per voice chunk.",
+      "Motion is semantic: reveal, highlight, path activation, state change, dim, or gate shift.",
+      "Preview motion should include line sweep, wrong-path draw, lane activation, gate shift, control pulse, lifecycle reveal, decision emphasis, and blocked demand movement where the content calls for it.",
+      "Dynamic focus should land on or just before the spoken focus phrase.",
+      "Keep subtitles clear of lifecycle gates and decision cards."
+    ],
+    "frameFittingConstraints": [
+      "Primary video frame is 1080x1920.",
+      "Final cover grid constraint remains 1080x1440.",
+      "Subtitles must not sit in a box or collide with central artifacts.",
+      "No scene may depend on tiny source-card details for meaning."
+    ]
+  },
+  "remotionImplementationPlan": {
+    "status": "implemented",
+    "path": "remotion/the-founders-playbook-ai-native-startup-ep01-judgment-bottleneck.implementation-plan.md",
+    "recommendedComposition": "FounderPlaybookEpisode",
+    "compositionId": "the-founders-playbook-ai-native-startup-ep01-judgment-bottleneck",
+    "durationInFrames": 2019,
+    "strategy": "Separate 9:16 Founder Playbook composition so existing Building Effective AI Agents Remotion work remains stable.",
+    "implementedFiles": [
+      "remotion/src/compositions/FounderPlaybookEpisode.tsx",
+      "remotion/src/components/founder-playbook/FounderFrame.tsx",
+      "remotion/src/components/founder-playbook/FounderArtifacts.tsx",
+      "remotion/src/components/founder-playbook/FounderSymbols.tsx",
+      "remotion/src/components/founder-playbook/founderTheme.ts",
+      "remotion/src/components/founder-playbook/types.ts"
+    ],
+    "verification": [
+      "TypeScript passed with npm exec tsc -- --noEmit.",
+      "Selected public audio c01.wav through c19.wav exists.",
+      "Remotion composition registry lists the 1080x1920 composition at 2019 frames."
+    ],
+    "notApprovedYet": [
+      "Douyin package"
+    ]
+  },
+  "remotionVisualQa": {
+    "status": "passed_after_fix",
+    "path": "review/the-founders-playbook-ai-native-startup-ep01-judgment-bottleneck.remotion-visual-qa.md",
+    "sampleDirectory": "review/the-founders-playbook-ai-native-startup-ep01-judgment-bottleneck.remotion-samples/",
+    "sampleStills": [
+      "c01-bottleneck.png",
+      "c03-lanes.png",
+      "c05-early-gate.png",
+      "c08-control.png",
+      "c10-judgment-node.png",
+      "c13-lifecycle.png",
+      "c18-final-decision.png",
+      "c19-demo-gate.png"
+    ],
+    "fixes": [
+      "Adjusted Remotion headline text fitting to avoid one-character Chinese orphan lines."
+    ],
+    "nextGate": "final render"
+  },
+  "finalRender": {
+    "status": "rerendered_with_c16_visual_correction_technical_qa_passed",
+    "path": "douyin/the-founders-playbook-ai-native-startup-ep01-judgment-bottleneck/video.mp4",
+    "qaPath": "review/the-founders-playbook-ai-native-startup-ep01-judgment-bottleneck.final-render-qa.md",
+    "revision": "Removed in-video top progress bar and corrected C16 to show deferred later gates matching the voice line.",
+    "metadata": {
+      "container": "mp4",
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "frames": 2019,
+      "durationSeconds": 67.35,
+      "audioSampleRate": 48000,
+      "audioChannels": 2,
+      "fileSizeBytes": 11566292
+    },
+    "nextGate": "Douyin package"
+  },
+  "douyinPackage": {
+    "status": "ready",
+    "path": "douyin/the-founders-playbook-ai-native-startup-ep01-judgment-bottleneck/",
+    "qaPath": "douyin/the-founders-playbook-ai-native-startup-ep01-judgment-bottleneck/qa.md",
+    "artifacts": [
+      "video.mp4",
+      "cover.png",
+      "cover.vertical.png",
+      "cover.grid.png",
+      "caption.md",
+      "cover.md",
+      "brief.md",
+      "script.md",
+      "MANIFEST.md",
+      "qa.md"
+    ],
+    "nextGate": "publish decision / platform plan"
+  },
+  "sourceRefs": [
+    {
+      "id": "source-intake",
+      "path": "sources/the-founders-playbook-ai-native-startup/source-intake.md",
+      "role": "source provenance and structure"
+    },
+    {
+      "id": "source-map",
+      "path": "extraction/the-founders-playbook-ai-native-startup.source-map.md",
+      "role": "source value inventory and page-area mapping"
+    },
+    {
+      "id": "source-logic",
+      "path": "review/the-founders-playbook-ai-native-startup.source-logic.findings.md",
+      "role": "taxonomy and fidelity guardrails"
+    },
+    {
+      "id": "episode-compression",
+      "path": "compression/the-founders-playbook-ai-native-startup-ep01-judgment-bottleneck.md",
+      "role": "episode scope and retained source value"
+    },
+    {
+      "id": "voice-manifest",
+      "path": "voice/the-founders-playbook-ai-native-startup-ep01-judgment-bottleneck/voice-manifest.json",
+      "role": "timing authority"
+    }
+  ],
+  "sourceFidelityGuardrails": [
+    "Do not imply execution no longer matters; the source claim is bottleneck shift.",
+    "Keep the lifecycle source hierarchy visible: Idea -> MVP -> Launch -> Scale.",
+    "Treat accelerator/steering visuals as a synthesis metaphor, not a source diagram.",
+    "Do not use unverified source metrics such as the 42% startup failure claim.",
+    "Do not turn Claude-specific product advice into universal startup doctrine."
+  ],
+  "sourceValueRetained": [
+    "AI compresses execution across research, coding, documents, and operations.",
+    "Founder judgment becomes more visible as execution gets faster.",
+    "The source-defined lifecycle remains visible without teaching every stage in this episode.",
+    "The opener points to the Idea-stage validation episode without collapsing it into Episode 1."
+  ],
+  "scenes": [
+    {
+      "id": "c01",
+      "startSeconds": 0.0,
+      "durationSeconds": 2.72,
+      "speechEndSeconds": 2.48,
+      "sectionLabel": "旧约束",
+      "paragraphId": "p01",
+      "claim": "过去的瓶颈是做不出来",
+      "narration": "以前创业，最怕的是做不出来。",
+      "subtitle": "以前最怕做不出来。",
+      "artifact": {
+        "type": "bottleneck-shift-board",
+        "state": "old-bottleneck",
+        "nodes": [
+          "Idea",
+          "Research",
+          "Build",
+          "Ship"
+        ],
+        "highlight": "Build friction"
+      },
+      "focusPhrase": "做不出来",
+      "focusCue": "highlight blocked build lane",
+      "motion": "reveal a slow work lane with a visible bottleneck marker",
+      "sources": [
+        "source-map:execution-compression",
+        "pdf:p3-p7"
+      ],
+      "sourceLogic": "source-supported",
+      "audioSource": "voice-manifest:c01"
+    },
+    {
+      "id": "c02",
+      "startSeconds": 2.72,
+      "durationSeconds": 4.4,
+      "speechEndSeconds": 6.64,
+      "sectionLabel": "新风险",
+      "paragraphId": "p01",
+      "claim": "现在的风险是更快跑错方向",
+      "narration": "现在更怕的是，做得很快，但方向错了。",
+      "subtitle": "做得很快，但方向错了。",
+      "artifact": {
+        "type": "wrong-direction-speed-path",
+        "state": "new-risk",
+        "nodes": [
+          "Fast execution",
+          "Weak judgment",
+          "Wrong direction"
+        ],
+        "highlight": "Wrong direction"
+      },
+      "focusPhrase": "方向错了",
+      "focusCue": "turn speed path away from the decision target",
+      "motion": "accelerated path bends away from target after the focus phrase",
+      "sources": [
+        "source-map:execution-compression",
+        "source-map:founder-bottleneck",
+        "pdf:p3-p7"
+      ],
+      "sourceLogic": "synthesis-from-source-thesis",
+      "audioSource": "voice-manifest:c02"
+    },
+    {
+      "id": "c03",
+      "startSeconds": 7.12,
+      "durationSeconds": 4.26,
+      "speechEndSeconds": 11.12,
+      "sectionLabel": "执行提速",
+      "paragraphId": "p02",
+      "claim": "AI 会让多种执行工作提速",
+      "narration": "调研、写代码、写文档、做运营，AI 都能帮你提速。",
+      "subtitle": "调研、代码、文档、运营，AI 都能提速。",
+      "artifact": {
+        "type": "execution-lane-accelerator",
+        "state": "four-lanes-accelerate",
+        "nodes": [
+          "调研",
+          "代码",
+          "文档",
+          "运营"
+        ],
+        "highlight": "AI acceleration"
+      },
+      "focusPhrase": "AI 都能帮你提速",
+      "focusCue": "activate acceleration on four lanes",
+      "motion": "four lanes brighten and move faster in sequence",
+      "sources": [
+        "source-map:execution-compression",
+        "pdf:p3-p7"
+      ],
+      "sourceLogic": "source-supported",
+      "audioSource": "voice-manifest:c03"
+    },
+    {
+      "id": "c04",
+      "startSeconds": 11.38,
+      "durationSeconds": 1.94,
+      "speechEndSeconds": 13.14,
+      "sectionLabel": "执行提速",
+      "paragraphId": "p02",
+      "claim": "AI 不是取消执行",
+      "narration": "但它不是替你省掉执行。",
+      "subtitle": "AI 不是省掉执行。",
+      "artifact": {
+        "type": "execution-not-removed",
+        "state": "execution-still-present",
+        "nodes": [
+          "Founder judgment",
+          "AI assistance",
+          "Execution work"
+        ],
+        "highlight": "Execution work"
+      },
+      "focusPhrase": "不是替你省掉执行",
+      "focusCue": "keep execution lane visible instead of crossing it out",
+      "motion": "attempted removal mark dissolves; execution lane remains",
+      "sources": [
+        "source-map:execution-compression",
+        "source-logic:execution-still-matters",
+        "pdf:p3-p7"
+      ],
+      "sourceLogic": "guardrail-claim",
+      "audioSource": "voice-manifest:c04"
+    },
+    {
+      "id": "c05",
+      "startSeconds": 13.32,
+      "durationSeconds": 3.92,
+      "speechEndSeconds": 16.76,
+      "sectionLabel": "判断提前",
+      "paragraphId": "p02",
+      "claim": "执行变快以后，判断更早暴露",
+      "narration": "而是让执行变快，让判断更早露出来。",
+      "subtitle": "它让执行变快，让判断更早露出来。",
+      "artifact": {
+        "type": "early-decision-gate",
+        "state": "decision-gate-moves-left",
+        "nodes": [
+          "Execution",
+          "Evidence",
+          "Judgment"
+        ],
+        "highlight": "Judgment gate"
+      },
+      "focusPhrase": "判断更早露出来",
+      "focusCue": "move judgment gate earlier on the timeline",
+      "motion": "decision gate slides forward as execution lane speeds up",
+      "sources": [
+        "source-map:execution-compression",
+        "source-map:founder-as-agent-orchestrator",
+        "pdf:p3-p7"
+      ],
+      "sourceLogic": "synthesis-from-source-thesis",
+      "audioSource": "voice-manifest:c05"
+    },
+    {
+      "id": "c06",
+      "startSeconds": 17.24,
+      "durationSeconds": 1.6,
+      "speechEndSeconds": 18.6,
+      "sectionLabel": "判断瓶颈",
+      "paragraphId": "p03",
+      "claim": "速度本身不是问题",
+      "narration": "做得快不是问题。",
+      "subtitle": "做得快不是问题。",
+      "artifact": {
+        "type": "speed-neutral-marker",
+        "state": "speed-not-blamed",
+        "nodes": [
+          "Speed",
+          "Direction"
+        ],
+        "highlight": "Speed is neutral"
+      },
+      "focusPhrase": "不是问题",
+      "focusCue": "mark speed as neutral rather than failed",
+      "motion": "speed indicator remains green while direction marker stays unresolved",
+      "sources": [
+        "source-logic:execution-still-matters",
+        "episode-compression:non-disappearance-caveat"
+      ],
+      "sourceLogic": "guardrail-claim",
+      "audioSource": "voice-manifest:c06"
+    },
+    {
+      "id": "c07",
+      "startSeconds": 18.84,
+      "durationSeconds": 3.24,
+      "speechEndSeconds": 21.8,
+      "sectionLabel": "判断瓶颈",
+      "paragraphId": "p03",
+      "claim": "方向错了，速度会放大损失",
+      "narration": "问题是方向错了以后，你会错得更快。",
+      "subtitle": "方向错了以后，会错得更快。",
+      "artifact": {
+        "type": "wrong-direction-acceleration",
+        "state": "loss-amplified",
+        "nodes": [
+          "Wrong direction",
+          "Fast execution",
+          "Compounded waste"
+        ],
+        "highlight": "错得更快"
+      },
+      "focusPhrase": "错得更快",
+      "focusCue": "increase distance from target after direction turns wrong",
+      "motion": "wrong path accelerates and leaves a longer error trail",
+      "sources": [
+        "source-map:sense-making-ahead-of-building",
+        "source-map:premature-scaling",
+        "pdf:p8-p10"
+      ],
+      "sourceLogic": "synthesis-from-source-failure-mode",
+      "audioSource": "voice-manifest:c07"
+    },
+    {
+      "id": "c08",
+      "startSeconds": 22.08,
+      "durationSeconds": 2.96,
+      "speechEndSeconds": 24.72,
+      "sectionLabel": "判断瓶颈",
+      "paragraphId": "p03",
+      "claim": "AI 更像油门，不是方向盘",
+      "narration": "AI 这个工具，更像油门，不是方向盘。",
+      "subtitle": "AI 更像油门，不是方向盘。",
+      "artifact": {
+        "type": "accelerator-steering-metaphor",
+        "state": "accelerator-not-steering",
+        "nodes": [
+          "AI = 油门",
+          "Founder judgment = 方向盘"
+        ],
+        "highlight": "方向盘 remains with founder"
+      },
+      "focusPhrase": "油门，不是方向盘",
+      "focusCue": "separate accelerator control from steering control",
+      "motion": "accelerator glows while steering control stays attached to founder",
+      "sources": [
+        "episode-compression:mental-upgrade",
+        "source-map:founder-role-shift",
+        "pdf:p5-p7"
+      ],
+      "sourceLogic": "visual-metaphor-synthesis",
+      "audioSource": "voice-manifest:c08"
+    },
+    {
+      "id": "c09",
+      "startSeconds": 25.04,
+      "durationSeconds": 3.96,
+      "speechEndSeconds": 28.72,
+      "sectionLabel": "判断瓶颈",
+      "paragraphId": "p03",
+      "claim": "AI 不能替创始人决定方向",
+      "narration": "它能让你跑得更快，但不能帮你决定往哪走。",
+      "subtitle": "它能让你更快，但不能帮你决定往哪走。",
+      "artifact": {
+        "type": "founder-steering-control",
+        "state": "founder-keeps-decision-control",
+        "nodes": [
+          "AI speed",
+          "Founder direction"
+        ],
+        "highlight": "Founder direction"
+      },
+      "focusPhrase": "决定往哪走",
+      "focusCue": "lock steering control to founder decision node",
+      "motion": "AI speed line extends, but direction selector remains under founder node",
+      "sources": [
+        "source-map:founder-as-agent-orchestrator",
+        "source-map:founder-role-shift",
+        "pdf:p5-p7"
+      ],
+      "sourceLogic": "source-supported-synthesis",
+      "audioSource": "voice-manifest:c09"
+    },
+    {
+      "id": "c10",
+      "startSeconds": 29.0,
+      "durationSeconds": 3.48,
+      "speechEndSeconds": 32.28,
+      "sectionLabel": "创始人判断",
+      "paragraphId": "p03",
+      "claim": "真正卡住的是创始人有没有想清楚",
+      "narration": "真正卡住人的，是创始人有没有想清楚。",
+      "subtitle": "真正卡住人的，是有没有想清楚。",
+      "artifact": {
+        "type": "founder-decision-gate",
+        "state": "judgment-bottleneck",
+        "nodes": [
+          "Problem",
+          "Evidence",
+          "Founder judgment",
+          "Build"
+        ],
+        "highlight": "Founder judgment"
+      },
+      "focusPhrase": "想清楚",
+      "focusCue": "highlight founder judgment as the bottleneck node",
+      "motion": "decision gate becomes the narrowest point in the system",
+      "sources": [
+        "source-map:founder-as-agent-orchestrator",
+        "review:negotiated-conclusion",
+        "pdf:p5-p7"
+      ],
+      "sourceLogic": "source-supported-synthesis",
+      "audioSource": "voice-manifest:c10"
+    },
+    {
+      "id": "c11",
+      "startSeconds": 32.48,
+      "durationSeconds": 3.72,
+      "speechEndSeconds": 35.68,
+      "sectionLabel": "创始人判断",
+      "paragraphId": "p03",
+      "claim": "判断具体落在做与停",
+      "narration": "什么值得做，什么应该先停。",
+      "subtitle": "什么值得做，什么应该先停。",
+      "artifact": {
+        "type": "go-stop-decision-cards",
+        "state": "paired-founder-decisions",
+        "nodes": [
+          "值得做",
+          "先停"
+        ],
+        "highlight": "Go / Stop"
+      },
+      "focusPhrase": "值得做 / 先停",
+      "focusCue": "split the founder gate into go and stop cards",
+      "motion": "two cards separate from one decision gate and settle side by side",
+      "sources": [
+        "source-map:sense-making-ahead-of-building",
+        "source-map:zero-friction-scope-creep",
+        "pdf:p8-p10",
+        "pdf:p17-p18"
+      ],
+      "sourceLogic": "synthesis-from-source-failure-modes",
+      "audioSource": "voice-manifest:c11"
+    },
+    {
+      "id": "c12",
+      "startSeconds": 36.2,
+      "durationSeconds": 4.44,
+      "speechEndSeconds": 40.36,
+      "sectionLabel": "阶段判断",
+      "paragraphId": "p04",
+      "claim": "AI 创业的起点是一连串判断",
+      "narration": "所以用 AI 创业，起点不是工具，而是一连串判断。",
+      "subtitle": "用 AI 创业，起点不是工具，是一连串判断。",
+      "artifact": {
+        "type": "judgment-sequence",
+        "state": "tools-recede-gates-appear",
+        "nodes": [
+          "Tools",
+          "Judgment chain"
+        ],
+        "highlight": "Judgment chain"
+      },
+      "focusPhrase": "一连串判断",
+      "focusCue": "fade tool icons back and reveal judgment gates",
+      "motion": "tool icons dim; gate sequence becomes the main artifact",
+      "sources": [
+        "source-map:lifecycle",
+        "source-map:founder-role-shift",
+        "pdf:p5-p7",
+        "pdf:p8-p30"
+      ],
+      "sourceLogic": "source-supported-synthesis",
+      "audioSource": "voice-manifest:c12"
+    },
+    {
+      "id": "c13",
+      "startSeconds": 40.64,
+      "durationSeconds": 4.2,
+      "speechEndSeconds": 44.56,
+      "sectionLabel": "阶段判断",
+      "paragraphId": "p04",
+      "claim": "源文生命周期是想法、MVP、上线、规模化",
+      "narration": "从想法，到 MVP，到上线，再到规模化。",
+      "subtitle": "从想法，到 MVP，到上线，再到规模化。",
+      "artifact": {
+        "type": "source-lifecycle-gates",
+        "state": "four-gates-reveal",
+        "nodes": [
+          "Idea",
+          "MVP",
+          "Launch",
+          "Scale"
+        ],
+        "highlight": "Source lifecycle"
+      },
+      "focusPhrase": "想法 / MVP / 上线 / 规模化",
+      "focusCue": "reveal gates in source order",
+      "motion": "four gates appear left to right in the source-defined order",
+      "sources": [
+        "source-map:source-defined-lifecycle",
+        "source-logic:lifecycle-taxonomy",
+        "pdf:p8-p30"
+      ],
+      "sourceLogic": "source-taxonomy",
+      "audioSource": "voice-manifest:c13"
+    },
+    {
+      "id": "c14",
+      "startSeconds": 44.84,
+      "durationSeconds": 2.68,
+      "speechEndSeconds": 47.24,
+      "sectionLabel": "阶段判断",
+      "paragraphId": "p04",
+      "claim": "每个阶段考的判断不同",
+      "narration": "每个阶段，考的判断都不一样。",
+      "subtitle": "每个阶段，判断都不一样。",
+      "artifact": {
+        "type": "different-judgment-icons",
+        "state": "stage-specific-judgment",
+        "nodes": [
+          "该不该做",
+          "边界清不清",
+          "能否脱离创始人",
+          "是否可防守"
+        ],
+        "highlight": "Different judgment per stage"
+      },
+      "focusPhrase": "判断都不一样",
+      "focusCue": "swap each lifecycle gate to a different judgment icon",
+      "motion": "each lifecycle gate receives a distinct decision symbol",
+      "sources": [
+        "source-map:lifecycle-exit-criteria",
+        "source-logic:series-not-one-video",
+        "pdf:p8-p30"
+      ],
+      "sourceLogic": "source-taxonomy-compression",
+      "audioSource": "voice-manifest:c14"
+    },
+    {
+      "id": "c15",
+      "startSeconds": 47.52,
+      "durationSeconds": 2.54,
+      "speechEndSeconds": 49.76,
+      "sectionLabel": "第一关",
+      "paragraphId": "p04",
+      "claim": "第一关是到底该不该做",
+      "narration": "第一关，是你到底该不该做。",
+      "subtitle": "第一关：到底该不该做。",
+      "artifact": {
+        "type": "idea-stage-gate",
+        "state": "first-gate-highlighted",
+        "nodes": [
+          "Idea",
+          "Problem-solution fit",
+          "Do / Stop"
+        ],
+        "highlight": "Idea"
+      },
+      "focusPhrase": "该不该做",
+      "focusCue": "zoom into Idea gate while later gates dim",
+      "motion": "Idea gate enlarges and the other three gates recede",
+      "sources": [
+        "source-map:idea-stage",
+        "source-map:problem-solution-fit",
+        "pdf:p8-p14"
+      ],
+      "sourceLogic": "source-supported",
+      "audioSource": "voice-manifest:c15"
+    },
+    {
+      "id": "c16",
+      "startSeconds": 50.06,
+      "durationSeconds": 3.48,
+      "speechEndSeconds": 53.02,
+      "sectionLabel": "后续关卡",
+      "paragraphId": "p04",
+      "claim": "边界、系统、护城河属于后续关卡",
+      "narration": "后面才轮到边界、系统和护城河。",
+      "subtitle": "后面才轮到边界、系统和护城河。",
+      "artifact": {
+        "type": "later-gates-deferred",
+        "state": "later-episodes-dimmed",
+        "nodes": [
+          "MVP: 边界",
+          "Launch: 系统",
+          "Scale: 护城河"
+        ],
+        "highlight": "Deferred"
+      },
+      "focusPhrase": "边界 / 系统 / 护城河",
+      "focusCue": "show later gates as dimmed future episodes",
+      "motion": "MVP, Launch, and Scale gates dim into a series roadmap",
+      "sources": [
+        "source-map:mvp-stage",
+        "source-map:launch-stage",
+        "source-map:scale-stage",
+        "pdf:p15-p30"
+      ],
+      "sourceLogic": "series-scope-control",
+      "audioSource": "voice-manifest:c16"
+    },
+    {
+      "id": "c17",
+      "startSeconds": 53.54,
+      "durationSeconds": 4.94,
+      "speechEndSeconds": 58.18,
+      "sectionLabel": "决策问题",
+      "paragraphId": "p05",
+      "claim": "先别急着追求更快",
+      "narration": "所以，用 AI 创业之前，先别急着问怎么更快。",
+      "subtitle": "用 AI 创业，先别急着问怎么更快。",
+      "artifact": {
+        "type": "speed-question-dim",
+        "state": "speed-question-deprioritized",
+        "nodes": [
+          "How to go faster?",
+          "What decision is blocking?"
+        ],
+        "highlight": "Decision question"
+      },
+      "focusPhrase": "别急着问怎么更快",
+      "focusCue": "dim the speed prompt and bring up the decision prompt",
+      "motion": "speed card loses emphasis; decision card moves to center",
+      "sources": [
+        "episode-compression:takeaway",
+        "source-map:same-job-new-rules",
+        "pdf:p31-p32"
+      ],
+      "sourceLogic": "source-supported-synthesis",
+      "audioSource": "voice-manifest:c17"
+    },
+    {
+      "id": "c18",
+      "startSeconds": 58.48,
+      "durationSeconds": 3.62,
+      "speechEndSeconds": 61.68,
+      "sectionLabel": "决策问题",
+      "paragraphId": "p05",
+      "claim": "诊断当前缺的是速度还是判断",
+      "narration": "先问一句：现在缺的是速度，还是判断？",
+      "subtitle": "现在缺的是速度，还是判断？",
+      "artifact": {
+        "type": "final-decision-card",
+        "state": "speed-vs-judgment",
+        "nodes": [
+          "速度",
+          "判断"
+        ],
+        "highlight": "判断"
+      },
+      "focusPhrase": "速度，还是判断",
+      "focusCue": "hold final binary decision card",
+      "motion": "two choices settle; judgment receives the final highlight",
+      "sources": [
+        "episode-compression:exact-mental-upgrade",
+        "source-map:founder-bottleneck",
+        "pdf:p3-p7"
+      ],
+      "sourceLogic": "source-supported-synthesis",
+      "audioSource": "voice-manifest:c18"
+    },
+    {
+      "id": "c19",
+      "startSeconds": 62.1,
+      "durationSeconds": 5.2,
+      "speechEndSeconds": 67.3,
+      "sectionLabel": "下一集",
+      "paragraphId": "p05",
+      "claim": "下一集进入 Demo 不等于验证",
+      "narration": "下一集，我们先看第一关：有了 Demo，为什么还不代表有人要。",
+      "subtitle": "下一集：有 Demo，为什么还不代表有人要。",
+      "artifact": {
+        "type": "next-episode-gate-preview",
+        "state": "idea-validation-preview",
+        "nodes": [
+          "Demo",
+          "Real demand",
+          "Episode 2"
+        ],
+        "highlight": "Demo is not demand"
+      },
+      "focusPhrase": "不代表有人要",
+      "focusCue": "show Demo card failing to unlock demand gate",
+      "motion": "Demo card approaches demand gate but does not open it",
+      "sources": [
+        "source-map:prototype-is-not-validation",
+        "source-map:idea-stage",
+        "pdf:p8-p14"
+      ],
+      "sourceLogic": "source-supported-bridge",
+      "audioSource": "voice-manifest:c19"
+    }
+  ]
+}

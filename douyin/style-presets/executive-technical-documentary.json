@@ -1,0 +1,47 @@
+{
+  "name": "Executive Technical Documentary",
+  "positioning": "institutional-grade intelligence condensed for Douyin",
+  "best_for": [
+    "frontier AI infrastructure",
+    "agentic systems",
+    "enterprise AI operations",
+    "applied intelligence",
+    "AI engineering",
+    "decision systems"
+  ],
+  "visual_identity": {
+    "core": "Minimal Cinematic Systems Intelligence",
+    "base_colors": ["black", "graphite", "off-white", "muted gray"],
+    "accent_colors": ["electric blue", "muted cyan"],
+    "avoid": ["rainbow gradients", "purple cyberpunk", "gaming neon", "meme overlays", "low-trust AI tool aesthetics"]
+  },
+  "typography": {
+    "style": "large clean sans-serif hierarchy",
+    "references": ["SF Pro", "Geist", "Helvetica Now", "Bloomberg-style information design"],
+    "rule": "few words per screen, compressed information, high contrast"
+  },
+  "composition": {
+    "use": ["centered compositions", "asymmetric layouts", "UI overlays", "architectural diagrams", "slow cinematic zooms"],
+    "avoid": ["noisy backgrounds", "random floating effects", "handheld chaos", "reaction cuts"]
+  },
+  "motion_language": {
+    "express": ["flow", "orchestration", "dependency", "routing", "memory", "evaluation loops"],
+    "use": ["node graphs", "flowing edges", "progressive reveals", "layered context expansion", "tool invocation visuals", "focus glow", "active-node outline", "guided zoom", "callout pointer", "timed highlight"],
+    "avoid": ["flashy transitions without semantic meaning", "long static slide holds without focus change"]
+  },
+  "sync_rules": {
+    "voice_frame_sync": "Every narration beat should map to a frame, callout, or highlighted visual state.",
+    "dynamic_focus": "The element being discussed must be visibly emphasized when it is mentioned.",
+    "static_slide_rule": "Static-only slide sequences are review drafts, not publishable Douyin videos, unless explicitly requested."
+  },
+  "narrative_structure": {
+    "default": "Hook -> System Insight -> Mental Upgrade",
+    "moat": ["trust", "synthesis quality", "systems thinking", "source quality", "visual intelligence"],
+    "category": "AI cognition compression, not AI information"
+  },
+  "human_presence": {
+    "recommended": "partial human presence and calm voice narration",
+    "persona": "calm AI systems architect",
+    "avoid": "influencer energy"
+  }
+}

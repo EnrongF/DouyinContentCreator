@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "1.0",
+  "slug": "building-effective-ai-agents-ep02-start-simple-scale-intelligently",
+  "status": "timed_audio_ready",
+  "ttsStatus": "complete",
+  "chunks": [
+    {
+      "id": "s01",
+      "text": "很多团队一上来就想做完整平台，但第一版 Agent 最怕的不是能力少，而是边界不清。",
+      "actualDurationSeconds": 8.198,
+      "measuredSpeechSeconds": 7.848,
+      "audioFile": "chunks/s01.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep02-start-simple-scale-intelligently/audio/s01.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s02",
+      "text": "原文强调的是 start simple, scale intelligently。简单系统更便宜、更容易调试，也更容易知道下一步该扩展哪里。",
+      "actualDurationSeconds": 10.862,
+      "measuredSpeechSeconds": 10.512,
+      "audioFile": "chunks/s02.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep02-start-simple-scale-intelligently/audio/s02.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s03",
+      "text": "Single Agent 的核心不是“一个聊天入口”，而是一个 Agent 围绕明确目标，观察、计划、调用工具，再根据结果继续推进。",
+      "actualDurationSeconds": 12.398,
+      "measuredSpeechSeconds": 12.048,
+      "audioFile": "chunks/s03.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep02-start-simple-scale-intelligently/audio/s03.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s04",
+      "text": "窄任务不是降低价值，而是让输入、工具、输出和成功标准都能被检查。没有边界，Agent 的失败也很难定位。",
+      "actualDurationSeconds": 13.862,
+      "measuredSpeechSeconds": 13.512,
+      "audioFile": "chunks/s04.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep02-start-simple-scale-intelligently/audio/s04.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s05",
+      "text": "原文提醒，在跳到 Multi-Agent 之前，先看一个 Single Agent 加上领域 Skills 能不能解决问题。Skill 是模块化能力包，不是另一个 Agent。",
+      "actualDurationSeconds": 14.366,
+      "measuredSpeechSeconds": 14.016,
+      "audioFile": "chunks/s05.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep02-start-simple-scale-intelligently/audio/s05.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s06",
+      "text": "第一版 Agent 不一定要用最强模型处理所有步骤。把高价值判断留给强模型，把固定动作交给工具或便宜模型。",
+      "actualDurationSeconds": 12.662,
+      "measuredSpeechSeconds": 12.312,
+      "audioFile": "chunks/s06.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep02-start-simple-scale-intelligently/audio/s06.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s07",
+      "text": "如果不知道 Agent 是否真的节省时间、减少错误、提高转化，就不要急着扩展成多智能体。先把指标和日志打通。",
+      "actualDurationSeconds": 12.302,
+      "measuredSpeechSeconds": 11.952,
+      "audioFile": "chunks/s07.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep02-start-simple-scale-intelligently/audio/s07.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s08",
+      "text": "第二集的结论是：先做一个窄而稳的 Agent，用真实反馈决定要加 Skill、加工具，还是以后再加多智能体。",
+      "actualDurationSeconds": 11.198,
+      "measuredSpeechSeconds": 10.848,
+      "audioFile": "chunks/s08.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep02-start-simple-scale-intelligently/audio/s08.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    }
+  ],
+  "finalAudio": "remotion_sequence_audio",
+  "totalDurationSeconds": 95.848,
+  "asrTranscript": "asr.txt",
+  "asrStatus": "pass",
+  "asrReviewChunks": [],
+  "termQa": {
+    "terms": [
+      "Agent",
+      "Workflow",
+      "Single Agent",
+      "Multi-Agent",
+      "Agentic Workflows",
+      "Token"
+    ],
+    "note": "ASR may translate English terms into Chinese; final QA should be by listening."
+  }
+}

@@ -1,0 +1,376 @@
+{
+  "schemaVersion": "1.0",
+  "slug": "building-effective-ai-agents",
+  "title": "Building Effective AI Agents",
+  "mission": "AI cognition compression",
+  "audience": "Business users deciding how to implement agents in real workflows",
+  "format": {
+    "aspectRatio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "visualSystem": {
+    "name": "Executive Technical Documentary for Business AI Architecture",
+    "background": "near-black graphite with subtle grain and one soft cyan gradient",
+    "typography": "large Chinese serif claim, compact sans-serif metadata",
+    "palette": {
+      "graphite": "#0b0f12",
+      "panel": "#111820",
+      "line": "#29414d",
+      "cyan": "#61d8ff",
+      "cyanSoft": "#1e6f86",
+      "amber": "#f0b44c",
+      "red": "#ef6a5b",
+      "text": "#f2f5f5",
+      "muted": "#8ea0a8"
+    },
+    "motionPrinciples": [
+      "Build the visual artifact progressively.",
+      "Use line activation to explain causal sequence.",
+      "Pulse only the active node.",
+      "Dim inactive architecture when discussing risk or avoidance."
+    ]
+  },
+  "cover": {
+    "headline": "企业什么时候该用 Agent？",
+    "subhead": "从 Workflow 到 Multi-Agent 的选择框架",
+    "artifact": "decision-ladder",
+    "badge": "AI Cognition Compression"
+  },
+  "sourceDiagrams": [
+    {
+      "id": "single-agent-architecture",
+      "sourceRef": "pdf:p12",
+      "path": "resources/building-effective-ai-agents/diagrams/p12-single-agent-architecture.png",
+      "useInEpisodes": ["episode-2", "episode-3"],
+      "preservation": "Keep original English labels visible; add explanatory overlays only."
+    },
+    {
+      "id": "single-agent-research-workflow",
+      "sourceRef": "pdf:p12",
+      "path": "resources/building-effective-ai-agents/diagrams/p12-single-agent-research-workflow.png",
+      "useInEpisodes": ["episode-2"],
+      "preservation": "Use with caution because the PDF title is potentially confusing in page context."
+    },
+    {
+      "id": "multi-agent-hierarchical-workflow",
+      "sourceRef": "pdf:p16",
+      "path": "resources/building-effective-ai-agents/diagrams/p16-multi-agent-hierarchical-workflow.png",
+      "useInEpisodes": ["episode-3"],
+      "preservation": "Use as original source diagram for supervisor-led coordination."
+    },
+    {
+      "id": "multi-agent-collaborative-workflow",
+      "sourceRef": "pdf:p17",
+      "path": "resources/building-effective-ai-agents/diagrams/p17-multi-agent-collaborative-workflow.png",
+      "useInEpisodes": ["episode-3"],
+      "preservation": "Use as original source diagram for peer/collaborative coordination."
+    },
+    {
+      "id": "multi-agent-sequential-workflow",
+      "sourceRef": "pdf:p19",
+      "path": "resources/building-effective-ai-agents/diagrams/p19-multi-agent-sequential-workflow.png",
+      "useInEpisodes": ["episode-4"],
+      "preservation": "Use as original source diagram for sequential workflow."
+    },
+    {
+      "id": "multi-agent-parallel-workflow",
+      "sourceRef": "pdf:p20",
+      "path": "resources/building-effective-ai-agents/diagrams/p20-multi-agent-parallel-workflow.png",
+      "useInEpisodes": ["episode-4"],
+      "preservation": "Use as original source diagram for parallel workflow."
+    },
+    {
+      "id": "multi-agent-evaluator-workflow",
+      "sourceRef": "pdf:p22",
+      "path": "resources/building-effective-ai-agents/diagrams/p22-multi-agent-evaluator-workflow.png",
+      "useInEpisodes": ["episode-4"],
+      "preservation": "Use as original source diagram for evaluator workflow."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s01",
+      "durationSeconds": 4.118,
+      "claim": "很多企业第一步就问错了",
+      "narration": "很多企业做 Agent，第一步就问错了。",
+      "subtitle": "很多企业做 Agent，第一步就问错了。",
+      "artifact": {
+        "type": "wrong-question",
+        "nodes": [
+          "能不能做多智能体？",
+          "业务问题需不需要自治？"
+        ]
+      },
+      "focus": "Reject technology-first selection.",
+      "sources": [
+        "pdf:p23-p24"
+      ],
+      "audioFile": "building-effective-ai-agents/audio/s01.mp3"
+    },
+    {
+      "id": "s02",
+      "durationSeconds": 6.158,
+      "claim": "先判断：需要自治，还是自动化？",
+      "narration": "真正该先问的是：这个业务问题，到底需不需要 Agent？",
+      "subtitle": "真正该先问的是：这个业务问题，到底需不需要 Agent？",
+      "artifact": {
+        "type": "decision-gate",
+        "nodes": [
+          "固定流程",
+          "需要判断",
+          "需要自治"
+        ]
+      },
+      "focus": "Open the main decision gate.",
+      "sources": [
+        "pdf:p4",
+        "pdf:p23-p24"
+      ],
+      "audioFile": "building-effective-ai-agents/audio/s02.mp3"
+    },
+    {
+      "id": "s03",
+      "durationSeconds": 8.75,
+      "claim": "流程固定时，不要急着上 Agent",
+      "narration": "如果流程很清楚，规则也稳定，你需要的可能只是自动化，或者一个 Workflow。",
+      "subtitle": "流程清楚、规则稳定时，通常先用自动化或 Workflow。",
+      "artifact": {
+        "type": "stable-process",
+        "nodes": [
+          "信息抽取",
+          "普通问答",
+          "标准报表",
+          "Workflow"
+        ]
+      },
+      "focus": "Dim the Agent branch; activate workflow.",
+      "sources": [
+        "pdf:p18-p19",
+        "pdf:p23-p24"
+      ],
+      "audioFile": "building-effective-ai-agents/audio/s03.mp3"
+    },
+    {
+      "id": "s04",
+      "durationSeconds": 9.998,
+      "claim": "Agent 适合路径不固定的问题",
+      "narration": "Agent 真正适合的是路径不固定，需要调用工具，需要根据反馈调整，还要持续推进目标。",
+      "subtitle": "Agent 适合路径不固定、需要工具和反馈调整的问题。",
+      "artifact": {
+        "type": "agent-loop",
+        "nodes": [
+          "目标",
+          "计划",
+          "工具",
+          "观察",
+          "调整"
+        ]
+      },
+      "focus": "Animate the perceive-plan-act-observe loop.",
+      "sourceDiagramRefs": [
+        "single-agent-architecture"
+      ],
+      "sources": [
+        "pdf:p4",
+        "pdf:p11-p12"
+      ],
+      "audioFile": "building-effective-ai-agents/audio/s04.mp3"
+    },
+    {
+      "id": "s05",
+      "durationSeconds": 9.062,
+      "claim": "步骤清楚但要控制，用 Workflow",
+      "narration": "比如审批、合规检查、内容从草稿到审核再发布。这适合顺序工作流。",
+      "subtitle": "审批、合规、发布链路，优先用顺序工作流。",
+      "artifact": {
+        "type": "sequential-workflow",
+        "nodes": [
+          "草稿",
+          "检查",
+          "审核",
+          "发布"
+        ]
+      },
+      "focus": "Build a left-to-right controlled path.",
+      "sourceDiagramRefs": [
+        "multi-agent-sequential-workflow"
+      ],
+      "sources": [
+        "pdf:p18-p19"
+      ],
+      "audioFile": "building-effective-ai-agents/audio/s05.mp3"
+    },
+    {
+      "id": "s06",
+      "durationSeconds": 8.966,
+      "claim": "目标清楚但路径不清楚，用 Single Agent",
+      "narration": "比如客户问题排查、市场研究、代码库理解、数据分析。这时可以用 Single Agent。",
+      "subtitle": "目标清楚、路径不清楚时，Single Agent 才有价值。",
+      "artifact": {
+        "type": "single-agent",
+        "nodes": [
+          "用户目标",
+          "Single Agent",
+          "工具调用",
+          "结果反馈"
+        ]
+      },
+      "focus": "Pulse the agent as it loops through tools.",
+      "sourceDiagramRefs": [
+        "single-agent-architecture",
+        "single-agent-research-workflow"
+      ],
+      "sources": [
+        "pdf:p11-p13",
+        "pdf:p23-p24"
+      ],
+      "audioFile": "building-effective-ai-agents/audio/s06.mp3"
+    },
+    {
+      "id": "s07",
+      "durationSeconds": 9.662,
+      "claim": "跨多个领域时，Multi-Agent 才有意义",
+      "narration": "比如贷款风险评估，要同时看信用、市场、运营、合规。这时 Multi-Agent 才有意义。",
+      "subtitle": "跨信用、市场、运营、合规，才考虑 Multi-Agent。",
+      "artifact": {
+        "type": "multi-agent",
+        "nodes": [
+          "信用",
+          "市场",
+          "运营",
+          "合规",
+          "汇总判断"
+        ]
+      },
+      "focus": "Activate specialist nodes, then converge.",
+      "sourceDiagramRefs": [
+        "multi-agent-hierarchical-workflow",
+        "multi-agent-collaborative-workflow",
+        "multi-agent-parallel-workflow"
+      ],
+      "sources": [
+        "pdf:p14-p17",
+        "pdf:p20-p21",
+        "pdf:p23-p24"
+      ],
+      "audioFile": "building-effective-ai-agents/audio/s07.mp3"
+    },
+    {
+      "id": "s08",
+      "durationSeconds": 9.758,
+      "claim": "Multi-Agent 不是默认选项",
+      "narration": "但代价也很真实：成本更高、延迟更长、调试更难。",
+      "subtitle": "Multi-Agent 的代价是成本、延迟和调试复杂度。",
+      "artifact": {
+        "type": "cost-triangle",
+        "nodes": [
+          "成本",
+          "延迟",
+          "调试难度"
+        ]
+      },
+      "focus": "Switch cyan to amber and dim optional complexity.",
+      "sources": [
+        "pdf:p23-p24"
+      ],
+      "audioFile": "building-effective-ai-agents/audio/s08.mp3"
+    },
+    {
+      "id": "s09",
+      "durationSeconds": 12.614,
+      "claim": "碰真实业务系统，重点变成生产控制",
+      "narration": "当 Agent 要碰 CRM、订单、支付、审批、内部数据库，重点不再只是 Agent 本身，而是生产控制。",
+      "subtitle": "Agent 碰真实系统时，核心是生产控制。",
+      "artifact": {
+        "type": "production-controls",
+        "nodes": [
+          "观测",
+          "上下文",
+          "监控",
+          "治理",
+          "人工接管"
+        ]
+      },
+      "focus": "Wrap the agent with operational controls.",
+      "sources": [
+        "pdf:p11",
+        "pdf:p15",
+        "pdf:p27"
+      ],
+      "audioFile": "building-effective-ai-agents/audio/s09.mp3"
+    },
+    {
+      "id": "s10",
+      "durationSeconds": 8.75,
+      "claim": "生产系统要能解释自己",
+      "narration": "你需要看见提示链、模型决策、检索上下文、Token 消耗和完整推理流程。",
+      "subtitle": "生产系统要看见提示链、决策、上下文、Token 和推理流程。",
+      "artifact": {
+        "type": "production-observability",
+        "nodes": [
+          "提示链",
+          "模型决策",
+          "检索上下文",
+          "Token",
+          "推理流程"
+        ]
+      },
+      "focus": "Reveal the operational controls one by one.",
+      "sources": [
+        "pdf:p11"
+      ],
+      "audioFile": "building-effective-ai-agents/audio/s10.mp3"
+    },
+    {
+      "id": "s11",
+      "durationSeconds": 8.054,
+      "claim": "选择框架：流程、风险、领域、成本、治理",
+      "narration": "所以给业务团队的选择框架很简单：流程、风险、领域、成本、治理。",
+      "subtitle": "流程、风险、领域、成本、治理，决定架构选择。",
+      "artifact": {
+        "type": "selection-matrix",
+        "nodes": [
+          "流程",
+          "风险",
+          "领域",
+          "成本",
+          "治理"
+        ]
+      },
+      "focus": "Reveal the five-axis matrix.",
+      "sourceDiagramRefs": [
+        "multi-agent-sequential-workflow",
+        "multi-agent-parallel-workflow",
+        "multi-agent-evaluator-workflow"
+      ],
+      "sources": [
+        "pdf:p23-p24",
+        "compression:building-effective-ai-agents"
+      ],
+      "audioFile": "building-effective-ai-agents/audio/s11.mp3"
+    },
+    {
+      "id": "s12",
+      "durationSeconds": 7.766,
+      "claim": "成熟不是更复杂，而是刚好够用",
+      "narration": "真正成熟的 Agent 项目，不是更复杂，而是复杂度刚好够用。",
+      "subtitle": "成熟的 Agent 项目，复杂度刚好够用。",
+      "artifact": {
+        "type": "complexity-ladder",
+        "nodes": [
+          "Workflow",
+          "Single Agent",
+          "Multi-Agent",
+          "Production Controls"
+        ]
+      },
+      "focus": "Settle on the smallest sufficient architecture.",
+      "sources": [
+        "compression:building-effective-ai-agents"
+      ],
+      "audioFile": "building-effective-ai-agents/audio/s12.mp3"
+    }
+  ]
+}

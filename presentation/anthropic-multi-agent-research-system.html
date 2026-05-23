@@ -1,0 +1,988 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Multi-Agent Research System - Detailed Dynamic Slides</title>
+  <style>
+    :root {
+      --paper: #f6f1e8;
+      --ink: #18201c;
+      --muted: #667269;
+      --line: #d9d0c1;
+      --sage: #8aa394;
+      --green: #276b55;
+      --clay: #bd6b4f;
+      --gold: #c99a2e;
+      --blue: #486f8f;
+      --panel: #fffaf1;
+      --shadow: 0 24px 60px rgba(42, 31, 20, 0.14);
+    }
+
+    * { box-sizing: border-box; }
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      background:
+        linear-gradient(90deg, rgba(39, 107, 85, 0.08) 1px, transparent 1px),
+        linear-gradient(180deg, rgba(39, 107, 85, 0.06) 1px, transparent 1px),
+        var(--paper);
+      background-size: 32px 32px;
+    }
+
+    .deck {
+      height: 100%;
+      display: grid;
+      grid-template-rows: auto 4px 1fr;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 12px 18px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(246, 241, 232, 0.92);
+      backdrop-filter: blur(12px);
+      z-index: 5;
+    }
+
+    .brand {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .brand strong {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      white-space: nowrap;
+    }
+
+    .brand span {
+      color: var(--muted);
+      font-size: 13px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    button {
+      width: 38px;
+      height: 34px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      color: var(--ink);
+      cursor: pointer;
+      border-radius: 6px;
+      font-size: 18px;
+      line-height: 1;
+      box-shadow: 0 4px 12px rgba(42, 31, 20, 0.08);
+    }
+
+    button:disabled {
+      opacity: 0.35;
+      cursor: default;
+      box-shadow: none;
+    }
+
+    .counter {
+      min-width: 72px;
+      text-align: right;
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+      font-size: 13px;
+    }
+
+    .progress {
+      background: rgba(24, 32, 28, 0.08);
+      overflow: hidden;
+    }
+
+    .progress div {
+      width: 0%;
+      height: 100%;
+      background: linear-gradient(90deg, var(--green), var(--clay), var(--gold));
+      transition: width 220ms ease;
+    }
+
+    .viewport {
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slides {
+      height: 100%;
+      display: flex;
+      transition: transform 360ms cubic-bezier(.2,.8,.2,1);
+      will-change: transform;
+    }
+
+    .slide {
+      width: 100vw;
+      height: 100%;
+      flex: 0 0 100vw;
+      padding: 28px;
+      display: grid;
+      align-items: stretch;
+    }
+
+    .canvas {
+      width: min(1240px, 100%);
+      margin: 0 auto;
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 22px;
+      opacity: 0.35;
+      transform: translateY(8px);
+      transition: opacity 240ms ease, transform 240ms ease;
+    }
+
+    .slide.active .canvas {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .title-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: end;
+      gap: 18px;
+      border-bottom: 2px solid var(--ink);
+      padding-bottom: 14px;
+    }
+
+    .kicker {
+      color: var(--green);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      max-width: 900px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 58px;
+      line-height: 1.02;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      max-width: 920px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 42px;
+      line-height: 1.08;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    .slide-no {
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+      font-size: 14px;
+    }
+
+    .body {
+      min-height: 0;
+      display: grid;
+      gap: 18px;
+      align-content: start;
+    }
+
+    .lead {
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 20px;
+      line-height: 1.55;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 22px;
+      min-height: 0;
+    }
+
+    .columns {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .tile,
+    .note,
+    .metric,
+    .artifact {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+
+    .tile,
+    .note {
+      padding: 18px;
+    }
+
+    .tile h3,
+    .note h3 {
+      font-size: 17px;
+      margin-bottom: 10px;
+    }
+
+    .tile p,
+    .note p,
+    li {
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.55;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .metric {
+      padding: 16px;
+      min-height: 128px;
+    }
+
+    .metric strong {
+      display: block;
+      color: var(--clay);
+      font-size: 36px;
+      line-height: 1;
+      font-weight: 850;
+      margin-bottom: 10px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .metric span {
+      display: block;
+      color: var(--muted);
+      line-height: 1.45;
+      font-size: 14px;
+    }
+
+    .artifact {
+      min-height: 0;
+      padding: 12px;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      gap: 10px;
+      overflow: hidden;
+    }
+
+    .artifact img {
+      width: 100%;
+      height: 100%;
+      min-height: 0;
+      object-fit: contain;
+      background: #ffffff;
+      border-radius: 6px;
+      border: 1px solid rgba(24, 32, 28, 0.08);
+    }
+
+    .caption {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.4;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    th,
+    td {
+      text-align: left;
+      vertical-align: top;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    th {
+      color: var(--ink);
+      background: #eadfce;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    td {
+      color: var(--muted);
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 5px;
+      color: #fff;
+      background: var(--green);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .tag.clay { background: var(--clay); }
+    .tag.gold { background: var(--gold); color: var(--ink); }
+    .tag.blue { background: var(--blue); }
+
+    .source-link {
+      color: var(--green);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .source-link:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 900px) {
+      .slide { padding: 18px; }
+      .brand span { display: none; }
+      h1 { font-size: 40px; }
+      h2 { font-size: 32px; }
+      .split,
+      .columns,
+      .metrics {
+        grid-template-columns: 1fr;
+      }
+      .artifact img { max-height: 46vh; }
+      .body { overflow: auto; padding-bottom: 18px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .slides,
+      .canvas,
+      .progress div {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="deck">
+    <header class="topbar">
+      <div class="brand">
+        <strong>Multi-Agent Research</strong>
+        <span>Detailed dynamic transform of Anthropic Engineering, Jun 13 2025</span>
+      </div>
+      <div class="controls">
+        <button id="prev" type="button" title="Previous slide" aria-label="Previous slide">&lt;</button>
+        <button id="next" type="button" title="Next slide" aria-label="Next slide">&gt;</button>
+        <div class="counter" id="counter">1 / 19</div>
+      </div>
+    </header>
+    <div class="progress" aria-hidden="true"><div id="bar"></div></div>
+
+    <section class="viewport" id="viewport">
+      <div class="slides" id="slides">
+        <article class="slide active">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">Anthropic Engineering</div>
+                <h1>How Anthropic built a production multi-agent research system</h1>
+              </div>
+              <div class="slide-no">01</div>
+            </div>
+            <div class="body split">
+              <div>
+                <p class="lead">Published Jun 13, 2025. The article is a systems case study: Claude Research searches across the web, Google Workspace, and integrations using a lead agent that plans, delegates, preserves memory, and hands the final report to a citation agent.</p>
+              </div>
+              <div class="note">
+                <h3>Scope preserved in this deck</h3>
+                <ul>
+                  <li>Benefits and limits of multi-agent research.</li>
+                  <li>Architecture diagrams from the original article.</li>
+                  <li>Prompting heuristics, effort budgets, and failure modes.</li>
+                  <li>Evaluation rubric and production reliability lessons.</li>
+                  <li>Appendix patterns for long-horizon agents and artifacts.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">Core claim</div>
+                <h2>Multi-agent systems are strongest when research is broad, dynamic, and high value.</h2>
+              </div>
+              <div class="slide-no">02</div>
+            </div>
+            <div class="body">
+              <div class="metrics">
+                <div class="metric"><strong>90.2%</strong><span>Internal research eval lift: Claude Opus 4 lead with Sonnet 4 subagents vs single-agent Claude Opus 4.</span></div>
+                <div class="metric"><strong>95%</strong><span>Performance variance explained by token usage, tool calls, and model choice in Anthropic's BrowseComp analysis.</span></div>
+                <div class="metric"><strong>80%</strong><span>Variance explained by token usage alone, making parallel context and capacity central to the architecture.</span></div>
+                <div class="metric"><strong>15x</strong><span>Approximate token usage of multi-agent systems compared with chat interactions.</span></div>
+              </div>
+              <table>
+                <thead><tr><th>Works well when</th><th>Works poorly when</th><th>Reason</th></tr></thead>
+                <tbody>
+                  <tr><td>Many independent research directions can run at once.</td><td>Every agent must share the same context.</td><td>Subagents help by separating concerns and using separate context windows.</td></tr>
+                  <tr><td>Information exceeds a single context window.</td><td>Tasks have tight dependencies between steps.</td><td>Parallel search compresses a large corpus into useful findings.</td></tr>
+                  <tr><td>The task value justifies higher token cost.</td><td>Low-value tasks need cheap, direct answers.</td><td>Agents use about 4x chat tokens; multi-agent systems use about 15x chat tokens.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">Why agents fit research</div>
+                <h2>Research is path-dependent: the next useful step depends on what was just discovered.</h2>
+              </div>
+              <div class="slide-no">03</div>
+            </div>
+            <div class="body">
+              <div class="columns">
+                <div class="tile"><h3>Open-ended work</h3><p>The article argues that complex research cannot be hardcoded into a fixed path because the right route changes as new leads appear.</p></div>
+                <div class="tile"><h3>Autonomous turns</h3><p>The model must decide which direction to pursue across many tool calls instead of executing a linear one-shot pipeline.</p></div>
+                <div class="tile"><h3>Human-like investigation</h3><p>Good research continuously updates the plan, follows tangential connections, and pivots when intermediate findings change the landscape.</p></div>
+              </div>
+              <table>
+                <thead><tr><th>Article reasoning</th><th>Design implication</th></tr></thead>
+                <tbody>
+                  <tr><td>Search is compression: distill insight from a vast corpus.</td><td>Subagents act as parallel compressors, then return the most important tokens to the lead agent.</td></tr>
+                  <tr><td>Separate contexts reduce path dependency.</td><td>Each subagent can follow a different trajectory with distinct tools, prompts, and evidence.</td></tr>
+                  <tr><td>Groups of generally intelligent agents can exceed individual limits.</td><td>Coordination becomes the main architecture problem after model capability crosses a useful threshold.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">Concrete example</div>
+                <h2>The S&amp;P 500 board-member query shows why breadth-first decomposition matters.</h2>
+              </div>
+              <div class="slide-no">04</div>
+            </div>
+            <div class="body split">
+              <div class="note">
+                <h3>Source example</h3>
+                <p>The article describes asking the system to identify all board members of companies in the Information Technology S&amp;P 500. The multi-agent system succeeded by decomposing the task into subagent work, while the single-agent system failed with slow sequential searches.</p>
+              </div>
+              <table>
+                <thead><tr><th>Single-agent route</th><th>Multi-agent route</th></tr></thead>
+                <tbody>
+                  <tr><td>Searches companies one after another.</td><td>Splits companies or sources across subagents.</td></tr>
+                  <tr><td>One context carries the whole investigation.</td><td>Separate contexts preserve independent search paths.</td></tr>
+                  <tr><td>Latency grows with each sequential lookup.</td><td>Parallel search compresses wall-clock time.</td></tr>
+                  <tr><td>Failure mode: too slow to complete the breadth of the task.</td><td>Success mode: enough parallel token budget is spent on the problem.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">Token scaling</div>
+                <h2>The article's performance story is mostly a token-budget story.</h2>
+              </div>
+              <div class="slide-no">05</div>
+            </div>
+            <div class="body">
+              <table>
+                <thead><tr><th>Claim</th><th>Evidence from article</th><th>Implication</th></tr></thead>
+                <tbody>
+                  <tr><td>More useful work needs more tokens.</td><td>Token usage alone explains 80% of BrowseComp performance variance.</td><td>Multi-agent systems scale capacity through separate context windows.</td></tr>
+                  <tr><td>Tokens are not the only factor.</td><td>Token usage, number of tool calls, and model choice explain 95% of variance.</td><td>Tool orchestration and model selection remain first-order decisions.</td></tr>
+                  <tr><td>Better models multiply token efficiency.</td><td>Anthropic says upgrading to Claude Sonnet 4 gave a larger gain than doubling the token budget on Sonnet 3.7.</td><td>Architecture and model quality compound rather than substitute for each other.</td></tr>
+                  <tr><td>The economics are real.</td><td>Agents use about 4x chat tokens; multi-agent systems use about 15x chat tokens.</td><td>Use this architecture for tasks whose value pays for the extra reasoning.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">Original artifact</div>
+                <h2>High-level architecture: lead agent, memory, subagents, and citation subagent.</h2>
+              </div>
+              <div class="slide-no">03</div>
+            </div>
+            <div class="body split">
+              <div class="artifact">
+                <img alt="High-level architecture of Anthropic's advanced research system" src="assets/anthropic-multi-agent-research-system/architecture.png" />
+                <div class="caption">Original article diagram: user query enters Claude.ai chat, lead agent coordinates search subagents, memory, and citations subagent.</div>
+              </div>
+              <div class="note">
+                <h3>What the diagram adds</h3>
+                <ul>
+                  <li>The lead agent has search tools, MCP tools, memory, run_subagent, and complete_task.</li>
+                  <li>Search subagents loop locally while filtering and compressing findings.</li>
+                  <li>The citation subagent is separate from the research subagents.</li>
+                  <li>Memory is a first-class node, not an implementation footnote.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">Original artifact</div>
+                <h2>Full process: iterative research, memory persistence, citation pass, final report.</h2>
+              </div>
+              <div class="slide-no">04</div>
+            </div>
+            <div class="body split">
+              <div class="artifact">
+                <img alt="Multi-agent system process diagram from Anthropic" src="assets/anthropic-multi-agent-research-system/process.png" />
+                <div class="caption">Original sequence diagram: LeadResearcher saves plan to Memory, creates subagents, loops on "more research needed?", then calls CitationAgent.</div>
+              </div>
+              <table>
+                <thead><tr><th>Stage</th><th>Important detail</th></tr></thead>
+                <tbody>
+                  <tr><td>User and system</td><td>User query creates the LeadResearcher agent.</td></tr>
+                  <tr><td>LeadResearcher</td><td>Thinks through the approach and saves the plan because context can exceed 200,000 tokens.</td></tr>
+                  <tr><td>Subagents</td><td>Each subagent performs web_search, uses interleaved thinking to evaluate results, then completes its task.</td></tr>
+                  <tr><td>Loop</td><td>Lead synthesizes and decides whether to continue or exit the research loop.</td></tr>
+                  <tr><td>CitationAgent</td><td>Processes documents and research report to locate citations before returning the final answer.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">RAG contrast</div>
+                <h2>The article frames Research as dynamic search, not static retrieval.</h2>
+              </div>
+              <div class="slide-no">05</div>
+            </div>
+            <div class="body">
+              <table>
+                <thead><tr><th>Approach</th><th>Mechanism</th><th>Weakness</th><th>Research system alternative</th></tr></thead>
+                <tbody>
+                  <tr><td><span class="tag blue">Static RAG</span></td><td>Retrieve chunks similar to the input query, then generate.</td><td>Can miss leads that require adaptation after intermediate findings.</td><td>Multi-step search changes direction as the investigation unfolds.</td></tr>
+                  <tr><td><span class="tag">Subagent compression</span></td><td>Independent agents explore different aspects with separate contexts.</td><td>Costs more tokens and coordination complexity.</td><td>Returns condensed findings to the lead agent.</td></tr>
+                  <tr><td><span class="tag clay">Citation stage</span></td><td>Separate agent maps claims to sources.</td><td>Adds another pass through the material.</td><td>Improves attribution quality before final delivery.</td></tr>
+                </tbody>
+              </table>
+              <div class="columns">
+                <div class="tile"><h3>Search as compression</h3><p>The system distills insight from a large corpus by letting subagents explore and then compress their findings.</p></div>
+                <div class="tile"><h3>Path dependency</h3><p>Research changes as evidence appears, so a one-shot pipeline cannot precompute the right route.</p></div>
+                <div class="tile"><h3>Separate contexts</h3><p>Each subagent can follow a different trajectory without polluting the lead agent's working context.</p></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">Early failure modes</div>
+                <h2>Prompting was the main control surface because coordination failures were behavioral.</h2>
+              </div>
+              <div class="slide-no">06</div>
+            </div>
+            <div class="body">
+              <table>
+                <thead><tr><th>Observed problem</th><th>Article example</th><th>Fix direction</th></tr></thead>
+                <tbody>
+                  <tr><td>Over-spawning</td><td>Early agents spawned 50 subagents for simple queries.</td><td>Embed effort budgets by query complexity.</td></tr>
+                  <tr><td>Endless searching</td><td>Agents scoured the web for nonexistent sources.</td><td>Teach sufficiency checks and stopping criteria.</td></tr>
+                  <tr><td>Noisy coordination</td><td>Agents distracted each other with excessive updates.</td><td>Constrain communication and output formats.</td></tr>
+                  <tr><td>Duplicate work</td><td>Vague "research semiconductor shortage" tasks caused overlapping searches.</td><td>Give each subagent objective, sources, tool guidance, and boundaries.</td></tr>
+                  <tr><td>Wrong tool</td><td>Searching the web for context that exists only in Slack is doomed.</td><td>Examine tools first, match tools to user intent, prefer specialized tools.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">Effort scaling table</div>
+                <h2>Anthropic gave the lead agent explicit budgets for different query classes.</h2>
+              </div>
+              <div class="slide-no">07</div>
+            </div>
+            <div class="body">
+              <table>
+                <thead><tr><th>Query type</th><th>Suggested agent allocation</th><th>Suggested tool-call budget</th><th>Purpose</th></tr></thead>
+                <tbody>
+                  <tr><td>Simple fact finding</td><td>1 agent</td><td>3-10 tool calls</td><td>Avoid expensive overinvestment in simple lookups.</td></tr>
+                  <tr><td>Direct comparison</td><td>2-4 subagents</td><td>10-15 calls each</td><td>Divide dimensions or candidate groups across workers.</td></tr>
+                  <tr><td>Complex research</td><td>More than 10 subagents</td><td>Clearly divided responsibilities</td><td>Cover many independent directions in parallel.</td></tr>
+                </tbody>
+              </table>
+              <div class="metrics">
+                <div class="metric"><strong>3-5</strong><span>Lead agent subagents spawned in parallel after speed improvements.</span></div>
+                <div class="metric"><strong>3+</strong><span>Tools called in parallel by subagents for complex research.</span></div>
+                <div class="metric"><strong>90%</strong><span>Possible research time reduction for complex queries after parallelization.</span></div>
+                <div class="metric"><strong>40%</strong><span>Completion-time reduction from improved tool descriptions in tool-testing work.</span></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">Tool and MCP design</div>
+                <h2>Anthropic treats the agent-tool interface as seriously as a human-computer interface.</h2>
+              </div>
+              <div class="slide-no">09</div>
+            </div>
+            <div class="body">
+              <table>
+                <thead><tr><th>Detail from article</th><th>Why it matters</th><th>Prompt/tool response</th></tr></thead>
+                <tbody>
+                  <tr><td>An agent searching the web for Slack-only context is doomed from the start.</td><td>Wrong tool choice can make success impossible, not merely inefficient.</td><td>Match tool usage to user intent and prefer specialized tools when available.</td></tr>
+                  <tr><td>MCP servers expose agents to unseen tools with uneven descriptions.</td><td>Tool ambiguity compounds as the available tool surface grows.</td><td>Give every tool a distinct purpose and clear description.</td></tr>
+                  <tr><td>Agents should examine available tools before acting.</td><td>Planning depends on knowing the reachable information surfaces.</td><td>Prompt the lead to map tools to broad external search, internal search, or specialized retrieval.</td></tr>
+                  <tr><td>Claude 4 can improve prompts and tool descriptions.</td><td>The team built a tool-testing agent that found nuances and bugs by repeatedly trying flawed tools.</td><td>Let agents diagnose failures and rewrite descriptions; this cut future completion time by 40%.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">Prompting principles</div>
+                <h2>Prompting principles, part 1: observe behavior, delegate clearly, and scale effort.</h2>
+              </div>
+              <div class="slide-no">10</div>
+            </div>
+            <div class="body">
+              <table>
+                <thead><tr><th>#</th><th>Principle</th><th>Operational meaning</th><th>Failure prevented</th></tr></thead>
+                <tbody>
+                  <tr><td>1</td><td>Think like your agents</td><td>Run simulations with exact prompts and tools; watch agents work step by step.</td><td>Continuing after sufficient results, overly verbose search queries, incorrect tool selection.</td></tr>
+                  <tr><td>2</td><td>Teach delegation</td><td>Subtasks need objective, output format, tool/source guidance, and boundaries.</td><td>Duplicate work and gaps caused by vague subagent instructions.</td></tr>
+                  <tr><td>3</td><td>Scale effort</td><td>Simple fact finding: 1 agent and 3-10 tool calls; direct comparisons: 2-4 subagents and 10-15 calls each; complex research: more than 10 subagents.</td><td>Spawning too many agents for simple work or underinvesting in complex work.</td></tr>
+                  <tr><td>4</td><td>Tool design matters</td><td>Make tool purpose distinct and encode selection heuristics.</td><td>Using generic or wrong tools when specialized sources are required.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">Prompting principles</div>
+                <h2>Prompting principles, part 2: improve tools, search broadly, think, and parallelize.</h2>
+              </div>
+              <div class="slide-no">11</div>
+            </div>
+            <div class="body">
+              <table>
+                <thead><tr><th>#</th><th>Principle</th><th>Specific article detail</th></tr></thead>
+                <tbody>
+                  <tr><td>5</td><td>Let agents improve themselves</td><td>Claude 4 models can diagnose a failure mode and suggest prompt or tool-description improvements.</td></tr>
+                  <tr><td>6</td><td>Start wide, then narrow</td><td>Agents often default to long specific queries that return few results, so prompts push short broad searches first.</td></tr>
+                  <tr><td>7</td><td>Guide the thinking process</td><td>The lead uses extended thinking for planning, tool choice, complexity, and role definition; subagents use interleaved thinking after tool results.</td></tr>
+                  <tr><td>8</td><td>Parallel tool calling</td><td>The lead spins up 3-5 subagents in parallel and subagents use 3+ tools in parallel, cutting complex research time by up to 90%.</td></tr>
+                </tbody>
+              </table>
+              <div class="note">
+                <h3>Semiconductor shortage failure example</h3>
+                <p>When the lead gave vague instructions like "research the semiconductor shortage," one subagent explored the 2021 automotive chip crisis while two others duplicated work on current 2025 supply chains. The fix was sharper division of labor.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">Evaluation</div>
+                <h2>Evaluate whether agents reached the right outcome through a reasonable process.</h2>
+              </div>
+              <div class="slide-no">09</div>
+            </div>
+            <div class="body split">
+              <table>
+                <thead><tr><th>Rubric item</th><th>Question the judge answers</th></tr></thead>
+                <tbody>
+                  <tr><td>Factual accuracy</td><td>Do the claims match the sources?</td></tr>
+                  <tr><td>Citation accuracy</td><td>Do cited sources support the claims?</td></tr>
+                  <tr><td>Completeness</td><td>Are all requested aspects covered?</td></tr>
+                  <tr><td>Source quality</td><td>Did the system prefer primary or authoritative sources?</td></tr>
+                  <tr><td>Tool efficiency</td><td>Did it use the right tools a reasonable number of times?</td></tr>
+                </tbody>
+              </table>
+              <div class="note">
+                <h3>Evaluation details from the article</h3>
+                <ul>
+                  <li>Start immediately with small samples; Anthropic began with about 20 real-usage queries.</li>
+                  <li>Early prompt tweaks can move success from 30% to 80%, so small evals can reveal large effects.</li>
+                  <li>A single LLM judge call producing 0.0-1.0 scores and pass-fail worked better than multiple judges.</li>
+                  <li>Human testers caught source selection bias toward SEO-optimized content farms over academic PDFs and personal blogs.</li>
+                  <li>Small lead-agent prompt changes can unpredictably alter subagent behavior, so teams must evaluate collaboration patterns, not only individual outputs.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">Production reliability</div>
+                <h2>The prototype-to-production gap is mostly about state, tracing, and deployment.</h2>
+              </div>
+              <div class="slide-no">10</div>
+            </div>
+            <div class="body">
+              <table>
+                <thead><tr><th>Challenge</th><th>Why it matters for agents</th><th>Anthropic response</th></tr></thead>
+                <tbody>
+                  <tr><td>Stateful execution</td><td>Agents run across many tool calls; restarts are expensive and frustrating.</td><td>Durable execution, retries, checkpoints, and resume from failure.</td></tr>
+                  <tr><td>Tool failure adaptation</td><td>Agents may encounter failing tools mid-run.</td><td>Tell the model when a tool is failing so it can adapt, then combine that adaptability with deterministic safeguards.</td></tr>
+                  <tr><td>Dynamic decisions</td><td>Same prompt can lead to different tool paths and sources.</td><td>Full production tracing to diagnose bad queries, poor source choice, or tool failures.</td></tr>
+                  <tr><td>Privacy-aware observability</td><td>Teams need behavior insight without reading user conversations.</td><td>Monitor decision patterns and interaction structures.</td></tr>
+                  <tr><td>Deployment</td><td>Agents may be mid-process when code, prompts, or tools update.</td><td>Rainbow deployments keep old and new versions running during gradual traffic shift.</td></tr>
+                  <tr><td>Synchronous bottleneck</td><td>Lead waits for each subagent set; subagents cannot coordinate in real time.</td><td>Async execution is a likely future improvement, but adds state consistency and error propagation challenges.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">Original artifact</div>
+                <h2>Observed Research usage clusters from Clio embeddings.</h2>
+              </div>
+              <div class="slide-no">11</div>
+            </div>
+            <div class="body split">
+              <div class="artifact">
+                <img alt="Clio embedding plot of Research feature usage clusters" src="assets/anthropic-multi-agent-research-system/clio-usage.png" />
+                <div class="caption">Original Clio embedding plot showing common uses of the Research feature.</div>
+              </div>
+              <table>
+                <thead><tr><th>Top usage category</th><th>Share</th></tr></thead>
+                <tbody>
+                  <tr><td>Develop software systems across specialized domains</td><td>10%</td></tr>
+                  <tr><td>Develop and optimize professional and technical content</td><td>8%</td></tr>
+                  <tr><td>Develop business growth and revenue generation strategies</td><td>8%</td></tr>
+                  <tr><td>Assist with academic research and educational material development</td><td>7%</td></tr>
+                  <tr><td>Research and verify information about people, places, or organizations</td><td>5%</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">Appendix patterns</div>
+                <h2>The appendix contains reusable patterns for long-horizon agent systems.</h2>
+              </div>
+              <div class="slide-no">12</div>
+            </div>
+            <div class="body">
+              <table>
+                <thead><tr><th>Pattern</th><th>Problem</th><th>Implementation idea</th></tr></thead>
+                <tbody>
+                  <tr><td>End-state evaluation</td><td>State-mutating agents can take many valid paths.</td><td>Judge whether the final state is correct; add checkpoints for important state changes.</td></tr>
+                  <tr><td>Long-horizon conversation management</td><td>Hundreds of turns exceed standard context windows.</td><td>Summarize completed phases, store essential context externally, spawn fresh subagents with handoffs.</td></tr>
+                  <tr><td>Subagent filesystem outputs</td><td>Passing everything through the coordinator loses fidelity and burns tokens.</td><td>Let specialized agents create persistent artifacts and pass lightweight references to the lead agent.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">User value</div>
+                <h2>The conclusion grounds the engineering work in actual user outcomes.</h2>
+              </div>
+              <div class="slide-no">18</div>
+            </div>
+            <div class="body">
+              <div class="columns">
+                <div class="tile"><h3>Business opportunities</h3><p>Users reported finding opportunities they had not previously considered.</p></div>
+                <div class="tile"><h3>Healthcare navigation</h3><p>The system helped users navigate complex healthcare options.</p></div>
+                <div class="tile"><h3>Technical debugging</h3><p>Users used Research to resolve difficult technical bugs.</p></div>
+                <div class="tile"><h3>Time saved</h3><p>The article says users saved up to days of work.</p></div>
+                <div class="tile"><h3>Hidden connections</h3><p>Research surfaced connections users would not have found alone.</p></div>
+                <div class="tile"><h3>Production lesson</h3><p>The last mile is most of the journey: prototype behavior needs serious engineering to become reliable at scale.</p></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">Takeaways</div>
+                <h2>Agent quality is architecture, prompts, tools, evals, and operations working together.</h2>
+              </div>
+              <div class="slide-no">13</div>
+            </div>
+            <div class="body">
+              <div class="columns">
+                <div class="tile"><h3>Architecture</h3><p>Use orchestrator-worker when breadth and independent exploration dominate the task.</p></div>
+                <div class="tile"><h3>Prompting</h3><p>Encode effort budgets, delegation boundaries, tool-selection heuristics, and stopping behavior.</p></div>
+                <div class="tile"><h3>Tools</h3><p>Tool metadata is a product surface. Poor descriptions materially increase failures and latency.</p></div>
+                <div class="tile"><h3>Evaluation</h3><p>Judge outcomes with flexible rubrics; combine small evals, LLM judges, and human testing.</p></div>
+                <div class="tile"><h3>Reliability</h3><p>Build durable execution, checkpoints, tracing, privacy-aware observability, and careful deploys.</p></div>
+                <div class="tile"><h3>Economics</h3><p>Use multi-agent systems where task value justifies about 15x chat token usage.</p></div>
+              </div>
+              <p class="lead">Source: <a class="source-link" href="https://www.anthropic.com/engineering/multi-agent-research-system">Anthropic, "How we built our multi-agent research system"</a></p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (() => {
+      const slides = [...document.querySelectorAll('.slide')];
+      const strip = document.getElementById('slides');
+      const bar = document.getElementById('bar');
+      const counter = document.getElementById('counter');
+      const prev = document.getElementById('prev');
+      const next = document.getElementById('next');
+      const viewport = document.getElementById('viewport');
+      let index = 0;
+      let touchX = null;
+
+      slides.forEach((slide, i) => {
+        const number = slide.querySelector('.slide-no');
+        if (number) number.textContent = String(i + 1).padStart(2, '0');
+      });
+
+      function render() {
+        slides.forEach((slide, i) => slide.classList.toggle('active', i === index));
+        strip.style.transform = `translateX(${-index * 100}vw)`;
+        counter.textContent = `${index + 1} / ${slides.length}`;
+        bar.style.width = `${((index + 1) / slides.length) * 100}%`;
+        prev.disabled = index === 0;
+        next.disabled = index === slides.length - 1;
+      }
+
+      function setSlide(nextIndex) {
+        index = Math.max(0, Math.min(slides.length - 1, nextIndex));
+        render();
+      }
+
+      prev.addEventListener('click', () => setSlide(index - 1));
+      next.addEventListener('click', () => setSlide(index + 1));
+
+      window.addEventListener('keydown', (event) => {
+        const forward = event.key === 'ArrowRight' || event.key === 'PageDown' || event.key === ' ';
+        const backward = event.key === 'ArrowLeft' || event.key === 'PageUp';
+        if (forward) {
+          event.preventDefault();
+          setSlide(index + 1);
+        }
+        if (backward) {
+          event.preventDefault();
+          setSlide(index - 1);
+        }
+        if (event.key === 'Home') setSlide(0);
+        if (event.key === 'End') setSlide(slides.length - 1);
+      });
+
+      viewport.addEventListener('touchstart', (event) => {
+        touchX = event.touches[0].clientX;
+      }, { passive: true });
+
+      viewport.addEventListener('touchend', (event) => {
+        if (touchX === null) return;
+        const delta = event.changedTouches[0].clientX - touchX;
+        if (Math.abs(delta) > 42) setSlide(index + (delta < 0 ? 1 : -1));
+        touchX = null;
+      }, { passive: true });
+
+      render();
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,447 @@
+{
+  "timing_source": "phrase_openai_tts",
+  "voice_profile": {
+    "model": "gpt-4o-mini-tts",
+    "voice": "alloy",
+    "speed": 1.2,
+    "chunking": "phrase_v1_natural_conversation",
+    "instructions_sha256": "8d9223d9b4e404b99714a0a17edefe45cd964e2b347be821b7a729a92ace106e"
+  },
+  "chunk_count": 24,
+  "scene_count": 14,
+  "total_audio_duration": 222.16999999999996,
+  "chunks": [
+    {
+      "scene": 1,
+      "chunk": 1,
+      "chunk_id": "01-01",
+      "audio_file": "voiceover_phrase_chunks/phrase_01-01.mp3",
+      "audio_duration": 12.5,
+      "text": "别只盯着那一百万行代码。 关键是，研发流程变成 Codex 能执行、能检查的环境。 这就是 Harness Engineering：让 AI 做事，也让结果可检查。",
+      "beat_start": 1,
+      "beat_end": 3,
+      "beat_count": 3,
+      "voice_profile": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "alloy",
+        "speed": 1.2,
+        "chunking": "phrase_v1_natural_conversation",
+        "instructions_sha256": "8d9223d9b4e404b99714a0a17edefe45cd964e2b347be821b7a729a92ace106e"
+      }
+    },
+    {
+      "scene": 2,
+      "chunk": 1,
+      "chunk_id": "02-01",
+      "audio_file": "voiceover_phrase_chunks/phrase_02-01.mp3",
+      "audio_duration": 12.14,
+      "text": "它不是演示，而是从零开始的内部产品。 这些代码不是一行一行手写出来的。 项目做了五个月，产出大约一百万行代码，一千五百个代码合并请求。",
+      "beat_start": 4,
+      "beat_end": 6,
+      "beat_count": 3,
+      "voice_profile": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "alloy",
+        "speed": 1.2,
+        "chunking": "phrase_v1_natural_conversation",
+        "instructions_sha256": "8d9223d9b4e404b99714a0a17edefe45cd964e2b347be821b7a729a92ace106e"
+      }
+    },
+    {
+      "scene": 2,
+      "chunk": 2,
+      "chunk_id": "02-02",
+      "audio_file": "voiceover_phrase_chunks/phrase_02-02.mp3",
+      "audio_duration": 13.49,
+      "text": "OpenAI 说，速度大约是手写方式的十倍。 最早只有三位工程师，平均每人每天三点五个代码合并请求。 后来团队变成七个人，使用的人也越来越多。",
+      "beat_start": 7,
+      "beat_end": 9,
+      "beat_count": 3,
+      "voice_profile": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "alloy",
+        "speed": 1.2,
+        "chunking": "phrase_v1_natural_conversation",
+        "instructions_sha256": "8d9223d9b4e404b99714a0a17edefe45cd964e2b347be821b7a729a92ace106e"
+      }
+    },
+    {
+      "scene": 3,
+      "chunk": 1,
+      "chunk_id": "03-01",
+      "audio_file": "voiceover_phrase_chunks/phrase_03-01.mp3",
+      "audio_duration": 7.34,
+      "text": "重点不是代码更多，而是分工变了。 人类决定方向，Codex 负责执行。",
+      "beat_start": 10,
+      "beat_end": 11,
+      "beat_count": 2,
+      "voice_profile": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "alloy",
+        "speed": 1.2,
+        "chunking": "phrase_v1_natural_conversation",
+        "instructions_sha256": "8d9223d9b4e404b99714a0a17edefe45cd964e2b347be821b7a729a92ace106e"
+      }
+    },
+    {
+      "scene": 4,
+      "chunk": 1,
+      "chunk_id": "04-01",
+      "audio_file": "voiceover_phrase_chunks/phrase_04-01.mp3",
+      "audio_duration": 12.7,
+      "text": "第一步，先让仓库适合 AI。 最开始的脚手架，是 Codex 和 GPT-5 生成的。 目录结构、持续集成、格式化和包管理，先一起搭好。",
+      "beat_start": 12,
+      "beat_end": 14,
+      "beat_count": 3,
+      "voice_profile": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "alloy",
+        "speed": 1.2,
+        "chunking": "phrase_v1_natural_conversation",
+        "instructions_sha256": "8d9223d9b4e404b99714a0a17edefe45cd964e2b347be821b7a729a92ace106e"
+      }
+    },
+    {
+      "scene": 4,
+      "chunk": 2,
+      "chunk_id": "04-02",
+      "audio_file": "voiceover_phrase_chunks/phrase_04-02.mp3",
+      "audio_duration": 4.39,
+      "text": "AGENTS.md 这种说明文件，也由 Codex 写。",
+      "beat_start": 15,
+      "beat_end": 15,
+      "beat_count": 1,
+      "voice_profile": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "alloy",
+        "speed": 1.2,
+        "chunking": "phrase_v1_natural_conversation",
+        "instructions_sha256": "8d9223d9b4e404b99714a0a17edefe45cd964e2b347be821b7a729a92ace106e"
+      }
+    },
+    {
+      "scene": 5,
+      "chunk": 1,
+      "chunk_id": "05-01",
+      "audio_file": "voiceover_phrase_chunks/phrase_05-01.mp3",
+      "audio_duration": 9.89,
+      "text": "第二步，让应用对 AI 可见。 每个独立工作区，都能跑一个应用。 接入 Chrome DevTools 之后，Codex 能看到页面。",
+      "beat_start": 16,
+      "beat_end": 18,
+      "beat_count": 3,
+      "voice_profile": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "alloy",
+        "speed": 1.2,
+        "chunking": "phrase_v1_natural_conversation",
+        "instructions_sha256": "8d9223d9b4e404b99714a0a17edefe45cd964e2b347be821b7a729a92ace106e"
+      }
+    },
+    {
+      "scene": 5,
+      "chunk": 2,
+      "chunk_id": "05-02",
+      "audio_file": "voiceover_phrase_chunks/phrase_05-02.mp3",
+      "audio_duration": 6.6,
+      "text": "它能复现问题，也能验证修复。 这时，界面就是 AI 的工作台。",
+      "beat_start": 19,
+      "beat_end": 20,
+      "beat_count": 2,
+      "voice_profile": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "alloy",
+        "speed": 1.2,
+        "chunking": "phrase_v1_natural_conversation",
+        "instructions_sha256": "8d9223d9b4e404b99714a0a17edefe45cd964e2b347be821b7a729a92ace106e"
+      }
+    },
+    {
+      "scene": 6,
+      "chunk": 1,
+      "chunk_id": "06-01",
+      "audio_file": "voiceover_phrase_chunks/phrase_06-01.mp3",
+      "audio_duration": 9.05,
+      "text": "第三步，让运行状态可见。 每个独立工作区，都有临时观测系统。 日志、指标、链路追踪，都会进入系统。",
+      "beat_start": 21,
+      "beat_end": 23,
+      "beat_count": 3,
+      "voice_profile": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "alloy",
+        "speed": 1.2,
+        "chunking": "phrase_v1_natural_conversation",
+        "instructions_sha256": "8d9223d9b4e404b99714a0a17edefe45cd964e2b347be821b7a729a92ace106e"
+      }
+    },
+    {
+      "scene": 6,
+      "chunk": 2,
+      "chunk_id": "06-02",
+      "audio_file": "voiceover_phrase_chunks/phrase_06-02.mp3",
+      "audio_duration": 10.32,
+      "text": "Codex 可以自己查询这些信号。 启动时间、慢链路，都能变成任务。 有些任务，Codex 可以连续做六小时以上。",
+      "beat_start": 24,
+      "beat_end": 26,
+      "beat_count": 3,
+      "voice_profile": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "alloy",
+        "speed": 1.2,
+        "chunking": "phrase_v1_natural_conversation",
+        "instructions_sha256": "8d9223d9b4e404b99714a0a17edefe45cd964e2b347be821b7a729a92ace106e"
+      }
+    },
+    {
+      "scene": 7,
+      "chunk": 1,
+      "chunk_id": "07-01",
+      "audio_file": "voiceover_phrase_chunks/phrase_07-01.mp3",
+      "audio_duration": 10.32,
+      "text": "第四步，把组织知识放进仓库。 说明文件太大，会浪费上下文。 所以它只保留一百行左右的地图。",
+      "beat_start": 27,
+      "beat_end": 29,
+      "beat_count": 3,
+      "voice_profile": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "alloy",
+        "speed": 1.2,
+        "chunking": "phrase_v1_natural_conversation",
+        "instructions_sha256": "8d9223d9b4e404b99714a0a17edefe45cd964e2b347be821b7a729a92ace106e"
+      }
+    },
+    {
+      "scene": 7,
+      "chunk": 2,
+      "chunk_id": "07-02",
+      "audio_file": "voiceover_phrase_chunks/phrase_07-02.mp3",
+      "audio_duration": 7.66,
+      "text": "详细知识放进文档目录。 检查、持续集成和维护智能体，负责保持更新。",
+      "beat_start": 30,
+      "beat_end": 31,
+      "beat_count": 2,
+      "voice_profile": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "alloy",
+        "speed": 1.2,
+        "chunking": "phrase_v1_natural_conversation",
+        "instructions_sha256": "8d9223d9b4e404b99714a0a17edefe45cd964e2b347be821b7a729a92ace106e"
+      }
+    },
+    {
+      "scene": 8,
+      "chunk": 1,
+      "chunk_id": "08-01",
+      "audio_file": "voiceover_phrase_chunks/phrase_08-01.mp3",
+      "audio_duration": 8.14,
+      "text": "AI 看不见的知识，基本就用不上。 聊天、经验、外部文档，都要进入仓库。",
+      "beat_start": 32,
+      "beat_end": 33,
+      "beat_count": 2,
+      "voice_profile": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "alloy",
+        "speed": 1.2,
+        "chunking": "phrase_v1_natural_conversation",
+        "instructions_sha256": "8d9223d9b4e404b99714a0a17edefe45cd964e2b347be821b7a729a92ace106e"
+      }
+    },
+    {
+      "scene": 9,
+      "chunk": 1,
+      "chunk_id": "09-01",
+      "audio_file": "voiceover_phrase_chunks/phrase_09-01.mp3",
+      "audio_duration": 8.64,
+      "text": "第五步，把工程品味变成规则。 业务模块，按照固定顺序依赖。 跨领域能力，统一通过 Providers。",
+      "beat_start": 34,
+      "beat_end": 36,
+      "beat_count": 3,
+      "voice_profile": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "alloy",
+        "speed": 1.2,
+        "chunking": "phrase_v1_natural_conversation",
+        "instructions_sha256": "8d9223d9b4e404b99714a0a17edefe45cd964e2b347be821b7a729a92ace106e"
+      }
+    },
+    {
+      "scene": 9,
+      "chunk": 2,
+      "chunk_id": "09-02",
+      "audio_file": "voiceover_phrase_chunks/phrase_09-02.mp3",
+      "audio_duration": 6.19,
+      "text": "边界要验证，日志要结构化。 错误信息会告诉智能体怎么修。",
+      "beat_start": 37,
+      "beat_end": 38,
+      "beat_count": 2,
+      "voice_profile": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "alloy",
+        "speed": 1.2,
+        "chunking": "phrase_v1_natural_conversation",
+        "instructions_sha256": "8d9223d9b4e404b99714a0a17edefe45cd964e2b347be821b7a729a92ace106e"
+      }
+    },
+    {
+      "scene": 10,
+      "chunk": 1,
+      "chunk_id": "10-01",
+      "audio_file": "voiceover_phrase_chunks/phrase_10-01.mp3",
+      "audio_duration": 11.86,
+      "text": "规则不是刹车，是防止速度失控。 第六步，合并策略也要改变。 代码合并请求更短，门禁更少，反馈更快。",
+      "beat_start": 39,
+      "beat_end": 41,
+      "beat_count": 3,
+      "voice_profile": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "alloy",
+        "speed": 1.2,
+        "chunking": "phrase_v1_natural_conversation",
+        "instructions_sha256": "8d9223d9b4e404b99714a0a17edefe45cd964e2b347be821b7a729a92ace106e"
+      }
+    },
+    {
+      "scene": 10,
+      "chunk": 2,
+      "chunk_id": "10-02",
+      "audio_file": "voiceover_phrase_chunks/phrase_10-02.mp3",
+      "audio_duration": 4.68,
+      "text": "高吞吐团队可以快修；低吞吐团队不能照搬。",
+      "beat_start": 42,
+      "beat_end": 42,
+      "beat_count": 1,
+      "voice_profile": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "alloy",
+        "speed": 1.2,
+        "chunking": "phrase_v1_natural_conversation",
+        "instructions_sha256": "8d9223d9b4e404b99714a0a17edefe45cd964e2b347be821b7a729a92ace106e"
+      }
+    },
+    {
+      "scene": 11,
+      "chunk": 1,
+      "chunk_id": "11-01",
+      "audio_file": "voiceover_phrase_chunks/phrase_11-01.mp3",
+      "audio_duration": 7.34,
+      "text": "AI 生成的范围，不止业务代码。 测试、工具、持续集成、文档、评审，也能生成。",
+      "beat_start": 43,
+      "beat_end": 44,
+      "beat_count": 2,
+      "voice_profile": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "alloy",
+        "speed": 1.2,
+        "chunking": "phrase_v1_natural_conversation",
+        "instructions_sha256": "8d9223d9b4e404b99714a0a17edefe45cd964e2b347be821b7a729a92ace106e"
+      }
+    },
+    {
+      "scene": 12,
+      "chunk": 1,
+      "chunk_id": "12-01",
+      "audio_file": "voiceover_phrase_chunks/phrase_12-01.mp3",
+      "audio_duration": 11.02,
+      "text": "最后，它形成一个闭环。 Codex 先确认状态，再复现问题。 然后修复、验证、录视频、提交代码合并请求。",
+      "beat_start": 45,
+      "beat_end": 47,
+      "beat_count": 3,
+      "voice_profile": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "alloy",
+        "speed": 1.2,
+        "chunking": "phrase_v1_natural_conversation",
+        "instructions_sha256": "8d9223d9b4e404b99714a0a17edefe45cd964e2b347be821b7a729a92ace106e"
+      }
+    },
+    {
+      "scene": 12,
+      "chunk": 2,
+      "chunk_id": "12-02",
+      "audio_file": "voiceover_phrase_chunks/phrase_12-02.mp3",
+      "audio_duration": 8.14,
+      "text": "反馈和构建失败，它先处理；需要判断，再找人。 但这依赖工具和结构，不能直接复制。",
+      "beat_start": 48,
+      "beat_end": 49,
+      "beat_count": 2,
+      "voice_profile": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "alloy",
+        "speed": 1.2,
+        "chunking": "phrase_v1_natural_conversation",
+        "instructions_sha256": "8d9223d9b4e404b99714a0a17edefe45cd964e2b347be821b7a729a92ace106e"
+      }
+    },
+    {
+      "scene": 13,
+      "chunk": 1,
+      "chunk_id": "13-01",
+      "audio_file": "voiceover_phrase_chunks/phrase_13-01.mp3",
+      "audio_duration": 12.5,
+      "text": "系统混乱，也必须被治理。 旧办法，是每周五拿出百分之二十时间，清理 AI 垃圾代码。 新办法，叫 golden principles，也就是一组黄金原则。",
+      "beat_start": 50,
+      "beat_end": 52,
+      "beat_count": 3,
+      "voice_profile": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "alloy",
+        "speed": 1.2,
+        "chunking": "phrase_v1_natural_conversation",
+        "instructions_sha256": "8d9223d9b4e404b99714a0a17edefe45cd964e2b347be821b7a729a92ace106e"
+      }
+    },
+    {
+      "scene": 13,
+      "chunk": 2,
+      "chunk_id": "13-02",
+      "audio_file": "voiceover_phrase_chunks/phrase_13-02.mp3",
+      "audio_duration": 7.34,
+      "text": "后台 Codex 会扫描问题，开小型重构请求。 这就像一套垃圾回收系统。",
+      "beat_start": 53,
+      "beat_end": 54,
+      "beat_count": 2,
+      "voice_profile": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "alloy",
+        "speed": 1.2,
+        "chunking": "phrase_v1_natural_conversation",
+        "instructions_sha256": "8d9223d9b4e404b99714a0a17edefe45cd964e2b347be821b7a729a92ace106e"
+      }
+    },
+    {
+      "scene": 14,
+      "chunk": 1,
+      "chunk_id": "14-01",
+      "audio_file": "voiceover_phrase_chunks/phrase_14-01.mp3",
+      "audio_duration": 11.45,
+      "text": "所以重点不是 AI 写代码，而是 Harness Engineering。 模型负责生成，Harness 负责治理。 结果要看得见、管得住、能验证、能维护。",
+      "beat_start": 55,
+      "beat_end": 57,
+      "beat_count": 3,
+      "voice_profile": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "alloy",
+        "speed": 1.2,
+        "chunking": "phrase_v1_natural_conversation",
+        "instructions_sha256": "8d9223d9b4e404b99714a0a17edefe45cd964e2b347be821b7a729a92ace106e"
+      }
+    },
+    {
+      "scene": 14,
+      "chunk": 2,
+      "chunk_id": "14-02",
+      "audio_file": "voiceover_phrase_chunks/phrase_14-02.mp3",
+      "audio_duration": 8.47,
+      "text": "OpenAI 也还在学习，长期问题怎么处理。 企业真正需要的，其实是这种 AI 基础设施。",
+      "beat_start": 58,
+      "beat_end": 59,
+      "beat_count": 2,
+      "voice_profile": {
+        "model": "gpt-4o-mini-tts",
+        "voice": "alloy",
+        "speed": 1.2,
+        "chunking": "phrase_v1_natural_conversation",
+        "instructions_sha256": "8d9223d9b4e404b99714a0a17edefe45cd964e2b347be821b7a729a92ace106e"
+      }
+    }
+  ]
+}

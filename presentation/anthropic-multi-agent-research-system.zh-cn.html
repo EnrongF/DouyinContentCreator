@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>多智能体研究系统 - 中文动态幻灯片</title>
+  <style>
+    :root {
+      --paper: #f6f1e8;
+      --ink: #18201c;
+      --muted: #667269;
+      --line: #d9d0c1;
+      --green: #276b55;
+      --clay: #bd6b4f;
+      --gold: #c99a2e;
+      --blue: #486f8f;
+      --panel: #fffaf1;
+      --shadow: 0 24px 60px rgba(42, 31, 20, 0.14);
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "PingFang SC", "Noto Sans SC", "Microsoft YaHei", ui-sans-serif, system-ui, sans-serif;
+    }
+    body {
+      background:
+        linear-gradient(90deg, rgba(39, 107, 85, 0.08) 1px, transparent 1px),
+        linear-gradient(180deg, rgba(39, 107, 85, 0.06) 1px, transparent 1px),
+        var(--paper);
+      background-size: 32px 32px;
+    }
+    .deck { height: 100%; display: grid; grid-template-rows: auto 4px 1fr; }
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 12px 18px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(246, 241, 232, 0.92);
+      backdrop-filter: blur(12px);
+      z-index: 5;
+    }
+    .brand { display: flex; align-items: baseline; gap: 12px; min-width: 0; }
+    .brand strong { font-size: 14px; letter-spacing: 0.06em; white-space: nowrap; }
+    .brand span { color: var(--muted); font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .controls { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+    button {
+      width: 38px;
+      height: 34px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      color: var(--ink);
+      cursor: pointer;
+      border-radius: 6px;
+      font-size: 18px;
+      line-height: 1;
+      box-shadow: 0 4px 12px rgba(42, 31, 20, 0.08);
+    }
+    button:disabled { opacity: 0.35; cursor: default; box-shadow: none; }
+    .counter { min-width: 72px; text-align: right; color: var(--muted); font-variant-numeric: tabular-nums; font-size: 13px; }
+    .progress { background: rgba(24, 32, 28, 0.08); overflow: hidden; }
+    .progress div {
+      width: 0%;
+      height: 100%;
+      background: linear-gradient(90deg, var(--green), var(--clay), var(--gold));
+      transition: width 220ms ease;
+    }
+    .viewport { overflow: hidden; position: relative; }
+    .slides { height: 100%; display: flex; transition: transform 360ms cubic-bezier(.2,.8,.2,1); will-change: transform; }
+    .slide { width: 100vw; height: 100%; flex: 0 0 100vw; padding: 28px; display: grid; align-items: stretch; }
+    .canvas {
+      width: min(1240px, 100%);
+      margin: 0 auto;
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 22px;
+      opacity: 0.35;
+      transform: translateY(8px);
+      transition: opacity 240ms ease, transform 240ms ease;
+    }
+    .slide.active .canvas { opacity: 1; transform: translateY(0); }
+    .title-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: end;
+      gap: 18px;
+      border-bottom: 2px solid var(--ink);
+      padding-bottom: 14px;
+    }
+    .kicker { color: var(--green); font-weight: 800; letter-spacing: 0.08em; font-size: 12px; margin-bottom: 10px; }
+    h1, h2, h3, p { margin: 0; }
+    h1 { max-width: 940px; font-size: 54px; line-height: 1.12; font-weight: 800; letter-spacing: 0; }
+    h2 { max-width: 960px; font-size: 40px; line-height: 1.18; font-weight: 800; letter-spacing: 0; }
+    .slide-no { color: var(--muted); font-variant-numeric: tabular-nums; font-size: 14px; }
+    .body { min-height: 0; display: grid; gap: 18px; align-content: start; }
+    .lead { max-width: 820px; color: var(--muted); font-size: 20px; line-height: 1.65; }
+    .split { display: grid; grid-template-columns: 0.95fr 1.05fr; gap: 22px; min-height: 0; }
+    .columns { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .tile, .note, .metric, .artifact {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+    .tile, .note { padding: 18px; }
+    .tile h3, .note h3 { font-size: 17px; margin-bottom: 10px; }
+    .tile p, .note p, li { color: var(--muted); font-size: 15px; line-height: 1.65; }
+    ul { margin: 0; padding-left: 18px; }
+    .metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+    .metric { padding: 16px; min-height: 128px; }
+    .metric strong {
+      display: block;
+      color: var(--clay);
+      font-size: 36px;
+      line-height: 1;
+      font-weight: 850;
+      margin-bottom: 10px;
+      font-variant-numeric: tabular-nums;
+    }
+    .metric span { display: block; color: var(--muted); line-height: 1.55; font-size: 14px; }
+    .artifact { min-height: 0; padding: 12px; display: grid; grid-template-rows: 1fr auto; gap: 10px; overflow: hidden; }
+    .artifact img {
+      width: 100%;
+      height: 100%;
+      min-height: 0;
+      object-fit: contain;
+      background: #ffffff;
+      border-radius: 6px;
+      border: 1px solid rgba(24, 32, 28, 0.08);
+    }
+    .caption { color: var(--muted); font-size: 13px; line-height: 1.5; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+    th { color: var(--ink); background: #eadfce; font-size: 12px; letter-spacing: 0.05em; }
+    td { color: var(--muted); }
+    tr:last-child td { border-bottom: 0; }
+    .tag { display: inline-block; padding: 4px 8px; border-radius: 5px; color: #fff; background: var(--green); font-size: 12px; font-weight: 700; }
+    .tag.clay { background: var(--clay); }
+    .tag.gold { background: var(--gold); color: var(--ink); }
+    .tag.blue { background: var(--blue); }
+    .source-link { color: var(--green); font-weight: 700; text-decoration: none; }
+    .source-link:hover { text-decoration: underline; }
+    @media (max-width: 900px) {
+      .slide { padding: 18px; }
+      .brand span { display: none; }
+      h1 { font-size: 36px; }
+      h2 { font-size: 30px; }
+      .split, .columns, .metrics { grid-template-columns: 1fr; }
+      .artifact img { max-height: 46vh; }
+      .body { overflow: auto; padding-bottom: 18px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .slides, .canvas, .progress div { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="deck">
+    <header class="topbar">
+      <div class="brand">
+        <strong>多智能体研究系统</strong>
+        <span>Anthropic Engineering 文章的中文动态幻灯片，2025 年 6 月 13 日</span>
+      </div>
+      <div class="controls">
+        <button id="prev" type="button" title="上一页" aria-label="上一页">&lt;</button>
+        <button id="next" type="button" title="下一页" aria-label="下一页">&gt;</button>
+        <div class="counter" id="counter">1 / 19</div>
+      </div>
+    </header>
+    <div class="progress" aria-hidden="true"><div id="bar"></div></div>
+
+    <section class="viewport" id="viewport">
+      <div class="slides" id="slides">
+        <article class="slide active">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">Anthropic Engineering</div>
+                <h1>Anthropic 如何构建生产级多智能体研究系统</h1>
+              </div>
+              <div class="slide-no">01</div>
+            </div>
+            <div class="body split">
+              <div>
+                <p class="lead">文章发表于 2025 年 6 月 13 日。它不是单纯讲“更强模型”，而是一个系统工程案例：Claude Research 会搜索网页、Google Workspace 和集成工具，由主智能体规划、分工、保存记忆，并把最终报告交给引用智能体处理来源。</p>
+              </div>
+              <div class="note">
+                <h3>本 deck 保留的内容</h3>
+                <ul>
+                  <li>多智能体研究的适用场景与限制。</li>
+                  <li>原文中的架构图、流程图和 Clio 使用聚类图。</li>
+                  <li>提示词启发式、投入预算、失败模式。</li>
+                  <li>评估标准、生产可靠性经验。</li>
+                  <li>附录中的长程智能体模式和持久化产物模式。</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">核心论点</div>
+                <h2>当研究任务足够宽、动态且高价值时，多智能体系统最有优势。</h2>
+              </div>
+              <div class="slide-no">02</div>
+            </div>
+            <div class="body">
+              <div class="metrics">
+                <div class="metric"><strong>90.2%</strong><span>内部研究评测中，Claude Opus 4 主智能体加 Sonnet 4 子智能体，相比单智能体 Opus 4 的提升。</span></div>
+                <div class="metric"><strong>95%</strong><span>在 BrowseComp 分析中，token 用量、工具调用次数和模型选择解释了大部分性能差异。</span></div>
+                <div class="metric"><strong>80%</strong><span>仅 token 用量就解释了 80% 的差异，说明并行上下文和容量非常关键。</span></div>
+                <div class="metric"><strong>15x</strong><span>多智能体系统相对普通聊天交互的大致 token 用量。</span></div>
+              </div>
+              <table>
+                <thead><tr><th>适合</th><th>不适合</th><th>原因</th></tr></thead>
+                <tbody>
+                  <tr><td>许多独立研究方向可以并行推进。</td><td>所有智能体都必须共享同一个上下文。</td><td>子智能体通过分离关注点和上下文窗口来扩大搜索面。</td></tr>
+                  <tr><td>信息量超过单一上下文窗口。</td><td>步骤之间存在强依赖。</td><td>并行搜索把大语料压缩成可用发现。</td></tr>
+                  <tr><td>任务价值足以覆盖更高 token 成本。</td><td>低价值任务只需要便宜直接的答案。</td><td>普通 agent 约为聊天的 4x token，多智能体约为 15x。</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">为什么适合研究</div>
+                <h2>研究是路径依赖的：下一步该做什么，取决于刚刚发现了什么。</h2>
+              </div>
+              <div class="slide-no">03</div>
+            </div>
+            <div class="body">
+              <div class="columns">
+                <div class="tile"><h3>开放式任务</h3><p>复杂研究无法预先硬编码成固定路线，因为新的线索会不断改变正确路径。</p></div>
+                <div class="tile"><h3>自主多轮决策</h3><p>模型需要在多次工具调用之间决定下一步，而不是执行一次性的线性流水线。</p></div>
+                <div class="tile"><h3>像人一样调查</h3><p>好的研究会持续更新计划、追踪旁支联系，并在中间发现改变局面时调整方向。</p></div>
+              </div>
+              <table>
+                <thead><tr><th>原文推理</th><th>设计含义</th></tr></thead>
+                <tbody>
+                  <tr><td>搜索是一种压缩：从巨大语料中提炼洞察。</td><td>子智能体相当于并行压缩器，把最重要的信息交回主智能体。</td></tr>
+                  <tr><td>独立上下文能降低路径依赖带来的干扰。</td><td>每个子智能体可以沿着不同证据链、工具和提示词轨迹前进。</td></tr>
+                  <tr><td>一组通用智能体可以突破单个智能体的限制。</td><td>当模型能力足够强之后，协调机制就变成核心架构问题。</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">具体例子</div>
+                <h2>S&amp;P 500 信息技术公司董事查询，说明为什么要做广度优先分解。</h2>
+              </div>
+              <div class="slide-no">04</div>
+            </div>
+            <div class="body split">
+              <div class="note">
+                <h3>原文例子</h3>
+                <p>文章提到一个任务：找出 S&amp;P 500 信息技术板块公司所有董事。多智能体系统通过把任务拆给子智能体完成，而单智能体系统因为顺序搜索太慢而失败。</p>
+              </div>
+              <table>
+                <thead><tr><th>单智能体路线</th><th>多智能体路线</th></tr></thead>
+                <tbody>
+                  <tr><td>一家公司接一家公司地搜索。</td><td>按公司或信息源拆给多个子智能体。</td></tr>
+                  <tr><td>一个上下文承载整场调查。</td><td>多个上下文保留相互独立的搜索路径。</td></tr>
+                  <tr><td>延迟随顺序查询线性增长。</td><td>并行搜索压缩总耗时。</td></tr>
+                  <tr><td>失败模式：太慢，无法完成任务广度。</td><td>成功模式：给问题投入足够的并行 token 预算。</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">Token 扩展</div>
+                <h2>原文的性能故事，本质上也是 token 预算故事。</h2>
+              </div>
+              <div class="slide-no">05</div>
+            </div>
+            <div class="body">
+              <table>
+                <thead><tr><th>主张</th><th>原文证据</th><th>含义</th></tr></thead>
+                <tbody>
+                  <tr><td>更有价值的工作需要更多 token。</td><td>仅 token 用量就解释 BrowseComp 80% 的性能差异。</td><td>多智能体通过独立上下文窗口扩展处理容量。</td></tr>
+                  <tr><td>token 不是唯一因素。</td><td>token 用量、工具调用数、模型选择合计解释 95% 差异。</td><td>工具编排和模型选择仍是一阶决策。</td></tr>
+                  <tr><td>更好的模型会放大 token 效率。</td><td>升级到 Claude Sonnet 4 的收益大于在 Sonnet 3.7 上把 token 预算翻倍。</td><td>架构和模型质量是复合关系，不是替代关系。</td></tr>
+                  <tr><td>经济账必须成立。</td><td>agent 约为聊天 4x token，多智能体系统约为 15x。</td><td>只应在任务价值足够高时使用这种架构。</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">原文图表</div>
+                <h2>高层架构：主智能体、记忆、子智能体和引用智能体。</h2>
+              </div>
+              <div class="slide-no">06</div>
+            </div>
+            <div class="body split">
+              <div class="artifact">
+                <img alt="Anthropic 高层架构图" src="assets/anthropic-multi-agent-research-system/architecture.png" />
+                <div class="caption">原文架构图：用户请求进入 Claude.ai chat，主智能体协调搜索子智能体、记忆和引用子智能体。</div>
+              </div>
+              <div class="note">
+                <h3>这张图补充了什么</h3>
+                <ul>
+                  <li>主智能体拥有搜索工具、MCP 工具、记忆、run_subagent 和 complete_task。</li>
+                  <li>搜索子智能体在局部循环中筛选和压缩发现。</li>
+                  <li>引用智能体与研究子智能体是分离阶段。</li>
+                  <li>记忆是架构节点，不是实现细节。</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">原文图表</div>
+                <h2>完整流程：迭代研究、记忆持久化、引用处理、最终报告。</h2>
+              </div>
+              <div class="slide-no">07</div>
+            </div>
+            <div class="body split">
+              <div class="artifact">
+                <img alt="Anthropic 多智能体流程图" src="assets/anthropic-multi-agent-research-system/process.png" />
+                <div class="caption">原文泳道图：LeadResearcher 把计划保存到 Memory，创建子智能体，判断是否需要更多研究，最后调用 CitationAgent。</div>
+              </div>
+              <table>
+                <thead><tr><th>阶段</th><th>关键细节</th></tr></thead>
+                <tbody>
+                  <tr><td>用户与系统</td><td>用户问题创建 LeadResearcher 智能体。</td></tr>
+                  <tr><td>LeadResearcher</td><td>思考研究方案，并保存计划，因为上下文可能超过 200,000 tokens。</td></tr>
+                  <tr><td>子智能体</td><td>每个子智能体执行 web_search，使用交错思考评估结果，再 complete_task。</td></tr>
+                  <tr><td>循环</td><td>主智能体综合结果，并决定继续研究还是退出循环。</td></tr>
+                  <tr><td>CitationAgent</td><td>处理文档和研究报告，定位引用来源，然后返回最终答案。</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">与 RAG 对比</div>
+                <h2>文章把 Research 定义为动态搜索，而不是静态检索。</h2>
+              </div>
+              <div class="slide-no">08</div>
+            </div>
+            <div class="body">
+              <table>
+                <thead><tr><th>方法</th><th>机制</th><th>弱点</th><th>Research 的替代方式</th></tr></thead>
+                <tbody>
+                  <tr><td><span class="tag blue">静态 RAG</span></td><td>检索与输入问题相似的片段，再生成答案。</td><td>可能错过需要根据中间发现调整方向的线索。</td><td>多步搜索会随着调查推进改变方向。</td></tr>
+                  <tr><td><span class="tag">子智能体压缩</span></td><td>多个独立智能体用各自上下文探索不同方面。</td><td>消耗更多 token，也带来协调复杂度。</td><td>把压缩后的发现返回主智能体。</td></tr>
+                  <tr><td><span class="tag clay">引用阶段</span></td><td>独立智能体把结论映射回来源。</td><td>需要额外处理一遍材料。</td><td>在最终交付前提高归因质量。</td></tr>
+                </tbody>
+              </table>
+              <div class="columns">
+                <div class="tile"><h3>搜索即压缩</h3><p>系统让子智能体探索大语料，再把发现压缩为主智能体可用的信息。</p></div>
+                <div class="tile"><h3>路径依赖</h3><p>研究会随着证据出现而变化，一次性流水线无法预先算出正确路线。</p></div>
+                <div class="tile"><h3>独立上下文</h3><p>每个子智能体可以走不同轨迹，不污染主智能体的工作上下文。</p></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">早期失败模式</div>
+                <h2>协调失败主要是行为问题，所以提示词是关键控制面。</h2>
+              </div>
+              <div class="slide-no">09</div>
+            </div>
+            <div class="body">
+              <table>
+                <thead><tr><th>问题</th><th>原文例子</th><th>修复方向</th></tr></thead>
+                <tbody>
+                  <tr><td>过度创建子智能体</td><td>早期系统会为简单问题创建 50 个子智能体。</td><td>按问题复杂度嵌入投入预算。</td></tr>
+                  <tr><td>无休止搜索</td><td>为不存在的来源持续搜索。</td><td>教会系统充分性判断和停止条件。</td></tr>
+                  <tr><td>沟通过噪</td><td>智能体之间用过多更新互相干扰。</td><td>约束通信和输出格式。</td></tr>
+                  <tr><td>重复劳动</td><td>模糊的“研究半导体短缺”会导致搜索重叠。</td><td>给每个子智能体明确目标、来源、工具和边界。</td></tr>
+                  <tr><td>工具选择错误</td><td>如果上下文只在 Slack 中，搜索网页从一开始就注定失败。</td><td>先检查可用工具，再把工具与用户意图匹配。</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">投入预算表</div>
+                <h2>Anthropic 给主智能体明确的查询复杂度预算。</h2>
+              </div>
+              <div class="slide-no">10</div>
+            </div>
+            <div class="body">
+              <table>
+                <thead><tr><th>问题类型</th><th>建议智能体分配</th><th>建议工具调用预算</th><th>目的</th></tr></thead>
+                <tbody>
+                  <tr><td>简单事实查找</td><td>1 个智能体</td><td>3-10 次工具调用</td><td>避免对简单查找投入过多成本。</td></tr>
+                  <tr><td>直接比较</td><td>2-4 个子智能体</td><td>每个 10-15 次调用</td><td>按维度或候选项分工。</td></tr>
+                  <tr><td>复杂研究</td><td>超过 10 个子智能体</td><td>职责清晰划分</td><td>并行覆盖大量独立方向。</td></tr>
+                </tbody>
+              </table>
+              <div class="metrics">
+                <div class="metric"><strong>3-5</strong><span>优化后，主智能体会并行创建 3-5 个子智能体。</span></div>
+                <div class="metric"><strong>3+</strong><span>复杂研究中，子智能体会并行调用 3 个以上工具。</span></div>
+                <div class="metric"><strong>90%</strong><span>并行化最多可把复杂研究耗时减少 90%。</span></div>
+                <div class="metric"><strong>40%</strong><span>改进工具描述后，后续任务完成时间减少 40%。</span></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">工具与 MCP 设计</div>
+                <h2>Anthropic 像设计人机界面一样认真设计智能体工具界面。</h2>
+              </div>
+              <div class="slide-no">11</div>
+            </div>
+            <div class="body">
+              <table>
+                <thead><tr><th>原文细节</th><th>为什么重要</th><th>提示词/工具响应</th></tr></thead>
+                <tbody>
+                  <tr><td>如果信息只在 Slack 中，让智能体搜索网页从一开始就失败。</td><td>错误工具不是低效，而是让任务不可能成功。</td><td>根据用户意图选择工具，并优先使用专门工具。</td></tr>
+                  <tr><td>MCP 服务器会暴露许多智能体没见过、描述质量不一的工具。</td><td>可用工具面扩大后，工具歧义会放大。</td><td>每个工具都要有清晰、互相区分的用途说明。</td></tr>
+                  <tr><td>智能体行动前应检查可用工具。</td><td>计划依赖于知道哪些信息面可以访问。</td><td>让主智能体把工具映射到外部搜索、内部搜索或专用检索。</td></tr>
+                  <tr><td>Claude 4 可以改进提示词和工具描述。</td><td>团队构建了一个工具测试 agent，通过反复试用有缺陷工具来发现问题。</td><td>让 agent 诊断失败并重写描述，这让后续完成时间减少 40%。</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">提示词原则</div>
+                <h2>第 1 部分：观察行为、清晰分工、按复杂度投入。</h2>
+              </div>
+              <div class="slide-no">12</div>
+            </div>
+            <div class="body">
+              <table>
+                <thead><tr><th>#</th><th>原则</th><th>操作含义</th><th>防止的失败</th></tr></thead>
+                <tbody>
+                  <tr><td>1</td><td>像智能体一样思考</td><td>用真实提示词和工具跑模拟，逐步观察行为。</td><td>已有足够结果还继续搜索、查询过长、选错工具。</td></tr>
+                  <tr><td>2</td><td>教会编排器如何分工</td><td>子任务需要目标、输出格式、工具/来源指导和边界。</td><td>模糊分工导致重复劳动或遗漏。</td></tr>
+                  <tr><td>3</td><td>按复杂度扩展投入</td><td>简单事实：1 个 agent、3-10 次调用；直接比较：2-4 个子智能体、每个 10-15 次；复杂研究：10 个以上子智能体。</td><td>简单任务过度创建 agent，复杂任务投入不足。</td></tr>
+                  <tr><td>4</td><td>工具设计很关键</td><td>工具用途必须互相区分，并编码选择启发式。</td><td>需要专门信息源时使用了泛化或错误工具。</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">提示词原则</div>
+                <h2>第 2 部分：改进工具、先宽后窄、引导思考、并行调用。</h2>
+              </div>
+              <div class="slide-no">13</div>
+            </div>
+            <div class="body">
+              <table>
+                <thead><tr><th>#</th><th>原则</th><th>原文具体细节</th></tr></thead>
+                <tbody>
+                  <tr><td>5</td><td>让智能体自我改进</td><td>Claude 4 可以诊断失败模式，并提出提示词或工具描述改进。</td></tr>
+                  <tr><td>6</td><td>先宽后窄</td><td>智能体常默认生成很长很具体、结果很少的查询，所以提示词要求先用短而宽的搜索。</td></tr>
+                  <tr><td>7</td><td>引导思考过程</td><td>主智能体使用 extended thinking 规划、选工具、评估复杂度和定义角色；子智能体在工具结果后使用 interleaved thinking。</td></tr>
+                  <tr><td>8</td><td>并行工具调用</td><td>主智能体并行创建 3-5 个子智能体，子智能体并行使用 3+ 工具，复杂研究最多减少 90% 时间。</td></tr>
+                </tbody>
+              </table>
+              <div class="note">
+                <h3>半导体短缺失败例子</h3>
+                <p>当主智能体只给出“研究半导体短缺”这样的模糊任务时，一个子智能体研究 2021 年汽车芯片危机，另外两个重复研究 2025 年供应链。修复方式是更清晰地划分职责。</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">评估</div>
+                <h2>评估重点不是固定路径，而是是否通过合理过程到达正确结果。</h2>
+              </div>
+              <div class="slide-no">14</div>
+            </div>
+            <div class="body split">
+              <table>
+                <thead><tr><th>评分项</th><th>judge 要回答的问题</th></tr></thead>
+                <tbody>
+                  <tr><td>事实准确性</td><td>结论是否与来源一致？</td></tr>
+                  <tr><td>引用准确性</td><td>引用来源是否支持对应主张？</td></tr>
+                  <tr><td>完整性</td><td>用户要求的方面是否覆盖？</td></tr>
+                  <tr><td>来源质量</td><td>系统是否优先使用一手或权威来源？</td></tr>
+                  <tr><td>工具效率</td><td>是否用对工具，调用次数是否合理？</td></tr>
+                </tbody>
+              </table>
+              <div class="note">
+                <h3>原文评估细节</h3>
+                <ul>
+                  <li>尽早从小样本开始；Anthropic 最初用了约 20 个真实使用问题。</li>
+                  <li>早期提示词修改可让成功率从 30% 到 80%，小评测能发现大变化。</li>
+                  <li>一个 LLM judge 调用，输出 0.0-1.0 分数和 pass/fail，反而比多个 judge 更一致。</li>
+                  <li>人工测试发现系统偏向 SEO 内容农场，而不是学术 PDF 或个人博客等更好来源。</li>
+                  <li>主智能体提示词的小改动会不可预测地改变子智能体行为，所以要评估协作模式。</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">生产可靠性</div>
+                <h2>从原型到生产，主要难点是状态、追踪和部署。</h2>
+              </div>
+              <div class="slide-no">15</div>
+            </div>
+            <div class="body">
+              <table>
+                <thead><tr><th>挑战</th><th>为什么对 agent 重要</th><th>Anthropic 的应对</th></tr></thead>
+                <tbody>
+                  <tr><td>有状态执行</td><td>agent 会跨许多工具调用运行，重启昂贵且影响体验。</td><td>持久化执行、重试、检查点和失败恢复。</td></tr>
+                  <tr><td>工具失败适应</td><td>agent 可能在运行中遇到失败工具。</td><td>把工具失败告诉模型，让它自适应，再结合确定性保护。</td></tr>
+                  <tr><td>动态决策</td><td>同一提示词可能走出不同工具路径和来源路径。</td><td>完整生产追踪，用于诊断坏查询、差来源或工具失败。</td></tr>
+                  <tr><td>隐私感知可观测性</td><td>团队需要行为洞察，但不能读取用户对话内容。</td><td>监控决策模式和交互结构。</td></tr>
+                  <tr><td>部署</td><td>agent 可能在代码、提示词或工具更新时仍在执行。</td><td>使用 rainbow deployment，让新旧版本在渐进流量切换中并存。</td></tr>
+                  <tr><td>同步瓶颈</td><td>主智能体等待一组子智能体，子智能体无法实时协作。</td><td>异步执行是未来方向，但会增加状态一致性和错误传播复杂度。</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">原文图表</div>
+                <h2>Clio 嵌入图展示 Research 的常见使用聚类。</h2>
+              </div>
+              <div class="slide-no">16</div>
+            </div>
+            <div class="body split">
+              <div class="artifact">
+                <img alt="Research 功能使用聚类的 Clio 嵌入图" src="assets/anthropic-multi-agent-research-system/clio-usage.png" />
+                <div class="caption">原文 Clio embedding plot：展示 Research 功能常见使用类别。</div>
+              </div>
+              <table>
+                <thead><tr><th>主要使用类别</th><th>占比</th></tr></thead>
+                <tbody>
+                  <tr><td>跨专业领域开发软件系统</td><td>10%</td></tr>
+                  <tr><td>开发和优化专业/技术内容</td><td>8%</td></tr>
+                  <tr><td>制定业务增长和收入策略</td><td>8%</td></tr>
+                  <tr><td>协助学术研究和教育材料开发</td><td>7%</td></tr>
+                  <tr><td>研究并验证人物、地点或组织信息</td><td>5%</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">附录模式</div>
+                <h2>附录给出了长程智能体系统可复用的工程模式。</h2>
+              </div>
+              <div class="slide-no">17</div>
+            </div>
+            <div class="body">
+              <table>
+                <thead><tr><th>模式</th><th>问题</th><th>实现思路</th></tr></thead>
+                <tbody>
+                  <tr><td>终态评估</td><td>会修改状态的 agent 可能有许多有效路径。</td><td>判断最终状态是否正确；对重要状态变化添加检查点。</td></tr>
+                  <tr><td>长程对话管理</td><td>对话可能跨数百轮，超出标准上下文窗口。</td><td>总结已完成阶段，把必要信息存到外部记忆，接近上下文限制时创建新子智能体并交接。</td></tr>
+                  <tr><td>子智能体写入文件系统</td><td>所有内容都经协调者转述会丢失细节并消耗 token。</td><td>让专门智能体直接创建持久化产物，只把轻量引用传回主智能体。</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">用户价值</div>
+                <h2>文章结尾把工程工作落回真实用户结果。</h2>
+              </div>
+              <div class="slide-no">18</div>
+            </div>
+            <div class="body">
+              <div class="columns">
+                <div class="tile"><h3>商业机会</h3><p>用户发现了之前没有考虑到的机会。</p></div>
+                <div class="tile"><h3>医疗选择</h3><p>系统帮助用户梳理复杂医疗选项。</p></div>
+                <div class="tile"><h3>技术调试</h3><p>用户用 Research 解决困难技术问题。</p></div>
+                <div class="tile"><h3>节省时间</h3><p>文章称用户最多节省了数天工作。</p></div>
+                <div class="tile"><h3>隐藏联系</h3><p>Research 找到了用户自己可能找不到的关联。</p></div>
+                <div class="tile"><h3>生产经验</h3><p>最后一公里往往才是大部分工程工作：原型行为需要严肃工程才能可靠规模化。</p></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div>
+                <div class="kicker">总结</div>
+                <h2>Agent 质量来自架构、提示词、工具、评估和运维共同作用。</h2>
+              </div>
+              <div class="slide-no">19</div>
+            </div>
+            <div class="body">
+              <div class="columns">
+                <div class="tile"><h3>架构</h3><p>当任务以广度和独立探索为主时，使用 orchestrator-worker。</p></div>
+                <div class="tile"><h3>提示词</h3><p>编码投入预算、分工边界、工具选择启发式和停止行为。</p></div>
+                <div class="tile"><h3>工具</h3><p>工具元数据是产品界面，差描述会显著增加失败和延迟。</p></div>
+                <div class="tile"><h3>评估</h3><p>用灵活 rubric 评估结果，结合小评测、LLM judge 和人工测试。</p></div>
+                <div class="tile"><h3>可靠性</h3><p>构建持久化执行、检查点、追踪、隐私感知可观测性和谨慎部署。</p></div>
+                <div class="tile"><h3>经济性</h3><p>只有当任务价值足以支撑约 15x 聊天 token 用量时，才值得使用多智能体。</p></div>
+              </div>
+              <p class="lead">来源：<a class="source-link" href="https://www.anthropic.com/engineering/multi-agent-research-system">Anthropic, “How we built our multi-agent research system”</a></p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (() => {
+      const slides = [...document.querySelectorAll('.slide')];
+      const strip = document.getElementById('slides');
+      const bar = document.getElementById('bar');
+      const counter = document.getElementById('counter');
+      const prev = document.getElementById('prev');
+      const next = document.getElementById('next');
+      const viewport = document.getElementById('viewport');
+      let index = 0;
+      let touchX = null;
+
+      slides.forEach((slide, i) => {
+        const number = slide.querySelector('.slide-no');
+        if (number) number.textContent = String(i + 1).padStart(2, '0');
+      });
+
+      function render() {
+        slides.forEach((slide, i) => slide.classList.toggle('active', i === index));
+        strip.style.transform = `translateX(${-index * 100}vw)`;
+        counter.textContent = `${index + 1} / ${slides.length}`;
+        bar.style.width = `${((index + 1) / slides.length) * 100}%`;
+        prev.disabled = index === 0;
+        next.disabled = index === slides.length - 1;
+      }
+
+      function setSlide(nextIndex) {
+        index = Math.max(0, Math.min(slides.length - 1, nextIndex));
+        render();
+      }
+
+      prev.addEventListener('click', () => setSlide(index - 1));
+      next.addEventListener('click', () => setSlide(index + 1));
+      window.addEventListener('keydown', (event) => {
+        const forward = event.key === 'ArrowRight' || event.key === 'PageDown' || event.key === ' ';
+        const backward = event.key === 'ArrowLeft' || event.key === 'PageUp';
+        if (forward) {
+          event.preventDefault();
+          setSlide(index + 1);
+        }
+        if (backward) {
+          event.preventDefault();
+          setSlide(index - 1);
+        }
+        if (event.key === 'Home') setSlide(0);
+        if (event.key === 'End') setSlide(slides.length - 1);
+      });
+      viewport.addEventListener('touchstart', (event) => {
+        touchX = event.touches[0].clientX;
+      }, { passive: true });
+      viewport.addEventListener('touchend', (event) => {
+        if (touchX === null) return;
+        const delta = event.changedTouches[0].clientX - touchX;
+        if (Math.abs(delta) > 42) setSlide(index + (delta < 0 ? 1 : -1));
+        touchX = null;
+      }, { passive: true });
+      render();
+    })();
+  </script>
+</body>
+</html>

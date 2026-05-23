@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "1.0",
+  "slug": "building-effective-ai-agents-ep03-single-vs-multi-agent-coordination",
+  "status": "timed_audio_ready",
+  "ttsStatus": "complete",
+  "chunks": [
+    {
+      "id": "s01",
+      "text": "多智能体的重点不是多几个 Agent，而是任务真的需要多个专业视角一起协调。",
+      "actualDurationSeconds": 9.998,
+      "measuredSpeechSeconds": 9.648,
+      "audioFile": "chunks/s01.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep03-single-vs-multi-agent-coordination/audio/s01.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s02",
+      "text": "只有当单个 Agent 遇到明显限制，比如领域太宽、上下文太长、需要并行探索，才值得考虑 Multi-Agent。",
+      "actualDurationSeconds": 12.758,
+      "measuredSpeechSeconds": 12.408,
+      "audioFile": "chunks/s02.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep03-single-vs-multi-agent-coordination/audio/s02.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s03",
+      "text": "原文里的 hierarchical pattern 属于集中式多智能体协调。Supervisor 决定调用哪些子 Agent，适合需要控制和汇总的任务。",
+      "actualDurationSeconds": 13.91,
+      "measuredSpeechSeconds": 13.56,
+      "audioFile": "chunks/s03.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep03-single-vs-multi-agent-coordination/audio/s03.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s04",
+      "text": "Collaborative pattern 没有一个固定中心，多个专业 Agent 直接沟通、协商角色、共享上下文。灵活性更高，治理难度也更高。",
+      "actualDurationSeconds": 12.854,
+      "measuredSpeechSeconds": 12.504,
+      "audioFile": "chunks/s04.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep03-single-vs-multi-agent-coordination/audio/s04.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s05",
+      "text": "PDF 提醒，Multi-Agent 可能消耗单 Agent 大约 10 到 15 倍 Token。只有任务价值足够高，这个成本才合理。",
+      "actualDurationSeconds": 12.254,
+      "measuredSpeechSeconds": 11.904,
+      "audioFile": "chunks/s05.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep03-single-vs-multi-agent-coordination/audio/s05.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s06",
+      "text": "原文提到复杂任务中多智能体可能比单智能体高 90.2%，但前提是任务需要多个独立方向。简单问题不该触发昂贵协调。",
+      "actualDurationSeconds": 14.15,
+      "measuredSpeechSeconds": 13.8,
+      "audioFile": "chunks/s06.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep03-single-vs-multi-agent-coordination/audio/s06.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s07",
+      "text": "多智能体失败时，不只要看每个 Agent 做了什么，还要看它们怎么沟通、怎么交接、怎么综合结论。",
+      "actualDurationSeconds": 11.054,
+      "measuredSpeechSeconds": 10.704,
+      "audioFile": "chunks/s07.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep03-single-vs-multi-agent-coordination/audio/s07.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s08",
+      "text": "第三集的结论是：先证明 Single Agent 不够，再证明协调成本值得，最后才选 hierarchical 或 collaborative。",
+      "actualDurationSeconds": 12.158,
+      "measuredSpeechSeconds": 11.808,
+      "audioFile": "chunks/s08.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep03-single-vs-multi-agent-coordination/audio/s08.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    }
+  ],
+  "finalAudio": "remotion_sequence_audio",
+  "totalDurationSeconds": 99.136,
+  "asrTranscript": "asr.txt",
+  "asrStatus": "pass",
+  "asrReviewChunks": [],
+  "termQa": {
+    "terms": [
+      "Agent",
+      "Workflow",
+      "Single Agent",
+      "Multi-Agent",
+      "Agentic Workflows",
+      "Token"
+    ],
+    "note": "ASR may translate English terms into Chinese; final QA should be by listening."
+  }
+}

@@ -1,0 +1,3783 @@
+{
+  "phase_count": 8,
+  "timing_source": "beat_audio_manifest",
+  "renderer": "html-native-playwright",
+  "frames": [
+    {
+      "file": "frames/scene_01_00.png",
+      "beat": 1,
+      "phase": 1,
+      "caption": "别只看那一百万行代码",
+      "voice": "别只盯着那一百万行代码。",
+      "duration_hint": 0.27856736782262653
+    },
+    {
+      "file": "frames/scene_01_01.png",
+      "beat": 1,
+      "phase": 2,
+      "caption": "别只看那一百万行代码",
+      "voice": "别只盯着那一百万行代码。",
+      "duration_hint": 0.27856736782262653
+    },
+    {
+      "file": "frames/scene_01_02.png",
+      "beat": 1,
+      "phase": 3,
+      "caption": "别只看那一百万行代码",
+      "voice": "别只盯着那一百万行代码。",
+      "duration_hint": 0.3064241046048892
+    },
+    {
+      "file": "frames/scene_01_03.png",
+      "beat": 1,
+      "phase": 4,
+      "caption": "别只看那一百万行代码",
+      "voice": "别只盯着那一百万行代码。",
+      "duration_hint": 0.33428084138715186
+    },
+    {
+      "file": "frames/scene_01_04.png",
+      "beat": 1,
+      "phase": 5,
+      "caption": "别只看那一百万行代码",
+      "voice": "别只盯着那一百万行代码。",
+      "duration_hint": 0.33428084138715186
+    },
+    {
+      "file": "frames/scene_01_05.png",
+      "beat": 1,
+      "phase": 6,
+      "caption": "别只看那一百万行代码",
+      "voice": "别只盯着那一百万行代码。",
+      "duration_hint": 0.3621375781694145
+    },
+    {
+      "file": "frames/scene_01_06.png",
+      "beat": 1,
+      "phase": 7,
+      "caption": "别只看那一百万行代码",
+      "voice": "别只盯着那一百万行代码。",
+      "duration_hint": 0.3899943149516772
+    },
+    {
+      "file": "frames/scene_01_07.png",
+      "beat": 1,
+      "phase": 8,
+      "caption": "别只看那一百万行代码",
+      "voice": "别只盯着那一百万行代码。",
+      "duration_hint": 0.5014212620807278
+    },
+    {
+      "file": "frames/scene_02_00.png",
+      "beat": 2,
+      "phase": 1,
+      "caption": "关键：软件工程变成智能体生产环境",
+      "voice": "关键是，研发流程变成 Codex 能执行、能检查的环境。",
+      "duration_hint": 0.4626208072768619
+    },
+    {
+      "file": "frames/scene_02_01.png",
+      "beat": 2,
+      "phase": 2,
+      "caption": "关键：软件工程变成智能体生产环境",
+      "voice": "关键是，研发流程变成 Codex 能执行、能检查的环境。",
+      "duration_hint": 0.4626208072768619
+    },
+    {
+      "file": "frames/scene_02_02.png",
+      "beat": 2,
+      "phase": 3,
+      "caption": "关键：软件工程变成智能体生产环境",
+      "voice": "关键是，研发流程变成 Codex 能执行、能检查的环境。",
+      "duration_hint": 0.5088828880045481
+    },
+    {
+      "file": "frames/scene_02_03.png",
+      "beat": 2,
+      "phase": 4,
+      "caption": "关键：软件工程变成智能体生产环境",
+      "voice": "关键是，研发流程变成 Codex 能执行、能检查的环境。",
+      "duration_hint": 0.5551449687322342
+    },
+    {
+      "file": "frames/scene_02_04.png",
+      "beat": 2,
+      "phase": 5,
+      "caption": "关键：软件工程变成智能体生产环境",
+      "voice": "关键是，研发流程变成 Codex 能执行、能检查的环境。",
+      "duration_hint": 0.5551449687322342
+    },
+    {
+      "file": "frames/scene_02_05.png",
+      "beat": 2,
+      "phase": 6,
+      "caption": "关键：软件工程变成智能体生产环境",
+      "voice": "关键是，研发流程变成 Codex 能执行、能检查的环境。",
+      "duration_hint": 0.6014070494599205
+    },
+    {
+      "file": "frames/scene_02_06.png",
+      "beat": 2,
+      "phase": 7,
+      "caption": "关键：软件工程变成智能体生产环境",
+      "voice": "关键是，研发流程变成 Codex 能执行、能检查的环境。",
+      "duration_hint": 0.6476691301876067
+    },
+    {
+      "file": "frames/scene_02_07.png",
+      "beat": 2,
+      "phase": 8,
+      "caption": "关键：软件工程变成智能体生产环境",
+      "voice": "关键是，研发流程变成 Codex 能执行、能检查的环境。",
+      "duration_hint": 0.8327174530983513
+    },
+    {
+      "file": "frames/scene_03_00.png",
+      "beat": 3,
+      "phase": 1,
+      "caption": "Harness Engineering：可见、可控、可验证",
+      "voice": "这就是 Harness Engineering：让 AI 做事，也让结果可检查。",
+      "duration_hint": 0.5088118249005117
+    },
+    {
+      "file": "frames/scene_03_01.png",
+      "beat": 3,
+      "phase": 2,
+      "caption": "Harness Engineering：可见、可控、可验证",
+      "voice": "这就是 Harness Engineering：让 AI 做事，也让结果可检查。",
+      "duration_hint": 0.5088118249005117
+    },
+    {
+      "file": "frames/scene_03_02.png",
+      "beat": 3,
+      "phase": 3,
+      "caption": "Harness Engineering：可见、可控、可验证",
+      "voice": "这就是 Harness Engineering：让 AI 做事，也让结果可检查。",
+      "duration_hint": 0.5596930073905628
+    },
+    {
+      "file": "frames/scene_03_03.png",
+      "beat": 3,
+      "phase": 4,
+      "caption": "Harness Engineering：可见、可控、可验证",
+      "voice": "这就是 Harness Engineering：让 AI 做事，也让结果可检查。",
+      "duration_hint": 0.610574189880614
+    },
+    {
+      "file": "frames/scene_03_04.png",
+      "beat": 3,
+      "phase": 5,
+      "caption": "Harness Engineering：可见、可控、可验证",
+      "voice": "这就是 Harness Engineering：让 AI 做事，也让结果可检查。",
+      "duration_hint": 0.610574189880614
+    },
+    {
+      "file": "frames/scene_03_05.png",
+      "beat": 3,
+      "phase": 6,
+      "caption": "Harness Engineering：可见、可控、可验证",
+      "voice": "这就是 Harness Engineering：让 AI 做事，也让结果可检查。",
+      "duration_hint": 0.6614553723706652
+    },
+    {
+      "file": "frames/scene_03_06.png",
+      "beat": 3,
+      "phase": 7,
+      "caption": "Harness Engineering：可见、可控、可验证",
+      "voice": "这就是 Harness Engineering：让 AI 做事，也让结果可检查。",
+      "duration_hint": 0.7123365548607165
+    },
+    {
+      "file": "frames/scene_03_07.png",
+      "beat": 3,
+      "phase": 8,
+      "caption": "Harness Engineering：可见、可控、可验证",
+      "voice": "这就是 Harness Engineering：让 AI 做事，也让结果可检查。",
+      "duration_hint": 0.915861284820921
+    },
+    {
+      "file": "frames/scene_04_00.png",
+      "beat": 4,
+      "phase": 1,
+      "caption": "这不是 demo：从真实产品开始",
+      "voice": "它不是演示，而是从零开始的内部产品。",
+      "duration_hint": 0.3549866071428572
+    },
+    {
+      "file": "frames/scene_04_01.png",
+      "beat": 4,
+      "phase": 2,
+      "caption": "这不是 demo：从真实产品开始",
+      "voice": "它不是演示，而是从零开始的内部产品。",
+      "duration_hint": 0.3549866071428572
+    },
+    {
+      "file": "frames/scene_04_02.png",
+      "beat": 4,
+      "phase": 3,
+      "caption": "这不是 demo：从真实产品开始",
+      "voice": "它不是演示，而是从零开始的内部产品。",
+      "duration_hint": 0.3904852678571429
+    },
+    {
+      "file": "frames/scene_04_03.png",
+      "beat": 4,
+      "phase": 4,
+      "caption": "这不是 demo：从真实产品开始",
+      "voice": "它不是演示，而是从零开始的内部产品。",
+      "duration_hint": 0.4259839285714286
+    },
+    {
+      "file": "frames/scene_04_04.png",
+      "beat": 4,
+      "phase": 5,
+      "caption": "这不是 demo：从真实产品开始",
+      "voice": "它不是演示，而是从零开始的内部产品。",
+      "duration_hint": 0.4259839285714286
+    },
+    {
+      "file": "frames/scene_04_05.png",
+      "beat": 4,
+      "phase": 6,
+      "caption": "这不是 demo：从真实产品开始",
+      "voice": "它不是演示，而是从零开始的内部产品。",
+      "duration_hint": 0.46148258928571434
+    },
+    {
+      "file": "frames/scene_04_06.png",
+      "beat": 4,
+      "phase": 7,
+      "caption": "这不是 demo：从真实产品开始",
+      "voice": "它不是演示，而是从零开始的内部产品。",
+      "duration_hint": 0.4969812500000001
+    },
+    {
+      "file": "frames/scene_04_07.png",
+      "beat": 4,
+      "phase": 8,
+      "caption": "这不是 demo：从真实产品开始",
+      "voice": "它不是演示，而是从零开始的内部产品。",
+      "duration_hint": 0.6389758928571428
+    },
+    {
+      "file": "frames/scene_05_00.png",
+      "beat": 5,
+      "phase": 1,
+      "caption": "0 行人工手写代码",
+      "voice": "这些代码不是一行一行手写出来的。",
+      "duration_hint": 0.3197589285714286
+    },
+    {
+      "file": "frames/scene_05_01.png",
+      "beat": 5,
+      "phase": 2,
+      "caption": "0 行人工手写代码",
+      "voice": "这些代码不是一行一行手写出来的。",
+      "duration_hint": 0.3197589285714286
+    },
+    {
+      "file": "frames/scene_05_02.png",
+      "beat": 5,
+      "phase": 3,
+      "caption": "0 行人工手写代码",
+      "voice": "这些代码不是一行一行手写出来的。",
+      "duration_hint": 0.3517348214285715
+    },
+    {
+      "file": "frames/scene_05_03.png",
+      "beat": 5,
+      "phase": 4,
+      "caption": "0 行人工手写代码",
+      "voice": "这些代码不是一行一行手写出来的。",
+      "duration_hint": 0.38371071428571435
+    },
+    {
+      "file": "frames/scene_05_04.png",
+      "beat": 5,
+      "phase": 5,
+      "caption": "0 行人工手写代码",
+      "voice": "这些代码不是一行一行手写出来的。",
+      "duration_hint": 0.38371071428571435
+    },
+    {
+      "file": "frames/scene_05_05.png",
+      "beat": 5,
+      "phase": 6,
+      "caption": "0 行人工手写代码",
+      "voice": "这些代码不是一行一行手写出来的。",
+      "duration_hint": 0.4156866071428572
+    },
+    {
+      "file": "frames/scene_05_06.png",
+      "beat": 5,
+      "phase": 7,
+      "caption": "0 行人工手写代码",
+      "voice": "这些代码不是一行一行手写出来的。",
+      "duration_hint": 0.44766250000000013
+    },
+    {
+      "file": "frames/scene_05_07.png",
+      "beat": 5,
+      "phase": 8,
+      "caption": "0 行人工手写代码",
+      "voice": "这些代码不是一行一行手写出来的。",
+      "duration_hint": 0.5755660714285715
+    },
+    {
+      "file": "frames/scene_06_00.png",
+      "beat": 6,
+      "phase": 1,
+      "caption": "5 个月：约 1M 行代码，约 1,500 PR",
+      "voice": "项目做了五个月，产出大约一百万行代码，一千五百个代码合并请求。",
+      "duration_hint": 0.5392544642857143
+    },
+    {
+      "file": "frames/scene_06_01.png",
+      "beat": 6,
+      "phase": 2,
+      "caption": "5 个月：约 1M 行代码，约 1,500 PR",
+      "voice": "项目做了五个月，产出大约一百万行代码，一千五百个代码合并请求。",
+      "duration_hint": 0.5392544642857143
+    },
+    {
+      "file": "frames/scene_06_02.png",
+      "beat": 6,
+      "phase": 3,
+      "caption": "5 个月：约 1M 行代码，约 1,500 PR",
+      "voice": "项目做了五个月，产出大约一百万行代码，一千五百个代码合并请求。",
+      "duration_hint": 0.5931799107142857
+    },
+    {
+      "file": "frames/scene_06_03.png",
+      "beat": 6,
+      "phase": 4,
+      "caption": "5 个月：约 1M 行代码，约 1,500 PR",
+      "voice": "项目做了五个月，产出大约一百万行代码，一千五百个代码合并请求。",
+      "duration_hint": 0.6471053571428571
+    },
+    {
+      "file": "frames/scene_06_04.png",
+      "beat": 6,
+      "phase": 5,
+      "caption": "5 个月：约 1M 行代码，约 1,500 PR",
+      "voice": "项目做了五个月，产出大约一百万行代码，一千五百个代码合并请求。",
+      "duration_hint": 0.6471053571428571
+    },
+    {
+      "file": "frames/scene_06_05.png",
+      "beat": 6,
+      "phase": 6,
+      "caption": "5 个月：约 1M 行代码，约 1,500 PR",
+      "voice": "项目做了五个月，产出大约一百万行代码，一千五百个代码合并请求。",
+      "duration_hint": 0.7010308035714286
+    },
+    {
+      "file": "frames/scene_06_06.png",
+      "beat": 6,
+      "phase": 7,
+      "caption": "5 个月：约 1M 行代码，约 1,500 PR",
+      "voice": "项目做了五个月，产出大约一百万行代码，一千五百个代码合并请求。",
+      "duration_hint": 0.75495625
+    },
+    {
+      "file": "frames/scene_06_07.png",
+      "beat": 6,
+      "phase": 8,
+      "caption": "5 个月：约 1M 行代码，约 1,500 PR",
+      "voice": "项目做了五个月，产出大约一百万行代码，一千五百个代码合并请求。",
+      "duration_hint": 0.9706580357142857
+    },
+    {
+      "file": "frames/scene_07_00.png",
+      "beat": 7,
+      "phase": 1,
+      "caption": "OpenAI 估计：约 1/10 手写时间",
+      "voice": "OpenAI 说，速度大约是手写方式的十倍。",
+      "duration_hint": 0.39764738598442717
+    },
+    {
+      "file": "frames/scene_07_01.png",
+      "beat": 7,
+      "phase": 2,
+      "caption": "OpenAI 估计：约 1/10 手写时间",
+      "voice": "OpenAI 说，速度大约是手写方式的十倍。",
+      "duration_hint": 0.39764738598442717
+    },
+    {
+      "file": "frames/scene_07_02.png",
+      "beat": 7,
+      "phase": 3,
+      "caption": "OpenAI 估计：约 1/10 手写时间",
+      "voice": "OpenAI 说，速度大约是手写方式的十倍。",
+      "duration_hint": 0.4374121245828698
+    },
+    {
+      "file": "frames/scene_07_03.png",
+      "beat": 7,
+      "phase": 4,
+      "caption": "OpenAI 估计：约 1/10 手写时间",
+      "voice": "OpenAI 说，速度大约是手写方式的十倍。",
+      "duration_hint": 0.4771768631813125
+    },
+    {
+      "file": "frames/scene_07_04.png",
+      "beat": 7,
+      "phase": 5,
+      "caption": "OpenAI 估计：约 1/10 手写时间",
+      "voice": "OpenAI 说，速度大约是手写方式的十倍。",
+      "duration_hint": 0.4771768631813125
+    },
+    {
+      "file": "frames/scene_07_05.png",
+      "beat": 7,
+      "phase": 6,
+      "caption": "OpenAI 估计：约 1/10 手写时间",
+      "voice": "OpenAI 说，速度大约是手写方式的十倍。",
+      "duration_hint": 0.5169416017797552
+    },
+    {
+      "file": "frames/scene_07_06.png",
+      "beat": 7,
+      "phase": 7,
+      "caption": "OpenAI 估计：约 1/10 手写时间",
+      "voice": "OpenAI 说，速度大约是手写方式的十倍。",
+      "duration_hint": 0.556706340378198
+    },
+    {
+      "file": "frames/scene_07_07.png",
+      "beat": 7,
+      "phase": 8,
+      "caption": "OpenAI 估计：约 1/10 手写时间",
+      "voice": "OpenAI 说，速度大约是手写方式的十倍。",
+      "duration_hint": 0.7157652947719688
+    },
+    {
+      "file": "frames/scene_08_00.png",
+      "beat": 8,
+      "phase": 1,
+      "caption": "3 位工程师：每人每天 3.5 个 PR",
+      "voice": "最早只有三位工程师，平均每人每天三点五个代码合并请求。",
+      "duration_hint": 0.5281957730812014
+    },
+    {
+      "file": "frames/scene_08_01.png",
+      "beat": 8,
+      "phase": 2,
+      "caption": "3 位工程师：每人每天 3.5 个 PR",
+      "voice": "最早只有三位工程师，平均每人每天三点五个代码合并请求。",
+      "duration_hint": 0.5281957730812014
+    },
+    {
+      "file": "frames/scene_08_02.png",
+      "beat": 8,
+      "phase": 3,
+      "caption": "3 位工程师：每人每天 3.5 个 PR",
+      "voice": "最早只有三位工程师，平均每人每天三点五个代码合并请求。",
+      "duration_hint": 0.5810153503893215
+    },
+    {
+      "file": "frames/scene_08_03.png",
+      "beat": 8,
+      "phase": 4,
+      "caption": "3 位工程师：每人每天 3.5 个 PR",
+      "voice": "最早只有三位工程师，平均每人每天三点五个代码合并请求。",
+      "duration_hint": 0.6338349276974417
+    },
+    {
+      "file": "frames/scene_08_04.png",
+      "beat": 8,
+      "phase": 5,
+      "caption": "3 位工程师：每人每天 3.5 个 PR",
+      "voice": "最早只有三位工程师，平均每人每天三点五个代码合并请求。",
+      "duration_hint": 0.6338349276974417
+    },
+    {
+      "file": "frames/scene_08_05.png",
+      "beat": 8,
+      "phase": 6,
+      "caption": "3 位工程师：每人每天 3.5 个 PR",
+      "voice": "最早只有三位工程师，平均每人每天三点五个代码合并请求。",
+      "duration_hint": 0.6866545050055618
+    },
+    {
+      "file": "frames/scene_08_06.png",
+      "beat": 8,
+      "phase": 7,
+      "caption": "3 位工程师：每人每天 3.5 个 PR",
+      "voice": "最早只有三位工程师，平均每人每天三点五个代码合并请求。",
+      "duration_hint": 0.7394740823136821
+    },
+    {
+      "file": "frames/scene_08_07.png",
+      "beat": 8,
+      "phase": 8,
+      "caption": "3 位工程师：每人每天 3.5 个 PR",
+      "voice": "最早只有三位工程师，平均每人每天三点五个代码合并请求。",
+      "duration_hint": 0.9507523915461624
+    },
+    {
+      "file": "frames/scene_09_00.png",
+      "beat": 9,
+      "phase": 1,
+      "caption": "7 位工程师后吞吐继续上升，还有真实用户",
+      "voice": "后来团队变成七个人，使用的人也越来越多。",
+      "duration_hint": 0.42315684093437167
+    },
+    {
+      "file": "frames/scene_09_01.png",
+      "beat": 9,
+      "phase": 2,
+      "caption": "7 位工程师后吞吐继续上升，还有真实用户",
+      "voice": "后来团队变成七个人，使用的人也越来越多。",
+      "duration_hint": 0.42315684093437167
+    },
+    {
+      "file": "frames/scene_09_02.png",
+      "beat": 9,
+      "phase": 3,
+      "caption": "7 位工程师后吞吐继续上升，还有真实用户",
+      "voice": "后来团队变成七个人，使用的人也越来越多。",
+      "duration_hint": 0.46547252502780884
+    },
+    {
+      "file": "frames/scene_09_03.png",
+      "beat": 9,
+      "phase": 4,
+      "caption": "7 位工程师后吞吐继续上升，还有真实用户",
+      "voice": "后来团队变成七个人，使用的人也越来越多。",
+      "duration_hint": 0.507788209121246
+    },
+    {
+      "file": "frames/scene_09_04.png",
+      "beat": 9,
+      "phase": 5,
+      "caption": "7 位工程师后吞吐继续上升，还有真实用户",
+      "voice": "后来团队变成七个人，使用的人也越来越多。",
+      "duration_hint": 0.507788209121246
+    },
+    {
+      "file": "frames/scene_09_05.png",
+      "beat": 9,
+      "phase": 6,
+      "caption": "7 位工程师后吞吐继续上升，还有真实用户",
+      "voice": "后来团队变成七个人，使用的人也越来越多。",
+      "duration_hint": 0.5501038932146831
+    },
+    {
+      "file": "frames/scene_09_06.png",
+      "beat": 9,
+      "phase": 7,
+      "caption": "7 位工程师后吞吐继续上升，还有真实用户",
+      "voice": "后来团队变成七个人，使用的人也越来越多。",
+      "duration_hint": 0.5924195773081203
+    },
+    {
+      "file": "frames/scene_09_07.png",
+      "beat": 9,
+      "phase": 8,
+      "caption": "7 位工程师后吞吐继续上升，还有真实用户",
+      "voice": "后来团队变成七个人，使用的人也越来越多。",
+      "duration_hint": 0.7616823136818689
+    },
+    {
+      "file": "frames/scene_10_00.png",
+      "beat": 10,
+      "phase": 1,
+      "caption": "关键不是代码量，而是角色变了",
+      "voice": "重点不是代码更多，而是分工变了。",
+      "duration_hint": 0.37672958642629906
+    },
+    {
+      "file": "frames/scene_10_01.png",
+      "beat": 10,
+      "phase": 2,
+      "caption": "关键不是代码量，而是角色变了",
+      "voice": "重点不是代码更多，而是分工变了。",
+      "duration_hint": 0.37672958642629906
+    },
+    {
+      "file": "frames/scene_10_02.png",
+      "beat": 10,
+      "phase": 3,
+      "caption": "关键不是代码量，而是角色变了",
+      "voice": "重点不是代码更多，而是分工变了。",
+      "duration_hint": 0.41440254506892893
+    },
+    {
+      "file": "frames/scene_10_03.png",
+      "beat": 10,
+      "phase": 4,
+      "caption": "关键不是代码量，而是角色变了",
+      "voice": "重点不是代码更多，而是分工变了。",
+      "duration_hint": 0.4520755037115588
+    },
+    {
+      "file": "frames/scene_10_04.png",
+      "beat": 10,
+      "phase": 5,
+      "caption": "关键不是代码量，而是角色变了",
+      "voice": "重点不是代码更多，而是分工变了。",
+      "duration_hint": 0.4520755037115588
+    },
+    {
+      "file": "frames/scene_10_05.png",
+      "beat": 10,
+      "phase": 6,
+      "caption": "关键不是代码量，而是角色变了",
+      "voice": "重点不是代码更多，而是分工变了。",
+      "duration_hint": 0.4897484623541888
+    },
+    {
+      "file": "frames/scene_10_06.png",
+      "beat": 10,
+      "phase": 7,
+      "caption": "关键不是代码量，而是角色变了",
+      "voice": "重点不是代码更多，而是分工变了。",
+      "duration_hint": 0.5274214209968187
+    },
+    {
+      "file": "frames/scene_10_07.png",
+      "beat": 10,
+      "phase": 8,
+      "caption": "关键不是代码量，而是角色变了",
+      "voice": "重点不是代码更多，而是分工变了。",
+      "duration_hint": 0.6781132555673383
+    },
+    {
+      "file": "frames/scene_11_00.png",
+      "beat": 11,
+      "phase": 1,
+      "caption": "人类掌舵，智能体执行",
+      "voice": "人类决定方向，Codex 负责执行。",
+      "duration_hint": 0.357270413573701
+    },
+    {
+      "file": "frames/scene_11_01.png",
+      "beat": 11,
+      "phase": 2,
+      "caption": "人类掌舵，智能体执行",
+      "voice": "人类决定方向，Codex 负责执行。",
+      "duration_hint": 0.357270413573701
+    },
+    {
+      "file": "frames/scene_11_02.png",
+      "beat": 11,
+      "phase": 3,
+      "caption": "人类掌舵，智能体执行",
+      "voice": "人类决定方向，Codex 负责执行。",
+      "duration_hint": 0.392997454931071
+    },
+    {
+      "file": "frames/scene_11_03.png",
+      "beat": 11,
+      "phase": 4,
+      "caption": "人类掌舵，智能体执行",
+      "voice": "人类决定方向，Codex 负责执行。",
+      "duration_hint": 0.4287244962884411
+    },
+    {
+      "file": "frames/scene_11_04.png",
+      "beat": 11,
+      "phase": 5,
+      "caption": "人类掌舵，智能体执行",
+      "voice": "人类决定方向，Codex 负责执行。",
+      "duration_hint": 0.4287244962884411
+    },
+    {
+      "file": "frames/scene_11_05.png",
+      "beat": 11,
+      "phase": 6,
+      "caption": "人类掌舵，智能体执行",
+      "voice": "人类决定方向，Codex 负责执行。",
+      "duration_hint": 0.46445153764581126
+    },
+    {
+      "file": "frames/scene_11_06.png",
+      "beat": 11,
+      "phase": 7,
+      "caption": "人类掌舵，智能体执行",
+      "voice": "人类决定方向，Codex 负责执行。",
+      "duration_hint": 0.5001785790031814
+    },
+    {
+      "file": "frames/scene_11_07.png",
+      "beat": 11,
+      "phase": 8,
+      "caption": "人类掌舵，智能体执行",
+      "voice": "人类决定方向，Codex 负责执行。",
+      "duration_hint": 0.6430867444326617
+    },
+    {
+      "file": "frames/scene_12_00.png",
+      "beat": 12,
+      "phase": 1,
+      "caption": "第一层：仓库先被智能体塑形",
+      "voice": "第一步，先让仓库适合 AI。",
+      "duration_hint": 0.3167199017199017
+    },
+    {
+      "file": "frames/scene_12_01.png",
+      "beat": 12,
+      "phase": 2,
+      "caption": "第一层：仓库先被智能体塑形",
+      "voice": "第一步，先让仓库适合 AI。",
+      "duration_hint": 0.3167199017199017
+    },
+    {
+      "file": "frames/scene_12_02.png",
+      "beat": 12,
+      "phase": 3,
+      "caption": "第一层：仓库先被智能体塑形",
+      "voice": "第一步，先让仓库适合 AI。",
+      "duration_hint": 0.34839189189189185
+    },
+    {
+      "file": "frames/scene_12_03.png",
+      "beat": 12,
+      "phase": 4,
+      "caption": "第一层：仓库先被智能体塑形",
+      "voice": "第一步，先让仓库适合 AI。",
+      "duration_hint": 0.38006388206388203
+    },
+    {
+      "file": "frames/scene_12_04.png",
+      "beat": 12,
+      "phase": 5,
+      "caption": "第一层：仓库先被智能体塑形",
+      "voice": "第一步，先让仓库适合 AI。",
+      "duration_hint": 0.38006388206388203
+    },
+    {
+      "file": "frames/scene_12_05.png",
+      "beat": 12,
+      "phase": 6,
+      "caption": "第一层：仓库先被智能体塑形",
+      "voice": "第一步，先让仓库适合 AI。",
+      "duration_hint": 0.4117358722358722
+    },
+    {
+      "file": "frames/scene_12_06.png",
+      "beat": 12,
+      "phase": 7,
+      "caption": "第一层：仓库先被智能体塑形",
+      "voice": "第一步，先让仓库适合 AI。",
+      "duration_hint": 0.4434078624078624
+    },
+    {
+      "file": "frames/scene_12_07.png",
+      "beat": 12,
+      "phase": 8,
+      "caption": "第一层：仓库先被智能体塑形",
+      "voice": "第一步，先让仓库适合 AI。",
+      "duration_hint": 0.5700958230958231
+    },
+    {
+      "file": "frames/scene_13_00.png",
+      "beat": 13,
+      "phase": 1,
+      "caption": "Codex CLI + GPT-5 生成初始 scaffold",
+      "voice": "最开始的脚手架，是 Codex 和 GPT-5 生成的。",
+      "duration_hint": 0.4321744471744471
+    },
+    {
+      "file": "frames/scene_13_01.png",
+      "beat": 13,
+      "phase": 2,
+      "caption": "Codex CLI + GPT-5 生成初始 scaffold",
+      "voice": "最开始的脚手架，是 Codex 和 GPT-5 生成的。",
+      "duration_hint": 0.4321744471744471
+    },
+    {
+      "file": "frames/scene_13_02.png",
+      "beat": 13,
+      "phase": 3,
+      "caption": "Codex CLI + GPT-5 生成初始 scaffold",
+      "voice": "最开始的脚手架，是 Codex 和 GPT-5 生成的。",
+      "duration_hint": 0.4753918918918918
+    },
+    {
+      "file": "frames/scene_13_03.png",
+      "beat": 13,
+      "phase": 4,
+      "caption": "Codex CLI + GPT-5 生成初始 scaffold",
+      "voice": "最开始的脚手架，是 Codex 和 GPT-5 生成的。",
+      "duration_hint": 0.5186093366093365
+    },
+    {
+      "file": "frames/scene_13_04.png",
+      "beat": 13,
+      "phase": 5,
+      "caption": "Codex CLI + GPT-5 生成初始 scaffold",
+      "voice": "最开始的脚手架，是 Codex 和 GPT-5 生成的。",
+      "duration_hint": 0.5186093366093365
+    },
+    {
+      "file": "frames/scene_13_05.png",
+      "beat": 13,
+      "phase": 6,
+      "caption": "Codex CLI + GPT-5 生成初始 scaffold",
+      "voice": "最开始的脚手架，是 Codex 和 GPT-5 生成的。",
+      "duration_hint": 0.5618267813267812
+    },
+    {
+      "file": "frames/scene_13_06.png",
+      "beat": 13,
+      "phase": 7,
+      "caption": "Codex CLI + GPT-5 生成初始 scaffold",
+      "voice": "最开始的脚手架，是 Codex 和 GPT-5 生成的。",
+      "duration_hint": 0.605044226044226
+    },
+    {
+      "file": "frames/scene_13_07.png",
+      "beat": 13,
+      "phase": 8,
+      "caption": "Codex CLI + GPT-5 生成初始 scaffold",
+      "voice": "最开始的脚手架，是 Codex 和 GPT-5 生成的。",
+      "duration_hint": 0.7779140049140048
+    },
+    {
+      "file": "frames/scene_14_00.png",
+      "beat": 14,
+      "phase": 1,
+      "caption": "结构、CI、格式化、包管理、应用框架",
+      "voice": "目录结构、持续集成、格式化和包管理，先一起搭好。",
+      "duration_hint": 0.5211056511056512
+    },
+    {
+      "file": "frames/scene_14_01.png",
+      "beat": 14,
+      "phase": 2,
+      "caption": "结构、CI、格式化、包管理、应用框架",
+      "voice": "目录结构、持续集成、格式化和包管理，先一起搭好。",
+      "duration_hint": 0.5211056511056512
+    },
+    {
+      "file": "frames/scene_14_02.png",
+      "beat": 14,
+      "phase": 3,
+      "caption": "结构、CI、格式化、包管理、应用框架",
+      "voice": "目录结构、持续集成、格式化和包管理，先一起搭好。",
+      "duration_hint": 0.5732162162162163
+    },
+    {
+      "file": "frames/scene_14_03.png",
+      "beat": 14,
+      "phase": 4,
+      "caption": "结构、CI、格式化、包管理、应用框架",
+      "voice": "目录结构、持续集成、格式化和包管理，先一起搭好。",
+      "duration_hint": 0.6253267813267814
+    },
+    {
+      "file": "frames/scene_14_04.png",
+      "beat": 14,
+      "phase": 5,
+      "caption": "结构、CI、格式化、包管理、应用框架",
+      "voice": "目录结构、持续集成、格式化和包管理，先一起搭好。",
+      "duration_hint": 0.6253267813267814
+    },
+    {
+      "file": "frames/scene_14_05.png",
+      "beat": 14,
+      "phase": 6,
+      "caption": "结构、CI、格式化、包管理、应用框架",
+      "voice": "目录结构、持续集成、格式化和包管理，先一起搭好。",
+      "duration_hint": 0.6774373464373465
+    },
+    {
+      "file": "frames/scene_14_06.png",
+      "beat": 14,
+      "phase": 7,
+      "caption": "结构、CI、格式化、包管理、应用框架",
+      "voice": "目录结构、持续集成、格式化和包管理，先一起搭好。",
+      "duration_hint": 0.7295479115479118
+    },
+    {
+      "file": "frames/scene_14_07.png",
+      "beat": 14,
+      "phase": 8,
+      "caption": "结构、CI、格式化、包管理、应用框架",
+      "voice": "目录结构、持续集成、格式化和包管理，先一起搭好。",
+      "duration_hint": 0.9379901719901721
+    },
+    {
+      "file": "frames/scene_15_00.png",
+      "beat": 15,
+      "phase": 1,
+      "caption": "甚至 AGENTS.md 也由 Codex 写",
+      "voice": "AGENTS.md 这种说明文件，也由 Codex 写。",
+      "duration_hint": 0.439
+    },
+    {
+      "file": "frames/scene_15_01.png",
+      "beat": 15,
+      "phase": 2,
+      "caption": "甚至 AGENTS.md 也由 Codex 写",
+      "voice": "AGENTS.md 这种说明文件，也由 Codex 写。",
+      "duration_hint": 0.439
+    },
+    {
+      "file": "frames/scene_15_02.png",
+      "beat": 15,
+      "phase": 3,
+      "caption": "甚至 AGENTS.md 也由 Codex 写",
+      "voice": "AGENTS.md 这种说明文件，也由 Codex 写。",
+      "duration_hint": 0.48289999999999994
+    },
+    {
+      "file": "frames/scene_15_03.png",
+      "beat": 15,
+      "phase": 4,
+      "caption": "甚至 AGENTS.md 也由 Codex 写",
+      "voice": "AGENTS.md 这种说明文件，也由 Codex 写。",
+      "duration_hint": 0.5267999999999999
+    },
+    {
+      "file": "frames/scene_15_04.png",
+      "beat": 15,
+      "phase": 5,
+      "caption": "甚至 AGENTS.md 也由 Codex 写",
+      "voice": "AGENTS.md 这种说明文件，也由 Codex 写。",
+      "duration_hint": 0.5267999999999999
+    },
+    {
+      "file": "frames/scene_15_05.png",
+      "beat": 15,
+      "phase": 6,
+      "caption": "甚至 AGENTS.md 也由 Codex 写",
+      "voice": "AGENTS.md 这种说明文件，也由 Codex 写。",
+      "duration_hint": 0.5707
+    },
+    {
+      "file": "frames/scene_15_06.png",
+      "beat": 15,
+      "phase": 7,
+      "caption": "甚至 AGENTS.md 也由 Codex 写",
+      "voice": "AGENTS.md 这种说明文件，也由 Codex 写。",
+      "duration_hint": 0.6146
+    },
+    {
+      "file": "frames/scene_15_07.png",
+      "beat": 15,
+      "phase": 8,
+      "caption": "甚至 AGENTS.md 也由 Codex 写",
+      "voice": "AGENTS.md 这种说明文件，也由 Codex 写。",
+      "duration_hint": 0.7901999999999999
+    },
+    {
+      "file": "frames/scene_16_00.png",
+      "beat": 16,
+      "phase": 1,
+      "caption": "第二层：让应用对智能体可见",
+      "voice": "第二步，让应用对 AI 可见。",
+      "duration_hint": 0.27075792312879304
+    },
+    {
+      "file": "frames/scene_16_01.png",
+      "beat": 16,
+      "phase": 2,
+      "caption": "第二层：让应用对智能体可见",
+      "voice": "第二步，让应用对 AI 可见。",
+      "duration_hint": 0.27075792312879304
+    },
+    {
+      "file": "frames/scene_16_02.png",
+      "beat": 16,
+      "phase": 3,
+      "caption": "第二层：让应用对智能体可见",
+      "voice": "第二步，让应用对 AI 可见。",
+      "duration_hint": 0.2978337154416723
+    },
+    {
+      "file": "frames/scene_16_03.png",
+      "beat": 16,
+      "phase": 4,
+      "caption": "第二层：让应用对智能体可见",
+      "voice": "第二步，让应用对 AI 可见。",
+      "duration_hint": 0.3249095077545516
+    },
+    {
+      "file": "frames/scene_16_04.png",
+      "beat": 16,
+      "phase": 5,
+      "caption": "第二层：让应用对智能体可见",
+      "voice": "第二步，让应用对 AI 可见。",
+      "duration_hint": 0.3249095077545516
+    },
+    {
+      "file": "frames/scene_16_05.png",
+      "beat": 16,
+      "phase": 6,
+      "caption": "第二层：让应用对智能体可见",
+      "voice": "第二步，让应用对 AI 可见。",
+      "duration_hint": 0.35198530006743095
+    },
+    {
+      "file": "frames/scene_16_06.png",
+      "beat": 16,
+      "phase": 7,
+      "caption": "第二层：让应用对智能体可见",
+      "voice": "第二步，让应用对 AI 可见。",
+      "duration_hint": 0.37906109238031027
+    },
+    {
+      "file": "frames/scene_16_07.png",
+      "beat": 16,
+      "phase": 8,
+      "caption": "第二层：让应用对智能体可见",
+      "voice": "第二步，让应用对 AI 可见。",
+      "duration_hint": 0.4873642616318274
+    },
+    {
+      "file": "frames/scene_17_00.png",
+      "beat": 17,
+      "phase": 1,
+      "caption": "每个 git worktree 启动独立应用",
+      "voice": "每个独立工作区，都能跑一个应用。",
+      "duration_hint": 0.32277545515846257
+    },
+    {
+      "file": "frames/scene_17_01.png",
+      "beat": 17,
+      "phase": 2,
+      "caption": "每个 git worktree 启动独立应用",
+      "voice": "每个独立工作区，都能跑一个应用。",
+      "duration_hint": 0.32277545515846257
+    },
+    {
+      "file": "frames/scene_17_02.png",
+      "beat": 17,
+      "phase": 3,
+      "caption": "每个 git worktree 启动独立应用",
+      "voice": "每个独立工作区，都能跑一个应用。",
+      "duration_hint": 0.35505300067430884
+    },
+    {
+      "file": "frames/scene_17_03.png",
+      "beat": 17,
+      "phase": 4,
+      "caption": "每个 git worktree 启动独立应用",
+      "voice": "每个独立工作区，都能跑一个应用。",
+      "duration_hint": 0.38733054619015506
+    },
+    {
+      "file": "frames/scene_17_04.png",
+      "beat": 17,
+      "phase": 5,
+      "caption": "每个 git worktree 启动独立应用",
+      "voice": "每个独立工作区，都能跑一个应用。",
+      "duration_hint": 0.38733054619015506
+    },
+    {
+      "file": "frames/scene_17_05.png",
+      "beat": 17,
+      "phase": 6,
+      "caption": "每个 git worktree 启动独立应用",
+      "voice": "每个独立工作区，都能跑一个应用。",
+      "duration_hint": 0.41960809170600133
+    },
+    {
+      "file": "frames/scene_17_06.png",
+      "beat": 17,
+      "phase": 7,
+      "caption": "每个 git worktree 启动独立应用",
+      "voice": "每个独立工作区，都能跑一个应用。",
+      "duration_hint": 0.4518856372218476
+    },
+    {
+      "file": "frames/scene_17_07.png",
+      "beat": 17,
+      "phase": 8,
+      "caption": "每个 git worktree 启动独立应用",
+      "voice": "每个独立工作区，都能跑一个应用。",
+      "duration_hint": 0.5809958192852326
+    },
+    {
+      "file": "frames/scene_18_00.png",
+      "beat": 18,
+      "phase": 1,
+      "caption": "DevTools：截图、读页面、导航",
+      "voice": "接入 Chrome DevTools 之后，Codex 能看到页面。",
+      "duration_hint": 0.3954666217127445
+    },
+    {
+      "file": "frames/scene_18_01.png",
+      "beat": 18,
+      "phase": 2,
+      "caption": "DevTools：截图、读页面、导航",
+      "voice": "接入 Chrome DevTools 之后，Codex 能看到页面。",
+      "duration_hint": 0.3954666217127445
+    },
+    {
+      "file": "frames/scene_18_02.png",
+      "beat": 18,
+      "phase": 3,
+      "caption": "DevTools：截图、读页面、导航",
+      "voice": "接入 Chrome DevTools 之后，Codex 能看到页面。",
+      "duration_hint": 0.4350132838840189
+    },
+    {
+      "file": "frames/scene_18_03.png",
+      "beat": 18,
+      "phase": 4,
+      "caption": "DevTools：截图、读页面、导航",
+      "voice": "接入 Chrome DevTools 之后，Codex 能看到页面。",
+      "duration_hint": 0.47455994605529334
+    },
+    {
+      "file": "frames/scene_18_04.png",
+      "beat": 18,
+      "phase": 5,
+      "caption": "DevTools：截图、读页面、导航",
+      "voice": "接入 Chrome DevTools 之后，Codex 能看到页面。",
+      "duration_hint": 0.47455994605529334
+    },
+    {
+      "file": "frames/scene_18_05.png",
+      "beat": 18,
+      "phase": 6,
+      "caption": "DevTools：截图、读页面、导航",
+      "voice": "接入 Chrome DevTools 之后，Codex 能看到页面。",
+      "duration_hint": 0.5141066082265678
+    },
+    {
+      "file": "frames/scene_18_06.png",
+      "beat": 18,
+      "phase": 7,
+      "caption": "DevTools：截图、读页面、导航",
+      "voice": "接入 Chrome DevTools 之后，Codex 能看到页面。",
+      "duration_hint": 0.5536532703978423
+    },
+    {
+      "file": "frames/scene_18_07.png",
+      "beat": 18,
+      "phase": 8,
+      "caption": "DevTools：截图、读页面、导航",
+      "voice": "接入 Chrome DevTools 之后，Codex 能看到页面。",
+      "duration_hint": 0.71183991908294
+    },
+    {
+      "file": "frames/scene_19_00.png",
+      "beat": 19,
+      "phase": 1,
+      "caption": "复现问题，再验证修复",
+      "voice": "它能复现问题，也能验证修复。",
+      "duration_hint": 0.33682758620689657
+    },
+    {
+      "file": "frames/scene_19_01.png",
+      "beat": 19,
+      "phase": 2,
+      "caption": "复现问题，再验证修复",
+      "voice": "它能复现问题，也能验证修复。",
+      "duration_hint": 0.33682758620689657
+    },
+    {
+      "file": "frames/scene_19_02.png",
+      "beat": 19,
+      "phase": 3,
+      "caption": "复现问题，再验证修复",
+      "voice": "它能复现问题，也能验证修复。",
+      "duration_hint": 0.37051034482758616
+    },
+    {
+      "file": "frames/scene_19_03.png",
+      "beat": 19,
+      "phase": 4,
+      "caption": "复现问题，再验证修复",
+      "voice": "它能复现问题，也能验证修复。",
+      "duration_hint": 0.4041931034482758
+    },
+    {
+      "file": "frames/scene_19_04.png",
+      "beat": 19,
+      "phase": 5,
+      "caption": "复现问题，再验证修复",
+      "voice": "它能复现问题，也能验证修复。",
+      "duration_hint": 0.4041931034482758
+    },
+    {
+      "file": "frames/scene_19_05.png",
+      "beat": 19,
+      "phase": 6,
+      "caption": "复现问题，再验证修复",
+      "voice": "它能复现问题，也能验证修复。",
+      "duration_hint": 0.4378758620689655
+    },
+    {
+      "file": "frames/scene_19_06.png",
+      "beat": 19,
+      "phase": 7,
+      "caption": "复现问题，再验证修复",
+      "voice": "它能复现问题，也能验证修复。",
+      "duration_hint": 0.47155862068965515
+    },
+    {
+      "file": "frames/scene_19_07.png",
+      "beat": 19,
+      "phase": 8,
+      "caption": "复现问题，再验证修复",
+      "voice": "它能复现问题，也能验证修复。",
+      "duration_hint": 0.6062896551724137
+    },
+    {
+      "file": "frames/scene_20_00.png",
+      "beat": 20,
+      "phase": 1,
+      "caption": "界面变成智能体工作台",
+      "voice": "这时，界面就是 AI 的工作台。",
+      "duration_hint": 0.3231724137931034
+    },
+    {
+      "file": "frames/scene_20_01.png",
+      "beat": 20,
+      "phase": 2,
+      "caption": "界面变成智能体工作台",
+      "voice": "这时，界面就是 AI 的工作台。",
+      "duration_hint": 0.3231724137931034
+    },
+    {
+      "file": "frames/scene_20_02.png",
+      "beat": 20,
+      "phase": 3,
+      "caption": "界面变成智能体工作台",
+      "voice": "这时，界面就是 AI 的工作台。",
+      "duration_hint": 0.35548965517241377
+    },
+    {
+      "file": "frames/scene_20_03.png",
+      "beat": 20,
+      "phase": 4,
+      "caption": "界面变成智能体工作台",
+      "voice": "这时，界面就是 AI 的工作台。",
+      "duration_hint": 0.38780689655172407
+    },
+    {
+      "file": "frames/scene_20_04.png",
+      "beat": 20,
+      "phase": 5,
+      "caption": "界面变成智能体工作台",
+      "voice": "这时，界面就是 AI 的工作台。",
+      "duration_hint": 0.38780689655172407
+    },
+    {
+      "file": "frames/scene_20_05.png",
+      "beat": 20,
+      "phase": 6,
+      "caption": "界面变成智能体工作台",
+      "voice": "这时，界面就是 AI 的工作台。",
+      "duration_hint": 0.4201241379310344
+    },
+    {
+      "file": "frames/scene_20_06.png",
+      "beat": 20,
+      "phase": 7,
+      "caption": "界面变成智能体工作台",
+      "voice": "这时，界面就是 AI 的工作台。",
+      "duration_hint": 0.4524413793103448
+    },
+    {
+      "file": "frames/scene_20_07.png",
+      "beat": 20,
+      "phase": 8,
+      "caption": "界面变成智能体工作台",
+      "voice": "这时，界面就是 AI 的工作台。",
+      "duration_hint": 0.5817103448275861
+    },
+    {
+      "file": "frames/scene_21_00.png",
+      "beat": 21,
+      "phase": 1,
+      "caption": "第三层：让运行信号可见",
+      "voice": "第三步，让运行状态可见。",
+      "duration_hint": 0.2511126373626374
+    },
+    {
+      "file": "frames/scene_21_01.png",
+      "beat": 21,
+      "phase": 2,
+      "caption": "第三层：让运行信号可见",
+      "voice": "第三步，让运行状态可见。",
+      "duration_hint": 0.2511126373626374
+    },
+    {
+      "file": "frames/scene_21_02.png",
+      "beat": 21,
+      "phase": 3,
+      "caption": "第三层：让运行信号可见",
+      "voice": "第三步，让运行状态可见。",
+      "duration_hint": 0.2762239010989011
+    },
+    {
+      "file": "frames/scene_21_03.png",
+      "beat": 21,
+      "phase": 4,
+      "caption": "第三层：让运行信号可见",
+      "voice": "第三步，让运行状态可见。",
+      "duration_hint": 0.30133516483516487
+    },
+    {
+      "file": "frames/scene_21_04.png",
+      "beat": 21,
+      "phase": 5,
+      "caption": "第三层：让运行信号可见",
+      "voice": "第三步，让运行状态可见。",
+      "duration_hint": 0.30133516483516487
+    },
+    {
+      "file": "frames/scene_21_05.png",
+      "beat": 21,
+      "phase": 6,
+      "caption": "第三层：让运行信号可见",
+      "voice": "第三步，让运行状态可见。",
+      "duration_hint": 0.3264464285714286
+    },
+    {
+      "file": "frames/scene_21_06.png",
+      "beat": 21,
+      "phase": 7,
+      "caption": "第三层：让运行信号可见",
+      "voice": "第三步，让运行状态可见。",
+      "duration_hint": 0.35155769230769235
+    },
+    {
+      "file": "frames/scene_21_07.png",
+      "beat": 21,
+      "phase": 8,
+      "caption": "第三层：让运行信号可见",
+      "voice": "第三步，让运行状态可见。",
+      "duration_hint": 0.45200274725274725
+    },
+    {
+      "file": "frames/scene_22_00.png",
+      "beat": 22,
+      "phase": 1,
+      "caption": "每个 worktree 有临时本地观测栈",
+      "voice": "每个独立工作区，都有临时观测系统。",
+      "duration_hint": 0.3132692307692308
+    },
+    {
+      "file": "frames/scene_22_01.png",
+      "beat": 22,
+      "phase": 2,
+      "caption": "每个 worktree 有临时本地观测栈",
+      "voice": "每个独立工作区，都有临时观测系统。",
+      "duration_hint": 0.3132692307692308
+    },
+    {
+      "file": "frames/scene_22_02.png",
+      "beat": 22,
+      "phase": 3,
+      "caption": "每个 worktree 有临时本地观测栈",
+      "voice": "每个独立工作区，都有临时观测系统。",
+      "duration_hint": 0.34459615384615383
+    },
+    {
+      "file": "frames/scene_22_03.png",
+      "beat": 22,
+      "phase": 4,
+      "caption": "每个 worktree 有临时本地观测栈",
+      "voice": "每个独立工作区，都有临时观测系统。",
+      "duration_hint": 0.3759230769230769
+    },
+    {
+      "file": "frames/scene_22_04.png",
+      "beat": 22,
+      "phase": 5,
+      "caption": "每个 worktree 有临时本地观测栈",
+      "voice": "每个独立工作区，都有临时观测系统。",
+      "duration_hint": 0.3759230769230769
+    },
+    {
+      "file": "frames/scene_22_05.png",
+      "beat": 22,
+      "phase": 6,
+      "caption": "每个 worktree 有临时本地观测栈",
+      "voice": "每个独立工作区，都有临时观测系统。",
+      "duration_hint": 0.40725
+    },
+    {
+      "file": "frames/scene_22_06.png",
+      "beat": 22,
+      "phase": 7,
+      "caption": "每个 worktree 有临时本地观测栈",
+      "voice": "每个独立工作区，都有临时观测系统。",
+      "duration_hint": 0.43857692307692314
+    },
+    {
+      "file": "frames/scene_22_07.png",
+      "beat": 22,
+      "phase": 8,
+      "caption": "每个 worktree 有临时本地观测栈",
+      "voice": "每个独立工作区，都有临时观测系统。",
+      "duration_hint": 0.5638846153846153
+    },
+    {
+      "file": "frames/scene_23_00.png",
+      "beat": 23,
+      "phase": 1,
+      "caption": "Vector 汇入日志、指标、链路追踪",
+      "voice": "日志、指标、链路追踪，都会进入系统。",
+      "duration_hint": 0.3406181318681319
+    },
+    {
+      "file": "frames/scene_23_01.png",
+      "beat": 23,
+      "phase": 2,
+      "caption": "Vector 汇入日志、指标、链路追踪",
+      "voice": "日志、指标、链路追踪，都会进入系统。",
+      "duration_hint": 0.3406181318681319
+    },
+    {
+      "file": "frames/scene_23_02.png",
+      "beat": 23,
+      "phase": 3,
+      "caption": "Vector 汇入日志、指标、链路追踪",
+      "voice": "日志、指标、链路追踪，都会进入系统。",
+      "duration_hint": 0.37467994505494506
+    },
+    {
+      "file": "frames/scene_23_03.png",
+      "beat": 23,
+      "phase": 4,
+      "caption": "Vector 汇入日志、指标、链路追踪",
+      "voice": "日志、指标、链路追踪，都会进入系统。",
+      "duration_hint": 0.40874175824175824
+    },
+    {
+      "file": "frames/scene_23_04.png",
+      "beat": 23,
+      "phase": 5,
+      "caption": "Vector 汇入日志、指标、链路追踪",
+      "voice": "日志、指标、链路追踪，都会进入系统。",
+      "duration_hint": 0.40874175824175824
+    },
+    {
+      "file": "frames/scene_23_05.png",
+      "beat": 23,
+      "phase": 6,
+      "caption": "Vector 汇入日志、指标、链路追踪",
+      "voice": "日志、指标、链路追踪，都会进入系统。",
+      "duration_hint": 0.44280357142857146
+    },
+    {
+      "file": "frames/scene_23_06.png",
+      "beat": 23,
+      "phase": 7,
+      "caption": "Vector 汇入日志、指标、链路追踪",
+      "voice": "日志、指标、链路追踪，都会进入系统。",
+      "duration_hint": 0.4768653846153847
+    },
+    {
+      "file": "frames/scene_23_07.png",
+      "beat": 23,
+      "phase": 8,
+      "caption": "Vector 汇入日志、指标、链路追踪",
+      "voice": "日志、指标、链路追踪，都会进入系统。",
+      "duration_hint": 0.6131126373626373
+    },
+    {
+      "file": "frames/scene_24_00.png",
+      "beat": 24,
+      "phase": 1,
+      "caption": "Codex 用 LogQL、PromQL、TraceQL 查询",
+      "voice": "Codex 可以自己查询这些信号。",
+      "duration_hint": 0.3014117647058824
+    },
+    {
+      "file": "frames/scene_24_01.png",
+      "beat": 24,
+      "phase": 2,
+      "caption": "Codex 用 LogQL、PromQL、TraceQL 查询",
+      "voice": "Codex 可以自己查询这些信号。",
+      "duration_hint": 0.3014117647058824
+    },
+    {
+      "file": "frames/scene_24_02.png",
+      "beat": 24,
+      "phase": 3,
+      "caption": "Codex 用 LogQL、PromQL、TraceQL 查询",
+      "voice": "Codex 可以自己查询这些信号。",
+      "duration_hint": 0.3315529411764706
+    },
+    {
+      "file": "frames/scene_24_03.png",
+      "beat": 24,
+      "phase": 4,
+      "caption": "Codex 用 LogQL、PromQL、TraceQL 查询",
+      "voice": "Codex 可以自己查询这些信号。",
+      "duration_hint": 0.36169411764705883
+    },
+    {
+      "file": "frames/scene_24_04.png",
+      "beat": 24,
+      "phase": 5,
+      "caption": "Codex 用 LogQL、PromQL、TraceQL 查询",
+      "voice": "Codex 可以自己查询这些信号。",
+      "duration_hint": 0.36169411764705883
+    },
+    {
+      "file": "frames/scene_24_05.png",
+      "beat": 24,
+      "phase": 6,
+      "caption": "Codex 用 LogQL、PromQL、TraceQL 查询",
+      "voice": "Codex 可以自己查询这些信号。",
+      "duration_hint": 0.39183529411764706
+    },
+    {
+      "file": "frames/scene_24_06.png",
+      "beat": 24,
+      "phase": 7,
+      "caption": "Codex 用 LogQL、PromQL、TraceQL 查询",
+      "voice": "Codex 可以自己查询这些信号。",
+      "duration_hint": 0.42197647058823534
+    },
+    {
+      "file": "frames/scene_24_07.png",
+      "beat": 24,
+      "phase": 8,
+      "caption": "Codex 用 LogQL、PromQL、TraceQL 查询",
+      "voice": "Codex 可以自己查询这些信号。",
+      "duration_hint": 0.5425411764705882
+    },
+    {
+      "file": "frames/scene_25_00.png",
+      "beat": 25,
+      "phase": 1,
+      "caption": "性能目标变成可执行任务",
+      "voice": "启动时间、慢链路，都能变成任务。",
+      "duration_hint": 0.35011764705882353
+    },
+    {
+      "file": "frames/scene_25_01.png",
+      "beat": 25,
+      "phase": 2,
+      "caption": "性能目标变成可执行任务",
+      "voice": "启动时间、慢链路，都能变成任务。",
+      "duration_hint": 0.35011764705882353
+    },
+    {
+      "file": "frames/scene_25_02.png",
+      "beat": 25,
+      "phase": 3,
+      "caption": "性能目标变成可执行任务",
+      "voice": "启动时间、慢链路，都能变成任务。",
+      "duration_hint": 0.3851294117647059
+    },
+    {
+      "file": "frames/scene_25_03.png",
+      "beat": 25,
+      "phase": 4,
+      "caption": "性能目标变成可执行任务",
+      "voice": "启动时间、慢链路，都能变成任务。",
+      "duration_hint": 0.4201411764705882
+    },
+    {
+      "file": "frames/scene_25_04.png",
+      "beat": 25,
+      "phase": 5,
+      "caption": "性能目标变成可执行任务",
+      "voice": "启动时间、慢链路，都能变成任务。",
+      "duration_hint": 0.4201411764705882
+    },
+    {
+      "file": "frames/scene_25_05.png",
+      "beat": 25,
+      "phase": 6,
+      "caption": "性能目标变成可执行任务",
+      "voice": "启动时间、慢链路，都能变成任务。",
+      "duration_hint": 0.4551529411764706
+    },
+    {
+      "file": "frames/scene_25_06.png",
+      "beat": 25,
+      "phase": 7,
+      "caption": "性能目标变成可执行任务",
+      "voice": "启动时间、慢链路，都能变成任务。",
+      "duration_hint": 0.49016470588235295
+    },
+    {
+      "file": "frames/scene_25_07.png",
+      "beat": 25,
+      "phase": 8,
+      "caption": "性能目标变成可执行任务",
+      "voice": "启动时间、慢链路，都能变成任务。",
+      "duration_hint": 0.6302117647058822
+    },
+    {
+      "file": "frames/scene_26_00.png",
+      "beat": 26,
+      "phase": 1,
+      "caption": "有些 Codex 任务可连续工作 6 小时以上",
+      "voice": "有些任务，Codex 可以连续做六小时以上。",
+      "duration_hint": 0.3804705882352941
+    },
+    {
+      "file": "frames/scene_26_01.png",
+      "beat": 26,
+      "phase": 2,
+      "caption": "有些 Codex 任务可连续工作 6 小时以上",
+      "voice": "有些任务，Codex 可以连续做六小时以上。",
+      "duration_hint": 0.3804705882352941
+    },
+    {
+      "file": "frames/scene_26_02.png",
+      "beat": 26,
+      "phase": 3,
+      "caption": "有些 Codex 任务可连续工作 6 小时以上",
+      "voice": "有些任务，Codex 可以连续做六小时以上。",
+      "duration_hint": 0.41851764705882355
+    },
+    {
+      "file": "frames/scene_26_03.png",
+      "beat": 26,
+      "phase": 4,
+      "caption": "有些 Codex 任务可连续工作 6 小时以上",
+      "voice": "有些任务，Codex 可以连续做六小时以上。",
+      "duration_hint": 0.45656470588235293
+    },
+    {
+      "file": "frames/scene_26_04.png",
+      "beat": 26,
+      "phase": 5,
+      "caption": "有些 Codex 任务可连续工作 6 小时以上",
+      "voice": "有些任务，Codex 可以连续做六小时以上。",
+      "duration_hint": 0.45656470588235293
+    },
+    {
+      "file": "frames/scene_26_05.png",
+      "beat": 26,
+      "phase": 6,
+      "caption": "有些 Codex 任务可连续工作 6 小时以上",
+      "voice": "有些任务，Codex 可以连续做六小时以上。",
+      "duration_hint": 0.49461176470588236
+    },
+    {
+      "file": "frames/scene_26_06.png",
+      "beat": 26,
+      "phase": 7,
+      "caption": "有些 Codex 任务可连续工作 6 小时以上",
+      "voice": "有些任务，Codex 可以连续做六小时以上。",
+      "duration_hint": 0.5326588235294119
+    },
+    {
+      "file": "frames/scene_26_07.png",
+      "beat": 26,
+      "phase": 8,
+      "caption": "有些 Codex 任务可连续工作 6 小时以上",
+      "voice": "有些任务，Codex 可以连续做六小时以上。",
+      "duration_hint": 0.6848470588235294
+    },
+    {
+      "file": "frames/scene_27_00.png",
+      "beat": 27,
+      "phase": 1,
+      "caption": "第四层：把组织知识写进仓库",
+      "voice": "第四步，把组织知识放进仓库。",
+      "duration_hint": 0.3419462686567164
+    },
+    {
+      "file": "frames/scene_27_01.png",
+      "beat": 27,
+      "phase": 2,
+      "caption": "第四层：把组织知识写进仓库",
+      "voice": "第四步，把组织知识放进仓库。",
+      "duration_hint": 0.3419462686567164
+    },
+    {
+      "file": "frames/scene_27_02.png",
+      "beat": 27,
+      "phase": 3,
+      "caption": "第四层：把组织知识写进仓库",
+      "voice": "第四步，把组织知识放进仓库。",
+      "duration_hint": 0.376140895522388
+    },
+    {
+      "file": "frames/scene_27_03.png",
+      "beat": 27,
+      "phase": 4,
+      "caption": "第四层：把组织知识写进仓库",
+      "voice": "第四步，把组织知识放进仓库。",
+      "duration_hint": 0.41033552238805965
+    },
+    {
+      "file": "frames/scene_27_04.png",
+      "beat": 27,
+      "phase": 5,
+      "caption": "第四层：把组织知识写进仓库",
+      "voice": "第四步，把组织知识放进仓库。",
+      "duration_hint": 0.41033552238805965
+    },
+    {
+      "file": "frames/scene_27_05.png",
+      "beat": 27,
+      "phase": 6,
+      "caption": "第四层：把组织知识写进仓库",
+      "voice": "第四步，把组织知识放进仓库。",
+      "duration_hint": 0.4445301492537313
+    },
+    {
+      "file": "frames/scene_27_06.png",
+      "beat": 27,
+      "phase": 7,
+      "caption": "第四层：把组织知识写进仓库",
+      "voice": "第四步，把组织知识放进仓库。",
+      "duration_hint": 0.47872477611940295
+    },
+    {
+      "file": "frames/scene_27_07.png",
+      "beat": 27,
+      "phase": 8,
+      "caption": "第四层：把组织知识写进仓库",
+      "voice": "第四步，把组织知识放进仓库。",
+      "duration_hint": 0.6155032835820895
+    },
+    {
+      "file": "frames/scene_28_00.png",
+      "beat": 28,
+      "phase": 1,
+      "caption": "巨大的 AGENTS.md 会浪费上下文",
+      "voice": "说明文件太大，会浪费上下文。",
+      "duration_hint": 0.3419462686567164
+    },
+    {
+      "file": "frames/scene_28_01.png",
+      "beat": 28,
+      "phase": 2,
+      "caption": "巨大的 AGENTS.md 会浪费上下文",
+      "voice": "说明文件太大，会浪费上下文。",
+      "duration_hint": 0.3419462686567164
+    },
+    {
+      "file": "frames/scene_28_02.png",
+      "beat": 28,
+      "phase": 3,
+      "caption": "巨大的 AGENTS.md 会浪费上下文",
+      "voice": "说明文件太大，会浪费上下文。",
+      "duration_hint": 0.376140895522388
+    },
+    {
+      "file": "frames/scene_28_03.png",
+      "beat": 28,
+      "phase": 4,
+      "caption": "巨大的 AGENTS.md 会浪费上下文",
+      "voice": "说明文件太大，会浪费上下文。",
+      "duration_hint": 0.41033552238805965
+    },
+    {
+      "file": "frames/scene_28_04.png",
+      "beat": 28,
+      "phase": 5,
+      "caption": "巨大的 AGENTS.md 会浪费上下文",
+      "voice": "说明文件太大，会浪费上下文。",
+      "duration_hint": 0.41033552238805965
+    },
+    {
+      "file": "frames/scene_28_05.png",
+      "beat": 28,
+      "phase": 6,
+      "caption": "巨大的 AGENTS.md 会浪费上下文",
+      "voice": "说明文件太大，会浪费上下文。",
+      "duration_hint": 0.4445301492537313
+    },
+    {
+      "file": "frames/scene_28_06.png",
+      "beat": 28,
+      "phase": 7,
+      "caption": "巨大的 AGENTS.md 会浪费上下文",
+      "voice": "说明文件太大，会浪费上下文。",
+      "duration_hint": 0.47872477611940295
+    },
+    {
+      "file": "frames/scene_28_07.png",
+      "beat": 28,
+      "phase": 8,
+      "caption": "巨大的 AGENTS.md 会浪费上下文",
+      "voice": "说明文件太大，会浪费上下文。",
+      "duration_hint": 0.6155032835820895
+    },
+    {
+      "file": "frames/scene_29_00.png",
+      "beat": 29,
+      "phase": 1,
+      "caption": "AGENTS.md 只做约 100 行地图",
+      "voice": "所以它只保留一百行左右的地图。",
+      "duration_hint": 0.3481074626865672
+    },
+    {
+      "file": "frames/scene_29_01.png",
+      "beat": 29,
+      "phase": 2,
+      "caption": "AGENTS.md 只做约 100 行地图",
+      "voice": "所以它只保留一百行左右的地图。",
+      "duration_hint": 0.3481074626865672
+    },
+    {
+      "file": "frames/scene_29_02.png",
+      "beat": 29,
+      "phase": 3,
+      "caption": "AGENTS.md 只做约 100 行地图",
+      "voice": "所以它只保留一百行左右的地图。",
+      "duration_hint": 0.38291820895522394
+    },
+    {
+      "file": "frames/scene_29_03.png",
+      "beat": 29,
+      "phase": 4,
+      "caption": "AGENTS.md 只做约 100 行地图",
+      "voice": "所以它只保留一百行左右的地图。",
+      "duration_hint": 0.41772895522388065
+    },
+    {
+      "file": "frames/scene_29_04.png",
+      "beat": 29,
+      "phase": 5,
+      "caption": "AGENTS.md 只做约 100 行地图",
+      "voice": "所以它只保留一百行左右的地图。",
+      "duration_hint": 0.41772895522388065
+    },
+    {
+      "file": "frames/scene_29_05.png",
+      "beat": 29,
+      "phase": 6,
+      "caption": "AGENTS.md 只做约 100 行地图",
+      "voice": "所以它只保留一百行左右的地图。",
+      "duration_hint": 0.4525397014925374
+    },
+    {
+      "file": "frames/scene_29_06.png",
+      "beat": 29,
+      "phase": 7,
+      "caption": "AGENTS.md 只做约 100 行地图",
+      "voice": "所以它只保留一百行左右的地图。",
+      "duration_hint": 0.4873504477611942
+    },
+    {
+      "file": "frames/scene_29_07.png",
+      "beat": 29,
+      "phase": 8,
+      "caption": "AGENTS.md 只做约 100 行地图",
+      "voice": "所以它只保留一百行左右的地图。",
+      "duration_hint": 0.626593432835821
+    },
+    {
+      "file": "frames/scene_30_00.png",
+      "beat": 30,
+      "phase": 1,
+      "caption": "docs/ 才是版本化系统记录",
+      "voice": "详细知识放进文档目录。",
+      "duration_hint": 0.2943719008264463
+    },
+    {
+      "file": "frames/scene_30_01.png",
+      "beat": 30,
+      "phase": 2,
+      "caption": "docs/ 才是版本化系统记录",
+      "voice": "详细知识放进文档目录。",
+      "duration_hint": 0.2943719008264463
+    },
+    {
+      "file": "frames/scene_30_02.png",
+      "beat": 30,
+      "phase": 3,
+      "caption": "docs/ 才是版本化系统记录",
+      "voice": "详细知识放进文档目录。",
+      "duration_hint": 0.32380909090909094
+    },
+    {
+      "file": "frames/scene_30_03.png",
+      "beat": 30,
+      "phase": 4,
+      "caption": "docs/ 才是版本化系统记录",
+      "voice": "详细知识放进文档目录。",
+      "duration_hint": 0.35324628099173555
+    },
+    {
+      "file": "frames/scene_30_04.png",
+      "beat": 30,
+      "phase": 5,
+      "caption": "docs/ 才是版本化系统记录",
+      "voice": "详细知识放进文档目录。",
+      "duration_hint": 0.35324628099173555
+    },
+    {
+      "file": "frames/scene_30_05.png",
+      "beat": 30,
+      "phase": 6,
+      "caption": "docs/ 才是版本化系统记录",
+      "voice": "详细知识放进文档目录。",
+      "duration_hint": 0.3826834710743802
+    },
+    {
+      "file": "frames/scene_30_06.png",
+      "beat": 30,
+      "phase": 7,
+      "caption": "docs/ 才是版本化系统记录",
+      "voice": "详细知识放进文档目录。",
+      "duration_hint": 0.4121206611570249
+    },
+    {
+      "file": "frames/scene_30_07.png",
+      "beat": 30,
+      "phase": 8,
+      "caption": "docs/ 才是版本化系统记录",
+      "voice": "详细知识放进文档目录。",
+      "duration_hint": 0.5298694214876033
+    },
+    {
+      "file": "frames/scene_31_00.png",
+      "beat": 31,
+      "phase": 1,
+      "caption": "CI、链接检查、文档维护 agent 保持新鲜",
+      "voice": "检查、持续集成和维护智能体，负责保持更新。",
+      "duration_hint": 0.4716280991735537
+    },
+    {
+      "file": "frames/scene_31_01.png",
+      "beat": 31,
+      "phase": 2,
+      "caption": "CI、链接检查、文档维护 agent 保持新鲜",
+      "voice": "检查、持续集成和维护智能体，负责保持更新。",
+      "duration_hint": 0.4716280991735537
+    },
+    {
+      "file": "frames/scene_31_02.png",
+      "beat": 31,
+      "phase": 3,
+      "caption": "CI、链接检查、文档维护 agent 保持新鲜",
+      "voice": "检查、持续集成和维护智能体，负责保持更新。",
+      "duration_hint": 0.5187909090909091
+    },
+    {
+      "file": "frames/scene_31_03.png",
+      "beat": 31,
+      "phase": 4,
+      "caption": "CI、链接检查、文档维护 agent 保持新鲜",
+      "voice": "检查、持续集成和维护智能体，负责保持更新。",
+      "duration_hint": 0.5659537190082644
+    },
+    {
+      "file": "frames/scene_31_04.png",
+      "beat": 31,
+      "phase": 5,
+      "caption": "CI、链接检查、文档维护 agent 保持新鲜",
+      "voice": "检查、持续集成和维护智能体，负责保持更新。",
+      "duration_hint": 0.5659537190082644
+    },
+    {
+      "file": "frames/scene_31_05.png",
+      "beat": 31,
+      "phase": 6,
+      "caption": "CI、链接检查、文档维护 agent 保持新鲜",
+      "voice": "检查、持续集成和维护智能体，负责保持更新。",
+      "duration_hint": 0.6131165289256197
+    },
+    {
+      "file": "frames/scene_31_06.png",
+      "beat": 31,
+      "phase": 7,
+      "caption": "CI、链接检查、文档维护 agent 保持新鲜",
+      "voice": "检查、持续集成和维护智能体，负责保持更新。",
+      "duration_hint": 0.6602793388429752
+    },
+    {
+      "file": "frames/scene_31_07.png",
+      "beat": 31,
+      "phase": 8,
+      "caption": "CI、链接检查、文档维护 agent 保持新鲜",
+      "voice": "检查、持续集成和维护智能体，负责保持更新。",
+      "duration_hint": 0.8489305785123965
+    },
+    {
+      "file": "frames/scene_32_00.png",
+      "beat": 32,
+      "phase": 1,
+      "caption": "智能体看不见的知识，几乎等于不存在",
+      "voice": "AI 看不见的知识，基本就用不上。",
+      "duration_hint": 0.3740867850098619
+    },
+    {
+      "file": "frames/scene_32_01.png",
+      "beat": 32,
+      "phase": 2,
+      "caption": "智能体看不见的知识，几乎等于不存在",
+      "voice": "AI 看不见的知识，基本就用不上。",
+      "duration_hint": 0.3740867850098619
+    },
+    {
+      "file": "frames/scene_32_02.png",
+      "beat": 32,
+      "phase": 3,
+      "caption": "智能体看不见的知识，几乎等于不存在",
+      "voice": "AI 看不见的知识，基本就用不上。",
+      "duration_hint": 0.4114954635108481
+    },
+    {
+      "file": "frames/scene_32_03.png",
+      "beat": 32,
+      "phase": 4,
+      "caption": "智能体看不见的知识，几乎等于不存在",
+      "voice": "AI 看不见的知识，基本就用不上。",
+      "duration_hint": 0.4489041420118343
+    },
+    {
+      "file": "frames/scene_32_04.png",
+      "beat": 32,
+      "phase": 5,
+      "caption": "智能体看不见的知识，几乎等于不存在",
+      "voice": "AI 看不见的知识，基本就用不上。",
+      "duration_hint": 0.4489041420118343
+    },
+    {
+      "file": "frames/scene_32_05.png",
+      "beat": 32,
+      "phase": 6,
+      "caption": "智能体看不见的知识，几乎等于不存在",
+      "voice": "AI 看不见的知识，基本就用不上。",
+      "duration_hint": 0.4863128205128205
+    },
+    {
+      "file": "frames/scene_32_06.png",
+      "beat": 32,
+      "phase": 7,
+      "caption": "智能体看不见的知识，几乎等于不存在",
+      "voice": "AI 看不见的知识，基本就用不上。",
+      "duration_hint": 0.5237214990138067
+    },
+    {
+      "file": "frames/scene_32_07.png",
+      "beat": 32,
+      "phase": 8,
+      "caption": "智能体看不见的知识，几乎等于不存在",
+      "voice": "AI 看不见的知识，基本就用不上。",
+      "duration_hint": 0.6733562130177514
+    },
+    {
+      "file": "frames/scene_33_00.png",
+      "beat": 33,
+      "phase": 1,
+      "caption": "外部文档、聊天、隐性经验必须进入仓库",
+      "voice": "聊天、经验、外部文档，都要进入仓库。",
+      "duration_hint": 0.4399132149901382
+    },
+    {
+      "file": "frames/scene_33_01.png",
+      "beat": 33,
+      "phase": 2,
+      "caption": "外部文档、聊天、隐性经验必须进入仓库",
+      "voice": "聊天、经验、外部文档，都要进入仓库。",
+      "duration_hint": 0.4399132149901382
+    },
+    {
+      "file": "frames/scene_33_02.png",
+      "beat": 33,
+      "phase": 3,
+      "caption": "外部文档、聊天、隐性经验必须进入仓库",
+      "voice": "聊天、经验、外部文档，都要进入仓库。",
+      "duration_hint": 0.483904536489152
+    },
+    {
+      "file": "frames/scene_33_03.png",
+      "beat": 33,
+      "phase": 4,
+      "caption": "外部文档、聊天、隐性经验必须进入仓库",
+      "voice": "聊天、经验、外部文档，都要进入仓库。",
+      "duration_hint": 0.5278958579881659
+    },
+    {
+      "file": "frames/scene_33_04.png",
+      "beat": 33,
+      "phase": 5,
+      "caption": "外部文档、聊天、隐性经验必须进入仓库",
+      "voice": "聊天、经验、外部文档，都要进入仓库。",
+      "duration_hint": 0.5278958579881659
+    },
+    {
+      "file": "frames/scene_33_05.png",
+      "beat": 33,
+      "phase": 6,
+      "caption": "外部文档、聊天、隐性经验必须进入仓库",
+      "voice": "聊天、经验、外部文档，都要进入仓库。",
+      "duration_hint": 0.5718871794871796
+    },
+    {
+      "file": "frames/scene_33_06.png",
+      "beat": 33,
+      "phase": 7,
+      "caption": "外部文档、聊天、隐性经验必须进入仓库",
+      "voice": "聊天、经验、外部文档，都要进入仓库。",
+      "duration_hint": 0.6158785009861935
+    },
+    {
+      "file": "frames/scene_33_07.png",
+      "beat": 33,
+      "phase": 8,
+      "caption": "外部文档、聊天、隐性经验必须进入仓库",
+      "voice": "聊天、经验、外部文档，都要进入仓库。",
+      "duration_hint": 0.7918437869822487
+    },
+    {
+      "file": "frames/scene_34_00.png",
+      "beat": 34,
+      "phase": 1,
+      "caption": "第五层：把工程品味机械化",
+      "voice": "第五步，把工程品味变成规则。",
+      "duration_hint": 0.2798074398249453
+    },
+    {
+      "file": "frames/scene_34_01.png",
+      "beat": 34,
+      "phase": 2,
+      "caption": "第五层：把工程品味机械化",
+      "voice": "第五步，把工程品味变成规则。",
+      "duration_hint": 0.2798074398249453
+    },
+    {
+      "file": "frames/scene_34_02.png",
+      "beat": 34,
+      "phase": 3,
+      "caption": "第五层：把工程品味机械化",
+      "voice": "第五步，把工程品味变成规则。",
+      "duration_hint": 0.30778818380743983
+    },
+    {
+      "file": "frames/scene_34_03.png",
+      "beat": 34,
+      "phase": 4,
+      "caption": "第五层：把工程品味机械化",
+      "voice": "第五步，把工程品味变成规则。",
+      "duration_hint": 0.3357689277899344
+    },
+    {
+      "file": "frames/scene_34_04.png",
+      "beat": 34,
+      "phase": 5,
+      "caption": "第五层：把工程品味机械化",
+      "voice": "第五步，把工程品味变成规则。",
+      "duration_hint": 0.3357689277899344
+    },
+    {
+      "file": "frames/scene_34_05.png",
+      "beat": 34,
+      "phase": 6,
+      "caption": "第五层：把工程品味机械化",
+      "voice": "第五步，把工程品味变成规则。",
+      "duration_hint": 0.3637496717724289
+    },
+    {
+      "file": "frames/scene_34_06.png",
+      "beat": 34,
+      "phase": 7,
+      "caption": "第五层：把工程品味机械化",
+      "voice": "第五步，把工程品味变成规则。",
+      "duration_hint": 0.39173041575492346
+    },
+    {
+      "file": "frames/scene_34_07.png",
+      "beat": 34,
+      "phase": 8,
+      "caption": "第五层：把工程品味机械化",
+      "voice": "第五步，把工程品味变成规则。",
+      "duration_hint": 0.5036533916849015
+    },
+    {
+      "file": "frames/scene_35_00.png",
+      "beat": 35,
+      "phase": 1,
+      "caption": "业务域只能沿固定顺序依赖",
+      "voice": "业务模块，按照固定顺序依赖。",
+      "duration_hint": 0.2798074398249453
+    },
+    {
+      "file": "frames/scene_35_01.png",
+      "beat": 35,
+      "phase": 2,
+      "caption": "业务域只能沿固定顺序依赖",
+      "voice": "业务模块，按照固定顺序依赖。",
+      "duration_hint": 0.2798074398249453
+    },
+    {
+      "file": "frames/scene_35_02.png",
+      "beat": 35,
+      "phase": 3,
+      "caption": "业务域只能沿固定顺序依赖",
+      "voice": "业务模块，按照固定顺序依赖。",
+      "duration_hint": 0.30778818380743983
+    },
+    {
+      "file": "frames/scene_35_03.png",
+      "beat": 35,
+      "phase": 4,
+      "caption": "业务域只能沿固定顺序依赖",
+      "voice": "业务模块，按照固定顺序依赖。",
+      "duration_hint": 0.3357689277899344
+    },
+    {
+      "file": "frames/scene_35_04.png",
+      "beat": 35,
+      "phase": 5,
+      "caption": "业务域只能沿固定顺序依赖",
+      "voice": "业务模块，按照固定顺序依赖。",
+      "duration_hint": 0.3357689277899344
+    },
+    {
+      "file": "frames/scene_35_05.png",
+      "beat": 35,
+      "phase": 6,
+      "caption": "业务域只能沿固定顺序依赖",
+      "voice": "业务模块，按照固定顺序依赖。",
+      "duration_hint": 0.3637496717724289
+    },
+    {
+      "file": "frames/scene_35_06.png",
+      "beat": 35,
+      "phase": 7,
+      "caption": "业务域只能沿固定顺序依赖",
+      "voice": "业务模块，按照固定顺序依赖。",
+      "duration_hint": 0.39173041575492346
+    },
+    {
+      "file": "frames/scene_35_07.png",
+      "beat": 35,
+      "phase": 8,
+      "caption": "业务域只能沿固定顺序依赖",
+      "voice": "业务模块，按照固定顺序依赖。",
+      "duration_hint": 0.5036533916849015
+    },
+    {
+      "file": "frames/scene_36_00.png",
+      "beat": 36,
+      "phase": 1,
+      "caption": "跨领域能力必须通过 Providers",
+      "voice": "跨领域能力，统一通过 Providers。",
+      "duration_hint": 0.30438512035010945
+    },
+    {
+      "file": "frames/scene_36_01.png",
+      "beat": 36,
+      "phase": 2,
+      "caption": "跨领域能力必须通过 Providers",
+      "voice": "跨领域能力，统一通过 Providers。",
+      "duration_hint": 0.30438512035010945
+    },
+    {
+      "file": "frames/scene_36_02.png",
+      "beat": 36,
+      "phase": 3,
+      "caption": "跨领域能力必须通过 Providers",
+      "voice": "跨领域能力，统一通过 Providers。",
+      "duration_hint": 0.33482363238512036
+    },
+    {
+      "file": "frames/scene_36_03.png",
+      "beat": 36,
+      "phase": 4,
+      "caption": "跨领域能力必须通过 Providers",
+      "voice": "跨领域能力，统一通过 Providers。",
+      "duration_hint": 0.3652621444201313
+    },
+    {
+      "file": "frames/scene_36_04.png",
+      "beat": 36,
+      "phase": 5,
+      "caption": "跨领域能力必须通过 Providers",
+      "voice": "跨领域能力，统一通过 Providers。",
+      "duration_hint": 0.3652621444201313
+    },
+    {
+      "file": "frames/scene_36_05.png",
+      "beat": 36,
+      "phase": 6,
+      "caption": "跨领域能力必须通过 Providers",
+      "voice": "跨领域能力，统一通过 Providers。",
+      "duration_hint": 0.3957006564551423
+    },
+    {
+      "file": "frames/scene_36_06.png",
+      "beat": 36,
+      "phase": 7,
+      "caption": "跨领域能力必须通过 Providers",
+      "voice": "跨领域能力，统一通过 Providers。",
+      "duration_hint": 0.42613916849015326
+    },
+    {
+      "file": "frames/scene_36_07.png",
+      "beat": 36,
+      "phase": 8,
+      "caption": "跨领域能力必须通过 Providers",
+      "voice": "跨领域能力，统一通过 Providers。",
+      "duration_hint": 0.547893216630197
+    },
+    {
+      "file": "frames/scene_37_00.png",
+      "beat": 37,
+      "phase": 1,
+      "caption": "边界解析、结构化日志、命名和文件大小都能检查",
+      "voice": "边界要验证，日志要结构化。",
+      "duration_hint": 0.3066074766355141
+    },
+    {
+      "file": "frames/scene_37_01.png",
+      "beat": 37,
+      "phase": 2,
+      "caption": "边界解析、结构化日志、命名和文件大小都能检查",
+      "voice": "边界要验证，日志要结构化。",
+      "duration_hint": 0.3066074766355141
+    },
+    {
+      "file": "frames/scene_37_02.png",
+      "beat": 37,
+      "phase": 3,
+      "caption": "边界解析、结构化日志、命名和文件大小都能检查",
+      "voice": "边界要验证，日志要结构化。",
+      "duration_hint": 0.3372682242990655
+    },
+    {
+      "file": "frames/scene_37_03.png",
+      "beat": 37,
+      "phase": 4,
+      "caption": "边界解析、结构化日志、命名和文件大小都能检查",
+      "voice": "边界要验证，日志要结构化。",
+      "duration_hint": 0.36792897196261687
+    },
+    {
+      "file": "frames/scene_37_04.png",
+      "beat": 37,
+      "phase": 5,
+      "caption": "边界解析、结构化日志、命名和文件大小都能检查",
+      "voice": "边界要验证，日志要结构化。",
+      "duration_hint": 0.36792897196261687
+    },
+    {
+      "file": "frames/scene_37_05.png",
+      "beat": 37,
+      "phase": 6,
+      "caption": "边界解析、结构化日志、命名和文件大小都能检查",
+      "voice": "边界要验证，日志要结构化。",
+      "duration_hint": 0.3985897196261683
+    },
+    {
+      "file": "frames/scene_37_06.png",
+      "beat": 37,
+      "phase": 7,
+      "caption": "边界解析、结构化日志、命名和文件大小都能检查",
+      "voice": "边界要验证，日志要结构化。",
+      "duration_hint": 0.4292504672897197
+    },
+    {
+      "file": "frames/scene_37_07.png",
+      "beat": 37,
+      "phase": 8,
+      "caption": "边界解析、结构化日志、命名和文件大小都能检查",
+      "voice": "边界要验证，日志要结构化。",
+      "duration_hint": 0.5518934579439253
+    },
+    {
+      "file": "frames/scene_38_00.png",
+      "beat": 38,
+      "phase": 1,
+      "caption": "lint 错误会把修复指导注入上下文",
+      "voice": "错误信息会告诉智能体怎么修。",
+      "duration_hint": 0.312392523364486
+    },
+    {
+      "file": "frames/scene_38_01.png",
+      "beat": 38,
+      "phase": 2,
+      "caption": "lint 错误会把修复指导注入上下文",
+      "voice": "错误信息会告诉智能体怎么修。",
+      "duration_hint": 0.312392523364486
+    },
+    {
+      "file": "frames/scene_38_02.png",
+      "beat": 38,
+      "phase": 3,
+      "caption": "lint 错误会把修复指导注入上下文",
+      "voice": "错误信息会告诉智能体怎么修。",
+      "duration_hint": 0.3436317757009345
+    },
+    {
+      "file": "frames/scene_38_03.png",
+      "beat": 38,
+      "phase": 4,
+      "caption": "lint 错误会把修复指导注入上下文",
+      "voice": "错误信息会告诉智能体怎么修。",
+      "duration_hint": 0.3748710280373831
+    },
+    {
+      "file": "frames/scene_38_04.png",
+      "beat": 38,
+      "phase": 5,
+      "caption": "lint 错误会把修复指导注入上下文",
+      "voice": "错误信息会告诉智能体怎么修。",
+      "duration_hint": 0.3748710280373831
+    },
+    {
+      "file": "frames/scene_38_05.png",
+      "beat": 38,
+      "phase": 6,
+      "caption": "lint 错误会把修复指导注入上下文",
+      "voice": "错误信息会告诉智能体怎么修。",
+      "duration_hint": 0.40611028037383173
+    },
+    {
+      "file": "frames/scene_38_06.png",
+      "beat": 38,
+      "phase": 7,
+      "caption": "lint 错误会把修复指导注入上下文",
+      "voice": "错误信息会告诉智能体怎么修。",
+      "duration_hint": 0.4373495327102803
+    },
+    {
+      "file": "frames/scene_38_07.png",
+      "beat": 38,
+      "phase": 8,
+      "caption": "lint 错误会把修复指导注入上下文",
+      "voice": "错误信息会告诉智能体怎么修。",
+      "duration_hint": 0.5623065420560747
+    },
+    {
+      "file": "frames/scene_39_00.png",
+      "beat": 39,
+      "phase": 1,
+      "caption": "约束不是减速器，是防止速度变混乱的加速器",
+      "voice": "规则不是刹车，是防止速度失控。",
+      "duration_hint": 0.38109695290858725
+    },
+    {
+      "file": "frames/scene_39_01.png",
+      "beat": 39,
+      "phase": 2,
+      "caption": "约束不是减速器，是防止速度变混乱的加速器",
+      "voice": "规则不是刹车，是防止速度失控。",
+      "duration_hint": 0.38109695290858725
+    },
+    {
+      "file": "frames/scene_39_02.png",
+      "beat": 39,
+      "phase": 3,
+      "caption": "约束不是减速器，是防止速度变混乱的加速器",
+      "voice": "规则不是刹车，是防止速度失控。",
+      "duration_hint": 0.4192066481994459
+    },
+    {
+      "file": "frames/scene_39_03.png",
+      "beat": 39,
+      "phase": 4,
+      "caption": "约束不是减速器，是防止速度变混乱的加速器",
+      "voice": "规则不是刹车，是防止速度失控。",
+      "duration_hint": 0.45731634349030464
+    },
+    {
+      "file": "frames/scene_39_04.png",
+      "beat": 39,
+      "phase": 5,
+      "caption": "约束不是减速器，是防止速度变混乱的加速器",
+      "voice": "规则不是刹车，是防止速度失控。",
+      "duration_hint": 0.45731634349030464
+    },
+    {
+      "file": "frames/scene_39_05.png",
+      "beat": 39,
+      "phase": 6,
+      "caption": "约束不是减速器，是防止速度变混乱的加速器",
+      "voice": "规则不是刹车，是防止速度失控。",
+      "duration_hint": 0.49542603878116337
+    },
+    {
+      "file": "frames/scene_39_06.png",
+      "beat": 39,
+      "phase": 7,
+      "caption": "约束不是减速器，是防止速度变混乱的加速器",
+      "voice": "规则不是刹车，是防止速度失控。",
+      "duration_hint": 0.5335357340720221
+    },
+    {
+      "file": "frames/scene_39_07.png",
+      "beat": 39,
+      "phase": 8,
+      "caption": "约束不是减速器，是防止速度变混乱的加速器",
+      "voice": "规则不是刹车，是防止速度失控。",
+      "duration_hint": 0.6859745152354569
+    },
+    {
+      "file": "frames/scene_40_00.png",
+      "beat": 40,
+      "phase": 1,
+      "caption": "第六层：吞吐量改变合并策略",
+      "voice": "第六步，合并策略也要改变。",
+      "duration_hint": 0.3482437673130194
+    },
+    {
+      "file": "frames/scene_40_01.png",
+      "beat": 40,
+      "phase": 2,
+      "caption": "第六层：吞吐量改变合并策略",
+      "voice": "第六步，合并策略也要改变。",
+      "duration_hint": 0.3482437673130194
+    },
+    {
+      "file": "frames/scene_40_02.png",
+      "beat": 40,
+      "phase": 3,
+      "caption": "第六层：吞吐量改变合并策略",
+      "voice": "第六步，合并策略也要改变。",
+      "duration_hint": 0.3830681440443213
+    },
+    {
+      "file": "frames/scene_40_03.png",
+      "beat": 40,
+      "phase": 4,
+      "caption": "第六层：吞吐量改变合并策略",
+      "voice": "第六步，合并策略也要改变。",
+      "duration_hint": 0.4178925207756232
+    },
+    {
+      "file": "frames/scene_40_04.png",
+      "beat": 40,
+      "phase": 5,
+      "caption": "第六层：吞吐量改变合并策略",
+      "voice": "第六步，合并策略也要改变。",
+      "duration_hint": 0.4178925207756232
+    },
+    {
+      "file": "frames/scene_40_05.png",
+      "beat": 40,
+      "phase": 6,
+      "caption": "第六层：吞吐量改变合并策略",
+      "voice": "第六步，合并策略也要改变。",
+      "duration_hint": 0.45271689750692523
+    },
+    {
+      "file": "frames/scene_40_06.png",
+      "beat": 40,
+      "phase": 7,
+      "caption": "第六层：吞吐量改变合并策略",
+      "voice": "第六步，合并策略也要改变。",
+      "duration_hint": 0.4875412742382272
+    },
+    {
+      "file": "frames/scene_40_07.png",
+      "beat": 40,
+      "phase": 8,
+      "caption": "第六层：吞吐量改变合并策略",
+      "voice": "第六步，合并策略也要改变。",
+      "duration_hint": 0.6268387811634348
+    },
+    {
+      "file": "frames/scene_41_00.png",
+      "beat": 41,
+      "phase": 1,
+      "caption": "短生命周期 PR，更少阻塞式 gate，flaky 后续修",
+      "voice": "代码合并请求更短，门禁更少，反馈更快。",
+      "duration_hint": 0.4566592797783933
+    },
+    {
+      "file": "frames/scene_41_01.png",
+      "beat": 41,
+      "phase": 2,
+      "caption": "短生命周期 PR，更少阻塞式 gate，flaky 后续修",
+      "voice": "代码合并请求更短，门禁更少，反馈更快。",
+      "duration_hint": 0.4566592797783933
+    },
+    {
+      "file": "frames/scene_41_02.png",
+      "beat": 41,
+      "phase": 3,
+      "caption": "短生命周期 PR，更少阻塞式 gate，flaky 后续修",
+      "voice": "代码合并请求更短，门禁更少，反馈更快。",
+      "duration_hint": 0.5023252077562327
+    },
+    {
+      "file": "frames/scene_41_03.png",
+      "beat": 41,
+      "phase": 4,
+      "caption": "短生命周期 PR，更少阻塞式 gate，flaky 后续修",
+      "voice": "代码合并请求更短，门禁更少，反馈更快。",
+      "duration_hint": 0.547991135734072
+    },
+    {
+      "file": "frames/scene_41_04.png",
+      "beat": 41,
+      "phase": 5,
+      "caption": "短生命周期 PR，更少阻塞式 gate，flaky 后续修",
+      "voice": "代码合并请求更短，门禁更少，反馈更快。",
+      "duration_hint": 0.547991135734072
+    },
+    {
+      "file": "frames/scene_41_05.png",
+      "beat": 41,
+      "phase": 6,
+      "caption": "短生命周期 PR，更少阻塞式 gate，flaky 后续修",
+      "voice": "代码合并请求更短，门禁更少，反馈更快。",
+      "duration_hint": 0.5936570637119113
+    },
+    {
+      "file": "frames/scene_41_06.png",
+      "beat": 41,
+      "phase": 7,
+      "caption": "短生命周期 PR，更少阻塞式 gate，flaky 后续修",
+      "voice": "代码合并请求更短，门禁更少，反馈更快。",
+      "duration_hint": 0.6393229916897507
+    },
+    {
+      "file": "frames/scene_41_07.png",
+      "beat": 41,
+      "phase": 8,
+      "caption": "短生命周期 PR，更少阻塞式 gate，flaky 后续修",
+      "voice": "代码合并请求更短，门禁更少，反馈更快。",
+      "duration_hint": 0.8219867036011079
+    },
+    {
+      "file": "frames/scene_42_00.png",
+      "beat": 42,
+      "phase": 1,
+      "caption": "高吞吐下修正便宜、等待昂贵；低吞吐别照搬",
+      "voice": "高吞吐团队可以快修；低吞吐团队不能照搬。",
+      "duration_hint": 0.46799999999999997
+    },
+    {
+      "file": "frames/scene_42_01.png",
+      "beat": 42,
+      "phase": 2,
+      "caption": "高吞吐下修正便宜、等待昂贵；低吞吐别照搬",
+      "voice": "高吞吐团队可以快修；低吞吐团队不能照搬。",
+      "duration_hint": 0.46799999999999997
+    },
+    {
+      "file": "frames/scene_42_02.png",
+      "beat": 42,
+      "phase": 3,
+      "caption": "高吞吐下修正便宜、等待昂贵；低吞吐别照搬",
+      "voice": "高吞吐团队可以快修；低吞吐团队不能照搬。",
+      "duration_hint": 0.5147999999999999
+    },
+    {
+      "file": "frames/scene_42_03.png",
+      "beat": 42,
+      "phase": 4,
+      "caption": "高吞吐下修正便宜、等待昂贵；低吞吐别照搬",
+      "voice": "高吞吐团队可以快修；低吞吐团队不能照搬。",
+      "duration_hint": 0.5616
+    },
+    {
+      "file": "frames/scene_42_04.png",
+      "beat": 42,
+      "phase": 5,
+      "caption": "高吞吐下修正便宜、等待昂贵；低吞吐别照搬",
+      "voice": "高吞吐团队可以快修；低吞吐团队不能照搬。",
+      "duration_hint": 0.5616
+    },
+    {
+      "file": "frames/scene_42_05.png",
+      "beat": 42,
+      "phase": 6,
+      "caption": "高吞吐下修正便宜、等待昂贵；低吞吐别照搬",
+      "voice": "高吞吐团队可以快修；低吞吐团队不能照搬。",
+      "duration_hint": 0.6083999999999999
+    },
+    {
+      "file": "frames/scene_42_06.png",
+      "beat": 42,
+      "phase": 7,
+      "caption": "高吞吐下修正便宜、等待昂贵；低吞吐别照搬",
+      "voice": "高吞吐团队可以快修；低吞吐团队不能照搬。",
+      "duration_hint": 0.6552
+    },
+    {
+      "file": "frames/scene_42_07.png",
+      "beat": 42,
+      "phase": 8,
+      "caption": "高吞吐下修正便宜、等待昂贵；低吞吐别照搬",
+      "voice": "高吞吐团队可以快修；低吞吐团队不能照搬。",
+      "duration_hint": 0.8423999999999999
+    },
+    {
+      "file": "frames/scene_43_00.png",
+      "beat": 43,
+      "phase": 1,
+      "caption": "Agent-generated 不只是业务代码",
+      "voice": "AI 生成的范围，不止业务代码。",
+      "duration_hint": 0.29814571948998175
+    },
+    {
+      "file": "frames/scene_43_01.png",
+      "beat": 43,
+      "phase": 2,
+      "caption": "Agent-generated 不只是业务代码",
+      "voice": "AI 生成的范围，不止业务代码。",
+      "duration_hint": 0.29814571948998175
+    },
+    {
+      "file": "frames/scene_43_02.png",
+      "beat": 43,
+      "phase": 3,
+      "caption": "Agent-generated 不只是业务代码",
+      "voice": "AI 生成的范围，不止业务代码。",
+      "duration_hint": 0.3279602914389799
+    },
+    {
+      "file": "frames/scene_43_03.png",
+      "beat": 43,
+      "phase": 4,
+      "caption": "Agent-generated 不只是业务代码",
+      "voice": "AI 生成的范围，不止业务代码。",
+      "duration_hint": 0.3577748633879781
+    },
+    {
+      "file": "frames/scene_43_04.png",
+      "beat": 43,
+      "phase": 5,
+      "caption": "Agent-generated 不只是业务代码",
+      "voice": "AI 生成的范围，不止业务代码。",
+      "duration_hint": 0.3577748633879781
+    },
+    {
+      "file": "frames/scene_43_05.png",
+      "beat": 43,
+      "phase": 6,
+      "caption": "Agent-generated 不只是业务代码",
+      "voice": "AI 生成的范围，不止业务代码。",
+      "duration_hint": 0.38758943533697626
+    },
+    {
+      "file": "frames/scene_43_06.png",
+      "beat": 43,
+      "phase": 7,
+      "caption": "Agent-generated 不只是业务代码",
+      "voice": "AI 生成的范围，不止业务代码。",
+      "duration_hint": 0.4174040072859745
+    },
+    {
+      "file": "frames/scene_43_07.png",
+      "beat": 43,
+      "phase": 8,
+      "caption": "Agent-generated 不只是业务代码",
+      "voice": "AI 生成的范围，不止业务代码。",
+      "duration_hint": 0.5366622950819672
+    },
+    {
+      "file": "frames/scene_44_00.png",
+      "beat": 44,
+      "phase": 1,
+      "caption": "代码、测试、工具、CI、文档、评审都进入系统",
+      "voice": "测试、工具、持续集成、文档、评审，也能生成。",
+      "duration_hint": 0.4358542805100183
+    },
+    {
+      "file": "frames/scene_44_01.png",
+      "beat": 44,
+      "phase": 2,
+      "caption": "代码、测试、工具、CI、文档、评审都进入系统",
+      "voice": "测试、工具、持续集成、文档、评审，也能生成。",
+      "duration_hint": 0.4358542805100183
+    },
+    {
+      "file": "frames/scene_44_02.png",
+      "beat": 44,
+      "phase": 3,
+      "caption": "代码、测试、工具、CI、文档、评审都进入系统",
+      "voice": "测试、工具、持续集成、文档、评审，也能生成。",
+      "duration_hint": 0.47943970856102014
+    },
+    {
+      "file": "frames/scene_44_03.png",
+      "beat": 44,
+      "phase": 4,
+      "caption": "代码、测试、工具、CI、文档、评审都进入系统",
+      "voice": "测试、工具、持续集成、文档、评审，也能生成。",
+      "duration_hint": 0.5230251366120219
+    },
+    {
+      "file": "frames/scene_44_04.png",
+      "beat": 44,
+      "phase": 5,
+      "caption": "代码、测试、工具、CI、文档、评审都进入系统",
+      "voice": "测试、工具、持续集成、文档、评审，也能生成。",
+      "duration_hint": 0.5230251366120219
+    },
+    {
+      "file": "frames/scene_44_05.png",
+      "beat": 44,
+      "phase": 6,
+      "caption": "代码、测试、工具、CI、文档、评审都进入系统",
+      "voice": "测试、工具、持续集成、文档、评审，也能生成。",
+      "duration_hint": 0.5666105646630238
+    },
+    {
+      "file": "frames/scene_44_06.png",
+      "beat": 44,
+      "phase": 7,
+      "caption": "代码、测试、工具、CI、文档、评审都进入系统",
+      "voice": "测试、工具、持续集成、文档、评审，也能生成。",
+      "duration_hint": 0.6101959927140257
+    },
+    {
+      "file": "frames/scene_44_07.png",
+      "beat": 44,
+      "phase": 8,
+      "caption": "代码、测试、工具、CI、文档、评审都进入系统",
+      "voice": "测试、工具、持续集成、文档、评审，也能生成。",
+      "duration_hint": 0.7845377049180329
+    },
+    {
+      "file": "frames/scene_45_00.png",
+      "beat": 45,
+      "phase": 1,
+      "caption": "最后形成端到端闭环",
+      "voice": "最后，它形成一个闭环。",
+      "duration_hint": 0.2916388697450034
+    },
+    {
+      "file": "frames/scene_45_01.png",
+      "beat": 45,
+      "phase": 2,
+      "caption": "最后形成端到端闭环",
+      "voice": "最后，它形成一个闭环。",
+      "duration_hint": 0.2916388697450034
+    },
+    {
+      "file": "frames/scene_45_02.png",
+      "beat": 45,
+      "phase": 3,
+      "caption": "最后形成端到端闭环",
+      "voice": "最后，它形成一个闭环。",
+      "duration_hint": 0.32080275671950376
+    },
+    {
+      "file": "frames/scene_45_03.png",
+      "beat": 45,
+      "phase": 4,
+      "caption": "最后形成端到端闭环",
+      "voice": "最后，它形成一个闭环。",
+      "duration_hint": 0.3499666436940041
+    },
+    {
+      "file": "frames/scene_45_04.png",
+      "beat": 45,
+      "phase": 5,
+      "caption": "最后形成端到端闭环",
+      "voice": "最后，它形成一个闭环。",
+      "duration_hint": 0.3499666436940041
+    },
+    {
+      "file": "frames/scene_45_05.png",
+      "beat": 45,
+      "phase": 6,
+      "caption": "最后形成端到端闭环",
+      "voice": "最后，它形成一个闭环。",
+      "duration_hint": 0.37913053066850444
+    },
+    {
+      "file": "frames/scene_45_06.png",
+      "beat": 45,
+      "phase": 7,
+      "caption": "最后形成端到端闭环",
+      "voice": "最后，它形成一个闭环。",
+      "duration_hint": 0.40829441764300484
+    },
+    {
+      "file": "frames/scene_45_07.png",
+      "beat": 45,
+      "phase": 8,
+      "caption": "最后形成端到端闭环",
+      "voice": "最后，它形成一个闭环。",
+      "duration_hint": 0.5249499655410061
+    },
+    {
+      "file": "frames/scene_46_00.png",
+      "beat": 46,
+      "phase": 1,
+      "caption": "验证状态、复现 bug、录制失败视频",
+      "voice": "Codex 先确认状态，再复现问题。",
+      "duration_hint": 0.34859958649207445
+    },
+    {
+      "file": "frames/scene_46_01.png",
+      "beat": 46,
+      "phase": 2,
+      "caption": "验证状态、复现 bug、录制失败视频",
+      "voice": "Codex 先确认状态，再复现问题。",
+      "duration_hint": 0.34859958649207445
+    },
+    {
+      "file": "frames/scene_46_02.png",
+      "beat": 46,
+      "phase": 3,
+      "caption": "验证状态、复现 bug、录制失败视频",
+      "voice": "Codex 先确认状态，再复现问题。",
+      "duration_hint": 0.3834595451412819
+    },
+    {
+      "file": "frames/scene_46_03.png",
+      "beat": 46,
+      "phase": 4,
+      "caption": "验证状态、复现 bug、录制失败视频",
+      "voice": "Codex 先确认状态，再复现问题。",
+      "duration_hint": 0.4183195037904893
+    },
+    {
+      "file": "frames/scene_46_04.png",
+      "beat": 46,
+      "phase": 5,
+      "caption": "验证状态、复现 bug、录制失败视频",
+      "voice": "Codex 先确认状态，再复现问题。",
+      "duration_hint": 0.4183195037904893
+    },
+    {
+      "file": "frames/scene_46_05.png",
+      "beat": 46,
+      "phase": 6,
+      "caption": "验证状态、复现 bug、录制失败视频",
+      "voice": "Codex 先确认状态，再复现问题。",
+      "duration_hint": 0.45317946243969676
+    },
+    {
+      "file": "frames/scene_46_06.png",
+      "beat": 46,
+      "phase": 7,
+      "caption": "验证状态、复现 bug、录制失败视频",
+      "voice": "Codex 先确认状态，再复现问题。",
+      "duration_hint": 0.48803942108890425
+    },
+    {
+      "file": "frames/scene_46_07.png",
+      "beat": 46,
+      "phase": 8,
+      "caption": "验证状态、复现 bug、录制失败视频",
+      "voice": "Codex 先确认状态，再复现问题。",
+      "duration_hint": 0.6274792556857339
+    },
+    {
+      "file": "frames/scene_47_00.png",
+      "beat": 47,
+      "phase": 1,
+      "caption": "修复、验证、录制修复视频、提交代码合并请求",
+      "voice": "然后修复、验证、录视频、提交代码合并请求。",
+      "duration_hint": 0.46176154376292217
+    },
+    {
+      "file": "frames/scene_47_01.png",
+      "beat": 47,
+      "phase": 2,
+      "caption": "修复、验证、录制修复视频、提交代码合并请求",
+      "voice": "然后修复、验证、录视频、提交代码合并请求。",
+      "duration_hint": 0.46176154376292217
+    },
+    {
+      "file": "frames/scene_47_02.png",
+      "beat": 47,
+      "phase": 3,
+      "caption": "修复、验证、录制修复视频、提交代码合并请求",
+      "voice": "然后修复、验证、录视频、提交代码合并请求。",
+      "duration_hint": 0.5079376981392144
+    },
+    {
+      "file": "frames/scene_47_03.png",
+      "beat": 47,
+      "phase": 4,
+      "caption": "修复、验证、录制修复视频、提交代码合并请求",
+      "voice": "然后修复、验证、录视频、提交代码合并请求。",
+      "duration_hint": 0.5541138525155066
+    },
+    {
+      "file": "frames/scene_47_04.png",
+      "beat": 47,
+      "phase": 5,
+      "caption": "修复、验证、录制修复视频、提交代码合并请求",
+      "voice": "然后修复、验证、录视频、提交代码合并请求。",
+      "duration_hint": 0.5541138525155066
+    },
+    {
+      "file": "frames/scene_47_05.png",
+      "beat": 47,
+      "phase": 6,
+      "caption": "修复、验证、录制修复视频、提交代码合并请求",
+      "voice": "然后修复、验证、录视频、提交代码合并请求。",
+      "duration_hint": 0.6002900068917988
+    },
+    {
+      "file": "frames/scene_47_06.png",
+      "beat": 47,
+      "phase": 7,
+      "caption": "修复、验证、录制修复视频、提交代码合并请求",
+      "voice": "然后修复、验证、录视频、提交代码合并请求。",
+      "duration_hint": 0.6464661612680911
+    },
+    {
+      "file": "frames/scene_47_07.png",
+      "beat": 47,
+      "phase": 8,
+      "caption": "修复、验证、录制修复视频、提交代码合并请求",
+      "voice": "然后修复、验证、录视频、提交代码合并请求。",
+      "duration_hint": 0.8311707787732598
+    },
+    {
+      "file": "frames/scene_48_00.png",
+      "beat": 48,
+      "phase": 1,
+      "caption": "回应反馈、修构建、判断时升级给人类、合并",
+      "voice": "反馈和构建失败，它先处理；需要判断，再找人。",
+      "duration_hint": 0.451583038869258
+    },
+    {
+      "file": "frames/scene_48_01.png",
+      "beat": 48,
+      "phase": 2,
+      "caption": "回应反馈、修构建、判断时升级给人类、合并",
+      "voice": "反馈和构建失败，它先处理；需要判断，再找人。",
+      "duration_hint": 0.451583038869258
+    },
+    {
+      "file": "frames/scene_48_02.png",
+      "beat": 48,
+      "phase": 3,
+      "caption": "回应反馈、修构建、判断时升级给人类、合并",
+      "voice": "反馈和构建失败，它先处理；需要判断，再找人。",
+      "duration_hint": 0.49674134275618376
+    },
+    {
+      "file": "frames/scene_48_03.png",
+      "beat": 48,
+      "phase": 4,
+      "caption": "回应反馈、修构建、判断时升级给人类、合并",
+      "voice": "反馈和构建失败，它先处理；需要判断，再找人。",
+      "duration_hint": 0.5418996466431095
+    },
+    {
+      "file": "frames/scene_48_04.png",
+      "beat": 48,
+      "phase": 5,
+      "caption": "回应反馈、修构建、判断时升级给人类、合并",
+      "voice": "反馈和构建失败，它先处理；需要判断，再找人。",
+      "duration_hint": 0.5418996466431095
+    },
+    {
+      "file": "frames/scene_48_05.png",
+      "beat": 48,
+      "phase": 6,
+      "caption": "回应反馈、修构建、判断时升级给人类、合并",
+      "voice": "反馈和构建失败，它先处理；需要判断，再找人。",
+      "duration_hint": 0.5870579505300354
+    },
+    {
+      "file": "frames/scene_48_06.png",
+      "beat": 48,
+      "phase": 7,
+      "caption": "回应反馈、修构建、判断时升级给人类、合并",
+      "voice": "反馈和构建失败，它先处理；需要判断，再找人。",
+      "duration_hint": 0.6322162544169612
+    },
+    {
+      "file": "frames/scene_48_07.png",
+      "beat": 48,
+      "phase": 8,
+      "caption": "回应反馈、修构建、判断时升级给人类、合并",
+      "voice": "反馈和构建失败，它先处理；需要判断，再找人。",
+      "duration_hint": 0.8128494699646643
+    },
+    {
+      "file": "frames/scene_49_00.png",
+      "beat": 49,
+      "phase": 1,
+      "caption": "这依赖工具和结构，不能直接复制",
+      "voice": "但这依赖工具和结构，不能直接复制。",
+      "duration_hint": 0.3624169611307422
+    },
+    {
+      "file": "frames/scene_49_01.png",
+      "beat": 49,
+      "phase": 2,
+      "caption": "这依赖工具和结构，不能直接复制",
+      "voice": "但这依赖工具和结构，不能直接复制。",
+      "duration_hint": 0.3624169611307422
+    },
+    {
+      "file": "frames/scene_49_02.png",
+      "beat": 49,
+      "phase": 3,
+      "caption": "这依赖工具和结构，不能直接复制",
+      "voice": "但这依赖工具和结构，不能直接复制。",
+      "duration_hint": 0.39865865724381633
+    },
+    {
+      "file": "frames/scene_49_03.png",
+      "beat": 49,
+      "phase": 4,
+      "caption": "这依赖工具和结构，不能直接复制",
+      "voice": "但这依赖工具和结构，不能直接复制。",
+      "duration_hint": 0.43490035335689053
+    },
+    {
+      "file": "frames/scene_49_04.png",
+      "beat": 49,
+      "phase": 5,
+      "caption": "这依赖工具和结构，不能直接复制",
+      "voice": "但这依赖工具和结构，不能直接复制。",
+      "duration_hint": 0.43490035335689053
+    },
+    {
+      "file": "frames/scene_49_05.png",
+      "beat": 49,
+      "phase": 6,
+      "caption": "这依赖工具和结构，不能直接复制",
+      "voice": "但这依赖工具和结构，不能直接复制。",
+      "duration_hint": 0.4711420494699648
+    },
+    {
+      "file": "frames/scene_49_06.png",
+      "beat": 49,
+      "phase": 7,
+      "caption": "这依赖工具和结构，不能直接复制",
+      "voice": "但这依赖工具和结构，不能直接复制。",
+      "duration_hint": 0.507383745583039
+    },
+    {
+      "file": "frames/scene_49_07.png",
+      "beat": 49,
+      "phase": 8,
+      "caption": "这依赖工具和结构，不能直接复制",
+      "voice": "但这依赖工具和结构，不能直接复制。",
+      "duration_hint": 0.6523505300353358
+    },
+    {
+      "file": "frames/scene_50_00.png",
+      "beat": 50,
+      "phase": 1,
+      "caption": "而熵也要被治理",
+      "voice": "系统混乱，也必须被治理。",
+      "duration_hint": 0.28466741826381053
+    },
+    {
+      "file": "frames/scene_50_01.png",
+      "beat": 50,
+      "phase": 2,
+      "caption": "而熵也要被治理",
+      "voice": "系统混乱，也必须被治理。",
+      "duration_hint": 0.28466741826381053
+    },
+    {
+      "file": "frames/scene_50_02.png",
+      "beat": 50,
+      "phase": 3,
+      "caption": "而熵也要被治理",
+      "voice": "系统混乱，也必须被治理。",
+      "duration_hint": 0.31313416009019157
+    },
+    {
+      "file": "frames/scene_50_03.png",
+      "beat": 50,
+      "phase": 4,
+      "caption": "而熵也要被治理",
+      "voice": "系统混乱，也必须被治理。",
+      "duration_hint": 0.3416009019165726
+    },
+    {
+      "file": "frames/scene_50_04.png",
+      "beat": 50,
+      "phase": 5,
+      "caption": "而熵也要被治理",
+      "voice": "系统混乱，也必须被治理。",
+      "duration_hint": 0.3416009019165726
+    },
+    {
+      "file": "frames/scene_50_05.png",
+      "beat": 50,
+      "phase": 6,
+      "caption": "而熵也要被治理",
+      "voice": "系统混乱，也必须被治理。",
+      "duration_hint": 0.3700676437429537
+    },
+    {
+      "file": "frames/scene_50_06.png",
+      "beat": 50,
+      "phase": 7,
+      "caption": "而熵也要被治理",
+      "voice": "系统混乱，也必须被治理。",
+      "duration_hint": 0.3985343855693348
+    },
+    {
+      "file": "frames/scene_50_07.png",
+      "beat": 50,
+      "phase": 8,
+      "caption": "而熵也要被治理",
+      "voice": "系统混乱，也必须被治理。",
+      "duration_hint": 0.5124013528748589
+    },
+    {
+      "file": "frames/scene_51_00.png",
+      "beat": 51,
+      "phase": 1,
+      "caption": "旧办法：每周五 20% 时间清理 AI 垃圾代码",
+      "voice": "旧办法，是每周五拿出百分之二十时间，清理 AI 垃圾代码。",
+      "duration_hint": 0.49182638105975196
+    },
+    {
+      "file": "frames/scene_51_01.png",
+      "beat": 51,
+      "phase": 2,
+      "caption": "旧办法：每周五 20% 时间清理 AI 垃圾代码",
+      "voice": "旧办法，是每周五拿出百分之二十时间，清理 AI 垃圾代码。",
+      "duration_hint": 0.49182638105975196
+    },
+    {
+      "file": "frames/scene_51_02.png",
+      "beat": 51,
+      "phase": 3,
+      "caption": "旧办法：每周五 20% 时间清理 AI 垃圾代码",
+      "voice": "旧办法，是每周五拿出百分之二十时间，清理 AI 垃圾代码。",
+      "duration_hint": 0.5410090191657272
+    },
+    {
+      "file": "frames/scene_51_03.png",
+      "beat": 51,
+      "phase": 4,
+      "caption": "旧办法：每周五 20% 时间清理 AI 垃圾代码",
+      "voice": "旧办法，是每周五拿出百分之二十时间，清理 AI 垃圾代码。",
+      "duration_hint": 0.5901916572717023
+    },
+    {
+      "file": "frames/scene_51_04.png",
+      "beat": 51,
+      "phase": 5,
+      "caption": "旧办法：每周五 20% 时间清理 AI 垃圾代码",
+      "voice": "旧办法，是每周五拿出百分之二十时间，清理 AI 垃圾代码。",
+      "duration_hint": 0.5901916572717023
+    },
+    {
+      "file": "frames/scene_51_05.png",
+      "beat": 51,
+      "phase": 6,
+      "caption": "旧办法：每周五 20% 时间清理 AI 垃圾代码",
+      "voice": "旧办法，是每周五拿出百分之二十时间，清理 AI 垃圾代码。",
+      "duration_hint": 0.6393742953776775
+    },
+    {
+      "file": "frames/scene_51_06.png",
+      "beat": 51,
+      "phase": 7,
+      "caption": "旧办法：每周五 20% 时间清理 AI 垃圾代码",
+      "voice": "旧办法，是每周五拿出百分之二十时间，清理 AI 垃圾代码。",
+      "duration_hint": 0.6885569334836528
+    },
+    {
+      "file": "frames/scene_51_07.png",
+      "beat": 51,
+      "phase": 8,
+      "caption": "旧办法：每周五 20% 时间清理 AI 垃圾代码",
+      "voice": "旧办法，是每周五拿出百分之二十时间，清理 AI 垃圾代码。",
+      "duration_hint": 0.8852874859075535
+    },
+    {
+      "file": "frames/scene_52_00.png",
+      "beat": 52,
+      "phase": 1,
+      "caption": "golden principles：共享工具，不猜数据",
+      "voice": "新办法，叫 golden principles，也就是一组黄金原则。",
+      "duration_hint": 0.4735062006764375
+    },
+    {
+      "file": "frames/scene_52_01.png",
+      "beat": 52,
+      "phase": 2,
+      "caption": "golden principles：共享工具，不猜数据",
+      "voice": "新办法，叫 golden principles，也就是一组黄金原则。",
+      "duration_hint": 0.4735062006764375
+    },
+    {
+      "file": "frames/scene_52_02.png",
+      "beat": 52,
+      "phase": 3,
+      "caption": "golden principles：共享工具，不猜数据",
+      "voice": "新办法，叫 golden principles，也就是一组黄金原则。",
+      "duration_hint": 0.5208568207440812
+    },
+    {
+      "file": "frames/scene_52_03.png",
+      "beat": 52,
+      "phase": 4,
+      "caption": "golden principles：共享工具，不猜数据",
+      "voice": "新办法，叫 golden principles，也就是一组黄金原则。",
+      "duration_hint": 0.5682074408117249
+    },
+    {
+      "file": "frames/scene_52_04.png",
+      "beat": 52,
+      "phase": 5,
+      "caption": "golden principles：共享工具，不猜数据",
+      "voice": "新办法，叫 golden principles，也就是一组黄金原则。",
+      "duration_hint": 0.5682074408117249
+    },
+    {
+      "file": "frames/scene_52_05.png",
+      "beat": 52,
+      "phase": 6,
+      "caption": "golden principles：共享工具，不猜数据",
+      "voice": "新办法，叫 golden principles，也就是一组黄金原则。",
+      "duration_hint": 0.6155580608793688
+    },
+    {
+      "file": "frames/scene_52_06.png",
+      "beat": 52,
+      "phase": 7,
+      "caption": "golden principles：共享工具，不猜数据",
+      "voice": "新办法，叫 golden principles，也就是一组黄金原则。",
+      "duration_hint": 0.6629086809470126
+    },
+    {
+      "file": "frames/scene_52_07.png",
+      "beat": 52,
+      "phase": 8,
+      "caption": "golden principles：共享工具，不猜数据",
+      "voice": "新办法，叫 golden principles，也就是一组黄金原则。",
+      "duration_hint": 0.8523111612175874
+    },
+    {
+      "file": "frames/scene_53_00.png",
+      "beat": 53,
+      "phase": 1,
+      "caption": "后台 Codex 扫描偏差、更新质量分、开小型重构请求",
+      "voice": "后台 Codex 会扫描问题，开小型重构请求。",
+      "duration_hint": 0.4249473684210527
+    },
+    {
+      "file": "frames/scene_53_01.png",
+      "beat": 53,
+      "phase": 2,
+      "caption": "后台 Codex 扫描偏差、更新质量分、开小型重构请求",
+      "voice": "后台 Codex 会扫描问题，开小型重构请求。",
+      "duration_hint": 0.4249473684210527
+    },
+    {
+      "file": "frames/scene_53_02.png",
+      "beat": 53,
+      "phase": 3,
+      "caption": "后台 Codex 扫描偏差、更新质量分、开小型重构请求",
+      "voice": "后台 Codex 会扫描问题，开小型重构请求。",
+      "duration_hint": 0.46744210526315794
+    },
+    {
+      "file": "frames/scene_53_03.png",
+      "beat": 53,
+      "phase": 4,
+      "caption": "后台 Codex 扫描偏差、更新质量分、开小型重构请求",
+      "voice": "后台 Codex 会扫描问题，开小型重构请求。",
+      "duration_hint": 0.5099368421052631
+    },
+    {
+      "file": "frames/scene_53_04.png",
+      "beat": 53,
+      "phase": 5,
+      "caption": "后台 Codex 扫描偏差、更新质量分、开小型重构请求",
+      "voice": "后台 Codex 会扫描问题，开小型重构请求。",
+      "duration_hint": 0.5099368421052631
+    },
+    {
+      "file": "frames/scene_53_05.png",
+      "beat": 53,
+      "phase": 6,
+      "caption": "后台 Codex 扫描偏差、更新质量分、开小型重构请求",
+      "voice": "后台 Codex 会扫描问题，开小型重构请求。",
+      "duration_hint": 0.5524315789473685
+    },
+    {
+      "file": "frames/scene_53_06.png",
+      "beat": 53,
+      "phase": 7,
+      "caption": "后台 Codex 扫描偏差、更新质量分、开小型重构请求",
+      "voice": "后台 Codex 会扫描问题，开小型重构请求。",
+      "duration_hint": 0.5949263157894737
+    },
+    {
+      "file": "frames/scene_53_07.png",
+      "beat": 53,
+      "phase": 8,
+      "caption": "后台 Codex 扫描偏差、更新质量分、开小型重构请求",
+      "voice": "后台 Codex 会扫描问题，开小型重构请求。",
+      "duration_hint": 0.7649052631578948
+    },
+    {
+      "file": "frames/scene_54_00.png",
+      "beat": 54,
+      "phase": 1,
+      "caption": "这就像垃圾回收",
+      "voice": "这就像一套垃圾回收系统。",
+      "duration_hint": 0.3090526315789474
+    },
+    {
+      "file": "frames/scene_54_01.png",
+      "beat": 54,
+      "phase": 2,
+      "caption": "这就像垃圾回收",
+      "voice": "这就像一套垃圾回收系统。",
+      "duration_hint": 0.3090526315789474
+    },
+    {
+      "file": "frames/scene_54_02.png",
+      "beat": 54,
+      "phase": 3,
+      "caption": "这就像垃圾回收",
+      "voice": "这就像一套垃圾回收系统。",
+      "duration_hint": 0.3399578947368421
+    },
+    {
+      "file": "frames/scene_54_03.png",
+      "beat": 54,
+      "phase": 4,
+      "caption": "这就像垃圾回收",
+      "voice": "这就像一套垃圾回收系统。",
+      "duration_hint": 0.37086315789473684
+    },
+    {
+      "file": "frames/scene_54_04.png",
+      "beat": 54,
+      "phase": 5,
+      "caption": "这就像垃圾回收",
+      "voice": "这就像一套垃圾回收系统。",
+      "duration_hint": 0.37086315789473684
+    },
+    {
+      "file": "frames/scene_54_05.png",
+      "beat": 54,
+      "phase": 6,
+      "caption": "这就像垃圾回收",
+      "voice": "这就像一套垃圾回收系统。",
+      "duration_hint": 0.4017684210526316
+    },
+    {
+      "file": "frames/scene_54_06.png",
+      "beat": 54,
+      "phase": 7,
+      "caption": "这就像垃圾回收",
+      "voice": "这就像一套垃圾回收系统。",
+      "duration_hint": 0.4326736842105264
+    },
+    {
+      "file": "frames/scene_54_07.png",
+      "beat": 54,
+      "phase": 8,
+      "caption": "这就像垃圾回收",
+      "voice": "这就像一套垃圾回收系统。",
+      "duration_hint": 0.5562947368421053
+    },
+    {
+      "file": "frames/scene_55_00.png",
+      "beat": 55,
+      "phase": 1,
+      "caption": "这不是 AI 写代码，而是 Harness Engineering",
+      "voice": "所以重点不是 AI 写代码，而是 Harness Engineering。",
+      "duration_hint": 0.4355463673951565
+    },
+    {
+      "file": "frames/scene_55_01.png",
+      "beat": 55,
+      "phase": 2,
+      "caption": "这不是 AI 写代码，而是 Harness Engineering",
+      "voice": "所以重点不是 AI 写代码，而是 Harness Engineering。",
+      "duration_hint": 0.4355463673951565
+    },
+    {
+      "file": "frames/scene_55_02.png",
+      "beat": 55,
+      "phase": 3,
+      "caption": "这不是 AI 写代码，而是 Harness Engineering",
+      "voice": "所以重点不是 AI 写代码，而是 Harness Engineering。",
+      "duration_hint": 0.47910100413467216
+    },
+    {
+      "file": "frames/scene_55_03.png",
+      "beat": 55,
+      "phase": 4,
+      "caption": "这不是 AI 写代码，而是 Harness Engineering",
+      "voice": "所以重点不是 AI 写代码，而是 Harness Engineering。",
+      "duration_hint": 0.5226556408741878
+    },
+    {
+      "file": "frames/scene_55_04.png",
+      "beat": 55,
+      "phase": 5,
+      "caption": "这不是 AI 写代码，而是 Harness Engineering",
+      "voice": "所以重点不是 AI 写代码，而是 Harness Engineering。",
+      "duration_hint": 0.5226556408741878
+    },
+    {
+      "file": "frames/scene_55_05.png",
+      "beat": 55,
+      "phase": 6,
+      "caption": "这不是 AI 写代码，而是 Harness Engineering",
+      "voice": "所以重点不是 AI 写代码，而是 Harness Engineering。",
+      "duration_hint": 0.5662102776137035
+    },
+    {
+      "file": "frames/scene_55_06.png",
+      "beat": 55,
+      "phase": 7,
+      "caption": "这不是 AI 写代码，而是 Harness Engineering",
+      "voice": "所以重点不是 AI 写代码，而是 Harness Engineering。",
+      "duration_hint": 0.6097649143532192
+    },
+    {
+      "file": "frames/scene_55_07.png",
+      "beat": 55,
+      "phase": 8,
+      "caption": "这不是 AI 写代码，而是 Harness Engineering",
+      "voice": "所以重点不是 AI 写代码，而是 Harness Engineering。",
+      "duration_hint": 0.7839834613112817
+    },
+    {
+      "file": "frames/scene_56_00.png",
+      "beat": 56,
+      "phase": 1,
+      "caption": "模型负责生成，Harness 负责治理",
+      "voice": "模型负责生成，Harness 负责治理。",
+      "duration_hint": 0.3253071470761961
+    },
+    {
+      "file": "frames/scene_56_01.png",
+      "beat": 56,
+      "phase": 2,
+      "caption": "模型负责生成，Harness 负责治理",
+      "voice": "模型负责生成，Harness 负责治理。",
+      "duration_hint": 0.3253071470761961
+    },
+    {
+      "file": "frames/scene_56_02.png",
+      "beat": 56,
+      "phase": 3,
+      "caption": "模型负责生成，Harness 负责治理",
+      "voice": "模型负责生成，Harness 负责治理。",
+      "duration_hint": 0.3578378617838157
+    },
+    {
+      "file": "frames/scene_56_03.png",
+      "beat": 56,
+      "phase": 4,
+      "caption": "模型负责生成，Harness 负责治理",
+      "voice": "模型负责生成，Harness 负责治理。",
+      "duration_hint": 0.3903685764914353
+    },
+    {
+      "file": "frames/scene_56_04.png",
+      "beat": 56,
+      "phase": 5,
+      "caption": "模型负责生成，Harness 负责治理",
+      "voice": "模型负责生成，Harness 负责治理。",
+      "duration_hint": 0.3903685764914353
+    },
+    {
+      "file": "frames/scene_56_05.png",
+      "beat": 56,
+      "phase": 6,
+      "caption": "模型负责生成，Harness 负责治理",
+      "voice": "模型负责生成，Harness 负责治理。",
+      "duration_hint": 0.4228992911990549
+    },
+    {
+      "file": "frames/scene_56_06.png",
+      "beat": 56,
+      "phase": 7,
+      "caption": "模型负责生成，Harness 负责治理",
+      "voice": "模型负责生成，Harness 负责治理。",
+      "duration_hint": 0.45543000590667454
+    },
+    {
+      "file": "frames/scene_56_07.png",
+      "beat": 56,
+      "phase": 8,
+      "caption": "模型负责生成，Harness 负责治理",
+      "voice": "模型负责生成，Harness 负责治理。",
+      "duration_hint": 0.585552864737153
+    },
+    {
+      "file": "frames/scene_57_00.png",
+      "beat": 57,
+      "phase": 1,
+      "caption": "让生成结果可见、可控、可验证、可维护",
+      "voice": "结果要看得见、管得住、能验证、能维护。",
+      "duration_hint": 0.38414648552864733
+    },
+    {
+      "file": "frames/scene_57_01.png",
+      "beat": 57,
+      "phase": 2,
+      "caption": "让生成结果可见、可控、可验证、可维护",
+      "voice": "结果要看得见、管得住、能验证、能维护。",
+      "duration_hint": 0.38414648552864733
+    },
+    {
+      "file": "frames/scene_57_02.png",
+      "beat": 57,
+      "phase": 3,
+      "caption": "让生成结果可见、可控、可验证、可维护",
+      "voice": "结果要看得见、管得住、能验证、能维护。",
+      "duration_hint": 0.422561134081512
+    },
+    {
+      "file": "frames/scene_57_03.png",
+      "beat": 57,
+      "phase": 4,
+      "caption": "让生成结果可见、可控、可验证、可维护",
+      "voice": "结果要看得见、管得住、能验证、能维护。",
+      "duration_hint": 0.4609757826343767
+    },
+    {
+      "file": "frames/scene_57_04.png",
+      "beat": 57,
+      "phase": 5,
+      "caption": "让生成结果可见、可控、可验证、可维护",
+      "voice": "结果要看得见、管得住、能验证、能维护。",
+      "duration_hint": 0.4609757826343767
+    },
+    {
+      "file": "frames/scene_57_05.png",
+      "beat": 57,
+      "phase": 6,
+      "caption": "让生成结果可见、可控、可验证、可维护",
+      "voice": "结果要看得见、管得住、能验证、能维护。",
+      "duration_hint": 0.4993904311872415
+    },
+    {
+      "file": "frames/scene_57_06.png",
+      "beat": 57,
+      "phase": 7,
+      "caption": "让生成结果可见、可控、可验证、可维护",
+      "voice": "结果要看得见、管得住、能验证、能维护。",
+      "duration_hint": 0.5378050797401063
+    },
+    {
+      "file": "frames/scene_57_07.png",
+      "beat": 57,
+      "phase": 8,
+      "caption": "让生成结果可见、可控、可验证、可维护",
+      "voice": "结果要看得见、管得住、能验证、能维护。",
+      "duration_hint": 0.6914636739515652
+    },
+    {
+      "file": "frames/scene_58_00.png",
+      "beat": 58,
+      "phase": 1,
+      "caption": "OpenAI 仍在学习长期一致性和人类判断位置",
+      "voice": "OpenAI 也还在学习，长期问题怎么处理。",
+      "duration_hint": 0.41720260223048333
+    },
+    {
+      "file": "frames/scene_58_01.png",
+      "beat": 58,
+      "phase": 2,
+      "caption": "OpenAI 仍在学习长期一致性和人类判断位置",
+      "voice": "OpenAI 也还在学习，长期问题怎么处理。",
+      "duration_hint": 0.41720260223048333
+    },
+    {
+      "file": "frames/scene_58_02.png",
+      "beat": 58,
+      "phase": 3,
+      "caption": "OpenAI 仍在学习长期一致性和人类判断位置",
+      "voice": "OpenAI 也还在学习，长期问题怎么处理。",
+      "duration_hint": 0.45892286245353164
+    },
+    {
+      "file": "frames/scene_58_03.png",
+      "beat": 58,
+      "phase": 4,
+      "caption": "OpenAI 仍在学习长期一致性和人类判断位置",
+      "voice": "OpenAI 也还在学习，长期问题怎么处理。",
+      "duration_hint": 0.50064312267658
+    },
+    {
+      "file": "frames/scene_58_04.png",
+      "beat": 58,
+      "phase": 5,
+      "caption": "OpenAI 仍在学习长期一致性和人类判断位置",
+      "voice": "OpenAI 也还在学习，长期问题怎么处理。",
+      "duration_hint": 0.50064312267658
+    },
+    {
+      "file": "frames/scene_58_05.png",
+      "beat": 58,
+      "phase": 6,
+      "caption": "OpenAI 仍在学习长期一致性和人类判断位置",
+      "voice": "OpenAI 也还在学习，长期问题怎么处理。",
+      "duration_hint": 0.5423633828996284
+    },
+    {
+      "file": "frames/scene_58_06.png",
+      "beat": 58,
+      "phase": 7,
+      "caption": "OpenAI 仍在学习长期一致性和人类判断位置",
+      "voice": "OpenAI 也还在学习，长期问题怎么处理。",
+      "duration_hint": 0.5840836431226767
+    },
+    {
+      "file": "frames/scene_58_07.png",
+      "beat": 58,
+      "phase": 8,
+      "caption": "OpenAI 仍在学习长期一致性和人类判断位置",
+      "voice": "OpenAI 也还在学习，长期问题怎么处理。",
+      "duration_hint": 0.7509646840148699
+    },
+    {
+      "file": "frames/scene_59_00.png",
+      "beat": 59,
+      "phase": 1,
+      "caption": "企业智能体真正需要的是基础设施",
+      "voice": "企业真正需要的，其实是这种 AI 基础设施。",
+      "duration_hint": 0.42979739776951664
+    },
+    {
+      "file": "frames/scene_59_01.png",
+      "beat": 59,
+      "phase": 2,
+      "caption": "企业智能体真正需要的是基础设施",
+      "voice": "企业真正需要的，其实是这种 AI 基础设施。",
+      "duration_hint": 0.42979739776951664
+    },
+    {
+      "file": "frames/scene_59_02.png",
+      "beat": 59,
+      "phase": 3,
+      "caption": "企业智能体真正需要的是基础设施",
+      "voice": "企业真正需要的，其实是这种 AI 基础设施。",
+      "duration_hint": 0.47277713754646833
+    },
+    {
+      "file": "frames/scene_59_03.png",
+      "beat": 59,
+      "phase": 4,
+      "caption": "企业智能体真正需要的是基础设施",
+      "voice": "企业真正需要的，其实是这种 AI 基础设施。",
+      "duration_hint": 0.5157568773234199
+    },
+    {
+      "file": "frames/scene_59_04.png",
+      "beat": 59,
+      "phase": 5,
+      "caption": "企业智能体真正需要的是基础设施",
+      "voice": "企业真正需要的，其实是这种 AI 基础设施。",
+      "duration_hint": 0.5157568773234199
+    },
+    {
+      "file": "frames/scene_59_05.png",
+      "beat": 59,
+      "phase": 6,
+      "caption": "企业智能体真正需要的是基础设施",
+      "voice": "企业真正需要的，其实是这种 AI 基础设施。",
+      "duration_hint": 0.5587366171003717
+    },
+    {
+      "file": "frames/scene_59_06.png",
+      "beat": 59,
+      "phase": 7,
+      "caption": "企业智能体真正需要的是基础设施",
+      "voice": "企业真正需要的，其实是这种 AI 基础设施。",
+      "duration_hint": 0.6017163568773234
+    },
+    {
+      "file": "frames/scene_59_07.png",
+      "beat": 59,
+      "phase": 8,
+      "caption": "企业智能体真正需要的是基础设施",
+      "voice": "企业真正需要的，其实是这种 AI 基础设施。",
+      "duration_hint": 0.7736353159851299
+    }
+  ]
+}

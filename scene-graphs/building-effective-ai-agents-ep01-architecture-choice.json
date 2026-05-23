@@ -1,0 +1,408 @@
+{
+  "schemaVersion": "1.0",
+  "slug": "building-effective-ai-agents-ep01-architecture-choice",
+  "title": "Building Effective AI Agents EP01: Agent架构怎么选?",
+  "mission": "AI cognition compression",
+  "audience": "Business and technical leaders choosing an AI-agent architecture",
+  "format": {
+    "aspectRatio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "visualSystem": {
+    "name": "Executive Technical Documentary with Preserved Source Diagrams",
+    "background": "near-black graphite with preserved PDF diagrams as source artifacts",
+    "typography": "large Chinese serif claim, compact sans-serif metadata, original English diagram labels preserved",
+    "palette": {
+      "graphite": "#0b0f12",
+      "panel": "#111820",
+      "line": "#29414d",
+      "cyan": "#61d8ff",
+      "cyanSoft": "#1e6f86",
+      "amber": "#f0b44c",
+      "red": "#ef6a5b",
+      "text": "#f2f5f5",
+      "muted": "#8ea0a8"
+    },
+    "motionPrinciples": [
+      "Use original English PDF diagrams as source artifacts.",
+      "Add Chinese callouts around diagrams rather than redrawing them away.",
+      "Highlight one decision focus per paragraph.",
+      "Keep the architecture ladder calm and legible."
+    ]
+  },
+  "cover": {
+    "headline": "Agent架构怎么选?",
+    "subhead": "架构、协调、工作流，是三件不同的事",
+    "artifact": "source-architecture-choice",
+    "badge": "EP01 / 架构选择",
+    "proofChips": [
+      "Source Diagrams",
+      "Coordination",
+      "Workflow"
+    ],
+    "sourceMark": "Source: Anthropic PDF / Building Effective AI Agents",
+    "sourceVisualRule": "Use original source diagrams as the cover's visual anchor; do not redraw the taxonomy into a different hierarchy."
+  },
+  "sourceDiagrams": [
+    {
+      "id": "single-agent-architecture",
+      "sourceRef": "pdf:p12",
+      "path": "resources/building-effective-ai-agents/diagrams/p12-single-agent-architecture.png",
+      "useInEpisodes": [
+        "episode-1",
+        "episode-2"
+      ],
+      "preservation": "Keep original English labels visible; add explanatory overlays only."
+    },
+    {
+      "id": "multi-agent-hierarchical-workflow",
+      "sourceRef": "pdf:p16",
+      "path": "resources/building-effective-ai-agents/diagrams/p16-multi-agent-hierarchical-workflow.png",
+      "useInEpisodes": [
+        "episode-1",
+        "episode-3"
+      ],
+      "preservation": "Use as original source diagram for supervisor-led coordination."
+    },
+    {
+      "id": "multi-agent-sequential-workflow",
+      "sourceRef": "pdf:p19",
+      "path": "resources/building-effective-ai-agents/diagrams/p19-multi-agent-sequential-workflow.png",
+      "useInEpisodes": [
+        "episode-1",
+        "episode-4"
+      ],
+      "preservation": "Use as original source diagram for sequential workflow."
+    },
+    {
+      "id": "multi-agent-parallel-workflow",
+      "sourceRef": "pdf:p20",
+      "path": "resources/building-effective-ai-agents/diagrams/p20-multi-agent-parallel-workflow.png",
+      "useInEpisodes": [
+        "episode-1",
+        "episode-4"
+      ],
+      "preservation": "Use as original source diagram for parallel workflow."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s01",
+      "durationSeconds": 5.462,
+      "sectionLabel": "Hook",
+      "paragraphLabel": "wrong starting question",
+      "claim": "做 Agent，最容易从错问题开始",
+      "narration": "做 Agent 最容易犯的错，是从技术名词开始。",
+      "subtitle": "做 Agent 最容易犯的错，是从技术名词开始。",
+      "artifact": {
+        "type": "wrong-question",
+        "nodes": [
+          "能不能做 Multi-Agent？",
+          "业务问题需不需要自治？"
+        ]
+      },
+      "focus": "Reject technology-first architecture selection.",
+      "sources": [
+        "pdf:p23-p24"
+      ],
+      "audioFile": "building-effective-ai-agents-ep01-architecture-choice/audio/s01.mp3"
+    },
+    {
+      "id": "s02",
+      "durationSeconds": 7.598,
+      "sectionLabel": "Source",
+      "paragraphLabel": "source diagram proof",
+      "claim": "这份 PDF 不是在推一个架构",
+      "narration": "这份 Anthropic PDF 真正给出的，不是一个固定答案，而是一组架构选择。",
+      "subtitle": "PDF 给出的不是固定答案，而是一组架构选择。",
+      "artifact": {
+        "type": "diagram-montage",
+        "nodes": [],
+        "imagePaths": [
+          "building-effective-ai-agents-ep01-architecture-choice/diagrams/p12-single-agent-architecture.png",
+          "building-effective-ai-agents-ep01-architecture-choice/diagrams/p19-multi-agent-sequential-workflow.png",
+          "building-effective-ai-agents-ep01-architecture-choice/diagrams/p20-multi-agent-parallel-workflow.png"
+        ],
+        "caption": "Original PDF diagrams kept visible: single-agent architecture, multi-agent coordination, and workflow patterns."
+      },
+      "focus": "Show source diagrams as evidence, not decoration.",
+      "sourceDiagramRefs": [
+        "single-agent-architecture",
+        "multi-agent-sequential-workflow",
+        "multi-agent-parallel-workflow"
+      ],
+      "sources": [
+        "pdf:p12",
+        "pdf:p19",
+        "pdf:p20"
+      ],
+      "audioFile": "building-effective-ai-agents-ep01-architecture-choice/audio/s02.mp3"
+    },
+    {
+      "id": "s03",
+      "durationSeconds": 10.67,
+      "sectionLabel": "Taxonomy",
+      "paragraphLabel": "source taxonomy",
+      "claim": "先分清三件事",
+      "narration": "先不要把概念混在一起。原文先讲 Single Agent，再讲 Multi-Agent 的协调概念，最后讲 Agentic Workflows。",
+      "subtitle": "先分清：架构、协调、工作流，是三件不同的事。",
+      "artifact": {
+        "type": "architecture-hierarchy",
+        "nodes": [],
+        "groups": [
+          {
+            "title": "Single Agent",
+            "items": [
+              "一个 Agent 负责目标",
+              "工具 / 技能 / 记忆",
+              "动态决策与反馈"
+            ]
+          },
+          {
+            "title": "Multi-Agent",
+            "items": [
+              "多个专业 Agent",
+              "集中式 / 去中心化",
+              "层级协调 / 协作协调"
+            ]
+          },
+          {
+            "title": "Agentic Workflows",
+            "items": [
+              "预定义结构",
+              "Sequential / Parallel",
+              "Evaluator-optimizer"
+            ]
+          }
+        ]
+      },
+      "focus": "Restore the source taxonomy before making architecture recommendations.",
+      "sources": [
+        "pdf:p4",
+        "pdf:p23-p24"
+      ],
+      "audioFile": "building-effective-ai-agents-ep01-architecture-choice/audio/s03.mp3"
+    },
+    {
+      "id": "s04",
+      "durationSeconds": 12.758,
+      "sectionLabel": "Taxonomy",
+      "paragraphLabel": "workflow structure boundary",
+      "claim": "Workflow 是结构，不是协调概念",
+      "narration": "Agentic Workflow 讲的是结构：任务如何排序、交接、并行和评估。它支撑架构，但不等于 Multi-Agent 的协调概念。",
+      "subtitle": "Workflow 讲结构；Coordination 讲多个 Agent 怎么协同。",
+      "artifact": {
+        "type": "source-diagram",
+        "nodes": [],
+        "imagePath": "building-effective-ai-agents-ep01-architecture-choice/diagrams/p19-multi-agent-sequential-workflow.png",
+        "caption": "Original PDF diagram: sequential workflow is a predefined orchestration structure."
+      },
+      "focus": "Separate workflow structure from multi-agent coordination taxonomy.",
+      "sourceDiagramRefs": [
+        "multi-agent-sequential-workflow"
+      ],
+      "sources": [
+        "pdf:p18-p19"
+      ],
+      "audioFile": "building-effective-ai-agents-ep01-architecture-choice/audio/s04.mp3"
+    },
+    {
+      "id": "s05",
+      "durationSeconds": 12.71,
+      "sectionLabel": "Single",
+      "paragraphLabel": "single-agent boundary",
+      "claim": "Single Agent 也可以有内部流程",
+      "narration": "Single Agent 是一个 Agent 负责目标，用工具、技能和记忆推进任务。它可以调用流程，但核心仍是一个 Agent 的动态决策。",
+      "subtitle": "Single Agent：一个 Agent 负责目标，工具和记忆支撑它。",
+      "artifact": {
+        "type": "source-diagram",
+        "nodes": [],
+        "imagePath": "building-effective-ai-agents-ep01-architecture-choice/diagrams/p12-single-agent-architecture.png",
+        "caption": "Original PDF diagram: a single agent combines LLM, tools, Skills, and memory."
+      },
+      "focus": "Clarify that workflows may exist inside a single-agent architecture.",
+      "sourceDiagramRefs": [
+        "single-agent-architecture"
+      ],
+      "sources": [
+        "pdf:p4",
+        "pdf:p11-p12"
+      ],
+      "audioFile": "building-effective-ai-agents-ep01-architecture-choice/audio/s05.mp3"
+    },
+    {
+      "id": "s06",
+      "durationSeconds": 9.902,
+      "sectionLabel": "Single",
+      "paragraphLabel": "start simple",
+      "claim": "目标清楚，路径不清楚：先用 Single Agent",
+      "narration": "所以，目标清楚、路径需要动态选择，但还不需要多个专家一起处理时，先从 Single Agent 开始。",
+      "subtitle": "目标清楚、路径要动态选择，但还不需要多个专家一起处理，先用 Single Agent。",
+      "artifact": {
+        "type": "single-agent",
+        "nodes": [
+          "目标",
+          "Single Agent",
+          "工具",
+          "反馈"
+        ]
+      },
+      "focus": "Frame Single Agent as the first narrow autonomy step.",
+      "sources": [
+        "pdf:p10",
+        "pdf:p12",
+        "pdf:p27"
+      ],
+      "audioFile": "building-effective-ai-agents-ep01-architecture-choice/audio/s06.mp3"
+    },
+    {
+      "id": "s07",
+      "durationSeconds": 12.158,
+      "sectionLabel": "Multi",
+      "paragraphLabel": "multi-agent coordination",
+      "claim": "Multi-Agent 的主轴是协调",
+      "narration": "Multi-Agent 的核心不是顺序或并行，而是协调。原文先分集中式和去中心化：集中式里才有 hierarchical pattern。",
+      "subtitle": "Multi-Agent 先分协调方式：集中式层级，或去中心化协作。",
+      "artifact": {
+        "type": "diagram-montage",
+        "nodes": [],
+        "imagePaths": [
+          "building-effective-ai-agents-ep01-architecture-choice/diagrams/p16-multi-agent-hierarchical-workflow.png",
+          "building-effective-ai-agents-ep01-architecture-choice/diagrams/p20-multi-agent-parallel-workflow.png"
+        ],
+        "caption": "Original PDF diagrams: hierarchical coordination plus parallel workflow as a separate workflow pattern."
+      },
+      "focus": "Correct the taxonomy: hierarchical is a coordination pattern; parallel is a workflow pattern.",
+      "sourceDiagramRefs": [
+        "multi-agent-hierarchical-workflow",
+        "multi-agent-parallel-workflow"
+      ],
+      "sources": [
+        "pdf:p14-p16",
+        "pdf:p20-p21"
+      ],
+      "audioFile": "building-effective-ai-agents-ep01-architecture-choice/audio/s07.mp3"
+    },
+    {
+      "id": "s08",
+      "durationSeconds": 10.166,
+      "sectionLabel": "Cost",
+      "paragraphLabel": "token cost",
+      "claim": "Multi-Agent 有真实成本",
+      "narration": "但代价也很真实。PDF 提醒，Multi-Agent 可能消耗单 Agent 大约十到十五倍 Token。",
+      "subtitle": "Multi-Agent 可能消耗约 10-15 倍 Token。",
+      "artifact": {
+        "type": "cost-triangle",
+        "nodes": [
+          "Token",
+          "延迟",
+          "调试"
+        ]
+      },
+      "focus": "Make cost visible before recommending complexity.",
+      "sources": [
+        "pdf:p23"
+      ],
+      "audioFile": "building-effective-ai-agents-ep01-architecture-choice/audio/s08.mp3"
+    },
+    {
+      "id": "s09",
+      "durationSeconds": 13.214,
+      "sectionLabel": "Decision",
+      "paragraphLabel": "five axes",
+      "claim": "选择看五件事",
+      "narration": "所以架构选择，主要看五件事：控制要求、领域复杂度、资源预算、上线时间，以及需不需要领域专家参与。",
+      "subtitle": "控制、领域、资源、时间、专家参与，决定架构选择。",
+      "artifact": {
+        "type": "selection-matrix",
+        "nodes": [
+          "控制",
+          "领域",
+          "资源",
+          "时间",
+          "专家参与"
+        ]
+      },
+      "focus": "Compress the PDF decision framework into five visible axes.",
+      "sources": [
+        "pdf:p23-p24"
+      ],
+      "audioFile": "building-effective-ai-agents-ep01-architecture-choice/audio/s09.mp3"
+    },
+    {
+      "id": "s10",
+      "durationSeconds": 11.606,
+      "sectionLabel": "Production",
+      "paragraphLabel": "observability",
+      "claim": "生产系统还要能解释自己",
+      "narration": "一旦进入真实业务系统，还要能观察和治理：提示链、模型决策、检索上下文、Token 消耗，都要看得见。",
+      "subtitle": "真实业务系统必须可观察、可治理。",
+      "artifact": {
+        "type": "production-observability",
+        "nodes": [
+          "提示链",
+          "模型决策",
+          "检索上下文",
+          "Token",
+          "治理"
+        ]
+      },
+      "focus": "Add the production caveat without turning this into Episode 5.",
+      "sources": [
+        "pdf:p11",
+        "pdf:p27"
+      ],
+      "audioFile": "building-effective-ai-agents-ep01-architecture-choice/audio/s10.mp3"
+    },
+    {
+      "id": "s11",
+      "durationSeconds": 6.206,
+      "sectionLabel": "Takeaway",
+      "paragraphLabel": "smallest fit",
+      "claim": "先选最小可用架构",
+      "narration": "第一集的结论是：先选最小可用架构，再保留演进空间。",
+      "subtitle": "先选最小可用架构，再保留演进空间。",
+      "artifact": {
+        "type": "complexity-ladder",
+        "nodes": [
+          "规则编排",
+          "Single Agent",
+          "Multi-Agent",
+          "生产治理"
+        ]
+      },
+      "focus": "Close with smallest sufficient architecture and room to evolve.",
+      "sources": [
+        "pdf:p24-p27",
+        "compression:building-effective-ai-agents-ep01-architecture-choice"
+      ],
+      "audioFile": "building-effective-ai-agents-ep01-architecture-choice/audio/s11.mp3"
+    },
+    {
+      "id": "s12",
+      "durationSeconds": 5.51,
+      "sectionLabel": "Next",
+      "paragraphLabel": "bridge",
+      "claim": "下一集：从窄 Agent 开始",
+      "narration": "下一集讲：怎么从一个窄而稳的 Agent 开始。",
+      "subtitle": "下一集：怎么从一个窄而稳的 Agent 开始。",
+      "artifact": {
+        "type": "single-agent",
+        "nodes": [
+          "窄任务",
+          "模块化",
+          "可观测",
+          "可演进"
+        ]
+      },
+      "focus": "Bridge to Episode 2.",
+      "sources": [
+        "pdf:p10",
+        "series:building-effective-ai-agents"
+      ],
+      "audioFile": "building-effective-ai-agents-ep01-architecture-choice/audio/s12.mp3"
+    }
+  ]
+}

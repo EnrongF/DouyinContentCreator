@@ -1,0 +1,47 @@
+## s01
+Expected: 很多团队一上来就想做完整平台，但第一版 Agent 最怕的不是能力少，而是边界不清。
+ASR: 很多团队一上来就想做完整平台,但B100Agent最怕的不是能力少,而是边界不清。
+Similarity: 0.901
+Core match: pass
+
+## s02
+Expected: 原文强调的是 start simple, scale intelligently。简单系统更便宜、更容易调试，也更容易知道下一步该扩展哪里。
+ASR: 原文强调的是,Start simple,Scale intelligently。简单系统更便宜,更容易调试,也更容易知道下一步该扩展哪里。
+Similarity: 1.000
+Core match: pass
+
+## s03
+Expected: Single Agent 的核心不是“一个聊天入口”，而是一个 Agent 围绕明确目标，观察、计划、调用工具，再根据结果继续推进。
+ASR: Single Agent的核心不是一个聊天入口,而是一个Agent围绕明确目标,观察、计划、调用工具,再根据结果继续推进。
+Similarity: 1.000
+Core match: pass
+
+## s04
+Expected: 窄任务不是降低价值，而是让输入、工具、输出和成功标准都能被检查。没有边界，Agent 的失败也很难定位。
+ASR: 窄任务不是降低价值,而是让输入、工具、输出和成功标准都能被检查。没有边界,Agent的失败也很难定位。
+Similarity: 1.000
+Core match: pass
+
+## s05
+Expected: 原文提醒，在跳到 Multi-Agent 之前，先看一个 Single Agent 加上领域 Skills 能不能解决问题。Skill 是模块化能力包，不是另一个 Agent。
+ASR: 本文提醒,在跳到Multi-Agent之前,先看一个Single-Agent加上领域Skills能不能解决问题。Skill是模块化能力包,不是另一个Agent。
+Similarity: 0.926
+Core match: pass
+
+## s06
+Expected: 第一版 Agent 不一定要用最强模型处理所有步骤。把高价值判断留给强模型，把固定动作交给工具或便宜模型。
+ASR: 第一版Agent不一定要用最强模型处理所有步骤,把高价值判断留给强模型,把固定动作交给工具或便宜模型。
+Similarity: 1.000
+Core match: pass
+
+## s07
+Expected: 如果不知道 Agent 是否真的节省时间、减少错误、提高转化，就不要急着扩展成多智能体。先把指标和日志打通。
+ASR: 如果不知道Agent是否真的节省时间,减少错误,提高转化,就不要急着扩展成多智能体,先把指标和日志打通。
+Similarity: 1.000
+Core match: pass
+
+## s08
+Expected: 第二集的结论是：先做一个窄而稳的 Agent，用真实反馈决定要加 Skill、加工具，还是以后再加多智能体。
+ASR: 第二集的结论是,先做一个窄而稳的agent,用真实反馈决定要加skill、加工具,还是以后再加多智能体。
+Similarity: 1.000
+Core match: pass

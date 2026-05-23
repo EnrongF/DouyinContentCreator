@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EP06 Mesh-Inspired Cover Preview</title>
+    <style>
+      :root {
+        --black: #0f0f10;
+        --ink: #1d1d1f;
+        --cream: #fefef7;
+        --paper: #f7f3ee;
+        --muted: #868f97;
+        --soft: #ffffff1f;
+        --orange: #fb7232;
+        --orange-deep: #ff6821;
+        --gold: #f7b500;
+        --blue: #32c5ff;
+        --pink: #fd86c7;
+        --font-cn-sans:
+          "Resource Han Rounded CN", "GenSenRounded TW", "GenSenRounded2 TW",
+          "GenJyuuGothic", "Source Han Sans SC", "Noto Sans CJK SC", "Noto Sans SC",
+          "Sarasa UI SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+          sans-serif;
+        --font-cn-serif:
+          "Source Han Serif SC", "Noto Serif CJK SC", "Noto Serif SC", "Songti SC",
+          "STSong", serif;
+        --font-cn-rounded:
+          "Resource Han Rounded CN", "GenSenRounded TW", "GenSenRounded2 TW",
+          "GenJyuuGothic", "Source Han Sans SC", "Noto Sans CJK SC", "Noto Sans SC",
+          "Sarasa UI SC", "PingFang SC", sans-serif;
+        --font-ui:
+          "Avenir Next", "Helvetica Neue", "Inter", "PingFang SC", system-ui,
+          sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: #050505;
+        color: var(--cream);
+        font-family: var(--font-cn-sans);
+      }
+
+      .stage {
+        width: min(92vw, 540px);
+        aspect-ratio: 3 / 4;
+        position: relative;
+        overflow: hidden;
+        background: var(--black);
+        box-shadow: 0 42px 140px rgba(0, 0, 0, 0.62);
+        isolation: isolate;
+      }
+
+      .warm-field,
+      .lower-field {
+        position: absolute;
+        pointer-events: none;
+        filter: blur(16px) saturate(1.08);
+        z-index: -1;
+      }
+
+      .warm-field {
+        width: 180%;
+        height: 52%;
+        top: -13%;
+        left: -40%;
+        background:
+          radial-gradient(42% 36% at 69% 32%, rgba(255, 237, 144, 0.86), rgba(255, 219, 103, 0.32) 48%, transparent 82%),
+          radial-gradient(44% 40% at 58% 34%, rgba(255, 255, 241, 0.94), rgba(255, 153, 130, 0.66) 34%, transparent 78%),
+          radial-gradient(36% 26% at 32% 30%, rgba(252, 187, 0, 0.76), rgba(238, 161, 0, 0.24) 58%, transparent 82%),
+          radial-gradient(40% 25% at 62% 68%, rgba(253, 134, 199, 0.58), rgba(171, 64, 125, 0.16) 60%, transparent 82%);
+        transform: rotate(-12deg);
+      }
+
+      .lower-field {
+        width: 150%;
+        height: 48%;
+        left: -22%;
+        bottom: -22%;
+        opacity: 0.72;
+        background:
+          radial-gradient(50% 42% at 50% 44%, rgba(250, 250, 247, 0.84), rgba(248, 242, 231, 0.23) 68%, transparent 100%),
+          radial-gradient(32% 26% at 31% 28%, rgba(255, 216, 108, 0.66), rgba(255, 178, 104, 0.18) 62%, transparent 100%),
+          radial-gradient(40% 20% at 64% 60%, rgba(136, 73, 238, 0.2), transparent 72%);
+        transform: rotate(7deg);
+      }
+
+      .rings {
+        position: absolute;
+        left: 50%;
+        top: 53%;
+        width: 156%;
+        aspect-ratio: 1.68;
+        transform: translate(-52%, -50%);
+        opacity: 0.55;
+        mix-blend-mode: plus-lighter;
+      }
+
+      .ring {
+        position: absolute;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 50%;
+        inset: var(--inset);
+        transform: rotate(var(--rot));
+      }
+
+      .ring::after {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        left: var(--dot-x);
+        top: var(--dot-y);
+        background: var(--dot);
+        box-shadow: 0 0 22px var(--dot);
+      }
+
+      .hero {
+        position: absolute;
+        left: 8%;
+        right: 8%;
+        top: 5.6%;
+        text-align: center;
+      }
+
+      .rename {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        color: var(--muted);
+        font-size: clamp(12px, 2.1vw, 17px);
+        line-height: 1;
+        letter-spacing: 0.22px;
+        font-family: var(--font-ui);
+      }
+
+      .rename strong {
+        color: var(--cream);
+        font-weight: 750;
+      }
+
+      h1 {
+        margin: 24px auto 0;
+        max-width: 90%;
+        color: var(--cream);
+        font-family: var(--font-cn-sans);
+        font-size: clamp(42px, 10.2vw, 92px);
+        line-height: 1.06;
+        letter-spacing: 0;
+        font-weight: 800;
+        font-variant-east-asian: proportional-width;
+        text-shadow:
+          0 0 6px rgba(255, 255, 255, 0.48),
+          0 16px 48px rgba(251, 114, 50, 0.2);
+      }
+
+      h1 span {
+        display: block;
+        text-wrap: balance;
+      }
+
+      h1 .tight-line {
+        transform: scaleX(0.96);
+        transform-origin: 50% 50%;
+      }
+
+      .subhead {
+        margin: 18px auto 0;
+        width: min(420px, 88%);
+        color: rgba(254, 254, 247, 0.72);
+        font-family: var(--font-cn-rounded);
+        font-size: clamp(18px, 3.6vw, 30px);
+        font-weight: 430;
+        line-height: 1.42;
+        letter-spacing: 0;
+      }
+
+      .cta {
+        margin: 19px auto 0;
+        width: fit-content;
+        min-width: 148px;
+        height: 48px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 22px;
+        border-radius: 16px;
+        background: var(--cream);
+        color: var(--ink);
+        font-size: 16px;
+        font-weight: 700;
+        box-shadow:
+          0 0 6px rgba(255, 255, 255, 0.72),
+          0 18px 42px rgba(251, 114, 50, 0.18);
+      }
+
+      .memory {
+        position: absolute;
+        left: 8%;
+        right: 8%;
+        top: 48.2%;
+        height: 26%;
+      }
+
+      .source-card {
+        position: absolute;
+        width: 44%;
+        height: 53%;
+        border-radius: 20px;
+        background: rgba(247, 243, 238, 0.94);
+        color: var(--ink);
+        border: 1px solid rgba(255, 255, 255, 0.72);
+        box-shadow:
+          0 24px 58px rgba(0, 0, 0, 0.34),
+          inset 0 -10px 24px rgba(255, 255, 255, 0.42);
+        overflow: hidden;
+      }
+
+      .source-card.one {
+        left: 0;
+        top: 4%;
+        transform: rotate(-3deg);
+      }
+
+      .source-card.two {
+        right: 0;
+        top: 18%;
+        transform: rotate(3deg);
+      }
+
+      .source-label {
+        position: absolute;
+        left: 12px;
+        top: 12px;
+        z-index: 2;
+        padding: 5px 8px;
+        border-radius: 999px;
+        background: rgba(31, 31, 31, 0.92);
+        color: var(--cream);
+        font-size: clamp(9px, 1.7vw, 13px);
+        font-weight: 780;
+        letter-spacing: 0.2px;
+      }
+
+      .diagram {
+        position: absolute;
+        inset: 36px 12px 39px;
+        width: calc(100% - 24px);
+        height: calc(100% - 75px);
+        object-fit: contain;
+      }
+
+      .card-title {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba(31, 31, 31, 0.72);
+        font-size: clamp(11px, 2vw, 15px);
+        font-weight: 780;
+      }
+
+      .tags {
+        position: absolute;
+        inset: 0;
+      }
+
+      .tag {
+        position: absolute;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        padding: 0 11px 0 8px;
+        border-radius: 12px;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.08);
+        font-size: clamp(12px, 2.2vw, 16px);
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(8px);
+      }
+
+      .tag::before {
+        content: "";
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: var(--tag);
+        box-shadow: 0 0 18px var(--tag);
+      }
+
+      .tag.a {
+        --tag: var(--orange);
+        left: 30%;
+        top: -4%;
+      }
+
+      .tag.b {
+        --tag: var(--blue);
+        right: 2%;
+        top: 62%;
+      }
+
+      .tag.c {
+        --tag: var(--gold);
+        left: 3%;
+        bottom: -2%;
+      }
+
+      .rule {
+        position: absolute;
+        left: 8%;
+        right: 8%;
+        bottom: 7.5%;
+        min-height: 68px;
+        color: var(--cream);
+        display: grid;
+        grid-template-columns: 48px 1fr;
+        column-gap: 13px;
+        align-items: center;
+      }
+
+      .rule-kicker {
+        color: rgba(254, 254, 247, 0.54);
+        text-transform: uppercase;
+        letter-spacing: 1.3px;
+        font-family: var(--font-ui);
+        font-size: clamp(10px, 1.8vw, 14px);
+        font-weight: 780;
+        grid-column: 2;
+      }
+
+      .rule::before {
+        content: "";
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        grid-row: 1 / span 2;
+        grid-column: 1;
+        background:
+          radial-gradient(circle at 38% 32%, rgba(255, 255, 255, 0.95), rgba(255, 209, 166, 0.72) 34%, rgba(251, 114, 50, 0.82) 68%, rgba(253, 134, 199, 0.52) 100%);
+        box-shadow:
+          0 0 8px rgba(255, 255, 255, 0.62),
+          0 0 42px rgba(251, 114, 50, 0.46);
+      }
+
+      .rule-main {
+        grid-column: 2;
+        margin-top: 6px;
+        font-size: clamp(15px, 2.65vw, 24px);
+        line-height: 1.12;
+        letter-spacing: 0;
+        font-family: var(--font-cn-rounded);
+        font-weight: 760;
+        color: var(--cream);
+        white-space: nowrap;
+        text-shadow: 0 14px 36px rgba(0, 0, 0, 0.46);
+      }
+
+      .source-mark {
+        position: absolute;
+        left: 8%;
+        right: 8%;
+        bottom: 2.2%;
+        color: rgba(255, 255, 255, 0.54);
+        text-align: center;
+        font-size: clamp(10px, 1.8vw, 14px);
+        line-height: 1.35;
+      }
+
+      @media (max-width: 640px) {
+        .stage {
+          width: 100vw;
+          min-height: 100vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="stage" aria-label="EP06 Mesh-inspired cover preview">
+      <div class="warm-field"></div>
+      <div class="lower-field"></div>
+
+      <div class="rings" aria-hidden="true">
+        <div class="ring" style="--inset: 8% 2%; --rot: -8deg; --dot-x: 68%; --dot-y: 18%; --dot: #fb7232"></div>
+        <div class="ring" style="--inset: 18% 12%; --rot: 6deg; --dot-x: 24%; --dot-y: 70%; --dot: #32c5ff"></div>
+        <div class="ring" style="--inset: 29% 23%; --rot: -14deg; --dot-x: 82%; --dot-y: 56%; --dot: #f7b500"></div>
+      </div>
+
+      <section class="hero">
+        <div class="rename"><strong>EP06</strong> / Hybrid architecture decision</div>
+        <h1>
+          <span>什么时候用</span>
+          <span class="tight-line">混合架构？</span>
+        </h1>
+        <div class="subhead">不是起点，是证据逼出来的下一步。</div>
+        <div class="cta">记住升级条件</div>
+      </section>
+
+      <section class="memory" aria-label="source evidence memory field">
+        <article class="source-card one">
+          <div class="source-label">起点</div>
+          <img
+            class="diagram"
+            src="../remotion/public/building-effective-ai-agents-ep06-hybrid-emerging-patterns/diagrams/p12-single-agent-architecture.png"
+            alt="Single agent architecture source diagram"
+          />
+          <div class="card-title">Single Agent</div>
+        </article>
+        <article class="source-card two">
+          <div class="source-label">协调</div>
+          <img
+            class="diagram"
+            src="../remotion/public/building-effective-ai-agents-ep06-hybrid-emerging-patterns/diagrams/p16-multi-agent-hierarchical-workflow.png"
+            alt="Multi-agent hierarchical workflow source diagram"
+          />
+          <div class="card-title">Supervisor Pattern</div>
+        </article>
+        <div class="tags">
+          <div class="tag a">Routing</div>
+          <div class="tag b">Evaluator</div>
+          <div class="tag c">Cost</div>
+        </div>
+      </section>
+
+      <section class="rule">
+        <div class="rule-kicker">Decision rule</div>
+        <div class="rule-main">先跑简单架构，再让问题暴露升级条件。</div>
+      </section>
+
+      <div class="source-mark">Source: Anthropic PDF / Building Effective AI Agents · Mesh visual style preview</div>
+    </main>
+  </body>
+</html>

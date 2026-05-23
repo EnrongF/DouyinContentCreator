@@ -1,0 +1,412 @@
+{
+  "schemaVersion": "1.1",
+  "slug": "the-founders-playbook-ai-native-startup-ep04-founder-not-router",
+  "title": "上线后，创始人别当中转站",
+  "series": "The Founder's Playbook - Building an AI-Native Startup",
+  "episode": 4,
+  "status": "scene_graph_ready",
+  "pauseRequired": true,
+  "nextApprovedStage": "visual production / render",
+  "notApprovedYet": [
+    "Douyin package",
+    "publish/upload"
+  ],
+  "mission": "AI cognition compression",
+  "audience": "Founders, solo builders, AI startup operators, and technical product leaders",
+  "format": {
+    "primary": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "coverGrid": {
+      "width": 1080,
+      "height": 1440,
+      "note": "Cover crop constraints apply later; this scene graph is for video timing."
+    }
+  },
+  "timing": {
+    "source": "voice/the-founders-playbook-ai-native-startup-ep04-founder-not-router/voice-manifest.json",
+    "totalMeasuredSpeechSeconds": 50.56,
+    "totalDurationSeconds": 54.2,
+    "audioStrategy": "selected_qwen_chunks"
+  },
+  "visualSystem": {
+    "status": "content_fitted_visual_system",
+    "lockedStyleName": "Founder Playbook Launch Router Gate",
+    "seriesReference": "scene-graphs/the-founders-playbook-ai-native-startup-ep03-boundaries-before-ai-code.json",
+    "visualJob": "Launch-stage founder bottleneck and system replacement",
+    "styleIntent": "reuse Founder Playbook warm decision-gate VI while changing the central artifact to routing pressure and attention audit lanes",
+    "audienceFeeling": "founder-facing, practical, warm, direct, controlled",
+    "typography": [
+      "Rounded / humanist Chinese sans stack from the Founder Playbook system",
+      "Avenir Next / Inter / system sans for metadata"
+    ],
+    "palette": [
+      "warm black field",
+      "cream text",
+      "amber for launch gate and founder judgment",
+      "cyan for repeatable systems and automation",
+      "rose for overloaded bottlenecks",
+      "orange for recurring work and delegation"
+    ],
+    "symbolGrammar": [
+      "Before designing any symbol, identify the section key message. The symbol must encode that takeaway, not merely the section topic or a noun from the narration.",
+      "Comply with the locked Founder Playbook VI first.",
+      "Use abstract concept marks: router node, queue pressure, launch gate, system router, and attention audit lanes.",
+      "Fit every symbol to the concept: routing pressure converges into one founder node; launch gate separates product existence from repeatable growth; recurring work sorts into lanes.",
+      "Keep each mark readable at phone size with short labels as anchors."
+    ],
+    "motionPrinciples": [
+      "One visual focus per voice chunk.",
+      "Motion is semantic: request convergence, gate transition, loop flip, queue buildup, attention-lane sorting, system replacement.",
+      "Subtitles must stay clear of the central router and audit diagrams.",
+      "Animation order and hold time follow measured voice timing."
+    ],
+    "frameFittingConstraints": [
+      "Primary video frame is 1080x1920.",
+      "Final cover grid constraint remains 1080x1440.",
+      "No scene may rely on dense process text for meaning.",
+      "Every diagram must remain readable in a phone feed.",
+      "Subtitles must not sit in a box or collide with central artifacts."
+    ]
+  },
+  "sourceRefs": [
+    {
+      "id": "source-intake",
+      "path": "sources/the-founders-playbook-ai-native-startup/source-intake.md",
+      "role": "source provenance and structure"
+    },
+    {
+      "id": "source-map",
+      "path": "extraction/the-founders-playbook-ai-native-startup.source-map.md",
+      "role": "source value inventory and page-area mapping"
+    },
+    {
+      "id": "episode-compression",
+      "path": "compression/the-founders-playbook-ai-native-startup-ep04-founder-not-router.md",
+      "role": "episode strategy and value budget"
+    },
+    {
+      "id": "voice-manifest",
+      "path": "voice/the-founders-playbook-ai-native-startup-ep04-founder-not-router/voice-manifest.json",
+      "role": "selected voice chunks and timing"
+    }
+  ],
+  "sourceFidelityGuardrails": [
+    "Launch is about repeatable business growth, not just product existence.",
+    "Founder-in-the-loop is useful early but becomes a bottleneck when every operational loop depends on founder attention.",
+    "The founder should not disappear; founder time is reserved for direction, tradeoff, and risk judgment.",
+    "Operations without founder bottlenecks is a launch-stage exit criterion.",
+    "Security, compliance, enterprise readiness, and full growth metrics remain deferred."
+  ],
+  "episodeClaims": [
+    "After launch, every issue cannot still route through the founder.",
+    "MVP proves the product deserves to exist; Launch proves the business can repeatedly grow.",
+    "Founder involvement shifts from learning advantage to operational bottleneck.",
+    "Delayed decisions, support queues, bug routing gaps, and remembered-only reports expose the bottleneck.",
+    "Founder-handled work should be sorted into automation, delegation, and founder-only judgment.",
+    "Repeated problems should become systems."
+  ],
+  "scenes": [
+    {
+      "id": "c01",
+      "startSeconds": 0,
+      "durationSeconds": 6.26,
+      "speechEndSeconds": 5.92,
+      "sectionLabel": "上线瓶颈",
+      "paragraphId": "p01",
+      "claim": "每个问题都等创始人，公司就还没进入增长。",
+      "narration": "产品上线后，如果每个问题都还要创始人接住，公司就没有真正进入增长。",
+      "subtitle": "每个问题都等创始人，公司就还没进入增长。",
+      "artifact": {
+        "type": "founder-router-bottleneck",
+        "state": "requests-converge",
+        "nodes": ["Support", "Bug", "Decision", "Report", "Founder"],
+        "highlight": "都要创始人接住",
+        "keyMessage": "Founder-in-the-loop becomes a launch bottleneck.",
+        "symbolMeaning": "Multiple request paths converge into one overloaded founder node."
+      },
+      "focusPhrase": "每个问题都还要创始人接住",
+      "focusCue": "request paths converge on founder node",
+      "motion": "requests draw inward, then the founder node pulses as overloaded",
+      "sources": ["episode-compression", "voice-manifest"],
+      "sourceLogic": "Operations without founder bottlenecks is part of launch readiness.",
+      "audioSource": "voice-manifest:c01"
+    },
+    {
+      "id": "c02",
+      "startSeconds": 6.26,
+      "durationSeconds": 5.8,
+      "speechEndSeconds": 11.7,
+      "sectionLabel": "Launch Gate",
+      "paragraphId": "p01",
+      "claim": "MVP 证明产品；Launch 证明增长能不能重复。",
+      "narration": "MVP 证明产品值得存在；Launch 证明业务能不能重复增长。",
+      "subtitle": "MVP 证明产品；Launch 证明增长能不能重复。",
+      "artifact": {
+        "type": "launch-gate-repeatability",
+        "state": "mvp-to-launch",
+        "nodes": ["MVP", "Launch", "重复增长"],
+        "highlight": "业务能不能重复增长",
+        "keyMessage": "Launch is a repeatability gate, not another feature sprint.",
+        "symbolMeaning": "The path crosses from product-exists into a repeatable-growth gate."
+      },
+      "focusPhrase": "业务能不能重复增长",
+      "focusCue": "MVP gate hands off to Launch gate",
+      "motion": "MVP node locks, then Launch gate opens toward repeatable growth",
+      "sources": ["episode-compression", "voice-manifest"],
+      "sourceLogic": "Launch is distinct from MVP and Scale.",
+      "audioSource": "voice-manifest:c02"
+    },
+    {
+      "id": "c03",
+      "startSeconds": 12.06,
+      "durationSeconds": 5.46,
+      "speechEndSeconds": 17.26,
+      "sectionLabel": "回路反转",
+      "paragraphId": "p02",
+      "claim": "早期，创始人在回路里，是优势。",
+      "narration": "早期，创始人在每个回路里，是优势：学得快，判断也快。",
+      "subtitle": "早期，创始人在回路里，是优势。",
+      "artifact": {
+        "type": "founder-router-bottleneck",
+        "state": "learning-loop-advantage",
+        "nodes": ["User", "Signal", "Decision", "Build", "Founder"],
+        "highlight": "学得快，判断也快",
+        "keyMessage": "Early founder involvement creates speed and learning.",
+        "symbolMeaning": "The founder node is still a useful learning loop before launch pressure grows."
+      },
+      "focusPhrase": "是优势",
+      "focusCue": "founder loop stays active but not overloaded",
+      "motion": "signals converge without overload warning",
+      "sources": ["episode-compression", "voice-manifest"],
+      "sourceLogic": "The episode does not claim founder involvement is always bad.",
+      "audioSource": "voice-manifest:c03"
+    },
+    {
+      "id": "c04",
+      "startSeconds": 17.52,
+      "durationSeconds": 3.14,
+      "speechEndSeconds": 20.24,
+      "sectionLabel": "回路反转",
+      "paragraphId": "p02",
+      "claim": "上线以后，同一个习惯会变成瓶颈。",
+      "narration": "但上线以后，同一个习惯会变成瓶颈。",
+      "subtitle": "上线以后，同一个习惯会变成瓶颈。",
+      "artifact": {
+        "type": "founder-router-bottleneck",
+        "state": "overload-flip",
+        "nodes": ["Support", "Bug", "Decision", "Report", "Founder"],
+        "highlight": "变成瓶颈",
+        "keyMessage": "The same founder loop flips from asset to constraint at Launch.",
+        "symbolMeaning": "The founder node changes from learning loop to overloaded router."
+      },
+      "focusPhrase": "变成瓶颈",
+      "focusCue": "founder node switches to overloaded state",
+      "motion": "center node shifts from amber to warning rose",
+      "sources": ["episode-compression", "voice-manifest"],
+      "sourceLogic": "Founder-in-every-loop changes from asset to constraint.",
+      "audioSource": "voice-manifest:c04"
+    },
+    {
+      "id": "c05",
+      "startSeconds": 20.66,
+      "durationSeconds": 3.94,
+      "speechEndSeconds": 24.34,
+      "sectionLabel": "瓶颈信号",
+      "paragraphId": "p03",
+      "claim": "一小时的决定，因为等你，拖成一周。",
+      "narration": "一个一小时能决定的问题，因为等你，拖成一周。",
+      "subtitle": "一小时的决定，因为等你，拖成一周。",
+      "artifact": {
+        "type": "founder-router-bottleneck",
+        "state": "decision-delay",
+        "nodes": ["1h Decision", "Waiting", "Queue", "1 Week", "Founder"],
+        "highlight": "拖成一周",
+        "keyMessage": "Founder routing turns small decisions into calendar delay.",
+        "symbolMeaning": "A short decision path stretches while it waits for founder attention."
+      },
+      "focusPhrase": "拖成一周",
+      "focusCue": "decision lane backs up behind founder",
+      "motion": "decision path slows and stacks at center",
+      "sources": ["episode-compression", "voice-manifest"],
+      "sourceLogic": "Delayed decisions are a warning sign of founder bottleneck.",
+      "audioSource": "voice-manifest:c05"
+    },
+    {
+      "id": "c06",
+      "startSeconds": 24.6,
+      "durationSeconds": 5.44,
+      "speechEndSeconds": 29.64,
+      "sectionLabel": "瓶颈信号",
+      "paragraphId": "p03",
+      "claim": "支持、Bug、周报，都开始排队。",
+      "narration": "支持消息堆起来，Bug 分流没人接，周报只在你想起来时才发生。",
+      "subtitle": "支持、Bug、周报，都开始排队。",
+      "artifact": {
+        "type": "founder-router-bottleneck",
+        "state": "recurring-work-queue",
+        "nodes": ["Support", "Bug", "Report", "Memory", "Founder"],
+        "highlight": "都开始排队",
+        "keyMessage": "Recurring operational work should not wait for founder memory.",
+        "symbolMeaning": "Support, bug triage, and reporting form separate queues into one founder router."
+      },
+      "focusPhrase": "都开始排队",
+      "focusCue": "support bug report queues stack up",
+      "motion": "three operational lanes stack toward the founder node",
+      "sources": ["episode-compression", "voice-manifest"],
+      "sourceLogic": "Recurring work triggered only by founder memory is a launch bottleneck.",
+      "audioSource": "voice-manifest:c06"
+    },
+    {
+      "id": "c07",
+      "startSeconds": 30.04,
+      "durationSeconds": 2.58,
+      "speechEndSeconds": 32.36,
+      "sectionLabel": "错误问题",
+      "paragraphId": "p04",
+      "claim": "不要问：我怎么再忙一点？",
+      "narration": "这时不要问自己：“我怎么再忙一点？”",
+      "subtitle": "不要问：我怎么再忙一点？",
+      "artifact": {
+        "type": "attention-audit-lanes",
+        "state": "wrong-question-dimmed",
+        "nodes": ["更忙", "自动化", "角色", "创始人判断"],
+        "highlight": "再忙一点",
+        "keyMessage": "More founder effort is the wrong launch-stage question.",
+        "symbolMeaning": "The busy-founder path dims before the audit lanes open."
+      },
+      "focusPhrase": "再忙一点",
+      "focusCue": "wrong question dims",
+      "motion": "busy-founder card dims and audit lanes wait",
+      "sources": ["episode-compression", "voice-manifest"],
+      "sourceLogic": "The remedy is system design, not more founder throughput.",
+      "audioSource": "voice-manifest:c07"
+    },
+    {
+      "id": "c08",
+      "startSeconds": 32.62,
+      "durationSeconds": 3.3,
+      "speechEndSeconds": 35.66,
+      "sectionLabel": "注意力审计",
+      "paragraphId": "p04",
+      "claim": "把亲手处理的事，分成三类。",
+      "narration": "要把亲手处理的事情列出来，分成三类。",
+      "subtitle": "把亲手处理的事，分成三类。",
+      "artifact": {
+        "type": "attention-audit-lanes",
+        "state": "audit-list-open",
+        "nodes": ["亲手处理", "自动化", "交给别人", "创始人判断"],
+        "highlight": "分成三类",
+        "keyMessage": "Founder-handled work should be audited, not accepted as default.",
+        "symbolMeaning": "Recurring work leaves the founder queue and prepares to split into lanes."
+      },
+      "focusPhrase": "分成三类",
+      "focusCue": "audit list opens",
+      "motion": "recurring work card opens into three lane targets",
+      "sources": ["episode-compression", "voice-manifest"],
+      "sourceLogic": "Audit everything personally handled.",
+      "audioSource": "voice-manifest:c08"
+    },
+    {
+      "id": "c09",
+      "startSeconds": 35.92,
+      "durationSeconds": 4.3,
+      "speechEndSeconds": 39.92,
+      "sectionLabel": "注意力审计",
+      "paragraphId": "p04",
+      "claim": "能自动化的交给系统，能交给别人的交给角色。",
+      "narration": "能自动化的，交给系统；能交给别人的，交给角色。",
+      "subtitle": "能自动化的交给系统，能交给别人的交给角色。",
+      "artifact": {
+        "type": "attention-audit-lanes",
+        "state": "automate-delegate",
+        "nodes": ["重复问题", "自动化", "交给别人", "创始人判断"],
+        "highlight": "自动化 / 交给别人",
+        "keyMessage": "Automation and delegation remove default founder routing.",
+        "symbolMeaning": "Recurring work is sorted into system and role lanes before founder judgment."
+      },
+      "focusPhrase": "交给系统",
+      "focusCue": "automate and delegate lanes light up",
+      "motion": "tasks split into automation and role lanes",
+      "sources": ["episode-compression", "voice-manifest"],
+      "sourceLogic": "Categorize work into automated, delegated, and founder judgment.",
+      "audioSource": "voice-manifest:c09"
+    },
+    {
+      "id": "c10",
+      "startSeconds": 40.22,
+      "durationSeconds": 4.82,
+      "speechEndSeconds": 44.62,
+      "sectionLabel": "创始人判断",
+      "paragraphId": "p04",
+      "claim": "只把方向、取舍、风险判断留给创始人。",
+      "narration": "只把真正需要方向、取舍和风险判断的事，留给创始人。",
+      "subtitle": "只把方向、取舍、风险判断留给创始人。",
+      "artifact": {
+        "type": "attention-audit-lanes",
+        "state": "founder-only-judgment",
+        "nodes": ["重复问题", "自动化", "交给别人", "创始人判断"],
+        "highlight": "方向 / 取舍 / 风险判断",
+        "keyMessage": "The founder stays in founder-only decisions.",
+        "symbolMeaning": "The founder lane remains active only for direction, tradeoff, and risk judgment."
+      },
+      "focusPhrase": "留给创始人",
+      "focusCue": "founder judgment lane remains highlighted",
+      "motion": "automation and delegation settle; founder judgment stays amber",
+      "sources": ["episode-compression", "voice-manifest"],
+      "sourceLogic": "Do not imply the founder disappears.",
+      "audioSource": "voice-manifest:c10"
+    },
+    {
+      "id": "c11",
+      "startSeconds": 45.04,
+      "durationSeconds": 4.6,
+      "speechEndSeconds": 49.28,
+      "sectionLabel": "本集判断",
+      "paragraphId": "p05",
+      "claim": "重复发生的问题，要变成系统。",
+      "narration": "这一集的判断是：重复发生的问题，要变成系统。",
+      "subtitle": "重复发生的问题，要变成系统。",
+      "artifact": {
+        "type": "attention-audit-lanes",
+        "state": "system-replaces-router",
+        "nodes": ["重复问题", "系统", "角色", "创始人判断"],
+        "highlight": "变成系统",
+        "keyMessage": "Repeated problems should become systems.",
+        "symbolMeaning": "The default route shifts from founder node to system lanes."
+      },
+      "focusPhrase": "重复发生的问题，要变成系统",
+      "focusCue": "system replaces founder router",
+      "motion": "system lane becomes the default route",
+      "sources": ["episode-compression", "voice-manifest"],
+      "sourceLogic": "Lightweight processes should run without founder intervention to trigger.",
+      "audioSource": "voice-manifest:c11"
+    },
+    {
+      "id": "c12",
+      "startSeconds": 49.64,
+      "durationSeconds": 4.56,
+      "speechEndSeconds": 54.2,
+      "sectionLabel": "下一集",
+      "paragraphId": "p05",
+      "claim": "下一集：护城河藏在业务流程里。",
+      "narration": "下一集，我们看护城河为什么不只在模型里，而在业务流程里。",
+      "subtitle": "下一集：护城河藏在业务流程里。",
+      "artifact": {
+        "type": "later-gates-deferred",
+        "state": "scale-workflow-moat-preview",
+        "nodes": ["Launch", "系统", "Scale", "护城河"],
+        "highlight": "业务流程里",
+        "keyMessage": "Scale shifts from launch systems to workflow moat.",
+        "symbolMeaning": "The lifecycle path moves from Launch system readiness toward Scale defensibility."
+      },
+      "focusPhrase": "业务流程里",
+      "focusCue": "Scale workflow moat preview",
+      "motion": "Launch system gate hands off to Scale workflow moat",
+      "sources": ["episode-compression", "voice-manifest"],
+      "sourceLogic": "Workflow moat belongs to the next episode, not this launch bottleneck episode.",
+      "audioSource": "voice-manifest:c12"
+    }
+  ]
+}

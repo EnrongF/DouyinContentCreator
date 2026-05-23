@@ -1,0 +1,686 @@
+{
+  "schemaVersion": "1.2",
+  "slug": "the-founders-playbook-ai-native-startup-ep01-judgment-bottleneck",
+  "series": "The Founder's Playbook - Building an AI-Native Startup",
+  "episode": {
+    "number": 1,
+    "title": "AI 创业，真正卡的是判断",
+    "workingEnglishTitle": "Judgment Bottleneck"
+  },
+  "language": "zh-CN",
+  "status": "voice_manifest_ready",
+  "pauseRequired": true,
+  "nextApprovedStage": "visual production style preview",
+  "notApprovedYet": [
+    "Remotion implementation",
+    "render",
+    "Douyin package"
+  ],
+  "sceneGraph": "scene-graphs/the-founders-playbook-ai-native-startup-ep01-judgment-bottleneck.json",
+  "voiceDirection": "natural Mandarin, calm technical host, direct and trustworthy, no news or influencer tone",
+  "defaultVoiceMaker": {
+    "provider": "qwen-dashscope",
+    "model": "qwen3-tts-instruct-flash",
+    "voice": "Ethan"
+  },
+  "audioStrategy": "chunk_sequence",
+  "finalAudio": "selected_qwen_chunks",
+  "totalMeasuredSpeechSeconds": 61.44,
+  "totalDurationSeconds": 67.3,
+  "asr": {
+    "status": "pass",
+    "transcript": "asr.txt",
+    "qa": "asr-qa.md",
+    "reviewChunks": [],
+    "retakeChunks": [
+      "c05",
+      "c08",
+      "c09",
+      "c14"
+    ]
+  },
+  "subtitlePolicy": {
+    "source": "chunks[].subtitle",
+    "burnIntoFinalVideo": true,
+    "standaloneSrtRequired": false
+  },
+  "paragraphs": [
+    {
+      "id": "p01",
+      "chunkIds": [
+        "c01",
+        "c02"
+      ],
+      "coreIdea": "Old execution bottleneck vs new wrong-direction speed risk.",
+      "visualFocus": "old bottleneck vs wrong-direction speed"
+    },
+    {
+      "id": "p02",
+      "chunkIds": [
+        "c03",
+        "c04",
+        "c05"
+      ],
+      "coreIdea": "AI speeds up execution instead of removing it.",
+      "visualFocus": "execution lanes and earlier decision gate"
+    },
+    {
+      "id": "p03",
+      "chunkIds": [
+        "c06",
+        "c07",
+        "c08",
+        "c09",
+        "c10",
+        "c11"
+      ],
+      "coreIdea": "Speed exposes founder judgment.",
+      "visualFocus": "accelerator, steering, and founder decision gate"
+    },
+    {
+      "id": "p04",
+      "chunkIds": [
+        "c12",
+        "c13",
+        "c14",
+        "c15",
+        "c16"
+      ],
+      "coreIdea": "AI startup stages test different judgments.",
+      "visualFocus": "Idea, MVP, Launch, Scale gates"
+    },
+    {
+      "id": "p05",
+      "chunkIds": [
+        "c17",
+        "c18",
+        "c19"
+      ],
+      "coreIdea": "Ask whether the current bottleneck is speed or judgment.",
+      "visualFocus": "final decision question and next episode preview"
+    }
+  ],
+  "chunks": [
+    {
+      "id": "c01",
+      "paragraphId": "p01",
+      "sectionLabel": "旧约束",
+      "intent": "hook with old bottleneck",
+      "tone": "direct",
+      "pacing": "fast opening",
+      "text": "以前创业，最怕的是做不出来。",
+      "ttsInputText": "以前创业，最怕的是做不出来。",
+      "subtitle": "以前最怕做不出来。",
+      "focusPhrase": "做不出来",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "blocked work lane"
+      ],
+      "emphasis": [
+        "做不出来"
+      ],
+      "audioFile": "chunks-qwen/c01.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 0.0,
+      "speechEndSeconds": 2.48,
+      "endSeconds": 2.72,
+      "measuredSpeechSeconds": 2.48,
+      "pauseAfterMs": 240,
+      "paddingSeconds": 0.24,
+      "actualDurationSeconds": 2.72
+    },
+    {
+      "id": "c02",
+      "paragraphId": "p01",
+      "sectionLabel": "新风险",
+      "intent": "name the new failure mode",
+      "tone": "slightly urgent",
+      "pacing": "pause after contrast",
+      "text": "现在更怕的是，做得很快，但方向错了。",
+      "ttsInputText": "现在更怕的是，做得很快，但方向错了。",
+      "subtitle": "做得很快，但方向错了。",
+      "focusPhrase": "方向错了",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "speed lane veers wrong"
+      ],
+      "emphasis": [
+        "方向错了"
+      ],
+      "audioFile": "chunks-qwen/c02.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 2.72,
+      "speechEndSeconds": 6.64,
+      "endSeconds": 7.12,
+      "measuredSpeechSeconds": 3.92,
+      "pauseAfterMs": 480,
+      "paddingSeconds": 0.48,
+      "actualDurationSeconds": 4.4
+    },
+    {
+      "id": "c03",
+      "paragraphId": "p02",
+      "sectionLabel": "执行提速",
+      "intent": "ground AI acceleration in concrete work",
+      "tone": "practical",
+      "pacing": "list rhythm",
+      "text": "调研、写代码、写文档、做运营，AI 都能帮你提速。",
+      "ttsInputText": "调研、写代码、写文档、做运营，A I 都能帮你提速。",
+      "subtitle": "调研、代码、文档、运营，AI 都能提速。",
+      "focusPhrase": "AI 都能帮你提速",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "research, code, docs, ops lanes accelerate"
+      ],
+      "emphasis": [
+        "AI 都能帮你提速"
+      ],
+      "audioFile": "chunks-qwen/c03.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 7.12,
+      "speechEndSeconds": 11.12,
+      "endSeconds": 11.38,
+      "measuredSpeechSeconds": 4.0,
+      "pauseAfterMs": 260,
+      "paddingSeconds": 0.26,
+      "actualDurationSeconds": 4.26
+    },
+    {
+      "id": "c04",
+      "paragraphId": "p02",
+      "sectionLabel": "执行提速",
+      "intent": "prevent wrong interpretation",
+      "tone": "firm",
+      "pacing": "short emphasis",
+      "text": "但它不是替你省掉执行。",
+      "ttsInputText": "但它不是替你省掉执行。",
+      "subtitle": "AI 不是省掉执行。",
+      "focusPhrase": "不是替你省掉执行",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "execution lane stays visible"
+      ],
+      "emphasis": [
+        "不是替你省掉执行"
+      ],
+      "audioFile": "chunks-qwen/c04.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 11.38,
+      "speechEndSeconds": 13.14,
+      "endSeconds": 13.32,
+      "measuredSpeechSeconds": 1.76,
+      "pauseAfterMs": 180,
+      "paddingSeconds": 0.18,
+      "actualDurationSeconds": 1.94
+    },
+    {
+      "id": "c05",
+      "paragraphId": "p02",
+      "sectionLabel": "判断提前",
+      "intent": "show speed exposing judgment",
+      "tone": "explanatory",
+      "pacing": "slower on judgment",
+      "text": "而是让执行变快，让判断更早露出来。",
+      "ttsInputText": "而是让执行变快，让判断更早露出来。",
+      "subtitle": "它让执行变快，让判断更早露出来。",
+      "focusPhrase": "判断更早露出来",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "decision gate appears earlier"
+      ],
+      "emphasis": [
+        "执行变快",
+        "判断更早露出来"
+      ],
+      "audioFile": "chunks-qwen/c05.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 13.32,
+      "speechEndSeconds": 16.76,
+      "endSeconds": 17.24,
+      "measuredSpeechSeconds": 3.44,
+      "pauseAfterMs": 480,
+      "paddingSeconds": 0.48,
+      "actualDurationSeconds": 3.92
+    },
+    {
+      "id": "c06",
+      "paragraphId": "p03",
+      "sectionLabel": "判断瓶颈",
+      "intent": "separate speed from the real problem",
+      "tone": "firm",
+      "pacing": "short",
+      "text": "做得快不是问题。",
+      "ttsInputText": "做得快不是问题。",
+      "subtitle": "做得快不是问题。",
+      "focusPhrase": "不是问题",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "fast lane stays neutral"
+      ],
+      "emphasis": [
+        "不是问题"
+      ],
+      "audioFile": "chunks-qwen/c06.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 17.24,
+      "speechEndSeconds": 18.6,
+      "endSeconds": 18.84,
+      "measuredSpeechSeconds": 1.36,
+      "pauseAfterMs": 240,
+      "paddingSeconds": 0.24,
+      "actualDurationSeconds": 1.6
+    },
+    {
+      "id": "c07",
+      "paragraphId": "p03",
+      "sectionLabel": "判断瓶颈",
+      "intent": "state wrong-direction acceleration",
+      "tone": "firm",
+      "pacing": "medium",
+      "text": "问题是方向错了以后，你会错得更快。",
+      "ttsInputText": "问题是方向错了以后，你会错得更快。",
+      "subtitle": "方向错了以后，会错得更快。",
+      "focusPhrase": "错得更快",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "wrong path accelerates"
+      ],
+      "emphasis": [
+        "错得更快"
+      ],
+      "audioFile": "chunks-qwen/c07.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 18.84,
+      "speechEndSeconds": 21.8,
+      "endSeconds": 22.08,
+      "measuredSpeechSeconds": 2.96,
+      "pauseAfterMs": 280,
+      "paddingSeconds": 0.28,
+      "actualDurationSeconds": 3.24
+    },
+    {
+      "id": "c08",
+      "paragraphId": "p03",
+      "sectionLabel": "判断瓶颈",
+      "intent": "land the metaphor",
+      "tone": "memorable but restrained",
+      "pacing": "contrast emphasis",
+      "text": "AI 这个工具，更像油门，不是方向盘。",
+      "ttsInputText": "A I 这个工具，更像油门，不是方向盘。",
+      "subtitle": "AI 更像油门，不是方向盘。",
+      "focusPhrase": "油门，不是方向盘",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "accelerator vs steering visual"
+      ],
+      "emphasis": [
+        "油门",
+        "方向盘"
+      ],
+      "audioFile": "chunks-qwen/c08.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 22.08,
+      "speechEndSeconds": 24.72,
+      "endSeconds": 25.04,
+      "measuredSpeechSeconds": 2.64,
+      "pauseAfterMs": 320,
+      "paddingSeconds": 0.32,
+      "actualDurationSeconds": 2.96
+    },
+    {
+      "id": "c09",
+      "paragraphId": "p03",
+      "sectionLabel": "判断瓶颈",
+      "intent": "clarify founder responsibility",
+      "tone": "plain",
+      "pacing": "pause after faster",
+      "text": "它能让你跑得更快，但不能帮你决定往哪走。",
+      "ttsInputText": "它能让你跑得更快，但不能帮你决定往哪走。",
+      "subtitle": "它能让你更快，但不能帮你决定往哪走。",
+      "focusPhrase": "决定往哪走",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "steering remains with founder"
+      ],
+      "emphasis": [
+        "不能帮你决定"
+      ],
+      "audioFile": "chunks-qwen/c09.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 25.04,
+      "speechEndSeconds": 28.72,
+      "endSeconds": 29.0,
+      "measuredSpeechSeconds": 3.68,
+      "pauseAfterMs": 280,
+      "paddingSeconds": 0.28,
+      "actualDurationSeconds": 3.96
+    },
+    {
+      "id": "c10",
+      "paragraphId": "p03",
+      "sectionLabel": "创始人判断",
+      "intent": "name the actual bottleneck",
+      "tone": "reflective",
+      "pacing": "slower",
+      "text": "真正卡住人的，是创始人有没有想清楚。",
+      "ttsInputText": "真正卡住人的，是创始人有没有想清楚。",
+      "subtitle": "真正卡住人的，是有没有想清楚。",
+      "focusPhrase": "想清楚",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "founder decision gate"
+      ],
+      "emphasis": [
+        "想清楚"
+      ],
+      "audioFile": "chunks-qwen/c10.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 29.0,
+      "speechEndSeconds": 32.28,
+      "endSeconds": 32.48,
+      "measuredSpeechSeconds": 3.28,
+      "pauseAfterMs": 200,
+      "paddingSeconds": 0.2,
+      "actualDurationSeconds": 3.48
+    },
+    {
+      "id": "c11",
+      "paragraphId": "p03",
+      "sectionLabel": "创始人判断",
+      "intent": "turn judgment into two choices",
+      "tone": "balanced",
+      "pacing": "paired cadence",
+      "text": "什么值得做，什么应该先停。",
+      "ttsInputText": "什么值得做，什么应该先停。",
+      "subtitle": "什么值得做，什么应该先停。",
+      "focusPhrase": "值得做 / 先停",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "go and stop decision cards"
+      ],
+      "emphasis": [
+        "值得做",
+        "先停"
+      ],
+      "audioFile": "chunks-qwen/c11.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 32.48,
+      "speechEndSeconds": 35.68,
+      "endSeconds": 36.2,
+      "measuredSpeechSeconds": 3.2,
+      "pauseAfterMs": 520,
+      "paddingSeconds": 0.52,
+      "actualDurationSeconds": 3.72
+    },
+    {
+      "id": "c12",
+      "paragraphId": "p04",
+      "sectionLabel": "阶段判断",
+      "intent": "reframe AI startup from tools to judgments",
+      "tone": "structured",
+      "pacing": "measured",
+      "text": "所以用 AI 创业，起点不是工具，而是一连串判断。",
+      "ttsInputText": "所以用 A I 创业，起点不是工具，而是一连串判断。",
+      "subtitle": "用 AI 创业，起点不是工具，是一连串判断。",
+      "focusPhrase": "一连串判断",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "gate sequence appears"
+      ],
+      "emphasis": [
+        "不是工具",
+        "一连串判断"
+      ],
+      "audioFile": "chunks-qwen/c12.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 36.2,
+      "speechEndSeconds": 40.36,
+      "endSeconds": 40.64,
+      "measuredSpeechSeconds": 4.16,
+      "pauseAfterMs": 280,
+      "paddingSeconds": 0.28,
+      "actualDurationSeconds": 4.44
+    },
+    {
+      "id": "c13",
+      "paragraphId": "p04",
+      "sectionLabel": "阶段判断",
+      "intent": "preview lifecycle gates",
+      "tone": "structured",
+      "pacing": "list rhythm",
+      "text": "从想法，到 MVP，到上线，再到规模化。",
+      "ttsInputText": "从想法，到 M V P，到上线，再到规模化。",
+      "subtitle": "从想法，到 MVP，到上线，再到规模化。",
+      "focusPhrase": "想法 / MVP / 上线 / 规模化",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "four lifecycle gates reveal"
+      ],
+      "emphasis": [
+        "想法",
+        "MVP",
+        "上线",
+        "规模化"
+      ],
+      "audioFile": "chunks-qwen/c13.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 40.64,
+      "speechEndSeconds": 44.56,
+      "endSeconds": 44.84,
+      "measuredSpeechSeconds": 3.92,
+      "pauseAfterMs": 280,
+      "paddingSeconds": 0.28,
+      "actualDurationSeconds": 4.2
+    },
+    {
+      "id": "c14",
+      "paragraphId": "p04",
+      "sectionLabel": "阶段判断",
+      "intent": "avoid compressing all gates into one lesson",
+      "tone": "measured",
+      "pacing": "medium",
+      "text": "每个阶段，考的判断都不一样。",
+      "ttsInputText": "每个阶段，考的判断都不一样。",
+      "subtitle": "每个阶段，判断都不一样。",
+      "focusPhrase": "判断都不一样",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "different icons on each gate"
+      ],
+      "emphasis": [
+        "每个阶段",
+        "判断都不一样"
+      ],
+      "audioFile": "chunks-qwen/c14.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 44.84,
+      "speechEndSeconds": 47.24,
+      "endSeconds": 47.52,
+      "measuredSpeechSeconds": 2.4,
+      "pauseAfterMs": 280,
+      "paddingSeconds": 0.28,
+      "actualDurationSeconds": 2.68
+    },
+    {
+      "id": "c15",
+      "paragraphId": "p04",
+      "sectionLabel": "第一关",
+      "intent": "highlight the next episode gate",
+      "tone": "direct",
+      "pacing": "slight setup pause",
+      "text": "第一关，是你到底该不该做。",
+      "ttsInputText": "第一关，是你到底该不该做。",
+      "subtitle": "第一关：到底该不该做。",
+      "focusPhrase": "该不该做",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "first gate highlights"
+      ],
+      "emphasis": [
+        "该不该做"
+      ],
+      "audioFile": "chunks-qwen/c15.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 47.52,
+      "speechEndSeconds": 49.76,
+      "endSeconds": 50.06,
+      "measuredSpeechSeconds": 2.24,
+      "pauseAfterMs": 300,
+      "paddingSeconds": 0.3,
+      "actualDurationSeconds": 2.54
+    },
+    {
+      "id": "c16",
+      "paragraphId": "p04",
+      "sectionLabel": "后续关卡",
+      "intent": "defer later episodes",
+      "tone": "compact",
+      "pacing": "compact list",
+      "text": "后面才轮到边界、系统和护城河。",
+      "ttsInputText": "后面才轮到边界、系统和护城河。",
+      "subtitle": "后面才轮到边界、系统和护城河。",
+      "focusPhrase": "边界 / 系统 / 护城河",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "later gates dimmed"
+      ],
+      "emphasis": [
+        "边界",
+        "系统",
+        "护城河"
+      ],
+      "audioFile": "chunks-qwen/c16.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 50.06,
+      "speechEndSeconds": 53.02,
+      "endSeconds": 53.54,
+      "measuredSpeechSeconds": 2.96,
+      "pauseAfterMs": 520,
+      "paddingSeconds": 0.52,
+      "actualDurationSeconds": 3.48
+    },
+    {
+      "id": "c17",
+      "paragraphId": "p05",
+      "sectionLabel": "决策问题",
+      "intent": "slow the viewer before asking the decision question",
+      "tone": "settled",
+      "pacing": "slow final beat",
+      "text": "所以，用 AI 创业之前，先别急着问怎么更快。",
+      "ttsInputText": "所以，用 A I 创业之前，先别急着问怎么更快。",
+      "subtitle": "用 AI 创业，先别急着问怎么更快。",
+      "focusPhrase": "别急着问怎么更快",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "speed question card dims"
+      ],
+      "emphasis": [
+        "别急着问怎么更快"
+      ],
+      "audioFile": "chunks-qwen/c17.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 53.54,
+      "speechEndSeconds": 58.18,
+      "endSeconds": 58.48,
+      "measuredSpeechSeconds": 4.64,
+      "pauseAfterMs": 300,
+      "paddingSeconds": 0.3,
+      "actualDurationSeconds": 4.94
+    },
+    {
+      "id": "c18",
+      "paragraphId": "p05",
+      "sectionLabel": "决策问题",
+      "intent": "deliver the final diagnostic question",
+      "tone": "settled",
+      "pacing": "question emphasis",
+      "text": "先问一句：现在缺的是速度，还是判断？",
+      "ttsInputText": "先问一句：现在缺的是速度，还是判断？",
+      "subtitle": "现在缺的是速度，还是判断？",
+      "focusPhrase": "速度，还是判断",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "final decision card"
+      ],
+      "emphasis": [
+        "速度",
+        "判断"
+      ],
+      "audioFile": "chunks-qwen/c18.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 58.48,
+      "speechEndSeconds": 61.68,
+      "endSeconds": 62.1,
+      "measuredSpeechSeconds": 3.2,
+      "pauseAfterMs": 420,
+      "paddingSeconds": 0.42,
+      "actualDurationSeconds": 3.62
+    },
+    {
+      "id": "c19",
+      "paragraphId": "p05",
+      "sectionLabel": "下一集",
+      "intent": "bridge to episode two",
+      "tone": "forward-looking",
+      "pacing": "lighter handoff",
+      "text": "下一集，我们先看第一关：有了 Demo，为什么还不代表有人要。",
+      "ttsInputText": "下一集，我们先看第一关：有了 Demo，为什么还不代表有人要。",
+      "subtitle": "下一集：有 Demo，为什么还不代表有人要。",
+      "focusPhrase": "不代表有人要",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "episode two gate preview"
+      ],
+      "emphasis": [
+        "不代表有人要"
+      ],
+      "audioFile": "chunks-qwen/c19.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 62.1,
+      "speechEndSeconds": 67.3,
+      "endSeconds": 67.3,
+      "measuredSpeechSeconds": 5.2,
+      "pauseAfterMs": 0,
+      "paddingSeconds": 0.0,
+      "actualDurationSeconds": 5.2
+    }
+  ]
+}

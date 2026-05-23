@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Harness Engineering Executive Technical Documentary</title>
+  <style>
+    :root {
+      --bg: #070a0e;
+      --graphite: #0f141b;
+      --panel: #121922;
+      --panel-2: #17202a;
+      --ink: #eef4f7;
+      --muted: #87949e;
+      --faint: #2b3744;
+      --cyan: #3dd5eb;
+      --blue: #4a84ff;
+      --green: #53dca2;
+      --amber: #e1a84c;
+      --red: #f25b5b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #020305;
+      color: var(--ink);
+      font-family: "SF Pro Display", "SF Pro Text", "Helvetica Neue", "PingFang SC", sans-serif;
+    }
+    .wrap { max-width: 510px; margin: 0 auto; padding: 22px; }
+    .frame {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 9 / 16;
+      margin: 0 0 28px;
+      padding: 34px 32px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 20% 23%, rgba(61,213,235,.18), transparent 26%),
+        radial-gradient(circle at 80% 64%, rgba(74,132,255,.14), transparent 30%),
+        linear-gradient(180deg, #090d13 0%, #05070a 100%);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 22px;
+      box-shadow: 0 28px 80px rgba(0,0,0,.48);
+    }
+    .frame::before {
+      content: "";
+      position: absolute;
+      inset: 210px 32px 210px;
+      background:
+        linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px),
+        linear-gradient(180deg, rgba(255,255,255,.035) 1px, transparent 1px);
+      background-size: 34px 34px;
+      pointer-events: none;
+    }
+    .meta {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--faint);
+      color: var(--muted);
+      font: 600 12px/1.2 "SF Mono", ui-monospace, monospace;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .meta b { color: var(--accent); font-weight: 600; }
+    .num {
+      position: absolute;
+      top: 48px;
+      right: 32px;
+      color: rgba(255,255,255,.08);
+      font-size: 58px;
+      font-weight: 700;
+    }
+    .kicker {
+      position: relative;
+      z-index: 1;
+      margin-top: 72px;
+      color: var(--accent);
+      font: 700 14px/1.2 "SF Mono", ui-monospace, monospace;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    .kicker::after {
+      content: "";
+      display: block;
+      width: 70px;
+      height: 2px;
+      margin-top: 12px;
+      background: var(--accent);
+      box-shadow: 0 0 18px var(--accent);
+    }
+    h1 {
+      position: relative;
+      z-index: 1;
+      margin: 72px 0 0;
+      max-width: 92%;
+      font-size: 42px;
+      line-height: 1.06;
+      letter-spacing: -.06em;
+      font-weight: 800;
+    }
+    h1 em { color: var(--accent); font-style: normal; }
+    .sub {
+      position: relative;
+      z-index: 1;
+      margin: 28px 0 0;
+      color: var(--muted);
+      font-size: 20px;
+      line-height: 1.45;
+      font-weight: 600;
+    }
+    .nodes, .stats, .bullets, .split { position: relative; z-index: 1; }
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 34px 1fr;
+      align-items: center;
+      gap: 10px;
+      margin-top: 90px;
+    }
+    .nodes { display: grid; gap: 12px; margin-top: 52px; }
+    .node {
+      min-width: 0;
+      padding: 18px;
+      border: 1px solid var(--faint);
+      border-radius: 16px;
+      background: rgba(18,25,34,.78);
+      backdrop-filter: blur(18px);
+    }
+    .node strong {
+      display: block;
+      color: var(--accent);
+      font-size: 18px;
+      line-height: 1.16;
+      margin-bottom: 10px;
+      overflow-wrap: anywhere;
+    }
+    .node span {
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.42;
+      white-space: pre-line;
+    }
+    .arrow {
+      color: var(--accent);
+      text-align: center;
+      text-shadow: 0 0 18px var(--accent);
+    }
+    .stats { margin-top: 76px; }
+    .stat {
+      display: grid;
+      grid-template-columns: 112px 1fr;
+      gap: 20px;
+      align-items: baseline;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--faint);
+    }
+    .stat b {
+      color: var(--accent);
+      font-size: 52px;
+      line-height: 1;
+    }
+    .stat span { color: var(--ink); font-size: 20px; font-weight: 700; }
+    .bullets { margin-top: 54px; }
+    .bullet {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 14px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--faint);
+    }
+    .bullet b {
+      color: var(--accent);
+      font: 700 14px/1.2 "SF Mono", ui-monospace, monospace;
+    }
+    .bullet strong { display: block; font-size: 18px; margin-bottom: 5px; }
+    .bullet span { color: var(--muted); font-size: 15px; line-height: 1.35; }
+    .footer {
+      position: absolute;
+      left: 32px;
+      right: 32px;
+      bottom: 48px;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 18px;
+      border-top: 1px solid var(--faint);
+      color: var(--muted);
+      font: 600 12px/1.2 "SF Mono", ui-monospace, monospace;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap" id="deck"></main>
+  <script>
+    const scenes = [
+      {n:"01", meta:"Trend signal", accent:"var(--cyan)", kicker:"Executive brief", title:["Harness Engineering","<em>为什么突然刷屏？</em>"], sub:"不是又一个 AI 热词，而是 Agent 从“能说”走向“能做事”的执行骨架。", nodes:[["SYSTEM SHIFT","Prompt → Context → Harness\\nfrom model output to governed action"]], footer:"Hook"},
+      {n:"02", meta:"Inner loop", accent:"var(--blue)", kicker:"Coding loop", title:["Coding Agent"], sub:"写代码、改代码、跑测试。它主要改变代码仓库。", split:[["Developer","提出需求\\n检查代码"],["Repo","代码变更\\n测试结果"]], footer:"Inner loop"},
+      {n:"03", meta:"Outer loop", accent:"var(--cyan)", kicker:"Delivery loop", title:["Delivery Agent"], sub:"构建、扫描、审批、部署、回滚、审计。它会接触生产系统。", split:[["Code","构建产物\\n发布候选"],["Production","真实用户\\n真实风险"]], footer:"Outer loop"},
+      {n:"04", meta:"Governance boundary", accent:"var(--red)", kicker:"Not an API key problem", title:["不能只给 AI","<em>一个 API key</em>"], sub:"权限不是治理。外循环连接生产系统、密钥、审批、合规和真实用户。", nodes:[["BAD EXECUTION PATH","Model → production API → hope nothing goes wrong"]], footer:"Permission is not governance"},
+      {n:"05", meta:"Failure modes", accent:"var(--red)", kicker:"Blast radius", title:["没有 Harness","<em>错误会被加速</em>"], nodes:[["Prompt injection","PR、issue、依赖说明污染 agent 行为"],["Wrong action","错误环境、错误 manifest、错误 rollback"],["Looping damage","反复 redeploy / rollback 放大损害"]], footer:"Concrete risks"},
+      {n:"06", meta:"Mental model", accent:"var(--cyan)", kicker:"Model outside the model", title:["模型是大脑","<em>Harness 是控制平面</em>"], split:[["MODEL","推理\\n生成计划\\n判断下一步"],["HARNESS","约束\\n执行\\n证明"]], footer:"Core analogy"},
+      {n:"07", meta:"Memory layer", accent:"var(--amber)", kicker:"Relationship memory", title:["不是普通 RAG","<em>而是 Knowledge Graph</em>"], sub:"交付决策依赖关系，不只是文本：服务、团队、流水线、环境、策略、事故。", nodes:[["Delivery KG","Service / Pipeline / Policy / Incident\\n关系 + 状态"]], footer:"Relationship memory"},
+      {n:"08", meta:"Six-layer harness", accent:"var(--cyan)", kicker:"Original framework", title:["Harness","<em>六层执行骨架</em>"], nodes:[["01 Context","结构化上下文管理"],["02 Tools","工具系统设计"],["03 Orchestration","执行编排引擎"],["04 State","状态与记忆管理"],["05 Evaluation","独立评估和可观测性"],["06 Recovery","约束校验和恢复机制"]], footer:"Six-layer harness"},
+      {n:"09", meta:"Governed tools", accent:"var(--green)", kicker:"Controlled tools", title:["工具可以强大","<em>但不能裸调</em>"], sub:"部署、回滚、feature flag、扫描、审批，都要经过权限、策略和执行边界。", split:[["MODEL","提出意图\\n不持有密钥"],["DELEGATE","企业边界内\\n执行动作"]], footer:"Tools under policy"},
+      {n:"10", meta:"Secrets boundary", accent:"var(--red)", kicker:"Zero secret leakage", title:["密钥不进模型","<em>不进 Prompt</em>"], sub:"密钥在企业执行层解密，而不是进入模型上下文、供应商内存或日志。", nodes:[["CORRECT PATH","Model intent → Harness policy → Delegate decrypts secret → Enterprise execution"]], footer:"Keep credentials inside"},
+      {n:"11", meta:"Evidence chain", accent:"var(--amber)", kicker:"Proof of action", title:["每次动作","<em>都要留下证据</em>"], bullets:[["01","Policy gate","是否允许、谁批准、条件是什么"],["02","Scorecard","服务质量、安全和发布健康度"],["03","Rollback","失败时怎么恢复，谁触发"],["04","Audit log","动作、证据、结果都可追踪"]], footer:"Evidence chain"},
+      {n:"12", meta:"MCP and Skills", accent:"var(--cyan)", kicker:"Operational interface", title:["不是暴露所有 API","<em>而是收敛成工具</em>"], stats:[["11","consolidated tools"],["168","resource types"],["31","toolsets"]], sub:"Skills 把人的意图翻译成正确的交付操作。", footer:"Operational interface"},
+      {n:"13", meta:"Governed path", accent:"var(--cyan)", kicker:"Safe execution", title:["AI 不绕过流程","<em>它通过流程</em>"], nodes:[["AI REQUEST","部署或回滚意图"],["POLICY GATE","权限 / 审批 / 风险检查"],["ENTERPRISE EXEC.","企业系统内执行并留证据"]], footer:"Governed path"},
+      {n:"14", meta:"Mental upgrade", accent:"var(--cyan)", kicker:"Takeaway", title:["模型是大脑","<em>Delivery Harness</em>","是安全上线控制平面"], sub:"未来不是让 AI 直接上生产，而是让每个动作可治理、可回滚、可审计。", nodes:[["AI cognition compression","frontier research → systems mental model"]], footer:"Final memory"}
+    ];
+    const deck = document.querySelector("#deck");
+    deck.innerHTML = scenes.map(scene => {
+      const title = scene.title.map(line => `<span>${line}</span>`).join("<br>");
+      const split = scene.split ? `<div class="split"><div class="node"><strong>${scene.split[0][0]}</strong><span>${scene.split[0][1]}</span></div><div class="arrow">→</div><div class="node"><strong>${scene.split[1][0]}</strong><span>${scene.split[1][1]}</span></div></div>` : "";
+      const nodes = scene.nodes ? `<div class="nodes">${scene.nodes.map(n => `<div class="node"><strong>${n[0]}</strong><span>${n[1]}</span></div>`).join("")}</div>` : "";
+      const bullets = scene.bullets ? `<div class="bullets">${scene.bullets.map(b => `<div class="bullet"><b>${b[0]}</b><div><strong>${b[1]}</strong><span>${b[2]}</span></div></div>`).join("")}</div>` : "";
+      const stats = scene.stats ? `<div class="stats">${scene.stats.map(s => `<div class="stat"><b>${s[0]}</b><span>${s[1]}</span></div>`).join("")}</div>` : "";
+      return `<section class="frame" style="--accent:${scene.accent}"><div class="num">${scene.n}</div><div class="meta"><span>AI SYSTEMS INTELLIGENCE</span><b>${scene.meta}</b></div><div class="kicker">${scene.kicker}</div><h1>${title}</h1>${scene.sub ? `<p class="sub">${scene.sub}</p>` : ""}${split}${nodes}${bullets}${stats}<div class="footer"><span>${scene.n} / ${scene.footer}</span><span>Harness Engineering</span></div></section>`;
+    }).join("");
+  </script>
+</body>
+</html>

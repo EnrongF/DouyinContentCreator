@@ -1,0 +1,469 @@
+{
+  "schemaVersion": "1.2",
+  "slug": "the-founders-playbook-ai-native-startup-ep03-boundaries-before-ai-code",
+  "series": "The Founder's Playbook - Building an AI-Native Startup",
+  "episode": {
+    "number": 3,
+    "title": "先定边界，再让 AI 写",
+    "workingEnglishTitle": "Boundaries Before AI Code"
+  },
+  "language": "zh-CN",
+  "status": "voice_manifest_ready",
+  "pauseRequired": true,
+  "nextApprovedStage": "scene graph",
+  "notApprovedYet": [
+    "visual production",
+    "render",
+    "Douyin package"
+  ],
+  "voiceDirection": "natural Mandarin, calm technical host, direct and trustworthy, no news or influencer tone",
+  "defaultVoiceMaker": {
+    "provider": "qwen-dashscope",
+    "model": "qwen3-tts-instruct-flash",
+    "voice": "Ethan"
+  },
+  "audioStrategy": "chunk_sequence",
+  "finalAudio": "selected_qwen_chunks",
+  "totalMeasuredSpeechSeconds": 59.2,
+  "totalDurationSeconds": 63.32,
+  "asr": {
+    "status": "pass",
+    "transcript": "asr.txt",
+    "qa": "asr-qa.md",
+    "reviewChunks": []
+  },
+  "subtitlePolicy": {
+    "source": "chunks[].subtitle",
+    "burnIntoFinalVideo": true,
+    "standaloneSrtRequired": false
+  },
+  "paragraphs": [
+    {
+      "id": "p01",
+      "chunkIds": [
+        "c01",
+        "c02"
+      ],
+      "coreIdea": "AI coding speed scatters an unclear product.",
+      "visualFocus": "feature sprawl outside boundary"
+    },
+    {
+      "id": "p02",
+      "chunkIds": [
+        "c03",
+        "c04"
+      ],
+      "coreIdea": "MVP is still evidence-gathering, not full-product construction.",
+      "visualFocus": "focused MVP evidence gate"
+    },
+    {
+      "id": "p03",
+      "chunkIds": [
+        "c05",
+        "c06"
+      ],
+      "coreIdea": "Scope is a three-part boundary.",
+      "visualFocus": "does / does not / evidence to add"
+    },
+    {
+      "id": "p04",
+      "chunkIds": [
+        "c07",
+        "c08",
+        "c09"
+      ],
+      "coreIdea": "AI technical debt is boundary and context drift.",
+      "visualFocus": "context drift and product sprawl"
+    },
+    {
+      "id": "p05",
+      "chunkIds": [
+        "c10",
+        "c11",
+        "c12"
+      ],
+      "coreIdea": "Let AI execute decisions already made.",
+      "visualFocus": "boundary before code and EP04 bridge"
+    }
+  ],
+  "chunks": [
+    {
+      "id": "c01",
+      "paragraphId": "p01",
+      "sectionLabel": "速度风险",
+      "intent": "hook with fast AI coding",
+      "tone": "direct",
+      "pacing": "clean hook",
+      "text": "AI 写代码很快。",
+      "ttsInputText": "A I 写代码很快。",
+      "subtitle": "AI 写代码很快。",
+      "focusPhrase": "写代码很快",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "code stream appears"
+      ],
+      "emphasis": [
+        "写代码很快"
+      ],
+      "audioFile": "chunks-qwen/c01.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 0.0,
+      "speechEndSeconds": 1.28,
+      "endSeconds": 1.56,
+      "measuredSpeechSeconds": 1.28,
+      "pauseAfterMs": 280,
+      "paddingSeconds": 0.28,
+      "actualDurationSeconds": 1.56
+    },
+    {
+      "id": "c02",
+      "paragraphId": "p01",
+      "sectionLabel": "速度风险",
+      "intent": "show product scatter when boundaries are unclear",
+      "tone": "slightly urgent",
+      "pacing": "pause after setup",
+      "text": "但如果产品边界不清楚，它也会很快把产品写散。",
+      "ttsInputText": "但如果产品边界不清楚，它也会很快把产品写散。",
+      "subtitle": "边界不清楚，产品会被写散。",
+      "focusPhrase": "产品写散",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "feature nodes spill outside boundary"
+      ],
+      "emphasis": [
+        "边界不清楚",
+        "写散"
+      ],
+      "audioFile": "chunks-qwen/c02.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 1.56,
+      "speechEndSeconds": 5.56,
+      "endSeconds": 5.98,
+      "measuredSpeechSeconds": 4.0,
+      "pauseAfterMs": 420,
+      "paddingSeconds": 0.42,
+      "actualDurationSeconds": 4.42
+    },
+    {
+      "id": "c03",
+      "paragraphId": "p02",
+      "sectionLabel": "MVP 关口",
+      "intent": "correct the impulse to build a full product",
+      "tone": "corrective",
+      "pacing": "measured",
+      "text": "有了验证信号以后，下一关不是马上把功能做满。",
+      "ttsInputText": "有了验证信号以后，下一关不是马上把功能做满。",
+      "subtitle": "有了验证信号，不是马上做满功能。",
+      "focusPhrase": "不是马上把功能做满",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "full-product button dims"
+      ],
+      "emphasis": [
+        "不是马上",
+        "做满"
+      ],
+      "audioFile": "chunks-qwen/c03.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 5.98,
+      "speechEndSeconds": 9.42,
+      "endSeconds": 9.74,
+      "measuredSpeechSeconds": 3.44,
+      "pauseAfterMs": 320,
+      "paddingSeconds": 0.32,
+      "actualDurationSeconds": 3.76
+    },
+    {
+      "id": "c04",
+      "paragraphId": "p02",
+      "sectionLabel": "MVP 关口",
+      "intent": "preserve MVP as evidence gathering",
+      "tone": "grounded",
+      "pacing": "list rhythm",
+      "text": "MVP 阶段，本质上还是在收集证据：一小群真实用户，会不会回来、付费，或者愿意推荐。",
+      "ttsInputText": "M V P 阶段，本质上还是在收集证据：一小群真实用户，会不会回来、付费，或者愿意推荐。",
+      "subtitle": "MVP 阶段，还是在收集证据。",
+      "focusPhrase": "回来、付费、推荐",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "focused MVP evidence gate"
+      ],
+      "emphasis": [
+        "收集证据",
+        "回来",
+        "付费",
+        "推荐"
+      ],
+      "audioFile": "chunks-qwen/c04.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 9.74,
+      "speechEndSeconds": 16.78,
+      "endSeconds": 17.24,
+      "measuredSpeechSeconds": 7.04,
+      "pauseAfterMs": 460,
+      "paddingSeconds": 0.46,
+      "actualDurationSeconds": 7.5
+    },
+    {
+      "id": "c05",
+      "paragraphId": "p03",
+      "sectionLabel": "范围边界",
+      "intent": "reject feature accumulation as the main MVP job",
+      "tone": "structured",
+      "pacing": "measured setup",
+      "text": "所以，最小可用产品，最重要的不是“还能加什么”。",
+      "ttsInputText": "所以，最小可用产品，最重要的不是“还能加什么”。",
+      "subtitle": "最重要的不是“还能加什么”。",
+      "focusPhrase": "还能加什么",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "add-feature card dims"
+      ],
+      "emphasis": [
+        "不是",
+        "还能加什么"
+      ],
+      "audioFile": "chunks-qwen/c05.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 17.24,
+      "speechEndSeconds": 21.72,
+      "endSeconds": 21.98,
+      "measuredSpeechSeconds": 4.48,
+      "pauseAfterMs": 260,
+      "paddingSeconds": 0.26,
+      "actualDurationSeconds": 4.74
+    },
+    {
+      "id": "c06",
+      "paragraphId": "p03",
+      "sectionLabel": "范围边界",
+      "intent": "define the three-part scope boundary",
+      "tone": "clear",
+      "pacing": "three-part rhythm",
+      "text": "而是先写清楚三件事：它现在解决什么，暂时不解决什么，什么证据才允许你加新功能。",
+      "ttsInputText": "而是先写清楚三件事：它现在解决什么，暂时不解决什么，什么证据才允许你加新功能。",
+      "subtitle": "先写清楚：解决什么、不解决什么、什么证据能加。",
+      "focusPhrase": "三件事",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "scope document appears"
+      ],
+      "emphasis": [
+        "解决什么",
+        "不解决什么",
+        "什么证据"
+      ],
+      "audioFile": "chunks-qwen/c06.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 21.98,
+      "speechEndSeconds": 28.62,
+      "endSeconds": 29.08,
+      "measuredSpeechSeconds": 6.64,
+      "pauseAfterMs": 460,
+      "paddingSeconds": 0.46,
+      "actualDurationSeconds": 7.1
+    },
+    {
+      "id": "c07",
+      "paragraphId": "p04",
+      "sectionLabel": "上下文漂移",
+      "intent": "name context reset as a hidden AI build risk",
+      "tone": "firm",
+      "pacing": "slightly slower",
+      "text": "不然，每次让 AI 开工，它都会重新猜一遍产品边界。",
+      "ttsInputText": "不然，每次让 A I 开工，它都会重新猜一遍产品边界。",
+      "subtitle": "每次让 AI 开工，它都会重新猜边界。",
+      "focusPhrase": "重新猜一遍产品边界",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "context reset loop"
+      ],
+      "emphasis": [
+        "重新猜",
+        "产品边界"
+      ],
+      "audioFile": "chunks-qwen/c07.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 29.08,
+      "speechEndSeconds": 33.4,
+      "endSeconds": 33.72,
+      "measuredSpeechSeconds": 4.32,
+      "pauseAfterMs": 320,
+      "paddingSeconds": 0.32,
+      "actualDurationSeconds": 4.64
+    },
+    {
+      "id": "c08",
+      "paragraphId": "p03",
+      "sectionLabel": "范围失形",
+      "intent": "show zero-friction scope creep",
+      "tone": "cumulative",
+      "pacing": "three-step accumulation",
+      "text": "今天加一个边缘场景，明天补一个酷功能，后天整个产品就开始失去形状。",
+      "ttsInputText": "今天加一个边缘场景，明天补一个酷功能，后天整个产品就开始失去形状。",
+      "subtitle": "一个又一个功能，产品开始失去形状。",
+      "focusPhrase": "失去形状",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "product box deforms"
+      ],
+      "emphasis": [
+        "边缘场景",
+        "酷功能",
+        "失去形状"
+      ],
+      "audioFile": "chunks-qwen/c08.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 33.72,
+      "speechEndSeconds": 40.2,
+      "endSeconds": 40.56,
+      "measuredSpeechSeconds": 6.48,
+      "pauseAfterMs": 360,
+      "paddingSeconds": 0.36,
+      "actualDurationSeconds": 6.84
+    },
+    {
+      "id": "c09",
+      "paragraphId": "p04",
+      "sectionLabel": "AI 技术债",
+      "intent": "define hidden AI technical debt",
+      "tone": "technical",
+      "pacing": "slow on concept",
+      "text": "这就是 AI 时代更隐蔽的技术债：代码可能能跑，但产品边界和架构上下文已经开始漂移。",
+      "ttsInputText": "这就是 A I 时代更隐蔽的技术债：代码可能能跑，但产品边界和架构上下文已经开始漂移。",
+      "subtitle": "AI 技术债：边界和上下文开始漂移。",
+      "focusPhrase": "边界和架构上下文",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "drift warning"
+      ],
+      "emphasis": [
+        "技术债",
+        "边界",
+        "架构上下文",
+        "漂移"
+      ],
+      "audioFile": "chunks-qwen/c09.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 40.56,
+      "speechEndSeconds": 47.52,
+      "endSeconds": 47.98,
+      "measuredSpeechSeconds": 6.96,
+      "pauseAfterMs": 460,
+      "paddingSeconds": 0.46,
+      "actualDurationSeconds": 7.42
+    },
+    {
+      "id": "c10",
+      "paragraphId": "p04",
+      "sectionLabel": "可读上下文",
+      "intent": "turn the idea into an operating rule",
+      "tone": "practical",
+      "pacing": "decisive",
+      "text": "所以，让 AI 写之前，先把边界和上下文放到它能读到的地方。",
+      "ttsInputText": "所以，让 A I 写之前，先把边界和上下文放到它能读到的地方。",
+      "subtitle": "让 AI 写之前，先放好边界和上下文。",
+      "focusPhrase": "放到它能读到的地方",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "readable context document"
+      ],
+      "emphasis": [
+        "边界",
+        "上下文",
+        "读到"
+      ],
+      "audioFile": "chunks-qwen/c10.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 47.98,
+      "speechEndSeconds": 53.66,
+      "endSeconds": 54.02,
+      "measuredSpeechSeconds": 5.68,
+      "pauseAfterMs": 360,
+      "paddingSeconds": 0.36,
+      "actualDurationSeconds": 6.04
+    },
+    {
+      "id": "c11",
+      "paragraphId": "p05",
+      "sectionLabel": "本集判断",
+      "intent": "deliver takeaway",
+      "tone": "settled",
+      "pacing": "takeaway emphasis",
+      "text": "这一集的判断是：先写边界，再写代码。",
+      "ttsInputText": "这一集的判断是：先写边界，再写代码。",
+      "subtitle": "先写边界，再写代码。",
+      "focusPhrase": "先写边界",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "boundary before code card"
+      ],
+      "emphasis": [
+        "先写边界",
+        "再写代码"
+      ],
+      "audioFile": "chunks-qwen/c11.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 54.02,
+      "speechEndSeconds": 57.14,
+      "endSeconds": 57.56,
+      "measuredSpeechSeconds": 3.12,
+      "pauseAfterMs": 420,
+      "paddingSeconds": 0.42,
+      "actualDurationSeconds": 3.54
+    },
+    {
+      "id": "c12",
+      "paragraphId": "p05",
+      "sectionLabel": "下一集",
+      "intent": "bridge to founder-as-router episode",
+      "tone": "forward-looking",
+      "pacing": "lighter handoff",
+      "text": "下一集，我们看产品上线以后，创始人为什么不能继续做所有事情的中转站。",
+      "ttsInputText": "下一集，我们看产品上线以后，创始人为什么不能继续做所有事情的中转站。",
+      "subtitle": "下一集：创始人别当中转站。",
+      "focusPhrase": "创始人不能继续当中转站",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "episode four router preview"
+      ],
+      "emphasis": [
+        "创始人",
+        "中转站"
+      ],
+      "audioFile": "chunks-qwen/c12.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 57.56,
+      "speechEndSeconds": 63.32,
+      "endSeconds": 63.32,
+      "measuredSpeechSeconds": 5.76,
+      "pauseAfterMs": 0,
+      "paddingSeconds": 0.0,
+      "actualDurationSeconds": 5.76
+    }
+  ]
+}

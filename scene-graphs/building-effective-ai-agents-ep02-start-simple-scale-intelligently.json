@@ -1,0 +1,271 @@
+{
+  "schemaVersion": "1.0",
+  "slug": "building-effective-ai-agents-ep02-start-simple-scale-intelligently",
+  "title": "Building Effective AI Agents EP02: Agent从小做起",
+  "mission": "AI cognition compression",
+  "audience": "Business and technical leaders choosing an AI-agent architecture",
+  "format": {
+    "aspectRatio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "visualSystem": {
+    "name": "Executive Technical Documentary with Preserved Source Diagrams",
+    "background": "near-black graphite with preserved PDF diagrams as source artifacts",
+    "typography": "large Chinese serif claim, compact sans-serif metadata, original English diagram labels preserved",
+    "palette": {
+      "graphite": "#0b0f12",
+      "panel": "#111820",
+      "line": "#29414d",
+      "cyan": "#61d8ff",
+      "cyanSoft": "#1e6f86",
+      "amber": "#f0b44c",
+      "red": "#ef6a5b",
+      "text": "#f2f5f5",
+      "muted": "#8ea0a8"
+    },
+    "motionPrinciples": [
+      "Use original English PDF diagrams as source artifacts.",
+      "Add Chinese callouts around diagrams rather than redrawing them away.",
+      "Highlight one decision focus per paragraph.",
+      "Keep progress labels audience-facing."
+    ]
+  },
+  "cover": {
+    "headline": "Agent从小做起",
+    "subhead": "第一版 Agent，先小、清楚、可衡量",
+    "artifact": "source-proof",
+    "badge": "EP02 / 从小做起",
+    "proofChips": [
+      "Single Agent",
+      "Context",
+      "Tools"
+    ],
+    "sourceMark": "Source: Anthropic PDF / Building Effective AI Agents",
+    "sourceVisualRule": "Use original source diagrams as visual proof; keep source taxonomy boundaries.",
+    "visuals": [
+      {
+        "title": "Single Agent",
+        "label": "架构层",
+        "image": "building-effective-ai-agents-ep02-start-simple-scale-intelligently/diagrams/p12-single-agent-architecture.png"
+      },
+      {
+        "title": "Research Loop",
+        "label": "示例流程",
+        "image": "building-effective-ai-agents-ep02-start-simple-scale-intelligently/diagrams/p12-single-agent-research-workflow.png"
+      }
+    ]
+  },
+  "sourceDiagrams": [
+    {
+      "id": "single-agent-architecture",
+      "sourceRef": "pdf:p12",
+      "path": "resources/building-effective-ai-agents/diagrams/p12-single-agent-architecture.png",
+      "useInEpisodes": [
+        "episode-2"
+      ],
+      "preservation": "Keep original English labels visible; add explanatory overlays only."
+    },
+    {
+      "id": "single-agent-research-workflow",
+      "sourceRef": "pdf:p12",
+      "path": "resources/building-effective-ai-agents/diagrams/p12-single-agent-research-workflow.png",
+      "useInEpisodes": [
+        "episode-2"
+      ],
+      "preservation": "Keep original English labels visible; add explanatory overlays only."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s01",
+      "durationSeconds": 8.198,
+      "sectionLabel": "Problem",
+      "paragraphLabel": "overbuild reflex",
+      "claim": "第一版 Agent，最怕一开始做大",
+      "narration": "很多团队一上来就想做完整平台，但第一版 Agent 最怕的不是能力少，而是边界不清。",
+      "subtitle": "第一版 Agent 最怕的不是能力少，而是边界不清。",
+      "artifact": {
+        "type": "wrong-question",
+        "nodes": [
+          "做一个万能 Agent",
+          "解决一个窄任务"
+        ]
+      },
+      "focus": "Reject broad first-agent scope.",
+      "sources": [
+        "pdf:p206-p210"
+      ],
+      "audioFile": "building-effective-ai-agents-ep02-start-simple-scale-intelligently/audio/s01.mp3"
+    },
+    {
+      "id": "s02",
+      "durationSeconds": 10.862,
+      "sectionLabel": "Principle",
+      "paragraphLabel": "start simple",
+      "claim": "先简单，才有机会扩展",
+      "narration": "原文强调的是 start simple, scale intelligently。简单系统更便宜、更容易调试，也更容易知道下一步该扩展哪里。",
+      "subtitle": "先简单，才知道下一步该扩展哪里。",
+      "artifact": {
+        "type": "selection-matrix",
+        "nodes": [
+          "成本",
+          "调试",
+          "学习速度",
+          "演进空间"
+        ]
+      },
+      "focus": "Make simplicity a design strategy, not a compromise.",
+      "sources": [
+        "pdf:p206-p210"
+      ],
+      "audioFile": "building-effective-ai-agents-ep02-start-simple-scale-intelligently/audio/s02.mp3"
+    },
+    {
+      "id": "s03",
+      "durationSeconds": 12.398,
+      "sectionLabel": "Single",
+      "paragraphLabel": "single loop",
+      "claim": "窄 Agent 的核心，是一个可闭环目标",
+      "narration": "Single Agent 的核心不是“一个聊天入口”，而是一个 Agent 围绕明确目标，观察、计划、调用工具，再根据结果继续推进。",
+      "subtitle": "窄 Agent 要围绕明确目标形成闭环。",
+      "artifact": {
+        "type": "source-diagram",
+        "nodes": [],
+        "imagePath": "building-effective-ai-agents-ep02-start-simple-scale-intelligently/diagrams/p12-single-agent-architecture.png",
+        "caption": "Original PDF diagram: single-agent architecture with LLM, tools, Skills, and memory."
+      },
+      "focus": "Use the source single-agent architecture as the episode anchor.",
+      "sources": [
+        "pdf:p257-p284"
+      ],
+      "sourceDiagramRefs": [
+        "single-agent-architecture"
+      ],
+      "audioFile": "building-effective-ai-agents-ep02-start-simple-scale-intelligently/audio/s03.mp3"
+    },
+    {
+      "id": "s04",
+      "durationSeconds": 13.862,
+      "sectionLabel": "Boundary",
+      "paragraphLabel": "narrow task",
+      "claim": "边界越窄，反馈越真实",
+      "narration": "窄任务不是降低价值，而是让输入、工具、输出和成功标准都能被检查。没有边界，Agent 的失败也很难定位。",
+      "subtitle": "边界越窄，反馈越真实。",
+      "artifact": {
+        "type": "single-agent",
+        "nodes": [
+          "输入边界",
+          "工具边界",
+          "输出标准",
+          "失败定位"
+        ]
+      },
+      "focus": "Define boundaries as QA infrastructure.",
+      "sources": [
+        "pdf:p209-p210",
+        "pdf:p897-p899"
+      ],
+      "audioFile": "building-effective-ai-agents-ep02-start-simple-scale-intelligently/audio/s04.mp3"
+    },
+    {
+      "id": "s05",
+      "durationSeconds": 14.366,
+      "sectionLabel": "Skills",
+      "paragraphLabel": "skills",
+      "claim": "先加 Skill，不一定先加 Agent",
+      "narration": "原文提醒，在跳到 Multi-Agent 之前，先看一个 Single Agent 加上领域 Skills 能不能解决问题。Skill 是模块化能力包，不是另一个 Agent。",
+      "subtitle": "先加 Skill，不一定先加 Agent。",
+      "artifact": {
+        "type": "architecture-hierarchy",
+        "nodes": [
+          "Single Agent",
+          "Tools",
+          "Skills",
+          "Memory"
+        ]
+      },
+      "focus": "Position Skills as modular capability, not coordination complexity.",
+      "sources": [
+        "pdf:p239-p270",
+        "pdf:p808-p811"
+      ],
+      "audioFile": "building-effective-ai-agents-ep02-start-simple-scale-intelligently/audio/s05.mp3"
+    },
+    {
+      "id": "s06",
+      "durationSeconds": 12.662,
+      "sectionLabel": "Model",
+      "paragraphLabel": "model choice",
+      "claim": "模型选择，是速度、成本和能力的取舍",
+      "narration": "第一版 Agent 不一定要用最强模型处理所有步骤。把高价值判断留给强模型，把固定动作交给工具或便宜模型。",
+      "subtitle": "模型选择，是速度、成本和能力的取舍。",
+      "artifact": {
+        "type": "selection-matrix",
+        "nodes": [
+          "能力",
+          "速度",
+          "成本",
+          "可靠性",
+          "任务价值"
+        ]
+      },
+      "focus": "Keep model choice tied to task value.",
+      "sources": [
+        "pdf:p206-p210",
+        "pdf:p765-p781"
+      ],
+      "audioFile": "building-effective-ai-agents-ep02-start-simple-scale-intelligently/audio/s06.mp3"
+    },
+    {
+      "id": "s07",
+      "durationSeconds": 12.302,
+      "sectionLabel": "Measure",
+      "paragraphLabel": "success metric",
+      "claim": "没有指标，就不要扩展架构",
+      "narration": "如果不知道 Agent 是否真的节省时间、减少错误、提高转化，就不要急着扩展成多智能体。先把指标和日志打通。",
+      "subtitle": "没有指标，就不要扩展架构。",
+      "artifact": {
+        "type": "production-observability",
+        "nodes": [
+          "任务成功率",
+          "人工接管率",
+          "延迟",
+          "Token",
+          "错误类型"
+        ]
+      },
+      "focus": "Require measurement before scaling.",
+      "sources": [
+        "pdf:p897-p899",
+        "pdf:p236-p243"
+      ],
+      "audioFile": "building-effective-ai-agents-ep02-start-simple-scale-intelligently/audio/s07.mp3"
+    },
+    {
+      "id": "s08",
+      "durationSeconds": 11.198,
+      "sectionLabel": "Takeaway",
+      "paragraphLabel": "small first",
+      "claim": "结论：先做窄，再做强",
+      "narration": "第二集的结论是：先做一个窄而稳的 Agent，用真实反馈决定要加 Skill、加工具，还是以后再加多智能体。",
+      "subtitle": "先做窄，再做强。",
+      "artifact": {
+        "type": "single-agent",
+        "nodes": [
+          "窄任务",
+          "工具",
+          "Skill",
+          "可观测",
+          "可演进"
+        ]
+      },
+      "focus": "Close with the evolution path into EP03.",
+      "sources": [
+        "series:building-effective-ai-agents"
+      ],
+      "audioFile": "building-effective-ai-agents-ep02-start-simple-scale-intelligently/audio/s08.mp3"
+    }
+  ]
+}

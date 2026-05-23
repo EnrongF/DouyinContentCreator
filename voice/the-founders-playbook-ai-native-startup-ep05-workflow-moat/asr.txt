@@ -1,0 +1,69 @@
+## c01
+Expected: 很多人讲 A I 创业的护城河，第一反应是：我用了哪个模型。
+ASR: 很多人讲AI创业的护城河,第一反应是我用了哪个模型。
+Similarity: 1.000
+Core match: pass
+Term check: pass
+
+## c02
+Expected: 但到规模化阶段，模型权限本身很难成为护城河。别人也能接入相似的能力。
+ASR: 但到规模化阶段,模型全线本身很难成为护城河,别人也能接入相似的能力。
+Similarity: 0.935
+Core match: pass
+Term check: pass
+
+## c03
+Expected: 真正开始拉开差距的，是业务流程里一层一层沉淀下来的细节。
+ASR: 真正开始拉开差距的,是业务流程里一层一层沉淀下来的细节。
+Similarity: 1.000
+Core match: pass
+Term check: pass
+
+## c04
+Expected: 比如，你知道这个行业的例外情况；你的系统接住了真实用户的行为。
+ASR: 比如,你知道这个行业的例外情况,你的系统接触了真实用户的行为。
+Similarity: 0.964
+Core match: pass
+Term check: pass
+
+## c05
+Expected: 你的流程连上了客户原来的工具，也留下了真实协作的痕迹。
+ASR: 你的流程连上了客户原来的工具,也留下了真实协作的痕迹。
+Similarity: 1.000
+Core match: pass
+Term check: pass
+
+## c06
+Expected: 这些东西不是一句提示词，也不是换一个模型就能复制。
+ASR: 这些东西不是一句提示词,也不是换一个模型就能复制。
+Similarity: 1.000
+Core match: pass
+Term check: pass
+
+## c07
+Expected: 它们会变成上下文、数据、集成、习惯，最后变成切换成本。
+ASR: 他们会变成上下文、数据、集成、习惯,最后变成切换成本。
+Similarity: 0.955
+Core match: pass
+Term check: pass
+
+## c08
+Expected: 所以，这一集不要问：我们是不是用了 A I？
+ASR: 所以,这一集不要问,我们是不是用了AI?
+Similarity: 1.000
+Core match: pass
+Term check: pass
+
+## c09
+Expected: 要问：我们的 A I 系统里，沉淀了哪些只有我们才有的业务细节？
+ASR: 要问我们的AI系统里沉淀了哪些只有我们才有的业务细节。
+Similarity: 1.000
+Core match: pass
+Term check: pass
+
+## c10
+Expected: 这才是 A I native 公司在规模化以后，可能长出护城河的地方。
+ASR: 这才是AI Native公司在规模化以后可能长出护城河的地方。
+Similarity: 1.000
+Core match: pass
+Term check: pass

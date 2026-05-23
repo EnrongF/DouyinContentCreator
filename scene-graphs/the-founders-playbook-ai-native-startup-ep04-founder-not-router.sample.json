@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "founder-playbook-scene-graph/v1",
+  "slug": "the-founders-playbook-ai-native-startup-ep04-founder-not-router-sample",
+  "title": "上线后，创始人别当中转站",
+  "series": "The Founder's Playbook: AI-Native Startup",
+  "episode": 4,
+  "status": "visual_sample_for_review",
+  "mission": "Preview the EP04 Launch-stage visual language before full voice, TTS, scene graph, and package production.",
+  "audience": "Founders and AI-native builders moving from MVP to Launch.",
+  "format": {
+    "primary": "douyin-vertical",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "timing": {
+    "totalDurationSeconds": 12,
+    "totalMeasuredSpeechSeconds": 0,
+    "audioStrategy": "visual sample only; no locked TTS"
+  },
+  "visualSystem": {
+    "status": "sample_uses_locked_founder_playbook_vi",
+    "visualJob": "Launch-stage founder bottleneck and system replacement",
+    "symbolGrammar": [
+      "Identify the section key message before designing any symbol.",
+      "Comply with the locked Founder Playbook VI before borrowing outside icon references.",
+      "Use abstract concept symbols: router node, queue pressure, launch gate, system router, and attention audit lanes.",
+      "Motion should explain routing pressure, gate transition, and sorting into repeatable systems."
+    ]
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "durationSeconds": 4,
+      "sectionLabel": "上线瓶颈",
+      "claim": "After launch, every loop cannot still pass through the founder.",
+      "narration": "产品上线后，如果每个问题都还要创始人接住，公司就没有真正进入增长。",
+      "subtitle": "每个问题都等创始人，公司就还没进入增长。",
+      "artifact": {
+        "type": "founder-router-bottleneck",
+        "nodes": ["Support", "Bug", "Decision", "Report", "Founder"],
+        "highlight": "都要创始人接住",
+        "keyMessage": "Founder-in-the-loop becomes a launch bottleneck.",
+        "symbolMeaning": "Multiple request paths converge into one overloaded founder node."
+      },
+      "focusPhrase": "都要创始人接住",
+      "focusCue": "request paths converge on founder node",
+      "motion": "requests draw inward, then the founder node pulses as overloaded",
+      "sources": ["compression/the-founders-playbook-ai-native-startup-ep04-founder-not-router.md"]
+    },
+    {
+      "id": "s02",
+      "durationSeconds": 4,
+      "sectionLabel": "Launch Gate",
+      "claim": "MVP proves the product. Launch proves the business can grow.",
+      "narration": "MVP 是证明产品值得存在；Launch 是证明业务能不能重复增长。",
+      "subtitle": "MVP 证明产品；Launch 证明增长能不能重复。",
+      "artifact": {
+        "type": "launch-gate-repeatability",
+        "nodes": ["MVP", "Launch", "Repeatable Growth"],
+        "highlight": "业务能不能增长",
+        "keyMessage": "Launch is a repeatability gate, not another feature sprint.",
+        "symbolMeaning": "The path crosses from product-exists into a repeatable-growth gate."
+      },
+      "focusPhrase": "增长能不能重复",
+      "focusCue": "MVP gate hands off to Launch gate",
+      "motion": "MVP node locks, then Launch gate opens toward repeatable growth",
+      "sources": ["compression/the-founders-playbook-ai-native-startup-ep04-founder-not-router.md"]
+    },
+    {
+      "id": "s03",
+      "durationSeconds": 4,
+      "sectionLabel": "注意力审计",
+      "claim": "Repeated problems should become systems.",
+      "narration": "真正要审计的是：哪些事可以自动化，哪些可以交给别人，哪些才需要创始人判断。",
+      "subtitle": "重复发生的问题，要变成系统。",
+      "artifact": {
+        "type": "attention-audit-lanes",
+        "nodes": ["Automate", "Delegate", "Founder Judgment"],
+        "highlight": "自动化 / 交给别人 / 创始人判断",
+        "keyMessage": "Founder attention should be reserved for founder-only decisions.",
+        "symbolMeaning": "Recurring work is sorted into automation, delegation, and founder-judgment lanes."
+      },
+      "focusPhrase": "自动化 / 交给别人 / 创始人判断",
+      "focusCue": "three-lane attention audit",
+      "motion": "tasks leave the founder queue and sort into three lanes",
+      "sources": ["compression/the-founders-playbook-ai-native-startup-ep04-founder-not-router.md"]
+    }
+  ]
+}

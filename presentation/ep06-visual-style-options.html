@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EP06 Visual Style Options</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #080d10;
+        --panel: #111820;
+        --panel-2: #161d23;
+        --line: #29414d;
+        --text: #f2f5f5;
+        --muted: #91a2aa;
+        --cyan: #61d8ff;
+        --amber: #f0b44c;
+        --red: #ef6a5b;
+        --green: #7bd88f;
+        --paper: #f2efe7;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: radial-gradient(circle at 20% 0%, rgba(97, 216, 255, 0.1), transparent 36%),
+          linear-gradient(180deg, #0c1115 0%, var(--bg) 100%);
+        color: var(--text);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+      }
+
+      .page {
+        width: min(1440px, calc(100vw - 48px));
+        margin: 0 auto;
+        padding: 40px 0 56px;
+      }
+
+      header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 24px;
+        align-items: end;
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 28px;
+        margin-bottom: 30px;
+      }
+
+      h1 {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(44px, 5.2vw, 86px);
+        line-height: 0.96;
+        letter-spacing: 0;
+      }
+
+      .lede {
+        margin: 18px 0 0;
+        max-width: 760px;
+        color: var(--muted);
+        font-size: 18px;
+        line-height: 1.55;
+      }
+
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+        padding: 0 16px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        color: var(--cyan);
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-weight: 800;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+      }
+
+      .option {
+        min-height: 640px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(17, 24, 32, 0.82);
+        overflow: hidden;
+      }
+
+      .option-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        align-items: center;
+        border-bottom: 1px solid var(--line);
+        padding: 18px 20px;
+      }
+
+      .option-title {
+        margin: 0;
+        font-size: 24px;
+        line-height: 1.15;
+      }
+
+      .option-tag {
+        color: var(--amber);
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 13px;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      .mock {
+        height: 360px;
+        padding: 22px;
+        position: relative;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .caption {
+        padding: 18px 20px 22px;
+        color: var(--muted);
+        font-size: 15px;
+        line-height: 1.48;
+      }
+
+      .caption strong {
+        color: var(--text);
+      }
+
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 14px;
+      }
+
+      .chip {
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 7px 10px;
+        color: var(--cyan);
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 12px;
+        font-weight: 800;
+      }
+
+      .switchboard {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+        background-size: 36px 36px;
+      }
+
+      .switch-row {
+        display: grid;
+        grid-template-columns: 1fr 56px 1fr 56px 1fr;
+        gap: 12px;
+        align-items: center;
+        height: 100%;
+      }
+
+      .module {
+        height: 220px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(8, 13, 16, 0.78);
+        padding: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .module.active {
+        border-color: var(--cyan);
+        box-shadow: 0 0 34px rgba(97, 216, 255, 0.2);
+      }
+
+      .module.warn {
+        border-color: var(--amber);
+        box-shadow: 0 0 34px rgba(240, 180, 76, 0.18);
+      }
+
+      .module-label {
+        color: var(--muted);
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 13px;
+        text-transform: uppercase;
+      }
+
+      .module-main {
+        font-size: 30px;
+        line-height: 1.02;
+        font-weight: 900;
+      }
+
+      .plus {
+        color: var(--amber);
+        text-align: center;
+        font-size: 48px;
+        font-weight: 900;
+      }
+
+      .source-native {
+        background: #0e1418;
+      }
+
+      .source-grid {
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+        align-items: center;
+      }
+
+      .paper-card {
+        min-height: 250px;
+        background: var(--paper);
+        color: #111820;
+        border-radius: 6px;
+        padding: 14px;
+        transform: rotate(-2deg);
+        box-shadow: 0 18px 30px rgba(0, 0, 0, 0.28);
+      }
+
+      .paper-card:nth-child(2) {
+        transform: rotate(0deg) translateY(-10px);
+        border: 3px solid var(--amber);
+      }
+
+      .paper-card:nth-child(3) {
+        transform: rotate(2deg);
+      }
+
+      .paper-title {
+        display: inline-block;
+        border-radius: 999px;
+        background: var(--cyan);
+        color: #061015;
+        font-size: 13px;
+        font-weight: 900;
+        padding: 7px 10px;
+      }
+
+      .diagram-line {
+        height: 14px;
+        border-radius: 999px;
+        background: #d5d9d3;
+        margin-top: 18px;
+      }
+
+      .diagram-line.short {
+        width: 58%;
+      }
+
+      .diagram-boxes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      .diagram-box {
+        height: 44px;
+        border: 1px solid #b7c3bf;
+        border-radius: 5px;
+        background: #ffffff;
+      }
+
+      .matrix {
+        background: linear-gradient(135deg, rgba(240, 180, 76, 0.08), rgba(97, 216, 255, 0.08));
+      }
+
+      .matrix-grid {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+
+      .axis-card {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(8, 13, 16, 0.7);
+        padding: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .axis-card:nth-child(2),
+      .axis-card:nth-child(3) {
+        border-color: var(--amber);
+      }
+
+      .axis-card b {
+        font-size: 26px;
+        line-height: 1.05;
+      }
+
+      .meter {
+        height: 9px;
+        border-radius: 999px;
+        background: var(--line);
+        overflow: hidden;
+      }
+
+      .meter span {
+        display: block;
+        height: 100%;
+        width: 72%;
+        background: var(--cyan);
+      }
+
+      .docu {
+        background: linear-gradient(90deg, rgba(8, 13, 16, 0.96) 0 54%, rgba(242, 239, 231, 0.94) 54% 100%);
+      }
+
+      .docu-layout {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 24px;
+      }
+
+      .docu-copy {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .docu-copy .kicker {
+        color: var(--cyan);
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      .docu-copy .big {
+        margin-top: 14px;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 52px;
+        line-height: 0.98;
+      }
+
+      .docu-proof {
+        color: #111820;
+        align-self: center;
+        width: 100%;
+      }
+
+      .proof-box {
+        height: 210px;
+        border: 2px solid #111820;
+        border-radius: 6px;
+        padding: 18px;
+      }
+
+      .proof-box div {
+        height: 22px;
+        margin-bottom: 14px;
+        background: #b9c4bf;
+        border-radius: 999px;
+      }
+
+      .recommend {
+        margin-top: 28px;
+        border: 1px solid var(--amber);
+        border-radius: 8px;
+        background: rgba(240, 180, 76, 0.08);
+        padding: 20px 22px;
+        color: var(--text);
+        font-size: 17px;
+        line-height: 1.55;
+      }
+
+      @media (max-width: 920px) {
+        .page {
+          width: min(100vw - 28px, 720px);
+          padding-top: 26px;
+        }
+
+        header {
+          grid-template-columns: 1fr;
+        }
+
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header>
+        <div>
+          <h1>EP06 视觉风格候选</h1>
+          <p class="lede">
+            这页只用于决定风格，不代表最终视频已经锁定。信息层保持不变：混合架构不是起点，
+            而是 Single Agent、Workflow、多智能体在运行证据之后的组合。
+          </p>
+        </div>
+        <div class="badge">Choose Before Render</div>
+      </header>
+
+      <section class="grid" aria-label="visual style options">
+        <article class="option">
+          <div class="option-head">
+            <h2 class="option-title">A. Evidence Switchboard</h2>
+            <div class="option-tag">current draft direction</div>
+          </div>
+          <div class="mock switchboard">
+            <div class="switch-row">
+              <div class="module active">
+                <div class="module-label">start</div>
+                <div class="module-main">Narrow Agent</div>
+                <div class="meter"><span></span></div>
+              </div>
+              <div class="plus">+</div>
+              <div class="module warn">
+                <div class="module-label">evidence gate</div>
+                <div class="module-main">Routing<br />Specialists</div>
+                <div class="meter"><span style="width: 58%; background: var(--amber)"></span></div>
+              </div>
+              <div class="plus">+</div>
+              <div class="module">
+                <div class="module-label">escalate</div>
+                <div class="module-main">Multi-Agent<br />Evaluator</div>
+                <div class="meter"><span style="width: 42%; background: var(--red)"></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="caption">
+            <strong>Best for:</strong> operational decision clarity. It makes the episode feel like a
+            production architecture control room. Strong for cost gates, routing, escalation, and
+            “do not turn this on too early”.
+            <div class="chips">
+              <span class="chip">semantic motion</span>
+              <span class="chip">decision-first</span>
+              <span class="chip">not decorative</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="option">
+          <div class="option-head">
+            <h2 class="option-title">B. Source-Native Documentary</h2>
+            <div class="option-tag">most source faithful</div>
+          </div>
+          <div class="mock source-native">
+            <div class="source-grid">
+              <div class="paper-card">
+                <span class="paper-title">Single Agent</span>
+                <div class="diagram-line"></div>
+                <div class="diagram-line short"></div>
+                <div class="diagram-boxes">
+                  <div class="diagram-box"></div>
+                  <div class="diagram-box"></div>
+                  <div class="diagram-box"></div>
+                  <div class="diagram-box"></div>
+                </div>
+              </div>
+              <div class="paper-card">
+                <span class="paper-title" style="background: var(--amber)">Workflow</span>
+                <div class="diagram-line"></div>
+                <div class="diagram-line short"></div>
+                <div class="diagram-boxes">
+                  <div class="diagram-box"></div>
+                  <div class="diagram-box"></div>
+                  <div class="diagram-box"></div>
+                  <div class="diagram-box"></div>
+                </div>
+              </div>
+              <div class="paper-card">
+                <span class="paper-title">Multi-Agent</span>
+                <div class="diagram-line"></div>
+                <div class="diagram-line short"></div>
+                <div class="diagram-boxes">
+                  <div class="diagram-box"></div>
+                  <div class="diagram-box"></div>
+                  <div class="diagram-box"></div>
+                  <div class="diagram-box"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="caption">
+            <strong>Best for:</strong> maximum trust. Original PDF diagrams dominate the screen, with
+            Chinese overlays and tight highlights. Less cinematic, more evidence-heavy.
+            <div class="chips">
+              <span class="chip">source proof</span>
+              <span class="chip">taxonomy safe</span>
+              <span class="chip">lower spectacle</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="option">
+          <div class="option-head">
+            <h2 class="option-title">C. Decision Matrix Studio</h2>
+            <div class="option-tag">best for leaders</div>
+          </div>
+          <div class="mock matrix">
+            <div class="matrix-grid">
+              <div class="axis-card">
+                <span class="module-label">axis 01</span>
+                <b>Control</b>
+                <div class="meter"><span></span></div>
+              </div>
+              <div class="axis-card">
+                <span class="module-label">axis 02</span>
+                <b>10-15x Token</b>
+                <div class="meter"><span style="width: 88%; background: var(--amber)"></span></div>
+              </div>
+              <div class="axis-card">
+                <span class="module-label">axis 03</span>
+                <b>Time to Market</b>
+                <div class="meter"><span style="width: 54%; background: var(--amber)"></span></div>
+              </div>
+              <div class="axis-card">
+                <span class="module-label">axis 04</span>
+                <b>Business Value</b>
+                <div class="meter"><span style="width: 76%; background: var(--green)"></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="caption">
+            <strong>Best for:</strong> executive clarity and platform performance. Every scene becomes
+            a business decision surface: what unlocks, what costs more, what should wait.
+            <div class="chips">
+              <span class="chip">high scan speed</span>
+              <span class="chip">Douyin friendly</span>
+              <span class="chip">less diagram-centric</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="option">
+          <div class="option-head">
+            <h2 class="option-title">D. Minimal Technical Documentary</h2>
+            <div class="option-tag">most premium/calm</div>
+          </div>
+          <div class="mock docu">
+            <div class="docu-layout">
+              <div class="docu-copy">
+                <div class="kicker">EP06 / Hybrid</div>
+                <div class="big">先跑出证据<br />再组合系统</div>
+              </div>
+              <div class="docu-proof">
+                <div class="proof-box">
+                  <div style="width: 78%"></div>
+                  <div style="width: 52%"></div>
+                  <div style="width: 92%"></div>
+                  <div style="width: 66%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="caption">
+            <strong>Best for:</strong> premium editorial feel. Fewer UI modules, more restrained
+            typography and proof inserts. Strongest if you want the series to feel like a serious
+            technical documentary rather than an operating dashboard.
+            <div class="chips">
+              <span class="chip">premium</span>
+              <span class="chip">calm</span>
+              <span class="chip">less kinetic</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="recommend">
+        <strong>My recommendation:</strong> choose A if the goal is Douyin retention and operational
+        clarity; choose B if source fidelity is the dominant concern; choose C if this episode is aimed
+        at business decision-makers; choose D if you want the whole series to feel more premium and less
+        dashboard-like. I would not lock the current rendered video until one of these directions is
+        selected.
+      </section>
+
+      <section class="recommend">
+        <strong>Full catalog:</strong>
+        <a style="color: #61d8ff" href="./ep06-all-template-previews.html">preview all 17 local visual templates</a>.
+      </section>
+    </main>
+  </body>
+</html>

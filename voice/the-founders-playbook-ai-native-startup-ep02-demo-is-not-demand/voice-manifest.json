@@ -1,0 +1,524 @@
+{
+  "schemaVersion": "1.2",
+  "slug": "the-founders-playbook-ai-native-startup-ep02-demo-is-not-demand",
+  "series": "The Founder's Playbook - Building an AI-Native Startup",
+  "episode": {
+    "number": 2,
+    "title": "有 Demo，不代表有人要",
+    "workingEnglishTitle": "Demo Is Not Demand"
+  },
+  "language": "zh-CN",
+  "status": "voice_manifest_ready",
+  "pauseRequired": true,
+  "nextApprovedStage": "scene graph",
+  "notApprovedYet": [
+    "visual production",
+    "render",
+    "Douyin package"
+  ],
+  "voiceDirection": "natural Mandarin, calm technical host, direct and trustworthy, no news or influencer tone",
+  "defaultVoiceMaker": {
+    "provider": "qwen-dashscope",
+    "model": "qwen3-tts-instruct-flash",
+    "voice": "Ethan"
+  },
+  "audioStrategy": "chunk_sequence",
+  "finalAudio": "selected_qwen_chunks",
+  "totalMeasuredSpeechSeconds": 60.8,
+  "totalDurationSeconds": 65.16,
+  "asr": {
+    "status": "pass",
+    "transcript": "asr.txt",
+    "qa": "asr-qa.md",
+    "reviewChunks": []
+  },
+  "subtitlePolicy": {
+    "source": "chunks[].subtitle",
+    "burnIntoFinalVideo": true,
+    "standaloneSrtRequired": false
+  },
+  "paragraphs": [
+    {
+      "id": "p01",
+      "chunkIds": [
+        "c01",
+        "c02"
+      ],
+      "coreIdea": "AI makes Demo fast, but fast Demo creates false certainty.",
+      "visualFocus": "fast Demo before evidence"
+    },
+    {
+      "id": "p02",
+      "chunkIds": [
+        "c03",
+        "c04"
+      ],
+      "coreIdea": "Demo is useful as a question tool, not proof.",
+      "visualFocus": "Demo shifts from proof to conversation tool"
+    },
+    {
+      "id": "p03",
+      "chunkIds": [
+        "c05",
+        "c06",
+        "c07",
+        "c08"
+      ],
+      "coreIdea": "Idea-stage gate is problem-solution fit.",
+      "visualFocus": "three validation checks"
+    },
+    {
+      "id": "p04",
+      "chunkIds": [
+        "c09",
+        "c10"
+      ],
+      "coreIdea": "Better customer discovery asks about past behavior and current workaround.",
+      "visualFocus": "weak question vs evidence questions"
+    },
+    {
+      "id": "p05",
+      "chunkIds": [
+        "c11",
+        "c12",
+        "c13",
+        "c14"
+      ],
+      "coreIdea": "Praise is not enough; pain and contradiction are better signals.",
+      "visualFocus": "praise vs pain decision card and EP03 bridge"
+    }
+  ],
+  "chunks": [
+    {
+      "id": "c01",
+      "paragraphId": "p01",
+      "sectionLabel": "快速 Demo",
+      "intent": "hook with AI-era speed",
+      "tone": "direct",
+      "pacing": "clean hook",
+      "text": "AI 让你很快做出 Demo。",
+      "ttsInputText": "A I 让你很快做出 Demo。",
+      "subtitle": "AI 很快做出 Demo。",
+      "focusPhrase": "很快做出 Demo",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "idea turns into Demo"
+      ],
+      "emphasis": [
+        "很快",
+        "Demo"
+      ],
+      "audioFile": "chunks-qwen/c01.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 0.0,
+      "speechEndSeconds": 1.68,
+      "endSeconds": 1.96,
+      "measuredSpeechSeconds": 1.68,
+      "pauseAfterMs": 280,
+      "paddingSeconds": 0.28,
+      "actualDurationSeconds": 1.96
+    },
+    {
+      "id": "c02",
+      "paragraphId": "p01",
+      "sectionLabel": "错误确定感",
+      "intent": "name the false-validation risk",
+      "tone": "slightly urgent",
+      "pacing": "pause after setup",
+      "text": "但最危险的地方也在这里：演示版一出来，你很容易以为问题已经被验证了。",
+      "ttsInputText": "但最危险的地方也在这里：演示版一出来，你很容易以为问题已经被验证了。",
+      "subtitle": "Demo 一出来，很容易以为问题已验证。",
+      "focusPhrase": "问题已经被验证了",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "evidence panel remains empty"
+      ],
+      "emphasis": [
+        "问题已经被验证了"
+      ],
+      "audioFile": "chunks-qwen/c02.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 1.96,
+      "speechEndSeconds": 7.32,
+      "endSeconds": 7.74,
+      "measuredSpeechSeconds": 5.36,
+      "pauseAfterMs": 420,
+      "paddingSeconds": 0.42,
+      "actualDurationSeconds": 5.78
+    },
+    {
+      "id": "c03",
+      "paragraphId": "p02",
+      "sectionLabel": "Demo 的用处",
+      "intent": "avoid dismissing demos",
+      "tone": "reassuring",
+      "pacing": "short corrective",
+      "text": "其实，Demo 不是没用。它很有用。",
+      "ttsInputText": "其实，Demo 不是没用。它很有用。",
+      "subtitle": "Demo 不是没用，它很有用。",
+      "focusPhrase": "很有用",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "Demo stays visible"
+      ],
+      "emphasis": [
+        "很有用"
+      ],
+      "audioFile": "chunks-qwen/c03.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 7.74,
+      "speechEndSeconds": 10.3,
+      "endSeconds": 10.52,
+      "measuredSpeechSeconds": 2.56,
+      "pauseAfterMs": 220,
+      "paddingSeconds": 0.22,
+      "actualDurationSeconds": 2.78
+    },
+    {
+      "id": "c04",
+      "paragraphId": "p02",
+      "sectionLabel": "Demo 的用处",
+      "intent": "reframe Demo as question tool",
+      "tone": "grounded",
+      "pacing": "contrast emphasis",
+      "text": "但它不是用来证明你对了，而是用来帮你问清楚：这个问题到底是不是真的存在。",
+      "ttsInputText": "但它不是用来证明你对了，而是用来帮你问清楚：这个问题到底是不是真的存在。",
+      "subtitle": "它不是证明你对了，而是帮你问清楚。",
+      "focusPhrase": "问清楚",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "Demo shifts to question tool"
+      ],
+      "emphasis": [
+        "不是用来证明",
+        "问清楚"
+      ],
+      "audioFile": "chunks-qwen/c04.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 10.52,
+      "speechEndSeconds": 16.2,
+      "endSeconds": 16.66,
+      "measuredSpeechSeconds": 5.68,
+      "pauseAfterMs": 460,
+      "paddingSeconds": 0.46,
+      "actualDurationSeconds": 6.14
+    },
+    {
+      "id": "c05",
+      "paragraphId": "p03",
+      "sectionLabel": "想法阶段",
+      "intent": "set up the three validation checks",
+      "tone": "structured",
+      "pacing": "measured setup",
+      "text": "在想法阶段，真正要过的不是“能不能做出来”，而是三件事。",
+      "ttsInputText": "在想法阶段，真正要过的不是“能不能做出来”，而是三件事。",
+      "subtitle": "想法阶段，真正要过的是三件事。",
+      "focusPhrase": "三件事",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "validation gate appears"
+      ],
+      "emphasis": [
+        "不是能不能做出来",
+        "三件事"
+      ],
+      "audioFile": "chunks-qwen/c05.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 16.66,
+      "speechEndSeconds": 21.7,
+      "endSeconds": 21.96,
+      "measuredSpeechSeconds": 5.04,
+      "pauseAfterMs": 260,
+      "paddingSeconds": 0.26,
+      "actualDurationSeconds": 5.3
+    },
+    {
+      "id": "c06",
+      "paragraphId": "p03",
+      "sectionLabel": "验证检查",
+      "intent": "first validation check",
+      "tone": "clear",
+      "pacing": "list rhythm",
+      "text": "第一，问题是不是真实、具体，而且经常发生。",
+      "ttsInputText": "第一，问题是不是真实、具体，而且经常发生。",
+      "subtitle": "问题是否真实、具体、经常发生。",
+      "focusPhrase": "真实、具体、经常发生",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "check one highlights"
+      ],
+      "emphasis": [
+        "真实",
+        "具体",
+        "经常发生"
+      ],
+      "audioFile": "chunks-qwen/c06.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 21.96,
+      "speechEndSeconds": 26.04,
+      "endSeconds": 26.26,
+      "measuredSpeechSeconds": 4.08,
+      "pauseAfterMs": 220,
+      "paddingSeconds": 0.22,
+      "actualDurationSeconds": 4.3
+    },
+    {
+      "id": "c07",
+      "paragraphId": "p03",
+      "sectionLabel": "验证检查",
+      "intent": "second validation check",
+      "tone": "clear",
+      "pacing": "slightly slower",
+      "text": "第二，你的方案是不是解决了用户真正的问题，而不是你一开始想象的问题。",
+      "ttsInputText": "第二，你的方案是不是解决了用户真正的问题，而不是你一开始想象的问题。",
+      "subtitle": "方案是否解决了真正的问题。",
+      "focusPhrase": "用户真正的问题",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "check two highlights"
+      ],
+      "emphasis": [
+        "用户真正的问题"
+      ],
+      "audioFile": "chunks-qwen/c07.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 26.26,
+      "speechEndSeconds": 32.74,
+      "endSeconds": 32.96,
+      "measuredSpeechSeconds": 6.48,
+      "pauseAfterMs": 220,
+      "paddingSeconds": 0.22,
+      "actualDurationSeconds": 6.7
+    },
+    {
+      "id": "c08",
+      "paragraphId": "p03",
+      "sectionLabel": "验证检查",
+      "intent": "third validation check",
+      "tone": "firm",
+      "pacing": "short",
+      "text": "第三，信号够不够支持你开始做 MVP。",
+      "ttsInputText": "第三，信号够不够支持你开始做 M V P。",
+      "subtitle": "信号是否足够支持开始做 MVP。",
+      "focusPhrase": "开始做 MVP",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "check three highlights"
+      ],
+      "emphasis": [
+        "信号",
+        "MVP"
+      ],
+      "audioFile": "chunks-qwen/c08.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 32.96,
+      "speechEndSeconds": 36.24,
+      "endSeconds": 36.66,
+      "measuredSpeechSeconds": 3.28,
+      "pauseAfterMs": 420,
+      "paddingSeconds": 0.42,
+      "actualDurationSeconds": 3.7
+    },
+    {
+      "id": "c09",
+      "paragraphId": "p04",
+      "sectionLabel": "问法切换",
+      "intent": "reject weak future-facing question",
+      "tone": "practical",
+      "pacing": "slight skepticism",
+      "text": "所以，别只问用户：“你会不会用？”",
+      "ttsInputText": "所以，别只问用户：“你会不会用？”",
+      "subtitle": "别只问：“你会不会用？”",
+      "focusPhrase": "你会不会用",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "weak question dims"
+      ],
+      "emphasis": [
+        "你会不会用"
+      ],
+      "audioFile": "chunks-qwen/c09.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 36.66,
+      "speechEndSeconds": 39.7,
+      "endSeconds": 39.96,
+      "measuredSpeechSeconds": 3.04,
+      "pauseAfterMs": 260,
+      "paddingSeconds": 0.26,
+      "actualDurationSeconds": 3.3
+    },
+    {
+      "id": "c10",
+      "paragraphId": "p04",
+      "sectionLabel": "问法切换",
+      "intent": "give better evidence questions",
+      "tone": "practical",
+      "pacing": "three question rhythm",
+      "text": "更好的问题是：你上一次遇到这个问题是什么时候？现在怎么解决？为什么还不换？",
+      "ttsInputText": "更好的问题是：你上一次遇到这个问题是什么时候？现在怎么解决？为什么还不换？",
+      "subtitle": "上次什么时候遇到？现在怎么解决？为什么还不换？",
+      "focusPhrase": "上一次 / 现在 / 为什么",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "evidence questions appear"
+      ],
+      "emphasis": [
+        "上一次",
+        "现在",
+        "为什么"
+      ],
+      "audioFile": "chunks-qwen/c10.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 39.96,
+      "speechEndSeconds": 45.32,
+      "endSeconds": 45.82,
+      "measuredSpeechSeconds": 5.36,
+      "pauseAfterMs": 500,
+      "paddingSeconds": 0.5,
+      "actualDurationSeconds": 5.86
+    },
+    {
+      "id": "c11",
+      "paragraphId": "p05",
+      "sectionLabel": "证据判断",
+      "intent": "separate praise from answer",
+      "tone": "firm",
+      "pacing": "short",
+      "text": "如果用户只是在夸 Demo，你还没有答案。",
+      "ttsInputText": "如果用户只是在夸 Demo，你还没有答案。",
+      "subtitle": "只是在夸 Demo，还没有答案。",
+      "focusPhrase": "没有答案",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "praise lane dims"
+      ],
+      "emphasis": [
+        "夸 Demo",
+        "没有答案"
+      ],
+      "audioFile": "chunks-qwen/c11.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 45.82,
+      "speechEndSeconds": 48.62,
+      "endSeconds": 48.88,
+      "measuredSpeechSeconds": 2.8,
+      "pauseAfterMs": 260,
+      "paddingSeconds": 0.26,
+      "actualDurationSeconds": 3.06
+    },
+    {
+      "id": "c12",
+      "paragraphId": "p05",
+      "sectionLabel": "证据判断",
+      "intent": "name the stronger signal",
+      "tone": "decisive",
+      "pacing": "slow on pain",
+      "text": "如果他开始暴露真实痛点，甚至指出你的 Demo 哪里没解决问题，那才是更有价值的信号。",
+      "ttsInputText": "如果他开始暴露真实痛点，甚至指出你的 Demo 哪里没解决问题，那才是更有价值的信号。",
+      "subtitle": "暴露真实痛点，才是更有价值的信号。",
+      "focusPhrase": "真实痛点",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "pain and contradiction chips highlight"
+      ],
+      "emphasis": [
+        "真实痛点",
+        "更有价值的信号"
+      ],
+      "audioFile": "chunks-qwen/c12.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 48.88,
+      "speechEndSeconds": 54.88,
+      "endSeconds": 55.3,
+      "measuredSpeechSeconds": 6.0,
+      "pauseAfterMs": 420,
+      "paddingSeconds": 0.42,
+      "actualDurationSeconds": 6.42
+    },
+    {
+      "id": "c13",
+      "paragraphId": "p05",
+      "sectionLabel": "本集判断",
+      "intent": "deliver takeaway",
+      "tone": "settled",
+      "pacing": "takeaway emphasis",
+      "text": "这一集的判断是：Demo 可以帮你问问题，但不能替你证明有人要。",
+      "ttsInputText": "这一集的判断是：Demo 可以帮你问问题，但不能替你证明有人要。",
+      "subtitle": "Demo 可以帮你问问题，不能证明有人要。",
+      "focusPhrase": "不能替你证明有人要",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "final decision card"
+      ],
+      "emphasis": [
+        "帮你问问题",
+        "不能替你证明有人要"
+      ],
+      "audioFile": "chunks-qwen/c13.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 55.3,
+      "speechEndSeconds": 59.94,
+      "endSeconds": 60.36,
+      "measuredSpeechSeconds": 4.64,
+      "pauseAfterMs": 420,
+      "paddingSeconds": 0.42,
+      "actualDurationSeconds": 5.06
+    },
+    {
+      "id": "c14",
+      "paragraphId": "p05",
+      "sectionLabel": "下一集",
+      "intent": "bridge to boundaries episode",
+      "tone": "forward-looking",
+      "pacing": "lighter handoff",
+      "text": "下一集，我们看确定要做以后，为什么要先定边界，再让 AI 写。",
+      "ttsInputText": "下一集，我们看确定要做以后，为什么要先定边界，再让 A I 写。",
+      "subtitle": "下一集：先定边界，再让 AI 写。",
+      "focusPhrase": "先定边界",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "episode three gate preview"
+      ],
+      "emphasis": [
+        "先定边界"
+      ],
+      "audioFile": "chunks-qwen/c14.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 60.36,
+      "speechEndSeconds": 65.16,
+      "endSeconds": 65.16,
+      "measuredSpeechSeconds": 4.8,
+      "pauseAfterMs": 0,
+      "paddingSeconds": 0.0,
+      "actualDurationSeconds": 4.8
+    }
+  ]
+}

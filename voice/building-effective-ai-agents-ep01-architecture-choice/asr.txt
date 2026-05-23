@@ -1,0 +1,71 @@
+## s01
+Expected: 做 Agent 最容易犯的错，是从技术名词开始。
+ASR: 做Agent最容易犯的错,是从技术名词开始。
+Similarity: 1.000
+Core match: pass
+
+## s02
+Expected: 这份 Anthropic PDF 真正给出的，不是一个固定答案，而是一组架构选择。
+ASR: 这份Anthropic PDF真正给出的不是一个固定答案,而是一组架构选择。
+Similarity: 1.000
+Core match: pass
+
+## s03
+Expected: 先不要把概念混在一起。原文先讲 Single Agent，再讲 Multi-Agent 的协调概念，最后讲 Agentic Workflows。
+ASR: 先不要把概念混在一起,原文先讲Single Agent,再讲Multi-Agent的协调概念,最后讲Agentic Workflows。
+Similarity: 1.000
+Core match: pass
+
+## s04
+Expected: Agentic Workflow 讲的是结构：任务如何排序、交接、并行和评估。它支撑架构，但不等于 Multi-Agent 的协调概念。
+ASR: Agentic workflow讲的是结构,任务如何排序、交接、并行和评估,它支撑架构,但不等于Multi-Agent的协调概念。
+Similarity: 1.000
+Core match: pass
+
+## s05
+Expected: Single Agent 是一个 Agent 负责目标，用工具、技能和记忆推进任务。它可以调用流程，但核心仍是一个 Agent 的动态决策。
+ASR: Single Agent是一个Agent负责目标,用工具、技能和记忆推进任务,它可以调用流程,但核心仍是一个Agent的动态决策。
+Similarity: 1.000
+Core match: pass
+
+## s06
+Expected: 所以，目标清楚、路径需要动态选择，但还不需要多个专家一起处理时，先从 Single Agent 开始。
+ASR: 所以,目标清楚,路径需要动态选择,但还不需要多个专家一起处理时,先从Single Agent开始。
+Similarity: 1.000
+Core match: pass
+
+## s07
+Expected: Multi-Agent 的核心不是顺序或并行，而是协调。原文先分集中式和去中心化：集中式里才有 hierarchical pattern。
+ASR: Multi-Agent的核心不是顺序或并行,而是协调,原文先分集中式和去中心化,集中式里才有Hierarchical pattern。
+Similarity: 1.000
+Core match: pass
+
+## s08
+Expected: 但代价也很真实。PDF 提醒，Multi-Agent 可能消耗单 Agent 大约十到十五倍 Token。
+ASR: 但代价也很真实,PDF提醒,Multi-agent可能消耗单agent大约10到15倍token。
+Similarity: 1.000
+Core match: pass
+
+## s09
+Expected: 所以架构选择，主要看五件事：控制要求、领域复杂度、资源预算、上线时间，以及需不需要领域专家参与。
+ASR: 所以,架构选择主要看五件事:控制要求、领域复杂度、资源预算、上限时间,以及需不需要领域专家参与。
+Similarity: 0.976
+Core match: pass
+
+## s10
+Expected: 一旦进入真实业务系统，还要能观察和治理：提示链、模型决策、检索上下文、Token 消耗，都要看得见。
+ASR: 一旦进入真实业务系统,还要能观察和治理,提示链、模型决策、检索上下文、Token消耗都要看得见。
+Similarity: 1.000
+Core match: pass
+
+## s11
+Expected: 第一集的结论是：先选最小可用架构，再保留演进空间。
+ASR: 第一集的结论是,先选最小可用架构,再保留演进空间。
+Similarity: 1.000
+Core match: pass
+
+## s12
+Expected: 下一集讲：怎么从一个窄而稳的 Agent 开始。
+ASR: 下一集讲,怎么从一个窄而稳的agent开始。
+Similarity: 1.000
+Core match: pass

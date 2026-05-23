@@ -1,0 +1,510 @@
+{
+  "schemaVersion": "1.1",
+  "slug": "the-founders-playbook-ai-native-startup-ep03-boundaries-before-ai-code",
+  "title": "先定边界，再让 AI 写",
+  "series": "The Founder's Playbook - Building an AI-Native Startup",
+  "episode": 3,
+  "status": "scene_graph_ready",
+  "pauseRequired": true,
+  "nextApprovedStage": "visual production / render",
+  "notApprovedYet": [
+    "Douyin package",
+    "publish/upload"
+  ],
+  "mission": "AI cognition compression",
+  "audience": "Founders, solo builders, AI startup operators, and technical product leaders",
+  "format": {
+    "primary": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "coverGrid": {
+      "width": 1080,
+      "height": 1440,
+      "note": "Cover crop constraints apply later; this scene graph is for video timing."
+    }
+  },
+  "timing": {
+    "source": "voice/the-founders-playbook-ai-native-startup-ep03-boundaries-before-ai-code/voice-manifest.json",
+    "totalMeasuredSpeechSeconds": 59.2,
+    "totalDurationSeconds": 63.32,
+    "audioStrategy": "selected_qwen_chunks"
+  },
+  "visualSystem": {
+    "status": "content_fitted_visual_system",
+    "lockedStyleName": "Founder Playbook Boundary Context Gate",
+    "seriesReference": "scene-graphs/the-founders-playbook-ai-native-startup-ep02-demo-is-not-demand.json",
+    "visualJob": "MVP boundary before AI code",
+    "styleIntent": "reuse Founder Playbook warm decision-gate VI while changing the central artifact to boundary/context discipline",
+    "audienceFeeling": "founder-facing, practical, warm, direct, controlled",
+    "typography": [
+      "Rounded / humanist Chinese sans stack from the Founder Playbook system",
+      "Avenir Next / Inter / system sans for metadata"
+    ],
+    "palette": [
+      "warm black field",
+      "cream text",
+      "amber for boundary and decision",
+      "cyan for evidence and readable context",
+      "rose for drift, sprawl, and weak scope",
+      "orange for AI execution speed"
+    ],
+    "symbolGrammar": [
+      "Before designing any symbol, identify the section key message. The symbol must encode that takeaway, not merely the section topic or a noun from the narration.",
+      "Comply with the locked Founder Playbook VI first; iOS icon discipline is only a secondary reference for silhouette and legibility.",
+      "Use abstract concept marks, not literal product UI: boundary frame, signal bars, threshold line, mismatch paths, void state, execution stack.",
+      "Fit every symbol to the concept: fast code uses path/stack, scope uses boundary frame, feature creep uses nodes outside the frame, context drift uses crossing paths.",
+      "Keep each mark readable at phone size with short labels as anchors.",
+      "Use common diagram grammar before invention."
+    ],
+    "motionPrinciples": [
+      "One visual focus per voice chunk.",
+      "Motion is semantic: code speed, boundary expansion, evidence gate, scope document reveal, context reset, drift warning, decision lock.",
+      "Major action sound cues only; no per-animation notification layer.",
+      "Subtitles must stay clear of the central boundary diagrams.",
+      "Animation order and hold time follow measured voice timing."
+    ],
+    "frameFittingConstraints": [
+      "Primary video frame is 1080x1920.",
+      "Final cover grid constraint remains 1080x1440.",
+      "No scene may rely on dense document text for meaning.",
+      "Every diagram must remain readable in a phone feed.",
+      "Subtitles must not sit in a box or collide with central artifacts."
+    ]
+  },
+  "sourceRefs": [
+    {
+      "id": "source-intake",
+      "path": "sources/the-founders-playbook-ai-native-startup/source-intake.md",
+      "role": "source provenance and structure"
+    },
+    {
+      "id": "source-map",
+      "path": "extraction/the-founders-playbook-ai-native-startup.source-map.md",
+      "role": "source value inventory and page-area mapping"
+    },
+    {
+      "id": "source-logic",
+      "path": "review/the-founders-playbook-ai-native-startup.source-logic.findings.md",
+      "role": "taxonomy and fidelity guardrails"
+    },
+    {
+      "id": "episode-compression",
+      "path": "compression/the-founders-playbook-ai-native-startup-ep03-boundaries-before-ai-code.md",
+      "role": "episode strategy and value budget"
+    },
+    {
+      "id": "voice-manifest",
+      "path": "voice/the-founders-playbook-ai-native-startup-ep03-boundaries-before-ai-code/voice-manifest.json",
+      "role": "selected voice chunks and timing"
+    }
+  ],
+  "sourceFidelityGuardrails": [
+    "MVP is still evidence-gathering about the solution, not full-product construction.",
+    "AI technical debt is framed as context, architecture, and boundary drift, not only bad code.",
+    "Scope boundaries must include what the MVP does, does not do, and what evidence justifies adding features.",
+    "Return, payment, referral, or repeated use are evidence examples, not a full PMF framework lesson.",
+    "Claude-specific artifacts are treated as source examples, not universal product law.",
+    "Security/compliance details and launch hardening remain deferred."
+  ],
+  "soundEffects": [
+    {
+      "id": "sfx-code-speed",
+      "file": "the-founders-playbook-ai-native-startup-ep03-boundaries-before-ai-code/sfx/speed-rise.wav",
+      "sceneId": "c01",
+      "atSeconds": 0.35,
+      "durationSeconds": 0.36,
+      "volume": 0.09,
+      "concept": "AI code speed starts",
+      "rationale": "Major opening action: fast execution appears before the boundary rule."
+    },
+    {
+      "id": "sfx-boundary-sprawl",
+      "file": "the-founders-playbook-ai-native-startup-ep03-boundaries-before-ai-code/sfx/boundary-warn.wav",
+      "sceneId": "c02",
+      "atSeconds": 1.85,
+      "durationSeconds": 0.42,
+      "volume": 0.09,
+      "concept": "feature nodes leave the boundary",
+      "rationale": "Major concept notification: unclear boundary creates product sprawl."
+    },
+    {
+      "id": "sfx-scope-lock",
+      "file": "the-founders-playbook-ai-native-startup-ep03-boundaries-before-ai-code/sfx/scope-lock.wav",
+      "sceneId": "c06",
+      "atSeconds": 2.4,
+      "durationSeconds": 0.34,
+      "volume": 0.1,
+      "concept": "three-part scope locks",
+      "rationale": "Major decision action: solve / not solve / evidence-to-add becomes the scope boundary."
+    },
+    {
+      "id": "sfx-context-drift",
+      "file": "the-founders-playbook-ai-native-startup-ep03-boundaries-before-ai-code/sfx/drift-cross.wav",
+      "sceneId": "c09",
+      "atSeconds": 3.2,
+      "durationSeconds": 0.4,
+      "volume": 0.08,
+      "concept": "context path drifts",
+      "rationale": "Major warning action: code can run while boundary/context drifts."
+    },
+    {
+      "id": "sfx-final-router-bridge",
+      "file": "the-founders-playbook-ai-native-startup-ep03-boundaries-before-ai-code/sfx/router-ping.wav",
+      "sceneId": "c12",
+      "atSeconds": 1.7,
+      "durationSeconds": 0.42,
+      "volume": 0.08,
+      "concept": "next operating gate appears",
+      "rationale": "Major bridge action only: the next episode router gate appears."
+    }
+  ],
+  "episodeClaims": [
+    "AI coding speed can scatter an unclear product.",
+    "After validation, the next risk is uncontrolled building.",
+    "MVP is a focused evidence-gathering stage.",
+    "Scope is a three-part boundary: solve, not solve, evidence to add.",
+    "AI technical debt can compound when product boundaries and architecture context drift.",
+    "AI should execute decisions already made, not decide product scope inside each coding session."
+  ],
+  "finalRender": {
+    "status": "technical_qa_passed",
+    "path": "douyin/the-founders-playbook-ai-native-startup-ep03-boundaries-before-ai-code/video.mp4",
+    "qaPath": "review/the-founders-playbook-ai-native-startup-ep03-boundaries-before-ai-code.final-render-qa.md",
+    "metadata": {
+      "container": "mp4",
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "frames": 1900,
+      "durationSeconds": 63.381,
+      "audioSampleRate": 48000,
+      "audioChannels": 2,
+      "soundEffectCount": 5,
+      "soundEffectPolicy": "major_action_notifications_only",
+      "fileSizeBytes": 12368744
+    },
+    "nextGate": "Douyin package"
+  },
+  "douyinPackage": {
+    "status": "ready",
+    "path": "douyin/the-founders-playbook-ai-native-startup-ep03-boundaries-before-ai-code/",
+    "qaPath": "douyin/the-founders-playbook-ai-native-startup-ep03-boundaries-before-ai-code/qa.md",
+    "artifacts": [
+      "video.mp4",
+      "cover.png",
+      "cover.vertical.png",
+      "cover.grid.png",
+      "caption.md",
+      "cover.md",
+      "brief.md",
+      "script.md",
+      "MANIFEST.md",
+      "qa.md"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "c01",
+      "startSeconds": 0,
+      "durationSeconds": 1.56,
+      "speechEndSeconds": 1.28,
+      "sectionLabel": "速度风险",
+      "paragraphId": "p01",
+      "claim": "AI coding is fast.",
+      "narration": "AI 写代码很快。",
+      "subtitle": "AI 写代码很快。",
+      "artifact": {
+        "type": "ai-code-speed",
+        "state": "fast-execution-before-boundary",
+        "nodes": ["AI 写代码", "边界框"],
+        "highlight": "写代码很快",
+        "keyMessage": "AI coding speed is useful only after a boundary exists.",
+        "symbolMeaning": "Execution stack is visually contained by a boundary-first frame."
+      },
+      "focusPhrase": "写代码很快",
+      "focusCue": "code path appears before boundary frame",
+      "motion": "AI execution stack appears, then boundary frame waits as prerequisite",
+      "sources": ["episode-compression", "voice-manifest"],
+      "sourceLogic": "Speed is useful but not sufficient.",
+      "audioSource": "voice-manifest:c01"
+    },
+    {
+      "id": "c02",
+      "startSeconds": 1.56,
+      "durationSeconds": 4.42,
+      "speechEndSeconds": 5.56,
+      "sectionLabel": "速度风险",
+      "paragraphId": "p01",
+      "claim": "Unclear product boundaries make fast AI coding scatter the product.",
+      "narration": "但如果产品边界不清楚，它也会很快把产品写散。",
+      "subtitle": "边界不清楚，产品会被写散。",
+      "artifact": {
+        "type": "product-boundary-sprawl",
+        "state": "feature-nodes-spill-outside-boundary",
+        "nodes": ["产品边界", "边缘场景", "酷功能", "写散"],
+        "highlight": "产品写散",
+        "keyMessage": "Unclear boundaries make fast AI output scatter the product.",
+        "symbolMeaning": "Feature nodes leave the product boundary frame."
+      },
+      "focusPhrase": "产品写散",
+      "focusCue": "feature nodes spill outside boundary frame",
+      "motion": "feature nodes push outside the boundary frame",
+      "sources": ["episode-compression", "voice-manifest"],
+      "sourceLogic": "This expresses zero-friction scope creep without adding unverified examples.",
+      "audioSource": "voice-manifest:c02"
+    },
+    {
+      "id": "c03",
+      "startSeconds": 5.98,
+      "durationSeconds": 3.76,
+      "speechEndSeconds": 9.42,
+      "sectionLabel": "MVP 关口",
+      "paragraphId": "p02",
+      "claim": "After validation, the next gate is not filling every feature.",
+      "narration": "有了验证信号以后，下一关不是马上把功能做满。",
+      "subtitle": "有了验证信号，不是马上做满功能。",
+      "artifact": {
+        "type": "mvp-evidence-gate",
+        "state": "full-product-option-dims",
+        "nodes": ["验证信号", "做满功能", "证据关口"],
+        "highlight": "不是马上把功能做满",
+        "keyMessage": "Validation signal should open an evidence gate, not a full-product build.",
+        "symbolMeaning": "Full-product option dims while the evidence gate activates."
+      },
+      "focusPhrase": "不是马上把功能做满",
+      "focusCue": "full-product option dims",
+      "motion": "full-product card dims and evidence gate activates",
+      "sources": ["episode-compression", "voice-manifest"],
+      "sourceLogic": "Keeps MVP separate from full-product build.",
+      "audioSource": "voice-manifest:c03"
+    },
+    {
+      "id": "c04",
+      "startSeconds": 9.74,
+      "durationSeconds": 7.5,
+      "speechEndSeconds": 16.78,
+      "sectionLabel": "MVP 关口",
+      "paragraphId": "p02",
+      "claim": "MVP is still evidence-gathering with real users.",
+      "narration": "MVP 阶段，本质上还是在收集证据：一小群真实用户，会不会回来、付费，或者愿意推荐。",
+      "subtitle": "MVP 阶段，还是在收集证据。",
+      "artifact": {
+        "type": "mvp-evidence-gate",
+        "state": "return-pay-refer-evidence",
+        "nodes": ["回来", "付费", "推荐"],
+        "highlight": "回来、付费、推荐",
+        "keyMessage": "MVP is still a real-user evidence stage.",
+        "symbolMeaning": "Evidence bars/chips represent return, payment, and referral signals."
+      },
+      "focusPhrase": "回来、付费、推荐",
+      "focusCue": "evidence chips rise above MVP gate",
+      "motion": "return, payment, and referral chips appear inside evidence gate",
+      "sources": ["episode-compression", "source-map", "voice-manifest"],
+      "sourceLogic": "Evidence examples are retained without teaching a PMF measurement framework.",
+      "audioSource": "voice-manifest:c04"
+    },
+    {
+      "id": "c05",
+      "startSeconds": 17.24,
+      "durationSeconds": 4.74,
+      "speechEndSeconds": 21.72,
+      "sectionLabel": "范围边界",
+      "paragraphId": "p03",
+      "claim": "The MVP job is not asking what else can be added.",
+      "narration": "所以，最小可用产品，最重要的不是“还能加什么”。",
+      "subtitle": "最重要的不是“还能加什么”。",
+      "artifact": {
+        "type": "scope-three-part-boundary",
+        "state": "add-feature-option-dimmed",
+        "nodes": ["还能加什么", "范围边界"],
+        "highlight": "还能加什么",
+        "keyMessage": "The wrong MVP question is what else can be added.",
+        "symbolMeaning": "Add-feature impulse is dimmed and replaced by a boundary-first frame."
+      },
+      "focusPhrase": "还能加什么",
+      "focusCue": "add-feature card dims before scope document",
+      "motion": "add-feature impulse dims and scope document frame appears",
+      "sources": ["episode-compression", "voice-manifest"],
+      "sourceLogic": "Preserves feature-expansion discipline.",
+      "audioSource": "voice-manifest:c05"
+    },
+    {
+      "id": "c06",
+      "startSeconds": 21.98,
+      "durationSeconds": 7.1,
+      "speechEndSeconds": 28.62,
+      "sectionLabel": "范围边界",
+      "paragraphId": "p03",
+      "claim": "Scope has three parts: what it solves, what it does not solve, and what evidence changes the boundary.",
+      "narration": "而是先写清楚三件事：它现在解决什么，暂时不解决什么，什么证据才允许你加新功能。",
+      "subtitle": "先写清楚：解决什么、不解决什么、什么证据能加。",
+      "artifact": {
+        "type": "scope-three-part-boundary",
+        "state": "does-does-not-evidence",
+        "nodes": ["解决什么", "不解决什么", "证据能加"],
+        "highlight": "三件事",
+        "keyMessage": "Scope is a three-part boundary.",
+        "symbolMeaning": "Three rows encode does, does-not-do, and evidence-to-add."
+      },
+      "focusPhrase": "三件事",
+      "focusCue": "three scope rows lock in",
+      "motion": "three boundary rows reveal and lock",
+      "sources": ["episode-compression", "source-map", "voice-manifest"],
+      "sourceLogic": "Directly maps the source scope document rule.",
+      "audioSource": "voice-manifest:c06"
+    },
+    {
+      "id": "c07",
+      "startSeconds": 29.08,
+      "durationSeconds": 4.64,
+      "speechEndSeconds": 33.4,
+      "sectionLabel": "上下文漂移",
+      "paragraphId": "p04",
+      "claim": "Without persistent context, each AI coding session re-guesses the product boundary.",
+      "narration": "不然，每次让 AI 开工，它都会重新猜一遍产品边界。",
+      "subtitle": "每次让 AI 开工，它都会重新猜边界。",
+      "artifact": {
+        "type": "context-reset-loop",
+        "state": "ai-session-re-guesses-boundary",
+        "nodes": ["AI 开工", "重新猜", "产品边界"],
+        "highlight": "重新猜一遍产品边界",
+        "keyMessage": "Without persistent context, every AI session re-guesses the boundary.",
+        "symbolMeaning": "A reset loop crosses back through the boundary frame."
+      },
+      "focusPhrase": "重新猜一遍产品边界",
+      "focusCue": "context loop breaks from boundary frame",
+      "motion": "context path loops back and crosses the boundary frame",
+      "sources": ["episode-compression", "source-map", "voice-manifest"],
+      "sourceLogic": "Explains context drift without making a Claude tutorial.",
+      "audioSource": "voice-manifest:c07"
+    },
+    {
+      "id": "c08",
+      "startSeconds": 33.72,
+      "durationSeconds": 6.84,
+      "speechEndSeconds": 40.2,
+      "sectionLabel": "范围失形",
+      "paragraphId": "p04",
+      "claim": "Cheap features accumulate until the product loses shape.",
+      "narration": "今天加一个边缘场景，明天补一个酷功能，后天整个产品就开始失去形状。",
+      "subtitle": "一个又一个功能，产品开始失去形状。",
+      "artifact": {
+        "type": "scope-creep-shape-loss",
+        "state": "feature-accumulation-deforms-product",
+        "nodes": ["边缘场景", "酷功能", "产品失形"],
+        "highlight": "失去形状",
+        "keyMessage": "Cheap features deform product shape.",
+        "symbolMeaning": "Feature nodes stretch and deform the boundary frame."
+      },
+      "focusPhrase": "失去形状",
+      "focusCue": "boundary frame deforms",
+      "motion": "feature nodes accumulate and the product boundary deforms",
+      "sources": ["episode-compression", "voice-manifest"],
+      "sourceLogic": "Shows zero-friction scope creep as the AI-era MVP risk.",
+      "audioSource": "voice-manifest:c08"
+    },
+    {
+      "id": "c09",
+      "startSeconds": 40.56,
+      "durationSeconds": 7.42,
+      "speechEndSeconds": 47.52,
+      "sectionLabel": "AI 技术债",
+      "paragraphId": "p04",
+      "claim": "AI technical debt can be boundary and architecture-context drift even when code runs.",
+      "narration": "这就是 AI 时代更隐蔽的技术债：代码可能能跑，但产品边界和架构上下文已经开始漂移。",
+      "subtitle": "AI 技术债：边界和上下文开始漂移。",
+      "artifact": {
+        "type": "technical-debt-context-drift",
+        "state": "code-runs-context-drifts",
+        "nodes": ["代码能跑", "产品边界", "架构上下文", "漂移"],
+        "highlight": "边界和架构上下文",
+        "keyMessage": "AI technical debt can be running code plus drifting context.",
+        "symbolMeaning": "Code path stays active while boundary/context path drifts."
+      },
+      "focusPhrase": "边界和架构上下文",
+      "focusCue": "architecture context drifts from code path",
+      "motion": "code-running path remains bright while boundary/context path drifts",
+      "sources": ["episode-compression", "source-map", "voice-manifest"],
+      "sourceLogic": "Keeps technical debt as source-defined context/architecture drift, not just bad code.",
+      "audioSource": "voice-manifest:c09"
+    },
+    {
+      "id": "c10",
+      "startSeconds": 47.98,
+      "durationSeconds": 6.04,
+      "speechEndSeconds": 53.66,
+      "sectionLabel": "可读上下文",
+      "paragraphId": "p05",
+      "claim": "Boundary and context should be placed where AI can read them before coding.",
+      "narration": "所以，让 AI 写之前，先把边界和上下文放到它能读到的地方。",
+      "subtitle": "让 AI 写之前，先放好边界和上下文。",
+      "artifact": {
+        "type": "context-readable-before-code",
+        "state": "context-loaded-before-execution",
+        "nodes": ["边界 / 架构 / 上下文", "读取门", "AI 可读取"],
+        "highlight": "放到它能读到的地方",
+        "keyMessage": "AI should read the boundary and context before coding.",
+        "symbolMeaning": "Written context passes through a read/load gate before the AI-readable execution path unlocks."
+      },
+      "focusPhrase": "放到它能读到的地方",
+      "focusCue": "boundary and context pass through read gate before execution",
+      "motion": "boundary/context frame activates, read gate loads it, then execution stack unlocks",
+      "sources": ["episode-compression", "source-map", "voice-manifest"],
+      "sourceLogic": "Treats persistent context as a general discipline; no Claude-specific claim in voice.",
+      "audioSource": "voice-manifest:c10"
+    },
+    {
+      "id": "c11",
+      "startSeconds": 54.02,
+      "durationSeconds": 3.54,
+      "speechEndSeconds": 57.14,
+      "sectionLabel": "本集判断",
+      "paragraphId": "p05",
+      "claim": "Write boundaries before code.",
+      "narration": "这一集的判断是：先写边界，再写代码。",
+      "subtitle": "先写边界，再写代码。",
+      "artifact": {
+        "type": "boundary-before-code-decision",
+        "state": "boundary-first-decision-lock",
+        "nodes": ["先写边界", "再写代码"],
+        "highlight": "先写边界",
+        "keyMessage": "The episode decision is boundary before code.",
+        "symbolMeaning": "Boundary card locks before the code execution card activates."
+      },
+      "focusPhrase": "先写边界",
+      "focusCue": "decision card locks boundary before code",
+      "motion": "boundary card locks before code card activates",
+      "sources": ["episode-compression", "voice-manifest"],
+      "sourceLogic": "This is the compressed mental model.",
+      "audioSource": "voice-manifest:c11"
+    },
+    {
+      "id": "c12",
+      "startSeconds": 57.56,
+      "durationSeconds": 5.76,
+      "speechEndSeconds": 63.32,
+      "sectionLabel": "下一集",
+      "paragraphId": "p05",
+      "claim": "Episode 4 moves from MVP boundaries to launch-stage operating systems.",
+      "narration": "下一集，我们看产品上线以后，创始人为什么不能继续做所有事情的中转站。",
+      "subtitle": "下一集：创始人别当中转站。",
+      "artifact": {
+        "type": "next-founder-router-preview",
+        "state": "launch-router-preview",
+        "nodes": ["上线后", "创始人", "中转站"],
+        "highlight": "创始人不能继续当中转站",
+        "keyMessage": "The next operating risk is founder-as-router after launch.",
+        "symbolMeaning": "Router/mismatch mark previews the next gate without teaching EP04."
+      },
+      "focusPhrase": "创始人不能继续当中转站",
+      "focusCue": "EP04 router gate preview",
+      "motion": "boundary/code gate clears and founder-router preview appears",
+      "sources": ["episode-compression", "voice-manifest"],
+      "sourceLogic": "Bridge points to Episode 4 without teaching launch systems here.",
+      "audioSource": "voice-manifest:c12"
+    }
+  ]
+}

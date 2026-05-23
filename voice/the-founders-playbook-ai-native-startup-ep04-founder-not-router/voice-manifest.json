@@ -1,0 +1,461 @@
+{
+  "schemaVersion": "1.2",
+  "slug": "the-founders-playbook-ai-native-startup-ep04-founder-not-router",
+  "series": "The Founder's Playbook - Building an AI-Native Startup",
+  "episode": {
+    "number": 4,
+    "title": "上线后，创始人别当中转站",
+    "workingEnglishTitle": "Founder Not Router"
+  },
+  "language": "zh-CN",
+  "status": "voice_manifest_ready",
+  "pauseRequired": true,
+  "nextApprovedStage": "scene graph",
+  "notApprovedYet": [
+    "visual production",
+    "render",
+    "Douyin package"
+  ],
+  "voiceDirection": "natural Mandarin, calm technical host, direct founder-operating judgment, no news or influencer tone",
+  "defaultVoiceMaker": {
+    "provider": "qwen-dashscope",
+    "model": "qwen3-tts-instruct-flash",
+    "voice": "Ethan"
+  },
+  "audioStrategy": "chunk_sequence",
+  "finalAudio": "selected_qwen_chunks",
+  "totalMeasuredSpeechSeconds": 50.56,
+  "totalDurationSeconds": 54.2,
+  "asr": {
+    "status": "pass",
+    "transcriptPath": "asr.txt",
+    "qaPath": "asr-qa.md"
+  },
+  "paragraphs": [
+    {
+      "id": "p01",
+      "chunkIds": [
+        "c01",
+        "c02"
+      ],
+      "coreIdea": "Launch is a repeatability gate, not just a product launch.",
+      "visualFocus": "founder router bottleneck and launch gate"
+    },
+    {
+      "id": "p02",
+      "chunkIds": [
+        "c03",
+        "c04"
+      ],
+      "coreIdea": "Founder-in-the-loop shifts from advantage to bottleneck.",
+      "visualFocus": "loop advantage flips into bottleneck"
+    },
+    {
+      "id": "p03",
+      "chunkIds": [
+        "c05",
+        "c06"
+      ],
+      "coreIdea": "Bottleneck warning signs are delayed decisions and recurring queues.",
+      "visualFocus": "decision support bug report queue"
+    },
+    {
+      "id": "p04",
+      "chunkIds": [
+        "c07",
+        "c08",
+        "c09",
+        "c10"
+      ],
+      "coreIdea": "Audit founder-handled work into automation, delegation, and founder judgment.",
+      "visualFocus": "three-lane attention audit"
+    },
+    {
+      "id": "p05",
+      "chunkIds": [
+        "c11",
+        "c12"
+      ],
+      "coreIdea": "Repeated problems should become systems; Scale shifts to workflow moat.",
+      "visualFocus": "system router and EP05 bridge"
+    }
+  ],
+  "chunks": [
+    {
+      "id": "c01",
+      "paragraphId": "p01",
+      "sectionLabel": "上线瓶颈",
+      "intent": "hook the founder-router bottleneck",
+      "tone": "direct",
+      "pacing": "firm hook",
+      "text": "产品上线后，如果每个问题都还要创始人接住，公司就没有真正进入增长。",
+      "ttsInputText": "产品上线后，如果每个问题都还要创始人接住，公司就没有真正进入增长。",
+      "subtitle": "每个问题都等创始人，公司就还没进入增长。",
+      "focusPhrase": "每个问题都还要创始人接住",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "request paths converge on founder"
+      ],
+      "emphasis": [
+        "每个问题",
+        "创始人接住",
+        "增长"
+      ],
+      "audioFile": "chunks-qwen/c01.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 0.0,
+      "speechEndSeconds": 5.92,
+      "endSeconds": 6.26,
+      "measuredSpeechSeconds": 5.92,
+      "pauseAfterMs": 340,
+      "paddingSeconds": 0.34,
+      "actualDurationSeconds": 6.26
+    },
+    {
+      "id": "c02",
+      "paragraphId": "p01",
+      "sectionLabel": "Launch Gate",
+      "intent": "separate MVP from Launch",
+      "tone": "structured",
+      "pacing": "clean contrast",
+      "text": "MVP 证明产品值得存在；Launch 证明业务能不能重复增长。",
+      "ttsInputText": "M V P 证明产品值得存在；Launch 证明业务能不能重复增长。",
+      "subtitle": "MVP 证明产品；Launch 证明增长能不能重复。",
+      "focusPhrase": "业务能不能重复增长",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "MVP to Launch repeatability gate"
+      ],
+      "emphasis": [
+        "MVP",
+        "Launch",
+        "重复增长"
+      ],
+      "audioFile": "chunks-qwen/c02.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 6.26,
+      "speechEndSeconds": 11.7,
+      "endSeconds": 12.06,
+      "measuredSpeechSeconds": 5.44,
+      "pauseAfterMs": 360,
+      "paddingSeconds": 0.36,
+      "actualDurationSeconds": 5.8
+    },
+    {
+      "id": "c03",
+      "paragraphId": "p02",
+      "sectionLabel": "回路反转",
+      "intent": "preserve why founder-in-loop is useful early",
+      "tone": "balanced",
+      "pacing": "measured",
+      "text": "早期，创始人在每个回路里，是优势：学得快，判断也快。",
+      "ttsInputText": "早期，创始人在每个回路里，是优势：学得快，判断也快。",
+      "subtitle": "早期，创始人在回路里，是优势。",
+      "focusPhrase": "是优势",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "active founder learning loop"
+      ],
+      "emphasis": [
+        "每个回路",
+        "优势"
+      ],
+      "audioFile": "chunks-qwen/c03.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 12.06,
+      "speechEndSeconds": 17.26,
+      "endSeconds": 17.52,
+      "measuredSpeechSeconds": 5.2,
+      "pauseAfterMs": 260,
+      "paddingSeconds": 0.26,
+      "actualDurationSeconds": 5.46
+    },
+    {
+      "id": "c04",
+      "paragraphId": "p02",
+      "sectionLabel": "回路反转",
+      "intent": "turn the early habit into launch bottleneck",
+      "tone": "decisive",
+      "pacing": "short turn",
+      "text": "但上线以后，同一个习惯会变成瓶颈。",
+      "ttsInputText": "但上线以后，同一个习惯会变成瓶颈。",
+      "subtitle": "上线以后，同一个习惯会变成瓶颈。",
+      "focusPhrase": "变成瓶颈",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "loop becomes bottleneck"
+      ],
+      "emphasis": [
+        "同一个习惯",
+        "瓶颈"
+      ],
+      "audioFile": "chunks-qwen/c04.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 17.52,
+      "speechEndSeconds": 20.24,
+      "endSeconds": 20.66,
+      "measuredSpeechSeconds": 2.72,
+      "pauseAfterMs": 420,
+      "paddingSeconds": 0.42,
+      "actualDurationSeconds": 3.14
+    },
+    {
+      "id": "c05",
+      "paragraphId": "p03",
+      "sectionLabel": "瓶颈信号",
+      "intent": "make delay concrete",
+      "tone": "observational",
+      "pacing": "slow on the time contrast",
+      "text": "一个一小时能决定的问题，因为等你，拖成一周。",
+      "ttsInputText": "一个一小时能决定的问题，因为等你，拖成一周。",
+      "subtitle": "一小时的决定，因为等你，拖成一周。",
+      "focusPhrase": "拖成一周",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "delayed decision queue"
+      ],
+      "emphasis": [
+        "一小时",
+        "一周"
+      ],
+      "audioFile": "chunks-qwen/c05.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 20.66,
+      "speechEndSeconds": 24.34,
+      "endSeconds": 24.6,
+      "measuredSpeechSeconds": 3.68,
+      "pauseAfterMs": 260,
+      "paddingSeconds": 0.26,
+      "actualDurationSeconds": 3.94
+    },
+    {
+      "id": "c06",
+      "paragraphId": "p03",
+      "sectionLabel": "瓶颈信号",
+      "intent": "show recurring work piling up",
+      "tone": "cumulative",
+      "pacing": "list rhythm",
+      "text": "支持消息堆起来，Bug 分流没人接，周报只在你想起来时才发生。",
+      "ttsInputText": "支持消息堆起来，Bug 分流没人接，周报只在你想起来时才发生。",
+      "subtitle": "支持、Bug、周报，都开始排队。",
+      "focusPhrase": "都开始排队",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "support bug report queue"
+      ],
+      "emphasis": [
+        "支持消息",
+        "Bug",
+        "周报"
+      ],
+      "audioFile": "chunks-qwen/c06.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 24.6,
+      "speechEndSeconds": 29.64,
+      "endSeconds": 30.04,
+      "measuredSpeechSeconds": 5.04,
+      "pauseAfterMs": 400,
+      "paddingSeconds": 0.4,
+      "actualDurationSeconds": 5.44
+    },
+    {
+      "id": "c07",
+      "paragraphId": "p04",
+      "sectionLabel": "错误问题",
+      "intent": "reject more founder effort as the answer",
+      "tone": "corrective",
+      "pacing": "brief pause",
+      "text": "这时不要问自己：“我怎么再忙一点？”",
+      "ttsInputText": "这时不要问自己：“我怎么再忙一点？”",
+      "subtitle": "不要问：我怎么再忙一点？",
+      "focusPhrase": "再忙一点",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "wrong question dims"
+      ],
+      "emphasis": [
+        "再忙一点"
+      ],
+      "audioFile": "chunks-qwen/c07.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 30.04,
+      "speechEndSeconds": 32.36,
+      "endSeconds": 32.62,
+      "measuredSpeechSeconds": 2.32,
+      "pauseAfterMs": 260,
+      "paddingSeconds": 0.26,
+      "actualDurationSeconds": 2.58
+    },
+    {
+      "id": "c08",
+      "paragraphId": "p04",
+      "sectionLabel": "注意力审计",
+      "intent": "open the bottleneck audit",
+      "tone": "practical",
+      "pacing": "setup",
+      "text": "要把亲手处理的事情列出来，分成三类。",
+      "ttsInputText": "要把亲手处理的事情列出来，分成三类。",
+      "subtitle": "把亲手处理的事，分成三类。",
+      "focusPhrase": "分成三类",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "audit list opens"
+      ],
+      "emphasis": [
+        "列出来",
+        "三类"
+      ],
+      "audioFile": "chunks-qwen/c08.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 32.62,
+      "speechEndSeconds": 35.66,
+      "endSeconds": 35.92,
+      "measuredSpeechSeconds": 3.04,
+      "pauseAfterMs": 260,
+      "paddingSeconds": 0.26,
+      "actualDurationSeconds": 3.3
+    },
+    {
+      "id": "c09",
+      "paragraphId": "p04",
+      "sectionLabel": "注意力审计",
+      "intent": "sort work into automation and delegation",
+      "tone": "operational",
+      "pacing": "two-lane rhythm",
+      "text": "能自动化的，交给系统；能交给别人的，交给角色。",
+      "ttsInputText": "能自动化的，交给系统；能交给别人的，交给角色。",
+      "subtitle": "能自动化的交给系统，能交给别人的交给角色。",
+      "focusPhrase": "交给系统",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "automate and delegate lanes"
+      ],
+      "emphasis": [
+        "自动化",
+        "系统",
+        "角色"
+      ],
+      "audioFile": "chunks-qwen/c09.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 35.92,
+      "speechEndSeconds": 39.92,
+      "endSeconds": 40.22,
+      "measuredSpeechSeconds": 4.0,
+      "pauseAfterMs": 300,
+      "paddingSeconds": 0.3,
+      "actualDurationSeconds": 4.3
+    },
+    {
+      "id": "c10",
+      "paragraphId": "p04",
+      "sectionLabel": "创始人判断",
+      "intent": "keep founder-only decisions explicit",
+      "tone": "firm",
+      "pacing": "slower on decision words",
+      "text": "只把真正需要方向、取舍和风险判断的事，留给创始人。",
+      "ttsInputText": "只把真正需要方向、取舍和风险判断的事，留给创始人。",
+      "subtitle": "只把方向、取舍、风险判断留给创始人。",
+      "focusPhrase": "留给创始人",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "founder judgment lane"
+      ],
+      "emphasis": [
+        "方向",
+        "取舍",
+        "风险判断"
+      ],
+      "audioFile": "chunks-qwen/c10.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 40.22,
+      "speechEndSeconds": 44.62,
+      "endSeconds": 45.04,
+      "measuredSpeechSeconds": 4.4,
+      "pauseAfterMs": 420,
+      "paddingSeconds": 0.42,
+      "actualDurationSeconds": 4.82
+    },
+    {
+      "id": "c11",
+      "paragraphId": "p05",
+      "sectionLabel": "本集判断",
+      "intent": "land the operating rule",
+      "tone": "settled",
+      "pacing": "takeaway emphasis",
+      "text": "这一集的判断是：重复发生的问题，要变成系统。",
+      "ttsInputText": "这一集的判断是：重复发生的问题，要变成系统。",
+      "subtitle": "重复发生的问题，要变成系统。",
+      "focusPhrase": "重复发生的问题，要变成系统",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "system replaces founder router"
+      ],
+      "emphasis": [
+        "重复发生",
+        "系统"
+      ],
+      "audioFile": "chunks-qwen/c11.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 45.04,
+      "speechEndSeconds": 49.28,
+      "endSeconds": 49.64,
+      "measuredSpeechSeconds": 4.24,
+      "pauseAfterMs": 360,
+      "paddingSeconds": 0.36,
+      "actualDurationSeconds": 4.6
+    },
+    {
+      "id": "c12",
+      "paragraphId": "p05",
+      "sectionLabel": "下一集",
+      "intent": "bridge to workflow moat",
+      "tone": "forward-looking",
+      "pacing": "lighter handoff",
+      "text": "下一集，我们看护城河为什么不只在模型里，而在业务流程里。",
+      "ttsInputText": "下一集，我们看护城河为什么不只在模型里，而在业务流程里。",
+      "subtitle": "下一集：护城河藏在业务流程里。",
+      "focusPhrase": "业务流程里",
+      "focusCue": "reveal-highlight",
+      "focus": [
+        "EP05 workflow moat preview"
+      ],
+      "emphasis": [
+        "护城河",
+        "业务流程"
+      ],
+      "audioFile": "chunks-qwen/c12.wav",
+      "ttsProvider": "qwen-dashscope",
+      "ttsModel": "qwen3-tts-instruct-flash",
+      "ttsVoice": "Ethan",
+      "startSeconds": 49.64,
+      "speechEndSeconds": 54.2,
+      "endSeconds": 54.2,
+      "measuredSpeechSeconds": 4.56,
+      "pauseAfterMs": 0,
+      "paddingSeconds": 0.0,
+      "actualDurationSeconds": 4.56
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "schemaVersion": "1.0",
+  "slug": "building-effective-ai-agents-ep05-production-readiness",
+  "title": "Building Effective AI Agents EP05: Agent上线前看什么?",
+  "mission": "AI cognition compression",
+  "audience": "Business and technical leaders choosing an AI-agent architecture",
+  "format": {
+    "aspectRatio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "visualSystem": {
+    "name": "Executive Technical Documentary with Preserved Source Diagrams",
+    "background": "near-black graphite with preserved PDF diagrams as source artifacts",
+    "typography": "large Chinese serif claim, compact sans-serif metadata, original English diagram labels preserved",
+    "palette": {
+      "graphite": "#0b0f12",
+      "panel": "#111820",
+      "line": "#29414d",
+      "cyan": "#61d8ff",
+      "cyanSoft": "#1e6f86",
+      "amber": "#f0b44c",
+      "red": "#ef6a5b",
+      "text": "#f2f5f5",
+      "muted": "#8ea0a8"
+    },
+    "motionPrinciples": [
+      "Use original English PDF diagrams as source artifacts.",
+      "Add Chinese callouts around diagrams rather than redrawing them away.",
+      "Highlight one decision focus per paragraph.",
+      "Keep progress labels audience-facing."
+    ]
+  },
+  "cover": {
+    "headline": "Agent上线前看什么?",
+    "subhead": "生产级 Agent，先解决可观测和上下文",
+    "artifact": "source-proof",
+    "badge": "EP05 / 上线前",
+    "proofChips": [
+      "Tracing",
+      "Eval",
+      "Control"
+    ],
+    "sourceMark": "Source: Anthropic PDF / Building Effective AI Agents",
+    "sourceVisualRule": "Use original source diagrams as visual proof; keep source taxonomy boundaries.",
+    "visuals": [
+      {
+        "title": "Observe",
+        "label": "可观测",
+        "image": "building-effective-ai-agents-ep05-production-readiness/diagrams/p12-single-agent-architecture.png"
+      },
+      {
+        "title": "Context",
+        "label": "上下文",
+        "image": "building-effective-ai-agents-ep05-production-readiness/diagrams/p16-multi-agent-hierarchical-workflow.png"
+      }
+    ]
+  },
+  "sourceDiagrams": [
+    {
+      "id": "single-agent-architecture",
+      "sourceRef": "pdf:p12",
+      "path": "resources/building-effective-ai-agents/diagrams/p12-single-agent-architecture.png",
+      "useInEpisodes": [
+        "episode-5"
+      ],
+      "preservation": "Keep original English labels visible; add explanatory overlays only."
+    },
+    {
+      "id": "multi-agent-hierarchical-workflow",
+      "sourceRef": "pdf:p16",
+      "path": "resources/building-effective-ai-agents/diagrams/p16-multi-agent-hierarchical-workflow.png",
+      "useInEpisodes": [
+        "episode-5"
+      ],
+      "preservation": "Keep original English labels visible; add explanatory overlays only."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s01",
+      "durationSeconds": 9.902,
+      "sectionLabel": "Risk",
+      "paragraphLabel": "invisible",
+      "claim": "看不见的 Agent，不该上线",
+      "narration": "Agent 的风险不只是答错，而是你不知道它为什么这样做、用了什么上下文、调用了哪些工具。",
+      "subtitle": "看不见的 Agent，不该上线。",
+      "artifact": {
+        "type": "wrong-question",
+        "nodes": [
+          "能跑就上线",
+          "能解释再上线"
+        ]
+      },
+      "focus": "Make observability a launch gate.",
+      "sources": [
+        "pdf:p236-p243",
+        "pdf:p897-p899"
+      ],
+      "audioFile": "building-effective-ai-agents-ep05-production-readiness/audio/s01.mp3"
+    },
+    {
+      "id": "s02",
+      "durationSeconds": 10.91,
+      "sectionLabel": "Observe",
+      "paragraphLabel": "observe what",
+      "claim": "可观测，不只是看日志",
+      "narration": "AI 应用要看 prompt chains、model decision paths、retrieval context、Token consumption，以及整个 reasoning workflow。",
+      "subtitle": "可观测，要看到决策路径。",
+      "artifact": {
+        "type": "production-observability",
+        "nodes": [
+          "Prompt chain",
+          "Model decision",
+          "Retrieval context",
+          "Token",
+          "Reasoning workflow"
+        ]
+      },
+      "focus": "List source observability objects.",
+      "sources": [
+        "pdf:p236-p249"
+      ],
+      "audioFile": "building-effective-ai-agents-ep05-production-readiness/audio/s02.mp3"
+    },
+    {
+      "id": "s03",
+      "durationSeconds": 10.262,
+      "sectionLabel": "Context",
+      "paragraphLabel": "context growth",
+      "claim": "上下文会变成生产瓶颈",
+      "narration": "多轮工具调用、检索结果、Agent 交接都会让上下文膨胀。上下文失控，Agent 的行为就会变得不可控。",
+      "subtitle": "上下文失控，行为就不可控。",
+      "artifact": {
+        "type": "cost-triangle",
+        "nodes": [
+          "上下文溢出",
+          "旧工具结果",
+          "无关检索"
+        ]
+      },
+      "focus": "Explain context as production risk.",
+      "sources": [
+        "pdf:p418-p438"
+      ],
+      "audioFile": "building-effective-ai-agents-ep05-production-readiness/audio/s03.mp3"
+    },
+    {
+      "id": "s04",
+      "durationSeconds": 11.318,
+      "sectionLabel": "Control",
+      "paragraphLabel": "context tools",
+      "claim": "生产系统要有上下文管理工具",
+      "narration": "原文提到 context editing、memory tools、pagination、filtering、truncation 和 token caps。这些不是优化项，是上线条件。",
+      "subtitle": "上下文管理，是上线条件。",
+      "artifact": {
+        "type": "selection-matrix",
+        "nodes": [
+          "Context editing",
+          "Memory tools",
+          "Pagination",
+          "Filtering",
+          "Token caps"
+        ]
+      },
+      "focus": "Turn source mechanics into QC requirements.",
+      "sources": [
+        "pdf:p429-p440"
+      ],
+      "audioFile": "building-effective-ai-agents-ep05-production-readiness/audio/s04.mp3"
+    },
+    {
+      "id": "s05",
+      "durationSeconds": 12.614,
+      "sectionLabel": "Govern",
+      "paragraphLabel": "governance",
+      "claim": "治理要能接住动态决策",
+      "narration": "传统软件的错误路径通常可复现，但 Agent 的决策可能每次不同。生产系统必须记录、评估、限制和回滚。",
+      "subtitle": "治理要能接住动态决策。",
+      "artifact": {
+        "type": "production-observability",
+        "nodes": [
+          "记录",
+          "评估",
+          "限制",
+          "人工接管",
+          "回滚"
+        ]
+      },
+      "focus": "Explain governance for non-determinism.",
+      "sources": [
+        "pdf:p409-p418",
+        "pdf:p897-p899"
+      ],
+      "audioFile": "building-effective-ai-agents-ep05-production-readiness/audio/s05.mp3"
+    },
+    {
+      "id": "s06",
+      "durationSeconds": 12.398,
+      "sectionLabel": "Metric",
+      "paragraphLabel": "business metrics",
+      "claim": "成功指标要连到业务",
+      "narration": "不要只看模型分数。要看节省时间、错误率、人工接管率、客户体验和成本，指标必须能说明业务价值。",
+      "subtitle": "成功指标要连到业务。",
+      "artifact": {
+        "type": "selection-matrix",
+        "nodes": [
+          "节省时间",
+          "错误率",
+          "接管率",
+          "体验",
+          "成本"
+        ]
+      },
+      "focus": "Ground QA in business metrics.",
+      "sources": [
+        "pdf:p897-p899"
+      ],
+      "audioFile": "building-effective-ai-agents-ep05-production-readiness/audio/s06.mp3"
+    },
+    {
+      "id": "s07",
+      "durationSeconds": 13.55,
+      "sectionLabel": "Gate",
+      "paragraphLabel": "launch gate",
+      "claim": "上线前，先过四个门",
+      "narration": "第一个门：任务边界清楚。第二个门：工具权限可控。第三个门：上下文可管理。第四个门：失败能被发现和接管。",
+      "subtitle": "上线前，先过四个门。",
+      "artifact": {
+        "type": "architecture-hierarchy",
+        "nodes": [
+          "任务边界",
+          "工具权限",
+          "上下文管理",
+          "失败接管"
+        ]
+      },
+      "focus": "Create practical production gate.",
+      "sources": [
+        "pdf:p236-p249",
+        "pdf:p429-p440"
+      ],
+      "audioFile": "building-effective-ai-agents-ep05-production-readiness/audio/s07.mp3"
+    },
+    {
+      "id": "s08",
+      "durationSeconds": 9.11,
+      "sectionLabel": "Takeaway",
+      "paragraphLabel": "visible",
+      "claim": "结论：先可见，再自治",
+      "narration": "第五集的结论是：生产级 Agent 不是先追求更聪明，而是先做到可见、可控、可接管。",
+      "subtitle": "先可见，再自治。",
+      "artifact": {
+        "type": "production-observability",
+        "nodes": [
+          "可见",
+          "可控",
+          "可接管"
+        ]
+      },
+      "focus": "Close with production readiness rule.",
+      "sources": [
+        "series:building-effective-ai-agents"
+      ],
+      "audioFile": "building-effective-ai-agents-ep05-production-readiness/audio/s08.mp3"
+    }
+  ]
+}

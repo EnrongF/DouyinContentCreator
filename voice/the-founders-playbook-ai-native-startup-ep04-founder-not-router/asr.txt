@@ -1,0 +1,83 @@
+## c01
+Expected: 产品上线后，如果每个问题都还要创始人接住，公司就没有真正进入增长。
+ASR: 产品上线后,如果每个问题都还要创始人接住,公司就没有真正进入增长。
+Similarity: 1.000
+Core match: pass
+Term check: pass
+
+## c02
+Expected: M V P 证明产品值得存在；Launch 证明业务能不能重复增长。
+ASR: MVP证明产品值得存在,Launch证明业务能不能重复增长。
+Similarity: 1.000
+Core match: pass
+Term check: pass
+
+## c03
+Expected: 早期，创始人在每个回路里，是优势：学得快，判断也快。
+ASR: 早期创始人在每个回路里是优势,学得快,判断也快。
+Similarity: 1.000
+Core match: pass
+Term check: pass
+
+## c04
+Expected: 但上线以后，同一个习惯会变成瓶颈。
+ASR: 按上线以后,同一个习惯会变成瓶颈
+Similarity: 0.933
+Core match: pass
+Term check: pass
+
+## c05
+Expected: 一个一小时能决定的问题，因为等你，拖成一周。
+ASR: 一个一小时能决定的问题,因为等你拖车一周。
+Similarity: 0.947
+Core match: pass
+Term check: pass
+
+## c06
+Expected: 支持消息堆起来，Bug 分流没人接，周报只在你想起来时才发生。
+ASR: 支持消息堆起来,bug分流没人接,周报只在你想起来时才发生。
+Similarity: 1.000
+Core match: pass
+Term check: pass
+
+## c07
+Expected: 这时不要问自己：“我怎么再忙一点？”
+ASR: 这是不要问自己,我怎么再忙一点。
+Similarity: 0.929
+Core match: pass
+Term check: not_applicable
+
+## c08
+Expected: 要把亲手处理的事情列出来，分成三类。
+ASR: 要把今时处理的事情列出来,分成三类。
+Similarity: 0.875
+Core match: pass
+Term check: not_applicable
+
+## c09
+Expected: 能自动化的，交给系统；能交给别人的，交给角色。
+ASR: 能自动化的交给系统,能交给别人的,你交给角色。
+Similarity: 0.974
+Core match: pass
+Term check: pass
+
+## c10
+Expected: 只把真正需要方向、取舍和风险判断的事，留给创始人。
+ASR: 只把真正需要方向取舍和风险判断的事留给创始人。
+Similarity: 1.000
+Core match: pass
+Term check: pass
+
+## c11
+Expected: 这一集的判断是：重复发生的问题，要变成系统。
+ASR: 这一集的判断是,重复发生的问题要变成系统。
+Similarity: 1.000
+Core match: pass
+Term check: pass
+
+## c12
+Expected: 下一集，我们看护城河为什么不只在模型里，而在业务流程里。
+ASR: 下一节,我们看护城河为什么不止在模型里,而在业务流程里。
+Similarity: 0.920
+Core match: pass
+Term check: pass

@@ -1,0 +1,281 @@
+{
+  "schemaVersion": "1.0",
+  "slug": "building-effective-ai-agents-ep04-agentic-workflows-are-structure",
+  "title": "Building Effective AI Agents EP04: Workflow到底是什么?",
+  "mission": "AI cognition compression",
+  "audience": "Business and technical leaders choosing an AI-agent architecture",
+  "format": {
+    "aspectRatio": "16:9",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "visualSystem": {
+    "name": "Executive Technical Documentary with Preserved Source Diagrams",
+    "background": "near-black graphite with preserved PDF diagrams as source artifacts",
+    "typography": "large Chinese serif claim, compact sans-serif metadata, original English diagram labels preserved",
+    "palette": {
+      "graphite": "#0b0f12",
+      "panel": "#111820",
+      "line": "#29414d",
+      "cyan": "#61d8ff",
+      "cyanSoft": "#1e6f86",
+      "amber": "#f0b44c",
+      "red": "#ef6a5b",
+      "text": "#f2f5f5",
+      "muted": "#8ea0a8"
+    },
+    "motionPrinciples": [
+      "Use original English PDF diagrams as source artifacts.",
+      "Add Chinese callouts around diagrams rather than redrawing them away.",
+      "Highlight one decision focus per paragraph.",
+      "Keep progress labels audience-facing."
+    ]
+  },
+  "cover": {
+    "headline": "Workflow到底是什么?",
+    "subhead": "它解决的是任务结构，不是协调哲学",
+    "artifact": "source-proof",
+    "badge": "EP04 / Workflow?",
+    "proofChips": [
+      "Sequential",
+      "Parallel",
+      "Evaluator"
+    ],
+    "sourceMark": "Source: Anthropic PDF / Building Effective AI Agents",
+    "sourceVisualRule": "Use original source diagrams as visual proof; keep source taxonomy boundaries.",
+    "visuals": [
+      {
+        "title": "Sequential",
+        "label": "顺序结构",
+        "image": "building-effective-ai-agents-ep04-agentic-workflows-are-structure/diagrams/p19-multi-agent-sequential-workflow.png"
+      },
+      {
+        "title": "Parallel",
+        "label": "并行结构",
+        "image": "building-effective-ai-agents-ep04-agentic-workflows-are-structure/diagrams/p20-multi-agent-parallel-workflow.png"
+      },
+      {
+        "title": "Evaluator",
+        "label": "评估优化",
+        "image": "building-effective-ai-agents-ep04-agentic-workflows-are-structure/diagrams/p22-multi-agent-evaluator-workflow.png"
+      }
+    ]
+  },
+  "sourceDiagrams": [
+    {
+      "id": "multi-agent-sequential-workflow",
+      "sourceRef": "pdf:p19",
+      "path": "resources/building-effective-ai-agents/diagrams/p19-multi-agent-sequential-workflow.png",
+      "useInEpisodes": [
+        "episode-4"
+      ],
+      "preservation": "Keep original English labels visible; add explanatory overlays only."
+    },
+    {
+      "id": "multi-agent-parallel-workflow",
+      "sourceRef": "pdf:p20",
+      "path": "resources/building-effective-ai-agents/diagrams/p20-multi-agent-parallel-workflow.png",
+      "useInEpisodes": [
+        "episode-4"
+      ],
+      "preservation": "Keep original English labels visible; add explanatory overlays only."
+    },
+    {
+      "id": "multi-agent-evaluator-workflow",
+      "sourceRef": "pdf:p22",
+      "path": "resources/building-effective-ai-agents/diagrams/p22-multi-agent-evaluator-workflow.png",
+      "useInEpisodes": [
+        "episode-4"
+      ],
+      "preservation": "Keep original English labels visible; add explanatory overlays only."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s01",
+      "durationSeconds": 11.462,
+      "sectionLabel": "Problem",
+      "paragraphLabel": "workflow confusion",
+      "claim": "Workflow 不是 Multi-Agent 的同义词",
+      "narration": "Workflow 讲的是任务怎么被组织：先后、并行、评估和优化。它不是多智能体协调概念的同义词。",
+      "subtitle": "Workflow 讲结构，不讲 Agent 数量。",
+      "artifact": {
+        "type": "wrong-question",
+        "nodes": [
+          "Workflow = Multi-Agent",
+          "Workflow = 任务结构"
+        ]
+      },
+      "focus": "Separate workflow structure from agent count.",
+      "sources": [
+        "pdf:p534-p538"
+      ],
+      "audioFile": "building-effective-ai-agents-ep04-agentic-workflows-are-structure/audio/s01.mp3"
+    },
+    {
+      "id": "s02",
+      "durationSeconds": 12.95,
+      "sectionLabel": "Principle",
+      "paragraphLabel": "predefined",
+      "claim": "Workflow 的核心是预定义结构",
+      "narration": "和 Agent 的动态行为不同，Workflow 更强调预定义控制流。你知道大致步骤，才适合把流程结构化。",
+      "subtitle": "Workflow 的核心是预定义结构。",
+      "artifact": {
+        "type": "selection-matrix",
+        "nodes": [
+          "步骤已知",
+          "交接清楚",
+          "质量门槛",
+          "可复用",
+          "可审计"
+        ]
+      },
+      "focus": "Define workflow as orchestration structure.",
+      "sources": [
+        "pdf:p534-p543"
+      ],
+      "audioFile": "building-effective-ai-agents-ep04-agentic-workflows-are-structure/audio/s02.mp3"
+    },
+    {
+      "id": "s03",
+      "durationSeconds": 10.814,
+      "sectionLabel": "Sequential",
+      "paragraphLabel": "sequential",
+      "claim": "Sequential：前一步决定后一步",
+      "narration": "顺序工作流适合阶段依赖明显的任务，比如草稿、审查、润色。每一步产出，都是下一步输入。",
+      "subtitle": "Sequential：前一步决定后一步。",
+      "artifact": {
+        "type": "source-diagram",
+        "nodes": [],
+        "imagePath": "building-effective-ai-agents-ep04-agentic-workflows-are-structure/diagrams/p19-multi-agent-sequential-workflow.png",
+        "caption": "Original PDF diagram: sequential workflow."
+      },
+      "focus": "Use source sequential diagram.",
+      "sources": [
+        "pdf:p543-p600"
+      ],
+      "sourceDiagramRefs": [
+        "multi-agent-sequential-workflow"
+      ],
+      "audioFile": "building-effective-ai-agents-ep04-agentic-workflows-are-structure/audio/s03.mp3"
+    },
+    {
+      "id": "s04",
+      "durationSeconds": 12.854,
+      "sectionLabel": "Parallel",
+      "paragraphLabel": "parallel",
+      "claim": "Parallel：能拆开，才并行",
+      "narration": "并行工作流适合互不依赖的子任务。风险、合规、运营可以同时看，但如果彼此必须接力，就不要硬并行。",
+      "subtitle": "Parallel 只适合互不依赖的子任务。",
+      "artifact": {
+        "type": "source-diagram",
+        "nodes": [],
+        "imagePath": "building-effective-ai-agents-ep04-agentic-workflows-are-structure/diagrams/p20-multi-agent-parallel-workflow.png",
+        "caption": "Original PDF diagram: parallel workflow."
+      },
+      "focus": "Use source parallel diagram.",
+      "sources": [
+        "pdf:p617-p656"
+      ],
+      "sourceDiagramRefs": [
+        "multi-agent-parallel-workflow"
+      ],
+      "audioFile": "building-effective-ai-agents-ep04-agentic-workflows-are-structure/audio/s04.mp3"
+    },
+    {
+      "id": "s05",
+      "durationSeconds": 10.214,
+      "sectionLabel": "Evaluator",
+      "paragraphLabel": "evaluator",
+      "claim": "Evaluator：让质量标准参与循环",
+      "narration": "Evaluator-optimizer 是生成和评估的迭代循环。它适合有清晰评价标准、需要反复改进的内容。",
+      "subtitle": "Evaluator 适合有清晰评价标准的迭代。",
+      "artifact": {
+        "type": "source-diagram",
+        "nodes": [],
+        "imagePath": "building-effective-ai-agents-ep04-agentic-workflows-are-structure/diagrams/p22-multi-agent-evaluator-workflow.png",
+        "caption": "Original PDF diagram: evaluator-optimizer workflow."
+      },
+      "focus": "Use source evaluator diagram.",
+      "sources": [
+        "pdf:p663-p708"
+      ],
+      "sourceDiagramRefs": [
+        "multi-agent-evaluator-workflow"
+      ],
+      "audioFile": "building-effective-ai-agents-ep04-agentic-workflows-are-structure/audio/s05.mp3"
+    },
+    {
+      "id": "s06",
+      "durationSeconds": 8.798,
+      "sectionLabel": "Avoid",
+      "paragraphLabel": "avoid rules",
+      "claim": "不要为了流程感，强行加 Workflow",
+      "narration": "如果任务一步就能完成，或者评价标准不清楚，Workflow 只会增加延迟和维护成本。",
+      "subtitle": "一步能完成，就不要强行加 Workflow。",
+      "artifact": {
+        "type": "cost-triangle",
+        "nodes": [
+          "延迟",
+          "维护",
+          "Token"
+        ]
+      },
+      "focus": "Keep workflow tied to useful structure.",
+      "sources": [
+        "pdf:p594-p600",
+        "pdf:p686-p696"
+      ],
+      "audioFile": "building-effective-ai-agents-ep04-agentic-workflows-are-structure/audio/s06.mp3"
+    },
+    {
+      "id": "s07",
+      "durationSeconds": 12.47,
+      "sectionLabel": "Decision",
+      "paragraphLabel": "choose structure",
+      "claim": "选择 Workflow，看依赖关系",
+      "narration": "选择顺序、并行还是评估优化，不是看哪个更高级，而是看任务之间有没有依赖、能不能独立处理、有没有质量标准。",
+      "subtitle": "选 Workflow，看依赖关系。",
+      "artifact": {
+        "type": "selection-matrix",
+        "nodes": [
+          "阶段依赖",
+          "互不依赖",
+          "质量标准",
+          "可审计",
+          "预算"
+        ]
+      },
+      "focus": "Give a decision rule.",
+      "sources": [
+        "pdf:p569-p588",
+        "pdf:p644-p656",
+        "pdf:p676-p696"
+      ],
+      "audioFile": "building-effective-ai-agents-ep04-agentic-workflows-are-structure/audio/s07.mp3"
+    },
+    {
+      "id": "s08",
+      "durationSeconds": 10.718,
+      "sectionLabel": "Takeaway",
+      "paragraphLabel": "structure",
+      "claim": "结论：Workflow 是结构工具",
+      "narration": "第四集的结论是：Workflow 是结构工具。它可以服务 Single Agent，也可以服务 Multi-Agent，但不要把它们混成一层。",
+      "subtitle": "Workflow 是结构工具。",
+      "artifact": {
+        "type": "architecture-hierarchy",
+        "nodes": [
+          "Single Agent",
+          "Multi-Agent",
+          "Workflow"
+        ]
+      },
+      "focus": "Close source taxonomy boundary.",
+      "sources": [
+        "series:building-effective-ai-agents"
+      ],
+      "audioFile": "building-effective-ai-agents-ep04-agentic-workflows-are-structure/audio/s08.mp3"
+    }
+  ]
+}

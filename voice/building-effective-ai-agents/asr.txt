@@ -1,0 +1,71 @@
+## s01
+Expected: 很多企业做 Agent，第一步就问错了。
+ASR: 很多企業做Agent,第一步就問錯了
+Similarity: 1.000
+Core match: pass
+
+## s02
+Expected: 真正该先问的是：这个业务问题，到底需不需要 Agent？
+ASR: 真正该先问的是,这个业务问题到底需不需要Agent?
+Similarity: 1.000
+Core match: pass
+
+## s03
+Expected: 如果流程很清楚，规则也稳定，你需要的可能只是自动化，或者一个 Workflow。
+ASR: 如果流程很清楚,规则也稳定,你需要的可能只是自动化,或者一个工作流。
+Similarity: 1.000
+Core match: pass
+
+## s04
+Expected: Agent 真正适合的是路径不固定，需要调用工具，需要根据反馈调整，还要持续推进目标。
+ASR: Agent真正适合的是路径不固定,需要桥用工具,需要根据反馈调整,还要持续推进目标。
+Similarity: 0.972
+Core match: pass
+
+## s05
+Expected: 比如审批、合规检查、内容从草稿到审核再发布。这适合顺序工作流。
+ASR: 比如审批、合规检查,内容从草稿到审核再发布,这是和顺序工作流。
+Similarity: 0.926
+Core match: pass
+
+## s06
+Expected: 比如客户问题排查、市场研究、代码库理解、数据分析。这时可以用 Single Agent。
+ASR: 比如客户问题排查、市场研究、代码库理解、数据分析,这时可以用Single agent。
+Similarity: 1.000
+Core match: pass
+
+## s07
+Expected: 比如贷款风险评估，要同时看信用、市场、运营、合规。这时 Multi-Agent 才有意义。
+ASR: 比如，贷款风险评估，要同时看信用、市场、运营、合规，这时multi-agent才有意义。
+Similarity: 1.000
+Core match: pass
+
+## s08
+Expected: 但 Multi-Agent 不是默认选项。它的代价也很真实：成本更高、延迟更长、调试更难。
+ASR: 但Multi-Agent不是默认选项,它的代价也很真实,成本更高,延迟更长,调试更难。
+Similarity: 1.000
+Core match: pass
+
+## s09
+Expected: 当 Agent 要碰 CRM、订单、支付、审批、内部数据库，重点不再是 Agent 本身，而是 Harness。
+ASR: 当agent要碰CRM、订单、支付、审批、内部数据库,重点不再是agent本身,而是Harness。
+Similarity: 1.000
+Core match: pass
+
+## s10
+Expected: 你需要权限控制、日志记录、监控、评估、回滚、人工接管。
+ASR: 你需要全線控制、日誌記錄、監控、評估、回滾、人工接管。
+Similarity: 0.810
+Core match: pass
+
+## s11
+Expected: 所以给业务团队的选择框架很简单：流程、风险、领域、成本、治理。
+ASR: 所以给业务团队的选择框架很简单:流程、风险、领域、成本、治理。
+Similarity: 1.000
+Core match: pass
+
+## s12
+Expected: 真正成熟的 Agent 项目，不是更复杂，而是复杂度刚好够用。
+ASR: 真正成熟的Agent项目不是更复杂,而是复杂度刚好够用。
+Similarity: 1.000
+Core match: pass

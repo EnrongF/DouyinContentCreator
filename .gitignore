@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+
+# Dependencies and local caches
+node_modules/
+.gstack/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Rendered video outputs
+*.mp4
+*.mov
+*.m4v
+*.webm
+*.avi

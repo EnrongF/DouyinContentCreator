@@ -1,0 +1,131 @@
+## c01
+Expected: 很多团队做 Agent，最后都会问一句：
+那我们是不是该上混合架构了？
+ASR: 很多团队做agent,最后都会问一句,那我们是不是该上混合架构了?
+Similarity: 1.000
+Core match: pass
+
+## c02
+Expected: 但 Anthropic 这份报告里，
+混合架构不是一开始就用的方案。
+ASR: 《单&Swapig》这份报告里,混合架构不是一开始就用的方案。
+Similarity: 0.800
+Core match: pass
+
+## c03
+Expected: 它更像是系统长大以后，
+才出现的组合形态。
+ASR: 它更像是系统长大以后才出现的组合形态。
+Similarity: 1.000
+Core match: pass
+
+## c04
+Expected: 比较稳的路线，
+是先做一个边界清楚的单 Agent。
+ASR: 比较稳的路线是先做一个边界清楚的单Agent。
+Similarity: 1.000
+Core match: pass
+
+## c05
+Expected: 等任务类型开始分叉，
+再加 routing，让不同请求走不同路径。
+ASR: 等任务类型开始分叉,再加入路由,让不同请求走不同路径。
+Similarity: 0.808
+Core match: pass
+
+## c06
+Expected: 如果问题真的跨了多个专业领域，
+再把能力拆成 specialist agents。
+ASR: 如果问题真的跨了多个专业领域,再把能力拆成Specialist Agents。
+Similarity: 1.000
+Core match: pass
+
+## c07
+Expected: 让 supervisor 负责分派、汇总和兜底。
+ASR: 让Supervisor负责分派、汇总和兜底。
+Similarity: 1.000
+Core match: pass
+
+## c08
+Expected: 再往后，
+才是把 workflow 结构接进来。
+ASR: 再往后才是把Workflow结构接进来。
+Similarity: 1.000
+Core match: pass
+
+## c09
+Expected: 独立分析可以并行跑；
+质量标准清楚的任务，可以加 evaluator 做反复优化。
+ASR: 独立分析可以并行跑,质量标准清楚的任务,可以加Evaluator做反复优化。
+Similarity: 1.000
+Core match: pass
+
+## c10
+Expected: 注意，
+这些不是同一层级的模式。
+ASR: 注意,这些不是同一层级的模式。
+Similarity: 1.000
+Core match: pass
+
+## c11
+Expected: hierarchical，讲的是多智能体怎么协调。
+parallel 和 evaluator，讲的是 workflow 怎么组织。
+ASR: Hierarchical讲的是多智能体怎么协调,Parallel和Evaluate讲的是workflow怎么组织。
+Similarity: 0.970
+Core match: pass
+
+## c12
+Expected: 如果把它们组合使用，
+要标成 synthesis。
+ASR: 如果把它们组合使用,要标成synthesis。
+Similarity: 1.000
+Core match: pass
+
+## c13
+Expected: 报告还提到 dynamic agent generation，
+和 peer-to-peer network。
+ASR: 报告还提到Dynamic Agent Generation和Peer-to-Peer Network。
+Similarity: 1.000
+Core match: pass
+
+## c14
+Expected: 但它们属于 emerging patterns。
+适合探索，不适合一上来就当生产默认方案。
+ASR: 但它们属于emerging patterns,适合探索,不适合一上来就当生产默认方案。
+Similarity: 1.000
+Core match: pass
+
+## c15
+Expected: 所以判断要不要 hybrid，
+看四个信号。
+ASR: 所以判断要不要Hybrid看四个信号
+Similarity: 1.000
+Core match: pass
+
+## c16
+Expected: 单个 Agent 的瓶颈已经明确；
+任务也能自然拆开；
+质量和升级规则说得清。
+ASR: 单个Agent的瓶颈已经明确,任务已能自然拆开,质量和升级规则说得清。
+Similarity: 0.967
+Core match: pass
+
+## c17
+Expected: 还有，团队扛得住 10 到 15 倍 token 成本、
+延迟和观测复杂度。
+ASR: 还有团队扛得住10到15倍token成本、延迟和观测复杂度。
+Similarity: 1.000
+Core match: pass
+
+## c18
+Expected: 一句话：
+混合架构不是高级感。
+ASR: 一句话,混合架构不是高级感。
+Similarity: 1.000
+Core match: pass
+
+## c19
+Expected: 它是证据逼出来的下一步。
+ASR: 它是证据逼出来的下一步。
+Similarity: 1.000
+Core match: pass

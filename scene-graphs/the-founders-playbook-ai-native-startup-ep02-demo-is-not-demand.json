@@ -1,0 +1,663 @@
+{
+  "schemaVersion": "1.1",
+  "slug": "the-founders-playbook-ai-native-startup-ep02-demo-is-not-demand",
+  "title": "有 Demo，不代表有人要",
+  "series": "The Founder's Playbook - Building an AI-Native Startup",
+  "episode": 2,
+  "status": "douyin_package_ready",
+  "pauseRequired": true,
+  "nextApprovedStage": "publish decision / platform plan",
+  "notApprovedYet": [
+    "publish/upload"
+  ],
+  "mission": "AI cognition compression",
+  "audience": "Founders, solo builders, AI startup operators, and technical product leaders",
+  "format": {
+    "primary": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "coverGrid": {
+      "width": 1080,
+      "height": 1440,
+      "note": "Cover crop constraints apply later; this scene graph is for video timing."
+    }
+  },
+  "timing": {
+    "source": "voice/the-founders-playbook-ai-native-startup-ep02-demo-is-not-demand/voice-manifest.json",
+    "totalMeasuredSpeechSeconds": 60.8,
+    "totalDurationSeconds": 65.16,
+    "audioStrategy": "selected_qwen_chunks"
+  },
+  "visualSystem": {
+    "status": "rebuilt_content_fitted_visual_system",
+    "lockedStyleName": "Founder Playbook Abstract Concept Symbol Gate",
+    "seriesReference": "scene-graphs/the-founders-playbook-ai-native-startup-ep01-judgment-bottleneck.json",
+    "visualJob": "Demo versus evidence gate",
+    "styleIntent": "reuse Founder Playbook warm decision-gate family while changing the central artifact to prototype/evidence logic",
+    "audienceFeeling": "founder-facing, warm, direct, high-trust, practical",
+    "typography": [
+      "Rounded / humanist Chinese sans stack from the confirmed Founder Playbook cover system",
+      "Avenir Next / Inter / system sans for UI metadata"
+    ],
+    "palette": [
+      "warm black field",
+      "cream text",
+      "amber episode badge",
+      "cyan for evidence and signal",
+      "rose for false proof or weak validation",
+      "orange for active Demo motion"
+    ],
+    "layoutGrammar": [
+      "Keep the stable Founder Playbook top metadata and bottom integrated subtitle.",
+      "Use one dominant central artifact per voice chunk.",
+      "Do not force PDF screenshots into the frame; source value is carried by structured gates and labels.",
+      "Choose the diagram shape from the spoken idea: path for fast build, split panel for false validation, vertical checks for validation, stack for evidence questions, threshold for signal quality.",
+      "Do not use equal-column diagram symmetry unless the content has equal peer concepts."
+    ],
+    "layoutRegions": {
+      "top": "series and episode metadata",
+      "center": "Demo/evidence artifact state",
+      "bottom": "burned-in subtitle text without a box"
+    },
+    "artifactTreatment": [
+      "Treat Demo as a visible object that can move between proof, question tool, praise, and evidence states.",
+      "Represent problem-solution fit as three checks: real/frequent problem, actual solution fit, enough signal for MVP.",
+      "Represent customer discovery as question cards and evidence chips, not as long interview script text.",
+      "Do not imply source publisher endorsement.",
+      "Do not use PMF metrics in this episode."
+    ],
+    "symbolGrammar": [
+      "Comply with the locked Founder Playbook VI: warm black field, cream text, amber/cyan/rose semantic tones, rounded 8px geometry, and restrained glow.",
+      "Fit symbols to content and concept: path for fast build, void for empty evidence, bars for signal strength, crossing paths for mismatch, nodes/path for question vector, frame for boundary.",
+      "Keep symbols easy to understand at phone size; use short labels only as anchors.",
+      "Use common visual grammar before invention: paths, gates, thresholds, bars, nodes, dashed empty states, and boundaries.",
+      "Keep abstract style; avoid literal product UI, person, mascot, or decorative object icons."
+    ],
+    "motionPrinciples": [
+      "One visual focus per voice chunk.",
+      "Motion is semantic: reveal, shift from proof to question tool, gate check activation, weak-question dimming, evidence-chip highlight.",
+      "Dynamic focus should land on or just before the spoken focus phrase.",
+      "Keep subtitles clear of validation checks and final decision cards.",
+      "Animation order, speed, and hold time follow the measured voice timing instead of a reusable preset effect."
+    ],
+    "frameFittingConstraints": [
+      "Primary video frame is 1080x1920.",
+      "Final cover grid constraint remains 1080x1440.",
+      "Subtitles must not sit in a box or collide with central artifacts.",
+      "No frame may rely on dense interview text for meaning.",
+      "Every diagram must remain readable as a phone-feed frame: short labels, content-fitted spacing, no tiny corrective notes."
+    ]
+  },
+  "soundEffects": [
+    {
+      "id": "sfx-demo-fast-path",
+      "file": "the-founders-playbook-ai-native-startup-ep02-demo-is-not-demand/sfx/soft-rise.wav",
+      "sceneId": "c01",
+      "atSeconds": 0.95,
+      "durationSeconds": 0.42,
+      "volume": 0.1,
+      "concept": "fast prototype path appears",
+      "rationale": "Major opening action: the idea becomes a Demo surface. A short rise supports speed without treating every motion as an event."
+    },
+    {
+      "id": "sfx-empty-evidence",
+      "file": "the-founders-playbook-ai-native-startup-ep02-demo-is-not-demand/sfx/void-dim.wav",
+      "sceneId": "c02",
+      "atSeconds": 2.15,
+      "durationSeconds": 0.34,
+      "volume": 0.09,
+      "concept": "evidence void remains empty",
+      "rationale": "Major concept notification: Demo praise is not evidence. The dim sound marks absence, not failure drama."
+    },
+    {
+      "id": "sfx-evidence-gate",
+      "file": "the-founders-playbook-ai-native-startup-ep02-demo-is-not-demand/sfx/gate-unlock.wav",
+      "sceneId": "c08",
+      "atSeconds": 1.8,
+      "durationSeconds": 0.46,
+      "volume": 0.1,
+      "concept": "enough signal unlocks MVP gate",
+      "rationale": "Major decision movement: evidence becomes strong enough to open the next gate."
+    },
+    {
+      "id": "sfx-praise-below-threshold",
+      "file": "the-founders-playbook-ai-native-startup-ep02-demo-is-not-demand/sfx/threshold-drop.wav",
+      "sceneId": "c11",
+      "atSeconds": 1.35,
+      "durationSeconds": 0.38,
+      "volume": 0.08,
+      "concept": "praise drops below evidence threshold",
+      "rationale": "Major contrast beat: polite praise is filtered out as weak validation."
+    },
+    {
+      "id": "sfx-final-decision-lock",
+      "file": "the-founders-playbook-ai-native-startup-ep02-demo-is-not-demand/sfx/decision-lock.wav",
+      "sceneId": "c13",
+      "atSeconds": 2.25,
+      "durationSeconds": 0.32,
+      "volume": 0.11,
+      "concept": "Demo locks as question tool, not proof",
+      "rationale": "Major final decision: the episode's mental model resolves into the question-tool frame."
+    },
+    {
+      "id": "sfx-next-boundary",
+      "file": "the-founders-playbook-ai-native-startup-ep02-demo-is-not-demand/sfx/boundary-ping.wav",
+      "sceneId": "c14",
+      "atSeconds": 1.75,
+      "durationSeconds": 0.44,
+      "volume": 0.08,
+      "concept": "next episode boundary gate appears",
+      "rationale": "Major bridge action only: the next boundary gate appears without turning the ending into a sequence of notifications."
+    }
+  ],
+  "sourceRefs": [
+    {
+      "id": "source-intake",
+      "path": "sources/the-founders-playbook-ai-native-startup/source-intake.md",
+      "role": "source provenance and structure"
+    },
+    {
+      "id": "source-map",
+      "path": "extraction/the-founders-playbook-ai-native-startup.source-map.md",
+      "role": "source value inventory and page-area mapping"
+    },
+    {
+      "id": "source-logic",
+      "path": "review/the-founders-playbook-ai-native-startup.source-logic.findings.md",
+      "role": "taxonomy and fidelity guardrails"
+    },
+    {
+      "id": "episode-compression",
+      "path": "compression/the-founders-playbook-ai-native-startup-ep02-demo-is-not-demand.md",
+      "role": "episode scope and retained source value"
+    },
+    {
+      "id": "voice-manifest",
+      "path": "voice/the-founders-playbook-ai-native-startup-ep02-demo-is-not-demand/voice-manifest.json",
+      "role": "timing authority"
+    }
+  ],
+  "sourceFidelityGuardrails": [
+    "Do not imply demos are useless; the source says prototypes are useful pressure-testing props.",
+    "Keep this episode inside the Idea-stage gate; do not teach MVP / PMF mechanics.",
+    "Do not use unverified source metrics such as the 42% startup failure claim.",
+    "Do not turn Claude-specific product advice into universal startup doctrine.",
+    "Problem-solution fit is the Idea-stage exit condition."
+  ],
+  "sourceValueRetained": [
+    "AI collapses idea-to-prototype distance.",
+    "Prototype existence is not validation.",
+    "Problem-solution fit requires real, specific problem evidence and solution fit.",
+    "Customer conversations and disconfirming evidence are the real evidence.",
+    "The bridge points to MVP boundary discipline without teaching Episode 3."
+  ],
+  "finalRender": {
+    "status": "technical_qa_passed",
+    "path": "douyin/the-founders-playbook-ai-native-startup-ep02-demo-is-not-demand/video.mp4",
+    "qaPath": "review/the-founders-playbook-ai-native-startup-ep02-demo-is-not-demand.final-render-qa.md",
+    "metadata": {
+      "container": "mp4",
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "frames": 1955,
+      "durationSeconds": 65.216,
+      "audioSampleRate": 48000,
+      "audioChannels": 2,
+      "soundEffectCount": 6,
+      "soundEffectPolicy": "major_action_notifications_only",
+      "fileSizeBytes": 13213162
+    },
+    "nextGate": "Douyin package"
+  },
+  "douyinPackage": {
+    "status": "ready",
+    "path": "douyin/the-founders-playbook-ai-native-startup-ep02-demo-is-not-demand/",
+    "qaPath": "douyin/the-founders-playbook-ai-native-startup-ep02-demo-is-not-demand/qa.md",
+    "artifacts": [
+      "video.mp4",
+      "cover.png",
+      "cover.vertical.png",
+      "cover.grid.png",
+      "caption.md",
+      "cover.md",
+      "brief.md",
+      "script.md",
+      "MANIFEST.md",
+      "qa.md"
+    ],
+    "nextGate": "publish decision / platform plan"
+  },
+  "scenes": [
+    {
+      "id": "c01",
+      "startSeconds": 0.0,
+      "durationSeconds": 1.96,
+      "speechEndSeconds": 1.68,
+      "sectionLabel": "快速 Demo",
+      "paragraphId": "p01",
+      "claim": "AI 让 Demo 很快出现",
+      "narration": "AI 让你很快做出 Demo。",
+      "subtitle": "AI 很快做出 Demo。",
+      "artifact": {
+        "type": "demo-fast-build",
+        "state": "idea-to-demo",
+        "nodes": [
+          "Idea",
+          "AI",
+          "Demo"
+        ],
+        "highlight": "Demo"
+      },
+      "focusPhrase": "很快做出 Demo",
+      "focusCue": "convert idea card into Demo card",
+      "motion": "idea card flashes through AI lane and becomes a Demo surface",
+      "sources": [
+        "source-map:prototype-is-not-validation",
+        "pdf:p10"
+      ],
+      "sourceLogic": "source-supported",
+      "audioSource": "voice-manifest:c01"
+    },
+    {
+      "id": "c02",
+      "startSeconds": 1.96,
+      "durationSeconds": 5.78,
+      "speechEndSeconds": 7.32,
+      "sectionLabel": "错误确定感",
+      "paragraphId": "p01",
+      "claim": "Demo 出现容易制造已经验证的错觉",
+      "narration": "但最危险的地方也在这里：演示版一出来，你很容易以为问题已经被验证了。",
+      "subtitle": "Demo 一出来，很容易以为问题已验证。",
+      "artifact": {
+        "type": "demo-false-validation",
+        "state": "proof-illusion",
+        "nodes": [
+          "Demo",
+          "Proof?",
+          "Evidence empty"
+        ],
+        "highlight": "Evidence empty"
+      },
+      "focusPhrase": "问题已经被验证了",
+      "focusCue": "show proof stamp failing while evidence panel stays empty",
+      "motion": "Demo receives a weak proof stamp; evidence panel remains blank",
+      "sources": [
+        "source-map:prototype-is-not-validation",
+        "pdf:p10"
+      ],
+      "sourceLogic": "source-supported",
+      "audioSource": "voice-manifest:c02"
+    },
+    {
+      "id": "c03",
+      "startSeconds": 7.74,
+      "durationSeconds": 2.78,
+      "speechEndSeconds": 10.3,
+      "sectionLabel": "Demo 的用处",
+      "paragraphId": "p02",
+      "claim": "Demo 仍然有用",
+      "narration": "其实，Demo 不是没用。它很有用。",
+      "subtitle": "Demo 不是没用，它很有用。",
+      "artifact": {
+        "type": "demo-useful-tool",
+        "state": "not-dismissed",
+        "nodes": [
+          "Demo",
+          "Useful",
+          "Conversation"
+        ],
+        "highlight": "Useful"
+      },
+      "focusPhrase": "很有用",
+      "focusCue": "keep Demo card active instead of crossing it out",
+      "motion": "a failed cross-out dissolves and the Demo card remains active",
+      "sources": [
+        "source-map:prototype-is-not-validation",
+        "pdf:p10",
+        "pdf:p14"
+      ],
+      "sourceLogic": "source-supported",
+      "audioSource": "voice-manifest:c03"
+    },
+    {
+      "id": "c04",
+      "startSeconds": 10.52,
+      "durationSeconds": 6.14,
+      "speechEndSeconds": 16.2,
+      "sectionLabel": "Demo 的用处",
+      "paragraphId": "p02",
+      "claim": "Demo 的用处是问清楚问题，而不是证明创始人正确",
+      "narration": "但它不是用来证明你对了，而是用来帮你问清楚：这个问题到底是不是真的存在。",
+      "subtitle": "它不是证明你对了，而是帮你问清楚。",
+      "artifact": {
+        "type": "demo-question-tool",
+        "state": "proof-to-question",
+        "nodes": [
+          "证明你对了",
+          "问清楚",
+          "问题是否存在"
+        ],
+        "highlight": "问清楚"
+      },
+      "focusPhrase": "问清楚",
+      "focusCue": "move Demo from proof lane to question lane",
+      "motion": "Demo card leaves the proof lane and docks beside question cards",
+      "sources": [
+        "source-map:prototype-is-not-validation",
+        "pdf:p10"
+      ],
+      "sourceLogic": "source-supported",
+      "audioSource": "voice-manifest:c04"
+    },
+    {
+      "id": "c05",
+      "startSeconds": 16.66,
+      "durationSeconds": 5.3,
+      "speechEndSeconds": 21.7,
+      "sectionLabel": "想法阶段",
+      "paragraphId": "p03",
+      "claim": "想法阶段要过的是验证关，不是能不能做出来",
+      "narration": "在想法阶段，真正要过的不是“能不能做出来”，而是三件事。",
+      "subtitle": "想法阶段，真正要过的是三件事。",
+      "artifact": {
+        "type": "idea-validation-gate",
+        "state": "three-checks-setup",
+        "nodes": [
+          "Can build?",
+          "Problem real?",
+          "Solution fits?",
+          "Enough signal?"
+        ],
+        "highlight": "Three checks"
+      },
+      "focusPhrase": "三件事",
+      "focusCue": "replace build question with three validation checks",
+      "motion": "build question dims; three validation checks appear",
+      "sources": [
+        "source-map:idea-stage-exit",
+        "pdf:p9"
+      ],
+      "sourceLogic": "source-taxonomy",
+      "audioSource": "voice-manifest:c05"
+    },
+    {
+      "id": "c06",
+      "startSeconds": 21.96,
+      "durationSeconds": 4.3,
+      "speechEndSeconds": 26.04,
+      "sectionLabel": "验证检查",
+      "paragraphId": "p03",
+      "claim": "问题必须真实、具体、经常发生",
+      "narration": "第一，问题是不是真实、具体，而且经常发生。",
+      "subtitle": "问题是否真实、具体、经常发生。",
+      "artifact": {
+        "type": "validation-check-real-problem",
+        "state": "check-one",
+        "nodes": [
+          "真实",
+          "具体",
+          "经常发生"
+        ],
+        "highlight": "真实、具体、经常发生"
+      },
+      "focusPhrase": "真实、具体、经常发生",
+      "focusCue": "activate first validation check",
+      "motion": "three problem-quality chips reveal and lock",
+      "sources": [
+        "source-map:idea-stage-exit",
+        "pdf:p9"
+      ],
+      "sourceLogic": "source-supported",
+      "audioSource": "voice-manifest:c06"
+    },
+    {
+      "id": "c07",
+      "startSeconds": 26.26,
+      "durationSeconds": 6.7,
+      "speechEndSeconds": 32.74,
+      "sectionLabel": "验证检查",
+      "paragraphId": "p03",
+      "claim": "方案必须解决用户真正的问题",
+      "narration": "第二，你的方案是不是解决了用户真正的问题，而不是你一开始想象的问题。",
+      "subtitle": "方案是否解决了真正的问题。",
+      "artifact": {
+        "type": "validation-check-solution-fit",
+        "state": "check-two",
+        "nodes": [
+          "你想象的问题",
+          "用户真正的问题",
+          "方案匹配"
+        ],
+        "highlight": "用户真正的问题"
+      },
+      "focusPhrase": "用户真正的问题",
+      "focusCue": "move solution from assumed problem to actual user problem",
+      "motion": "solution line disconnects from assumed problem and reconnects to user problem",
+      "sources": [
+        "source-map:idea-stage-exit",
+        "pdf:p9",
+        "pdf:p14"
+      ],
+      "sourceLogic": "source-supported",
+      "audioSource": "voice-manifest:c07"
+    },
+    {
+      "id": "c08",
+      "startSeconds": 32.96,
+      "durationSeconds": 3.7,
+      "speechEndSeconds": 36.24,
+      "sectionLabel": "验证检查",
+      "paragraphId": "p03",
+      "claim": "进入 MVP 需要足够信号，而不是确定性",
+      "narration": "第三，信号够不够支持你开始做 MVP。",
+      "subtitle": "信号是否足够支持开始做 MVP。",
+      "artifact": {
+        "type": "validation-check-enough-signal",
+        "state": "check-three",
+        "nodes": [
+          "信号",
+          "MVP",
+          "Reasoned decision"
+        ],
+        "highlight": "MVP"
+      },
+      "focusPhrase": "开始做 MVP",
+      "focusCue": "signal meter crosses MVP threshold",
+      "motion": "evidence meter fills just enough to unlock MVP gate",
+      "sources": [
+        "source-map:idea-stage-exit",
+        "pdf:p9"
+      ],
+      "sourceLogic": "source-supported",
+      "audioSource": "voice-manifest:c08"
+    },
+    {
+      "id": "c09",
+      "startSeconds": 36.66,
+      "durationSeconds": 3.3,
+      "speechEndSeconds": 39.7,
+      "sectionLabel": "问法切换",
+      "paragraphId": "p04",
+      "claim": "不要只问未来式的礼貌问题",
+      "narration": "所以，别只问用户：“你会不会用？”",
+      "subtitle": "别只问：“你会不会用？”",
+      "artifact": {
+        "type": "weak-future-question",
+        "state": "weak-question-dims",
+        "nodes": [
+          "你会不会用?",
+          "Polite answer",
+          "Weak signal"
+        ],
+        "highlight": "Weak signal"
+      },
+      "focusPhrase": "你会不会用",
+      "focusCue": "dim future-facing question card",
+      "motion": "future-facing question fades into weak signal",
+      "sources": [
+        "source-map:customer-interview-audit",
+        "pdf:p13"
+      ],
+      "sourceLogic": "source-supported",
+      "audioSource": "voice-manifest:c09"
+    },
+    {
+      "id": "c10",
+      "startSeconds": 39.96,
+      "durationSeconds": 5.86,
+      "speechEndSeconds": 45.32,
+      "sectionLabel": "问法切换",
+      "paragraphId": "p04",
+      "claim": "更好的问题追问过去行为和现有替代方案",
+      "narration": "更好的问题是：你上一次遇到这个问题是什么时候？现在怎么解决？为什么还不换？",
+      "subtitle": "上次什么时候遇到？现在怎么解决？为什么还不换？",
+      "artifact": {
+        "type": "evidence-question-stack",
+        "state": "past-behavior-questions",
+        "nodes": [
+          "上一次",
+          "现在怎么解决",
+          "为什么还不换"
+        ],
+        "highlight": "上一次 / 现在 / 为什么"
+      },
+      "focusPhrase": "上一次 / 现在 / 为什么",
+      "focusCue": "reveal three evidence questions",
+      "motion": "three question cards stack into an evidence column",
+      "sources": [
+        "source-map:customer-interview-audit",
+        "pdf:p13"
+      ],
+      "sourceLogic": "source-supported",
+      "audioSource": "voice-manifest:c10"
+    },
+    {
+      "id": "c11",
+      "startSeconds": 45.82,
+      "durationSeconds": 3.06,
+      "speechEndSeconds": 48.62,
+      "sectionLabel": "证据判断",
+      "paragraphId": "p05",
+      "claim": "只夸 Demo 还不是答案",
+      "narration": "如果用户只是在夸 Demo，你还没有答案。",
+      "subtitle": "只是在夸 Demo，还没有答案。",
+      "artifact": {
+        "type": "praise-not-evidence",
+        "state": "praise-dims",
+        "nodes": [
+          "夸 Demo",
+          "答案?",
+          "证据不足"
+        ],
+        "highlight": "证据不足"
+      },
+      "focusPhrase": "没有答案",
+      "focusCue": "dim praise lane and keep answer locked",
+      "motion": "praise chip glows briefly, then fades below evidence threshold",
+      "sources": [
+        "source-map:prototype-is-not-validation",
+        "pdf:p10",
+        "pdf:p13"
+      ],
+      "sourceLogic": "source-supported-synthesis",
+      "audioSource": "voice-manifest:c11"
+    },
+    {
+      "id": "c12",
+      "startSeconds": 48.88,
+      "durationSeconds": 6.42,
+      "speechEndSeconds": 54.88,
+      "sectionLabel": "证据判断",
+      "paragraphId": "p05",
+      "claim": "真实痛点和反证比赞美更有价值",
+      "narration": "如果他开始暴露真实痛点，甚至指出你的 Demo 哪里没解决问题，那才是更有价值的信号。",
+      "subtitle": "暴露真实痛点，才是更有价值的信号。",
+      "artifact": {
+        "type": "pain-signal-evidence",
+        "state": "pain-and-contradiction",
+        "nodes": [
+          "真实痛点",
+          "没解决",
+          "更有价值的信号"
+        ],
+        "highlight": "真实痛点"
+      },
+      "focusPhrase": "真实痛点",
+      "focusCue": "highlight pain and contradiction chips",
+      "motion": "pain and contradiction chips rise above praise into evidence lane",
+      "sources": [
+        "source-map:disconfirming-evidence",
+        "source-map:customer-interview-audit",
+        "pdf:p10",
+        "pdf:p13"
+      ],
+      "sourceLogic": "source-supported-synthesis",
+      "audioSource": "voice-manifest:c12"
+    },
+    {
+      "id": "c13",
+      "startSeconds": 55.3,
+      "durationSeconds": 5.06,
+      "speechEndSeconds": 59.94,
+      "sectionLabel": "本集判断",
+      "paragraphId": "p05",
+      "claim": "Demo 能提问，不能证明有人要",
+      "narration": "这一集的判断是：Demo 可以帮你问问题，但不能替你证明有人要。",
+      "subtitle": "Demo 可以帮你问问题，不能证明有人要。",
+      "artifact": {
+        "type": "demo-question-not-proof",
+        "state": "final-decision",
+        "nodes": [
+          "帮你问问题",
+          "不能证明有人要"
+        ],
+        "highlight": "不能证明有人要"
+      },
+      "focusPhrase": "不能替你证明有人要",
+      "focusCue": "split final decision into question tool versus proof",
+      "motion": "final decision card locks question tool and blocks proof claim",
+      "sources": [
+        "episode-compression:core-claim",
+        "source-map:prototype-is-not-validation",
+        "pdf:p10"
+      ],
+      "sourceLogic": "source-supported-synthesis",
+      "audioSource": "voice-manifest:c13"
+    },
+    {
+      "id": "c14",
+      "startSeconds": 60.36,
+      "durationSeconds": 4.8,
+      "speechEndSeconds": 65.16,
+      "sectionLabel": "下一集",
+      "paragraphId": "p05",
+      "claim": "下一关是确定要做以后先定边界",
+      "narration": "下一集，我们看确定要做以后，为什么要先定边界，再让 AI 写。",
+      "subtitle": "下一集：先定边界，再让 AI 写。",
+      "artifact": {
+        "type": "next-boundary-gate-preview",
+        "state": "episode-three-preview",
+        "nodes": [
+          "值得做",
+          "边界",
+          "AI 写"
+        ],
+        "highlight": "边界"
+      },
+      "focusPhrase": "先定边界",
+      "focusCue": "open next boundary gate",
+      "motion": "Demo/evidence gate clears and the boundary gate appears as next episode preview",
+      "sources": [
+        "series:episode-three-bridge",
+        "source-map:agentic-technical-debt",
+        "pdf:p16-p18"
+      ],
+      "sourceLogic": "bridge-to-next-source-stage",
+      "audioSource": "voice-manifest:c14"
+    }
+  ]
+}

@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Harness Engineering - Agent Harness for Software Delivery</title>
+  <style>
+    :root {
+      --bg: #f4f6f1;
+      --ink: #151b17;
+      --muted: #5c675f;
+      --line: #cbd5ca;
+      --panel: #ffffff;
+      --green: #1f7a55;
+      --blue: #295f8f;
+      --clay: #b85d45;
+      --gold: #c59225;
+      --shadow: 0 20px 60px rgba(22, 28, 24, 0.12);
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      height: 100%;
+      overflow: hidden;
+      color: var(--ink);
+      background:
+        linear-gradient(90deg, rgba(31,122,85,0.07) 1px, transparent 1px),
+        linear-gradient(180deg, rgba(41,95,143,0.06) 1px, transparent 1px),
+        var(--bg);
+      background-size: 34px 34px;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .deck { height: 100%; display: grid; grid-template-rows: auto 4px 1fr; }
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 12px 18px;
+      background: rgba(244,246,241,0.92);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(10px);
+      z-index: 3;
+    }
+    .brand { display: flex; gap: 12px; align-items: baseline; min-width: 0; }
+    .brand strong { font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap; }
+    .brand span { font-size: 13px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .controls { display: flex; align-items: center; gap: 8px; }
+    button {
+      width: 38px;
+      height: 34px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--panel);
+      color: var(--ink);
+      cursor: pointer;
+      font-size: 18px;
+      box-shadow: 0 4px 12px rgba(22,28,24,0.08);
+    }
+    button:disabled { opacity: 0.35; cursor: default; box-shadow: none; }
+    .counter { min-width: 72px; text-align: right; color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; }
+    .progress { background: rgba(21,27,23,0.08); }
+    .progress div { width: 0%; height: 100%; background: linear-gradient(90deg, var(--green), var(--blue), var(--clay)); transition: width 220ms ease; }
+    .viewport { overflow: hidden; }
+    .slides { height: 100%; display: flex; transition: transform 360ms cubic-bezier(.2,.8,.2,1); }
+    .slide { width: 100vw; height: 100%; flex: 0 0 100vw; padding: 28px; display: grid; align-items: stretch; }
+    .canvas {
+      width: min(1240px, 100%);
+      margin: 0 auto;
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 22px;
+      opacity: 0.35;
+      transform: translateY(8px);
+      transition: opacity 220ms ease, transform 220ms ease;
+    }
+    .slide.active .canvas { opacity: 1; transform: translateY(0); }
+    .title-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 18px;
+      align-items: end;
+      border-bottom: 2px solid var(--ink);
+      padding-bottom: 14px;
+    }
+    .kicker { color: var(--green); font-weight: 800; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 10px; }
+    h1, h2, h3, p { margin: 0; letter-spacing: 0; }
+    h1 { font-size: 56px; line-height: 1.05; max-width: 920px; font-weight: 850; }
+    h2 { font-size: 40px; line-height: 1.12; max-width: 980px; font-weight: 820; }
+    h3 { font-size: 17px; margin-bottom: 10px; }
+    .slide-no { color: var(--muted); font-variant-numeric: tabular-nums; }
+    .body { min-height: 0; display: grid; gap: 18px; align-content: start; }
+    .lead { color: var(--muted); font-size: 20px; line-height: 1.6; max-width: 840px; }
+    .split { display: grid; grid-template-columns: 0.95fr 1.05fr; gap: 18px; min-height: 0; }
+    .columns { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+    .tile, .metric, .diagram, table {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+    .tile, .metric, .diagram { padding: 18px; }
+    .tile p, .metric span, li, td { color: var(--muted); font-size: 15px; line-height: 1.6; }
+    .metric strong { display: block; color: var(--clay); font-size: 34px; line-height: 1; margin-bottom: 10px; font-variant-numeric: tabular-nums; }
+    ul { margin: 0; padding-left: 18px; }
+    table { width: 100%; border-collapse: collapse; overflow: hidden; }
+    th, td { text-align: left; vertical-align: top; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+    th { background: #e6ece4; color: var(--ink); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; }
+    tr:last-child td { border-bottom: 0; }
+    .flow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; align-items: stretch; }
+    .node { padding: 16px; border: 1px solid var(--line); border-radius: 8px; background: #fbfcf9; min-height: 118px; }
+    .node strong { display: block; margin-bottom: 8px; color: var(--green); }
+    .source-link { color: var(--green); font-weight: 700; text-decoration: none; }
+    .source-link:hover { text-decoration: underline; }
+    @media (max-width: 900px) {
+      .slide { padding: 18px; }
+      .brand span { display: none; }
+      h1 { font-size: 36px; }
+      h2 { font-size: 30px; }
+      .split, .columns, .metrics, .flow { grid-template-columns: 1fr; }
+      .body { overflow: auto; padding-bottom: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="deck">
+    <header class="topbar">
+      <div class="brand">
+        <strong>Harness Engineering</strong>
+        <span>Agent harness architecture for software delivery</span>
+      </div>
+      <div class="controls">
+        <button id="prev" type="button" aria-label="Previous slide">&lt;</button>
+        <button id="next" type="button" aria-label="Next slide">&gt;</button>
+        <div class="counter" id="counter">1 / 14</div>
+      </div>
+    </header>
+    <div class="progress"><div id="bar"></div></div>
+    <section class="viewport" id="viewport">
+      <div class="slides" id="slides">
+        <article class="slide active">
+          <div class="canvas">
+            <div class="title-row">
+              <div><div class="kicker">Qualified source transform</div><h1>Harness engineering is the control system around delivery agents.</h1></div>
+              <div class="slide-no">01</div>
+            </div>
+            <div class="body split">
+              <p class="lead">The latest Harness sources frame the real problem as agent harness design: models provide intelligence, but the harness controls memory, context, tools, execution, verification, and auditability.</p>
+              <div class="tile">
+                <h3>Source gate</h3>
+                <ul>
+                  <li>First-party Harness sources from 2025-2026.</li>
+                  <li>Official docs plus source-code repositories.</li>
+                  <li>SEO summaries and press releases rejected.</li>
+                  <li>Vendor framing preserved as Harness's thesis, not neutral market proof.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div><div class="kicker">Core distinction</div><h2>There are two loops: code creation and software delivery.</h2></div>
+              <div class="slide-no">02</div>
+            </div>
+            <div class="body">
+              <table>
+                <thead><tr><th>Loop</th><th>Agent job</th><th>Harness requirement</th></tr></thead>
+                <tbody>
+                  <tr><td>Inner loop</td><td>Write, edit, test, and review code near one developer and one repo.</td><td>Repository context, code tools, local feedback.</td></tr>
+                  <tr><td>Outer loop</td><td>Build, test, secure, deploy, verify, operate, and roll back software.</td><td>Organization context, production credentials, policy gates, evidence, audit trail.</td></tr>
+                  <tr><td>Key difference</td><td>A coding-agent mistake is usually caught downstream.</td><td>A delivery-agent mistake is downstream; it touches production and compliance.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div><div class="kicker">Agent harness anatomy</div><h2>A delivery agent needs memory, context, tools, and verification.</h2></div>
+              <div class="slide-no">03</div>
+            </div>
+            <div class="body">
+              <div class="flow">
+                <div class="node"><strong>Memory</strong><p>Software Delivery Knowledge Graph: services, teams, pipelines, incidents, policies, scorecards, artifacts.</p></div>
+                <div class="node"><strong>Context</strong><p>Live delivery state: scans, change freezes, dependencies, on-call schedules, incidents, recent deploys.</p></div>
+                <div class="node"><strong>Tools</strong><p>Governed actions: deploy, scan, migrate, flag, run chaos tests, open incidents, roll back.</p></div>
+                <div class="node"><strong>Verification</strong><p>Scorecards, policy gates, approvals, signed evidence, audit records, rollback paths.</p></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div><div class="kicker">What breaks without it</div><h2>Speed becomes a damage multiplier when agents act without delivery controls.</h2></div>
+              <div class="slide-no">04</div>
+            </div>
+            <div class="body">
+              <table>
+                <thead><tr><th>Failure mode</th><th>Why it matters</th><th>Harness control</th></tr></thead>
+                <tbody>
+                  <tr><td>Prompt injection</td><td>PR descriptions, poisoned dependencies, or issue comments can redirect agent behavior.</td><td>Identity model, scoped permissions, governed execution.</td></tr>
+                  <tr><td>Compliance bypass</td><td>A parallel AI path without approvals or audit trail is hard to defend.</td><td>Policy gates, approvals, evidence, audit logs.</td></tr>
+                  <tr><td>Partial context</td><td>Agent makes locally plausible but globally unsafe decisions.</td><td>Knowledge graph plus live delivery context.</td></tr>
+                  <tr><td>AI-specific failures</td><td>Hallucinated manifests, rollback loops, confident wrong fixes.</td><td>Verification, scorecards, deterministic pipeline controls.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div><div class="kicker">Execution boundary</div><h2>The model can be outside; the control plane and credentials cannot.</h2></div>
+              <div class="slide-no">05</div>
+            </div>
+            <div class="body split">
+              <div class="tile">
+                <h3>Delegate pattern</h3>
+                <p>Harness describes actions running through a Delegate: a lightweight worker inside the customer's environment. The agent issues an instruction; the Delegate executes it inside the perimeter and returns the result.</p>
+              </div>
+              <div class="tile">
+                <h3>Secret boundary</h3>
+                <p>Secrets are decrypted inside the Delegate, not in the agent context window, model provider memory, or audit log. This is the practical difference between arbitrary access and governable execution.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div><div class="kicker">MCP architecture</div><h2>Harness MCP Server compresses a broad platform into a smaller agent tool surface.</h2></div>
+              <div class="slide-no">06</div>
+            </div>
+            <div class="body">
+              <div class="metrics">
+                <div class="metric"><strong>11</strong><span>Consolidated tools in the official GitHub README.</span></div>
+                <div class="metric"><strong>168</strong><span>Resource types exposed through registry-based dispatch.</span></div>
+                <div class="metric"><strong>31</strong><span>Toolsets spanning CI/CD, GitOps, feature flags, cost, security, chaos, IDP, governance, and more.</span></div>
+                <div class="metric"><strong>30</strong><span>Prompt templates for common delivery workflows.</span></div>
+              </div>
+              <div class="diagram">
+                <div class="flow">
+                  <div class="node"><strong>Agent intent</strong><p>"Debug this failed pipeline"</p></div>
+                  <div class="node"><strong>Consolidated tool</strong><p>harness_get / harness_list / harness_execute</p></div>
+                  <div class="node"><strong>Resource registry</strong><p>pipeline, execution, service, environment, flag, vulnerability</p></div>
+                  <div class="node"><strong>Harness action</strong><p>Query, create, update, execute, approve, or diagnose.</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div><div class="kicker">Skills layer</div><h2>Skills translate user intent into correct Harness workflows.</h2></div>
+              <div class="slide-no">07</div>
+            </div>
+            <div class="body split">
+              <div class="tile">
+                <h3>Problem</h3>
+                <p>Raw tool access is not enough. A user should not need to know Harness resource schemas, org/project paths, pipeline internals, or which API maps to which task.</p>
+              </div>
+              <div class="tile">
+                <h3>Pattern</h3>
+                <p>Harness Skills are structured instruction files layered over MCP. They guide Claude Code, Cursor, GitHub Copilot, and other assistants to create, operate, debug, and govern CI/CD workflows through natural language.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div><div class="kicker">Knowledge graph</div><h2>Delivery safety depends on relationships, not just retrieved text.</h2></div>
+              <div class="slide-no">08</div>
+            </div>
+            <div class="body">
+              <table>
+                <thead><tr><th>Question</th><th>RAG-only weakness</th><th>Graph advantage</th></tr></thead>
+                <tbody>
+                  <tr><td>Is checkout safe to ship tonight?</td><td>Can retrieve docs and PRs, but misses current dependencies and operating state.</td><td>Connects checkout to payments, inventory, fraud, identity, scorecards, CVEs, incidents, change freezes, and owners.</td></tr>
+                  <tr><td>What is the blast radius?</td><td>Text chunks do not naturally represent dependency paths.</td><td>Edges encode service relationships and ownership.</td></tr>
+                  <tr><td>Should an agent deploy?</td><td>Retrieved facts can be stale or incomplete.</td><td>Live state plus policy context drives the decision.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div><div class="kicker">DevOps Agent</div><h2>The DevOps Agent makes the delivery harness actionable.</h2></div>
+              <div class="slide-no">09</div>
+            </div>
+            <div class="body">
+              <div class="columns">
+                <div class="tile"><h3>Pipeline generation</h3><p>Generate or modify delivery workflows using Harness context and policy constraints.</p></div>
+                <div class="tile"><h3>Troubleshooting</h3><p>Analyze failed executions, logs, configuration, and GitOps state in context.</p></div>
+                <div class="tile"><h3>Policy work</h3><p>Help generate and enforce OPA policies so governance stays inside the workflow.</p></div>
+                <div class="tile"><h3>GitOps operations</h3><p>Diagnose manifest, dependency, cluster, or connectivity issues in GitOps flows.</p></div>
+                <div class="tile"><h3>Privacy posture</h3><p>Official docs become the baseline for what the agent can access and how data is handled.</p></div>
+                <div class="tile"><h3>Human flow</h3><p>Use natural language without requiring users to memorize platform internals.</p></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div><div class="kicker">Pipelines as harness</div><h2>Pipelines are production orchestration engines, not just script runners.</h2></div>
+              <div class="slide-no">10</div>
+            </div>
+            <div class="body">
+              <table>
+                <thead><tr><th>Pipeline capability</th><th>Harness role for agents</th></tr></thead>
+                <tbody>
+                  <tr><td>Loops, matrix runs, parallel stages, conditions</td><td>Structure complex delivery behavior deterministically.</td></tr>
+                  <tr><td>Approvals, OPA gates, scorecards</td><td>Prevent agents from bypassing organizational rules.</td></tr>
+                  <tr><td>Rollback, retries, evidence</td><td>Convert action into recoverable and auditable execution.</td></tr>
+                  <tr><td>Agentic step-chaining</td><td>Let deterministic and agentic steps compose inside the same governed workflow.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div><div class="kicker">Operating model</div><h2>The winning pattern: many coding agents, one delivery control plane.</h2></div>
+              <div class="slide-no">11</div>
+            </div>
+            <div class="body split">
+              <div class="tile">
+                <h3>Distributed development</h3>
+                <p>Teams may use Cursor, Claude Code, Copilot, Codex, or future agents. That diversity is healthy for code creation.</p>
+              </div>
+              <div class="tile">
+                <h3>Centralized delivery</h3>
+                <p>Software delivery needs one policy set, one audit trail, one credential boundary, and one place where evidence is retained. Whichever coding agent writes the code, deployment passes through the same harness.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div><div class="kicker">Source quality</div><h2>The source bundle was selected for freshness, originality, and technical depth.</h2></div>
+              <div class="slide-no">12</div>
+            </div>
+            <div class="body">
+              <table>
+                <thead><tr><th>Source category</th><th>Why used</th><th>Risk</th></tr></thead>
+                <tbody>
+                  <tr><td>Harness official docs</td><td>Most current product behavior and module boundaries.</td><td>Docs show intended behavior, not independent outcomes.</td></tr>
+                  <tr><td>Harness official GitHub repos</td><td>Implementation artifacts for MCP and skills.</td><td>Repo README can be ahead of docs or evolving quickly.</td></tr>
+                  <tr><td>Harness technical blogs</td><td>Best explanation of engineering thesis and architecture reasoning.</td><td>First-party vendor framing.</td></tr>
+                  <tr><td>Rejected sources</td><td>SEO summaries, press releases, product pages, third-party MCP indexes.</td><td>Too derivative, promotional, or less precise.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div><div class="kicker">Reusable pattern</div><h2>Agent harness engineering is a general architecture pattern.</h2></div>
+              <div class="slide-no">13</div>
+            </div>
+            <div class="body">
+              <div class="columns">
+                <div class="tile"><h3>Context boundary</h3><p>Expose enough context for good decisions, but not secrets or irrelevant noise.</p></div>
+                <div class="tile"><h3>Tool boundary</h3><p>Reduce tool count, clarify resource types, and dispatch through registries.</p></div>
+                <div class="tile"><h3>Execution boundary</h3><p>Run actions inside the enterprise environment where credentials belong.</p></div>
+                <div class="tile"><h3>Policy boundary</h3><p>Put RBAC, OPA, approvals, and scorecards in the path of action.</p></div>
+                <div class="tile"><h3>Evidence boundary</h3><p>Write durable records that auditors and incident reviewers can trust.</p></div>
+                <div class="tile"><h3>Skill boundary</h3><p>Turn natural-language intent into safe workflows, not raw endpoint calls.</p></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="canvas">
+            <div class="title-row">
+              <div><div class="kicker">Takeaway</div><h2>The model is the brain. The delivery harness is the system of control.</h2></div>
+              <div class="slide-no">14</div>
+            </div>
+            <div class="body">
+              <div class="columns">
+                <div class="tile"><h3>Memory</h3><p>Knowledge graph models how the company ships.</p></div>
+                <div class="tile"><h3>Context</h3><p>Live state determines whether action is safe now.</p></div>
+                <div class="tile"><h3>Tools</h3><p>MCP and platform modules expose governed actions.</p></div>
+                <div class="tile"><h3>Verification</h3><p>Policy, scorecards, approvals, rollback, and evidence constrain agents.</p></div>
+                <div class="tile"><h3>Boundary</h3><p>Execution and credentials stay inside the enterprise perimeter.</p></div>
+                <div class="tile"><h3>Source</h3><p><a class="source-link" href="https://www.harness.io/blog/ai-writes-the-code-who-delivers-it-safely">Harness: AI writes the code. Who delivers it safely?</a></p></div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <script>
+    (() => {
+      const slides = [...document.querySelectorAll('.slide')];
+      const strip = document.getElementById('slides');
+      const bar = document.getElementById('bar');
+      const counter = document.getElementById('counter');
+      const prev = document.getElementById('prev');
+      const next = document.getElementById('next');
+      const viewport = document.getElementById('viewport');
+      let index = 0;
+      let touchX = null;
+      slides.forEach((slide, i) => {
+        const number = slide.querySelector('.slide-no');
+        if (number) number.textContent = String(i + 1).padStart(2, '0');
+      });
+      function render() {
+        slides.forEach((slide, i) => slide.classList.toggle('active', i === index));
+        strip.style.transform = `translateX(${-index * 100}vw)`;
+        counter.textContent = `${index + 1} / ${slides.length}`;
+        bar.style.width = `${((index + 1) / slides.length) * 100}%`;
+        prev.disabled = index === 0;
+        next.disabled = index === slides.length - 1;
+      }
+      function setSlide(nextIndex) {
+        index = Math.max(0, Math.min(slides.length - 1, nextIndex));
+        render();
+      }
+      prev.addEventListener('click', () => setSlide(index - 1));
+      next.addEventListener('click', () => setSlide(index + 1));
+      window.addEventListener('keydown', (event) => {
+        if (event.key === 'ArrowRight' || event.key === 'PageDown' || event.key === ' ') {
+          event.preventDefault();
+          setSlide(index + 1);
+        }
+        if (event.key === 'ArrowLeft' || event.key === 'PageUp') {
+          event.preventDefault();
+          setSlide(index - 1);
+        }
+        if (event.key === 'Home') setSlide(0);
+        if (event.key === 'End') setSlide(slides.length - 1);
+      });
+      viewport.addEventListener('touchstart', (event) => {
+        touchX = event.touches[0].clientX;
+      }, { passive: true });
+      viewport.addEventListener('touchend', (event) => {
+        if (touchX === null) return;
+        const delta = event.changedTouches[0].clientX - touchX;
+        if (Math.abs(delta) > 42) setSlide(index + (delta < 0 ? 1 : -1));
+        touchX = null;
+      }, { passive: true });
+      render();
+    })();
+  </script>
+</body>
+</html>

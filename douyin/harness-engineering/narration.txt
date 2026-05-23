@@ -1,0 +1,44 @@
+Harness Engineering 最近刷遍 AI 社群、技术博客和开发者讨论区。
+但很多人还没弄懂它到底指什么，就已经开始转发、解读，甚至拿来命名项目。
+先别把它当成又一个营销词。
+它真正指向的是：AI 从“能说会道”，走向“能在真实系统里干成事”的执行骨架。
+过去我们讲 Prompt Engineering，是让模型听懂你。
+后来讲 Context Engineering，是让模型看到该看的信息。
+现在讲 Harness Engineering，是让模型在真实世界里，持续、可靠、按目标行动。
+关键变化不在模型内部，而在模型外部。
+为什么同样调用 GPT 或 Claude，有的 agent 像玩具，有的 agent 能进入生产流程？
+差别往往不在模型参数，而在包裹模型的那套 harness。
+一个完整的 harness，至少有六层。
+第一，结构化上下文管理。
+第二，工具系统设计。
+第三，执行编排引擎。
+第四，状态与记忆管理。
+第五，独立评估和可观测性。
+第六，约束校验和恢复机制。
+这六层合在一起，才让 agent 不只是回答问题，而是完成任务。
+放到软件交付里，问题会更具体。
+Coding Agent 在内循环，主要写代码、改代码、跑测试。
+Delivery Agent 在外循环，碰到构建、扫描、审批、部署、回滚和审计。
+外循环连接生产系统、密钥、权限、合规和真实用户。
+所以不能只是给 AI 一个 API key。
+权限不是治理，权限只是入口。
+没有 harness，失败会很具体：PR 描述里的 prompt injection，恶意依赖，错误的 Kubernetes 配置，反复 rollback 和 redeploy。
+速度越快，错误扩散越快。
+真正需要的是 delivery harness。
+模型是大脑，harness 是控制平面。
+第一层记忆，不只是普通 RAG，而是 software delivery knowledge graph。
+它要知道服务、团队、流水线、环境、策略、事故、依赖之间的关系。
+第二层实时上下文：现在有没有故障，有没有冻结窗口，最近扫描有没有风险，谁在 on-call。
+第三层受控工具：部署、回滚、feature flag、扫描、审批，都不能让模型直接裸调接口。
+执行应该发生在企业边界内，比如通过 Delegate。
+密钥在 Delegate 内解密，不进入模型上下文，不进入供应商内存，也不进入 prompt。
+第四层验证和证据。
+Policy gate、scorecard、approval、rollback、audit log，都要留下可追踪证据。
+Harness MCP Server 的价值也在这里。
+它不是把所有 API 暴露给 AI，而是把复杂平台收敛成更少的受控工具和资源。
+公开资料里，Harness MCP Server 覆盖十一类工具、一百六十八种资源类型、三十一组 toolsets。
+Skills 则把人的意图翻译成正确的交付操作。
+所以 Harness Engineering 不是让 AI 获得更多自由。
+它是让 AI 的每一步行动，都有上下文、有边界、有证据、有恢复路径。
+一句话：模型负责推理，Harness 负责约束、执行和证明。
+真正的 AI 生产力革命，正在从模型内部，转向模型外部。

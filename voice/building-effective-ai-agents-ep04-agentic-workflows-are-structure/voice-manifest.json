@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "1.0",
+  "slug": "building-effective-ai-agents-ep04-agentic-workflows-are-structure",
+  "status": "timed_audio_ready",
+  "ttsStatus": "complete",
+  "chunks": [
+    {
+      "id": "s01",
+      "text": "Workflow 讲的是任务怎么被组织：先后、并行、评估和优化。它不是多智能体协调概念的同义词。",
+      "actualDurationSeconds": 11.462,
+      "measuredSpeechSeconds": 11.112,
+      "audioFile": "chunks/s01.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep04-agentic-workflows-are-structure/audio/s01.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s02",
+      "text": "和 Agent 的动态行为不同，Workflow 更强调预定义控制流。你知道大致步骤，才适合把流程结构化。",
+      "actualDurationSeconds": 12.95,
+      "measuredSpeechSeconds": 12.6,
+      "audioFile": "chunks/s02.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep04-agentic-workflows-are-structure/audio/s02.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s03",
+      "text": "顺序工作流适合阶段依赖明显的任务，比如草稿、审查、润色。每一步产出，都是下一步输入。",
+      "actualDurationSeconds": 10.814,
+      "measuredSpeechSeconds": 10.464,
+      "audioFile": "chunks/s03.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep04-agentic-workflows-are-structure/audio/s03.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s04",
+      "text": "并行工作流适合互不依赖的子任务。风险、合规、运营可以同时看，但如果彼此必须接力，就不要硬并行。",
+      "actualDurationSeconds": 12.854,
+      "measuredSpeechSeconds": 12.504,
+      "audioFile": "chunks/s04.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep04-agentic-workflows-are-structure/audio/s04.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s05",
+      "text": "Evaluator-optimizer 是生成和评估的迭代循环。它适合有清晰评价标准、需要反复改进的内容。",
+      "actualDurationSeconds": 10.214,
+      "measuredSpeechSeconds": 9.864,
+      "audioFile": "chunks/s05.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep04-agentic-workflows-are-structure/audio/s05.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s06",
+      "text": "如果任务一步就能完成，或者评价标准不清楚，Workflow 只会增加延迟和维护成本。",
+      "actualDurationSeconds": 8.798,
+      "measuredSpeechSeconds": 8.448,
+      "audioFile": "chunks/s06.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep04-agentic-workflows-are-structure/audio/s06.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s07",
+      "text": "选择顺序、并行还是评估优化，不是看哪个更高级，而是看任务之间有没有依赖、能不能独立处理、有没有质量标准。",
+      "actualDurationSeconds": 12.47,
+      "measuredSpeechSeconds": 12.12,
+      "audioFile": "chunks/s07.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep04-agentic-workflows-are-structure/audio/s07.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    },
+    {
+      "id": "s08",
+      "text": "第四集的结论是：Workflow 是结构工具。它可以服务 Single Agent，也可以服务 Multi-Agent，但不要把它们混成一层。",
+      "actualDurationSeconds": 10.718,
+      "measuredSpeechSeconds": 10.368,
+      "audioFile": "chunks/s08.mp3",
+      "remotionAudioFile": "building-effective-ai-agents-ep04-agentic-workflows-are-structure/audio/s08.mp3",
+      "ttsModel": "gpt-4o-mini-tts",
+      "ttsVoice": "marin",
+      "ttsSpeed": 1.0,
+      "paddingSeconds": 0.35
+    }
+  ],
+  "finalAudio": "remotion_sequence_audio",
+  "totalDurationSeconds": 90.28,
+  "asrTranscript": "asr.txt",
+  "asrStatus": "pass",
+  "asrReviewChunks": [],
+  "termQa": {
+    "terms": [
+      "Agent",
+      "Workflow",
+      "Single Agent",
+      "Multi-Agent",
+      "Agentic Workflows",
+      "Token"
+    ],
+    "note": "ASR may translate English terms into Chinese; final QA should be by listening."
+  }
+}
